@@ -11,9 +11,9 @@
 # ```
 # 
 # ```{admonition} Eksempler på funksjoner
-# :class: eksempel
+# :class: eksempel, dropdown
 # 
-# $$f(x)=3x+2$$
+# $$f(x) = 3x+2$$
 # 
 # $$g(x)=\sqrt{2x+4}$$
 # 
