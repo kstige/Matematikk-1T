@@ -13,7 +13,7 @@
 # ```{admonition} Eksempler på funksjoner
 # :class: eksempel, dropdown
 # 
-# $$f(x) = 3x+2$$
+# $$f(x) = 3x + 2$$
 # 
 # $$g(x)=\sqrt{2x+4}$$
 # 
@@ -63,7 +63,7 @@ plt.show()
 # Definisjosmengden til en funksjon er alle verdier for $x$ som vi kan sette inn i variabelen. 
 # 
 # ```{admonition} Eksempler på definisjonsmengde
-# :class: eksempel
+# :class: eksempel, dropdown
 # Funksjonen $f(x)= 3x + 2$ har definisjonsmengde $D_f = \mathbf{R}$ siden vi kan sette inn alle reelle tall for $x$.
 # 
 # Funksjonen $g(x) = \sqrt{2x+4}$ har definisjonsmengde $D_g = \left[-2, \rightarrow\right>$ siden vi ikke kan ta kvadratrota av et negativt tall.
@@ -77,8 +77,8 @@ plt.show()
 # Verdimengden til en funksjon er alle verdier vi kan få ut av funksjonen.
 # 
 # ```{admonition} Eksempler på verdimengde
-# :class: eksempel
-# Funksjonen $f(x))= 3x + 2$ har verdimengde $V_f = \mathbf{R}$ siden vi kan få ut alle reelle tall fra funksjonen.
+# :class: eksempel, dropdown
+# Funksjonen $f(x)= 3x + 2$ har verdimengde $V_f = \mathbf{R}$ siden vi kan få ut alle reelle tall fra funksjonen.
 # 
 # Funksjonen $g(x) = \sqrt{2x+4}$ har verdimengde $V_g = \left[0, \rightarrow\right>$ siden kvadratrota ikke kan være negativ.
 # 
