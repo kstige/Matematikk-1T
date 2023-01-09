@@ -10,14 +10,14 @@
 # Når hver verdi av $x$ vi putter inn gir oss en verdi for $f(x)$ ut, så sier vi at $f$ er en funksjon av $x$.
 # ```
 # 
-# ```{admonition} Eksempler på funksjoner
+# ```{admonition} Eksempel: Funksjoner
 # :class: eksempel, dropdown
 # 
-# $$f(x) = 3x + 2$$
-# 
-# $$g(x)=\sqrt{2x+4}$$
-# 
-# $$h(x)=\frac{2}{x}$$
+# $$
+# f(x)=3x+2 \
+# g(x)=\sqrt{2x+4} \
+# g(x)=\sqrt{2x+4}
+# $$
 # 
 # I alle tilfellene over har vi funksjoner siden vi for hver verdi av $x$ vil få ut en verdi for $f(x)$.
 # ```

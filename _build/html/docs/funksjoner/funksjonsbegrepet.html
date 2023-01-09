@@ -263,35 +263,6 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/docs/funksjoner/funksjonsbegrepet.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
-  
-
-<span class="headerbtn__icon-container">
-  
-    <img src="../../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -439,14 +410,14 @@ title="Print to PDF"
 <p class="admonition-title">Definisjon av funksjon</p>
 <p>Når hver verdi av <span class="math notranslate nohighlight">\(x\)</span> vi putter inn gir oss en verdi for <span class="math notranslate nohighlight">\(f(x)\)</span> ut, så sier vi at <span class="math notranslate nohighlight">\(f\)</span> er en funksjon av <span class="math notranslate nohighlight">\(x\)</span>.</p>
 </div>
-<div class="eksempel admonition">
-<p class="admonition-title">Eksempler på funksjoner</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel: Funksjoner</p>
 <div class="math notranslate nohighlight">
-\[f(x)=3x+2\]</div>
-<div class="math notranslate nohighlight">
-\[g(x)=\sqrt{2x+4}\]</div>
-<div class="math notranslate nohighlight">
-\[h(x)=\frac{2}{x}\]</div>
+\[
+f(x)=3x+2 \
+g(x)=\sqrt{2x+4} \
+g(x)=\sqrt{2x+4}
+\]</div>
 <p>I alle tilfellene over har vi funksjoner siden vi for hver verdi av <span class="math notranslate nohighlight">\(x\)</span> vil få ut en verdi for <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
 </div>
 <section id="representasjonsmetoder">
@@ -486,7 +457,7 @@ title="Print to PDF"
 <section id="definisjonsmengde">
 <h2>Definisjonsmengde<a class="headerlink" href="#definisjonsmengde" title="Permalink to this headline">#</a></h2>
 <p>Definisjosmengden til en funksjon er alle verdier for <span class="math notranslate nohighlight">\(x\)</span> som vi kan sette inn i variabelen.</p>
-<div class="eksempel admonition">
+<div class="eksempel dropdown admonition">
 <p class="admonition-title">Eksempler på definisjonsmengde</p>
 <p>Funksjonen <span class="math notranslate nohighlight">\(f(x)= 3x + 2\)</span> har definisjonsmengde <span class="math notranslate nohighlight">\(D_f = \mathbf{R}\)</span> siden vi kan sette inn alle reelle tall for <span class="math notranslate nohighlight">\(x\)</span>.</p>
 <p>Funksjonen <span class="math notranslate nohighlight">\(g(x) = \sqrt{2x+4}\)</span> har definisjonsmengde <span class="math notranslate nohighlight">\(D_g = \left[-2, \rightarrow\right&gt;\)</span> siden vi ikke kan ta kvadratrota av et negativt tall.</p>
@@ -497,9 +468,9 @@ title="Print to PDF"
 <section id="verdimengde">
 <h2>Verdimengde<a class="headerlink" href="#verdimengde" title="Permalink to this headline">#</a></h2>
 <p>Verdimengden til en funksjon er alle verdier vi kan få ut av funksjonen.</p>
-<div class="eksempel admonition">
+<div class="eksempel dropdown admonition">
 <p class="admonition-title">Eksempler på verdimengde</p>
-<p>Funksjonen <span class="math notranslate nohighlight">\(f(x))= 3x + 2\)</span> har verdimengde <span class="math notranslate nohighlight">\(V_f = \mathbf{R}\)</span> siden vi kan få ut alle reelle tall fra funksjonen.</p>
+<p>Funksjonen <span class="math notranslate nohighlight">\(f(x)= 3x + 2\)</span> har verdimengde <span class="math notranslate nohighlight">\(V_f = \mathbf{R}\)</span> siden vi kan få ut alle reelle tall fra funksjonen.</p>
 <p>Funksjonen <span class="math notranslate nohighlight">\(g(x) = \sqrt{2x+4}\)</span> har verdimengde <span class="math notranslate nohighlight">\(V_g = \left[0, \rightarrow\right&gt;\)</span> siden kvadratrota ikke kan være negativ.</p>
 <p>Funksjonen <span class="math notranslate nohighlight">\(h(x)=\frac{2}{x}\)</span> har verdimengde <span class="math notranslate nohighlight">\(D_h = \mathbf{R} \, \backslash \, \{0\}\)</span> siden vi kan få ut alle reelle tall utenom <span class="math notranslate nohighlight">\(0\)</span>.</p>
 </div>
