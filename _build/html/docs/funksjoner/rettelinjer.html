@@ -1,0 +1,648 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Lineære funksjoner &#8212; Matematikk 1T</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/myadmonitions.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Quiz om lineære funksjoner" href="quiz_rettelinjer.html" />
+    <link rel="prev" title="Quiz om viktige punkt" href="quiz_viktigepunkt.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Matematikk 1T</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Matematikk 1T
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algebra
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebra/intro_algebra.html">
+   Introduksjon til algebra
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Likninger
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/uttrykk_likning_identitet.html">
+   Uttrykk, likning og identitet
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Funksjoner
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="funksjonsbegrepet.html">
+   Funksjonsbegrepet
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="viktige_punkt.html">
+   Viktige punkt
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="quiz_viktigepunkt.html">
+     Quiz om viktige punkt
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   Lineære funksjoner
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="quiz_rettelinjer.html">
+     Quiz om lineære funksjoner
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="polynomfunksjoner.html">
+   Polynomfunksjoner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="rasjonalefunksjoner.html">
+   Rasjonale funksjoner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="potensfunksjoner.html">
+   Potensfunksjoner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="eksponentialfunksjoner.html">
+   Eksponentialfunksjoner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="vekstfart.html">
+   Vekstfart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="derivert.html">
+   Den deriverte
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="funksjoner_geogebra.html">
+   Funksjoner i GeoGebra
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/docs/funksjoner/rettelinjer.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fdocs/funksjoner/rettelinjer.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/docs/funksjoner/rettelinjer.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finne-funksjonsuttrykket-til-en-lineaer-funksjon">
+   Finne funksjonsuttrykket til en lineær funksjon
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Lineære funksjoner</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finne-funksjonsuttrykket-til-en-lineaer-funksjon">
+   Finne funksjonsuttrykket til en lineær funksjon
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="lineaere-funksjoner">
+<h1>Lineære funksjoner<a class="headerlink" href="#lineaere-funksjoner" title="Permalink to this headline">#</a></h1>
+<div class="def admonition">
+<p class="admonition-title">Definisjon av lineære funksjoner</p>
+<p>Alle lineære funksjoner kan skrives på formen <span class="math notranslate nohighlight">\(f(x) =ax+b\)</span> der <span class="math notranslate nohighlight">\(a,b\in\mathbf{R}\)</span>. Siden funksjonsverdien vises langs <span class="math notranslate nohighlight">\(y\)</span>-aksen vil dere også ofte møte på formen <span class="math notranslate nohighlight">\(y = ax+b\)</span>.</p>
+<p>Tallet <span class="math notranslate nohighlight">\(a\)</span> kalles stigningstallet. Det viser hvor mye <span class="math notranslate nohighlight">\(f(x)\)</span> øker eller minker med når <span class="math notranslate nohighlight">\(x\)</span> øker med 1.</p>
+<p>Tallet <span class="math notranslate nohighlight">\(b\)</span> kalles konstantleddet. Det viser <span class="math notranslate nohighlight">\(y\)</span>-verdien til skjæringspunktet med <span class="math notranslate nohighlight">\(y\)</span>-aksen.</p>
+<p><img alt="stigningstall_og_konstantledd" src="../../_images/ab.png" /></p>
+</div>
+<div class="def dropdown admonition">
+<p class="admonition-title">Alternativ form for rett linje</p>
+<p>Siden ledd kan flyttes til andre side av likhetstegnet og ei likning kan multipliseres med det samme på begge sider av likhetstegnet, så kan dere møte på følgende form av ei rett linje:</p>
+<p><span class="math notranslate nohighlight">\(ax+by=c\)</span></p>
+<p>Da vil <span class="math notranslate nohighlight">\(a\)</span> og <span class="math notranslate nohighlight">\(b\)</span> ikke være stigningstall og konstantledd.</p>
+</div>
+<div class="oppgave admonition">
+<p class="admonition-title">Oppgave</p>
+<p>Finn stigningstall og konstantledd for linjene gitt ved:</p>
+<div class="math notranslate nohighlight">
+\[
+f(x)=2x+3
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+g(x)=-\frac{1}{3}x-2
+\]</div>
+<div class="losning dropdown admonition">
+<p class="admonition-title">Løsningsforslag</p>
+<p><span class="math notranslate nohighlight">\(f(x)\)</span> har stignignstall 2 og konstantledd lik 3.</p>
+<p><span class="math notranslate nohighlight">\(g(x)\)</span> har stigningstall lik <span class="math notranslate nohighlight">\(-\frac{1}{3}\)</span> og konstantledd lik -2.</p>
+</div>
+</div>
+<section id="finne-funksjonsuttrykket-til-en-lineaer-funksjon">
+<h2>Finne funksjonsuttrykket til en lineær funksjon<a class="headerlink" href="#finne-funksjonsuttrykket-til-en-lineaer-funksjon" title="Permalink to this headline">#</a></h2>
+<p>For å finne funksjonsuttrykket for ei rett linje trenger vi å vite to størrelser:</p>
+<ul class="simple">
+<li><p>stigningstallet a</p></li>
+<li><p>konstantleddet b</p></li>
+</ul>
+<p>For å finne disse to trenger vi å kjenne to punkt på linja. Har vi det, kan vi enten tegne linja og lese av, eller vi kan regne oss fram til svaret. Hva som er enklest kommer an på tallene. Først ser vi på et enkelt eksempel for å illustrere hvordan vi kan tenke.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel lineær funksjon</p>
+<p>En lineær funksjon går gjennom punktene <span class="math notranslate nohighlight">\(P_1 (2,5)\)</span> og <span class="math notranslate nohighlight">\(P_2 (4,9)\)</span>. Vi skal finne funksjonsuttrykket og starter med å tegne opp punktene i et koordinatsystem og trekke linja gjennom dem.</p>
+<p><img alt="stigningstall" src="../../_images/rettlinje.png" /></p>
+<p>Så skal vi finne stigningstallet. Vi vet at stigninstallet er økningen i <span class="math notranslate nohighlight">\(y\)</span> når <span class="math notranslate nohighlight">\(x\)</span> øker med 1. Her ser vi at når <span class="math notranslate nohighlight">\(x\)</span> går fra 2 til 4, så går <span class="math notranslate nohighlight">\(y\)</span> fra 5 til 9. En økning på 2 i <span class="math notranslate nohighlight">\(x\)</span> gir altså en økning på 4 i <span class="math notranslate nohighlight">\(y\)</span>. Stigningstallet må derfor være <span class="math notranslate nohighlight">\(\frac{4}{2}=2\)</span>.</p>
+<p>For å finne konstantleddet må vi finne skjæringen med <span class="math notranslate nohighlight">\(y\)</span>-aksen. Da går vi to bakover langs <span class="math notranslate nohighlight">\(x\)</span>-aksen og må derfor gå 4 nedover langs <span class="math notranslate nohighlight">\(y\)</span>-aksen (to stigningstall). Konstantleddet blir 1.</p>
+<p>Funksjonsuttrykket blir derfor <span class="math notranslate nohighlight">\(f(x)=2x+1\)</span>.</p>
+</div>
+<p>Vi skal nå formalisere eksempelet over til en framgangsmåte vi kan bruke når vi har gitt to punkt på ei rett linje. Først finner vi stigningstallet.</p>
+<div class="def admonition">
+<p class="admonition-title">Stigningstall</p>
+<p>Om vi kjenner to punkt, <span class="math notranslate nohighlight">\(P_1\)</span> og <span class="math notranslate nohighlight">\(P_2\)</span>, på ei rett linje, så kan vi finne stigningstallet ved å regne ut endringen langs <span class="math notranslate nohighlight">\(y\)</span>-aksen (<span class="math notranslate nohighlight">\(\Delta y\)</span>) delt på endringen langs <span class="math notranslate nohighlight">\(x\)</span>-aksen (<span class="math notranslate nohighlight">\(\Delta x\)</span>).</p>
+<div class="math notranslate nohighlight">
+\[
+a = \frac{y_2-y_1}{x_2-x_1}=\frac{\Delta y}{\Delta x}
+\]</div>
+<p><img alt="stigningstall" src="../../_images/stigningstall.png" /></p>
+</div>
+<p>Når vi har funnet stigningstallet til linja må vi ta utgangspunkt i et av punktene og gå “bakover” for å finne konstantleddet.</p>
+<div class="def admonition">
+<p class="admonition-title">Konstantledd</p>
+<p>Vi tar utgangspunkt i punktet <span class="math notranslate nohighlight">\(P_1 (x_1, y_1)\)</span> og stigningstallet <span class="math notranslate nohighlight">\(a\)</span>. For å komme til <span class="math notranslate nohighlight">\(y\)</span>-aksen må vi gå <span class="math notranslate nohighlight">\(x_1\)</span> bakover. Da vil <span class="math notranslate nohighlight">\(y\)</span> endre seg fra <span class="math notranslate nohighlight">\(y_1\)</span> med <span class="math notranslate nohighlight">\(ax_1\)</span> slik at konstantleddet blir:</p>
+<div class="math notranslate nohighlight">
+\[
+b = y_1 - ax_1
+\]</div>
+</div>
+<p>Setter vi sammen resultatet fra stigningstallet og konstantleddet, så har vi funksjonsuttrykket for den rette linja.</p>
+<p>Vi kan også finne uttrykket direkte fra den såkalte ettpunktsformelen.</p>
+<div class="def admonition">
+<p class="admonition-title">Ettpunktsformelen</p>
+<p>Vi kjenner puntket <span class="math notranslate nohighlight">\((x_1, y_1)\)</span> og stigningstallet <span class="math notranslate nohighlight">\(a\)</span> på ei rett linje. Ved å velge et tilfeldig (ukjent) punkt <span class="math notranslate nohighlight">\((x,y)\)</span> på den rette linja og bruke formelen for stigningstallet får vi</p>
+<div class="math notranslate nohighlight">
+\[
+a = \frac{y-y_1}{x-x_1}
+\]</div>
+<p><img alt="stigningstall" src="../../_images/ettpunktsformel.png" /></p>
+<p>Hvis vi multipliserer med <span class="math notranslate nohighlight">\((x-x_1)\)</span> på begge sider av likhetstegnet, så får vi ettpunktsformelen.</p>
+<div class="math notranslate nohighlight">
+\[
+y - y_1  = a(x-x_1)
+\]</div>
+</div>
+<div class="oppgave admonition">
+<p class="admonition-title">Oppgave</p>
+<p><strong>a)</strong> Finn funksjonsuttrykket for ei rett linje som går gjennom <span class="math notranslate nohighlight">\((3, 2)\)</span> og <span class="math notranslate nohighlight">\((5, 10)\)</span>. <br />
+<strong>b)</strong> Undersøk om punktet <span class="math notranslate nohighlight">\((-1, -6)\)</span> ligger på linja.<br />
+<strong>c)</strong> Finn nullpunktet til funksjonen.</p>
+<div class="losning dropdown admonition">
+<p class="admonition-title">Løsningsforslag</p>
+<p><strong>a)</strong> Finner først stigningstallet ved</p>
+<div class="math notranslate nohighlight">
+\[a = \frac{10-2}{5-3}=\frac{8}{2}=4\]</div>
+<p>Bruker så ettpunktsformelen med punktet <span class="math notranslate nohighlight">\((3,2)\)</span></p>
+<div class="math notranslate nohighlight">
+\[y-2=2(x-3)\]</div>
+<p>som når vi ganger ut parentesen og flytter over -3 gir</p>
+<div class="math notranslate nohighlight">
+\[y = 2x-4\]</div>
+<p><strong>b)</strong> Setter inn -1 for <span class="math notranslate nohighlight">\(x\)</span> i likninga for linja.</p>
+<div class="math notranslate nohighlight">
+\[y = 2(-1)-4 = -6\]</div>
+<p>Det betyr at <span class="math notranslate nohighlight">\((-1, -6)\)</span> ligger på linja.</p>
+<p><strong>c)</strong> Nullpunktet er der <span class="math notranslate nohighlight">\(y=0\)</span>. Løser derfor likninga</p>
+<div class="math notranslate nohighlight">
+\[2x-4=0\]</div>
+<p>som gir at nullpunktet er for <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
+</div>
+</div>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./docs\funksjoner"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="quiz_viktigepunkt.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Quiz om viktige punkt</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="quiz_rettelinjer.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Quiz om lineære funksjoner</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Kristoffer Stige<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

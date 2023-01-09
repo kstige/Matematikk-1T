@@ -1,0 +1,31 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: docs/intro
+options:
+  numbered: true
+
+parts:
+- caption: Algebra
+  chapters:
+  - file: docs/algebra/intro_algebra
+- caption: Likninger
+  chapters:
+  - file: docs/likninger/uttrykk_likning_identitet
+- caption: Funksjoner
+  chapters:
+  - file: docs/funksjoner/funksjonsbegrepet
+  - file: docs/funksjoner/viktige_punkt
+    sections: 
+      - file: docs/funksjoner/quiz_viktigepunkt
+  - file: docs/funksjoner/rettelinjer
+    sections: 
+      - file: docs/funksjoner/quiz_rettelinjer
+  - file: docs/funksjoner/polynomfunksjoner
+  - file: docs/funksjoner/rasjonalefunksjoner
+  - file: docs/funksjoner/potensfunksjoner
+  - file: docs/funksjoner/eksponentialfunksjoner
+  - file: docs/funksjoner/vekstfart
+  - file: docs/funksjoner/derivert
+  - file: docs/funksjoner/funksjoner_geogebra

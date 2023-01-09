@@ -1,0 +1,45 @@
+.admonition.oppgave {
+    border-color: #be8322;
+    background-color: rgba(249, 154, 38, 0.1)
+}
+.admonition.oppgave > .admonition-title {
+    background-color: rgba(249, 154, 38, 0.1)
+}
+.admonition.oppgave > .admonition-title::before {
+    content: '\f304';
+    color: #be8322
+}
+
+.admonition.losning {
+    border-color: #be8322;
+    background-color: rgba(245, 174, 67, 0.2)
+}
+.admonition.losning > .admonition-title {
+    background-color: rgba(255, 171, 68, 0.2);
+    margin-left: -1.0rem;
+    margin-right: -1.4rem;
+}
+.admonition.losning > .admonition-title::before {
+    content: '\f044';
+    color: #be8322
+}
+
+.admonition.eksempel {
+    border-color: #2aaf1e;
+    background-color: rgba(60, 160, 74, 0.1);
+}
+.admonition.eksempel > .admonition-title {
+    background-color: rgba(60, 160, 74, 0.1);
+}
+.admonition.eksempel > .admonition-title::before {
+    content: '\f044';
+    color: #2aaf1e
+}
+
+.admonition.def {
+    border-color: rgba(87,154,202);
+    background-color: rgba(87,154,202,0.1);
+}
+.admonition.def > .admonition-title {
+    background-color: rgba(87,154,202,0.1);
+}
