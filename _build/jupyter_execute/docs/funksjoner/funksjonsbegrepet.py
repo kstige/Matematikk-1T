@@ -16,7 +16,7 @@
 # $$
 # f(x)=3x+2 \\
 # g(x)=\sqrt{2x+4} \\
-# g(x)=\sqrt{2x+4}
+# g(x)=\frac{2}{x}
 # $$
 # 
 # I alle tilfellene over har vi funksjoner siden vi for hver verdi av $x$ vil få ut en verdi for $f(x)$.
