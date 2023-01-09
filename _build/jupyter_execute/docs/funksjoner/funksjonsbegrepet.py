@@ -14,8 +14,8 @@
 # :class: eksempel, dropdown
 # 
 # $$
-# f(x)=3x+2 \
-# g(x)=\sqrt{2x+4} \
+# f(x)=3x+2 \\
+# g(x)=\sqrt{2x+4} \\
 # g(x)=\sqrt{2x+4}
 # $$
 # 
