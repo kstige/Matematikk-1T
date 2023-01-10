@@ -42,7 +42,7 @@
 # `````{admonition} Eksempel: Renteregning
 # :class: eksempel, dropdown
 # 
-# Du setter 20000 kr inn i banken til fastrente på 3,0 % for hvert år. Det her kan beskrives ved hjelp av en eksponentialfunksjon med startfunksjon 20000 og vekstfaktor $1+\frac{3}{100}=1,03$. Eksponentialfunksjonen blir
+# Du setter 20000 kr inn i banken til fastrente på 3,0 % for hvert år. Det her kan beskrives ved hjelp av en eksponentialfunksjon med startverdi 20000 og vekstfaktor $1+\frac{3}{100}=1,03$. Eksponentialfunksjonen blir
 # 
 # $$f(x)=20000\cdot 1,03^x$$
 # 
@@ -50,7 +50,7 @@
 # 
 # ```{figure} ./bilder/renter.png
 # ---
-# scale: 30%
+# scale: 20%
 # align: center
 # ---
 # ```
