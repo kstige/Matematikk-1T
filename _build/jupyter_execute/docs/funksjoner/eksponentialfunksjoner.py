@@ -9,7 +9,7 @@
 # :class: def
 # Eksponentialfunksjoner kan skrives på formen $f(x)=a\cdot b^x$, der $b>0$.
 # 
-# Vi ser at $a$ er funksjonsverdien når $x=0$ (skjæringspunktet med $y$-aksen), mens $b$ er en vekstfaktor. Eksponentialfunksjonen viser en utvikling som endrer seg med en fast prosentstørrelse fo hver periode. Vi sier at funksjonen $f$ endrer seg eksponentielt.
+# Vi ser at $a$ er funksjonsverdien når $x=0$ (skjæringspunktet med $y$-aksen), mens $b$ er en vekstfaktor. Eksponentialfunksjonen viser en utvikling som endrer seg med en fast prosentstørrelse for hver periode. Det kalles en eksponentiell endring.
 # 
 #  * Om $0<b<1$ vil funksjonen være avtagende.
 #  * Om $b>1$ vil funksjonen være stigende.
