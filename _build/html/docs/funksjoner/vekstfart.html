@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Den deriverte" href="derivert.html" />
@@ -346,7 +348,43 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="vekstfart">
 <h1>Vekstfart<a class="headerlink" href="#vekstfart" title="Permalink to this headline">#</a></h1>
-<p>Vekstfart</p>
+<p>For lineære funksjoner har vi sett på stigningstallet. Det forteller hvor raskt funksjonen endrer seg. Det som er spesielt med lineære funksjoner er at de endrer seg med dette samme stigningstallet hele tiden. Stigningstallet kan også kalles vekstfarten til den lineære funksjoner.</p>
+<p>Andre funksjonstyper har ikke et stignignstall, men det kan allikevel være nyttig å se på vekstfarten til funksjonen. Vi tar utgangspunkt i definisjonen av vekstfarten (stigningstallet) til en lineær funksjon når vi definerer det vi vil kalle gjennomsnittlig vekstfart.</p>
+<div class="admonition-definisjon-av-gjennomsnittlig-vekstfart admonition">
+<p class="admonition-title">Definisjon av gjennomsnittlig vekstfart</p>
+<p>For å finne den gjennomsnittlige vekstfarten til funksjonen <span class="math notranslate nohighlight">\(f(x)\)</span> på intervallet <span class="math notranslate nohighlight">\([x_1, x_2]\)</span> bruker vi</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\Delta f(x)}{\Delta x} = \frac{f(x_2)-f(x_1)}{x_2-x_1}
+\]</div>
+<p>Dette er det samme som stigningstallet til den rette linja gjennom punktene <span class="math notranslate nohighlight">\((x_1, f(x_1))\)</span> og <span class="math notranslate nohighlight">\((x_2, f(x_2))\)</span>.</p>
+<p>Vekstfarten har en enhet som er gitt ved enheten til <span class="math notranslate nohighlight">\(f(x)\)</span> delt på enheten til <span class="math notranslate nohighlight">\(x\)</span>.</p>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html">
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+
+<div id="ggb-point"></div>
+
+<script>
+  var ggbApp = new GGBApplet({
+      "height": 400,
+      "showToolBar": true,
+      "showMenuBar": true,
+      "showAlgebraInput": false,
+      "showResetIcon": true,
+      "enableLabelDrags": false,
+      "enableRightClick": false,
+      "enableShiftDragZoom": true,
+      "useBrowserForJS": false,
+      "material_id": "uh5nffph"
+  }, 'ggb-point');
+
+  ggbApp.inject();
+</script>
+</div></div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
