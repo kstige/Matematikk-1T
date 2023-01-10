@@ -29,9 +29,8 @@
 # Finn stigningstall og konstantledd for linjene gitt ved:
 # 
 # $$
-# f(x)=2x+3
-# $$
-# $$
+# f(x)=2x+3 \\
+# \\
 # g(x)=-\frac{1}{3}x-2
 # $$
 # 
