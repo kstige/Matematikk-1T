@@ -5,11 +5,11 @@
 # 
 # En funksjonstype som kan likne litt på potensfunksjoner er eksponentialfunksjoner. Det er imidlertid viktig å kunne skille de fra hverandre. Der variabelen $x$ i potensfunksjoner er grunntallet i en potens, vil variabelen i en eksponentialfunksjon befinne seg i eksponenten.
 # 
-# ```{admonition} Definisjon av potensfunksjoner
+# ```{admonition} Definisjon av eksponentialfunksjoner
 # :class: def
 # Eksponentialfunksjoner kan skrives på formen $f(x)=a\cdot b^x$, der $b>0$.
 # 
-# Vi ser at $a$ er funksjonsverdien når $x=0$ (skjæringspunktet med $y$-aksen), mens $b$ er en vekstfaktor. Eksponentialfunksjonen viser ern utvikling som endrer seg med en fast prosentstørrelse fo hver periode. Vi sier at funksjonen $f$ endrer seg eksponentielt.
+# Vi ser at $a$ er funksjonsverdien når $x=0$ (skjæringspunktet med $y$-aksen), mens $b$ er en vekstfaktor. Eksponentialfunksjonen viser en utvikling som endrer seg med en fast prosentstørrelse fo hver periode. Vi sier at funksjonen $f$ endrer seg eksponentielt.
 # 
 #  * Om $0<b<1$ vil funksjonen være avtagende.
 #  * Om $b>1$ vil funksjonen være stigende.
