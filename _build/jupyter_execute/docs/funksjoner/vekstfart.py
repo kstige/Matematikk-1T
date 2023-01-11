@@ -18,9 +18,3 @@
 # 
 # Vekstfarten har en enhet som er gitt ved enheten til $f(x)$ delt på enheten til $x$.
 # ```
-
-# In[14]:
-
-
-get_ipython().run_cell_magic('html', '', '\n<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>\n\n<div id="ggb-point"></div>\n\n<script>\n  var ggbApp = new GGBApplet({\n      "height": 400,\n      "showToolBar": true,\n      "showMenuBar": true,\n      "showAlgebraInput": false,\n      "showResetIcon": true,\n      "enableLabelDrags": false,\n      "enableRightClick": false,\n      "enableShiftDragZoom": true,\n      "useBrowserForJS": false,\n      "material_id": "uh5nffph"\n  }, \'ggb-point\');\n\n  ggbApp.inject();\n</script>\n')
-

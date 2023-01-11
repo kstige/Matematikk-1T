@@ -1,0 +1,21 @@
+%%html
+
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+
+<script>  
+    var params = {
+        "material_id": "nqwqdtps", 
+        "appName": "graphing", 
+        "width": 800, "height": 600, 
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false,
+        "showResetIcon": true 
+        };
+    var applet = new GGBApplet(params, false);
+    window.addEventListener("load", function() { 
+        applet.inject('ggb-element');
+    });
+</script>
+
+<div id="ggb-element"></div> 

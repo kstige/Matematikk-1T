@@ -24,6 +24,8 @@ parts:
       - file: docs/funksjoner/quiz_rettelinjer
   - file: docs/funksjoner/polynomfunksjoner
   - file: docs/funksjoner/rasjonalefunksjoner
+    sections:
+      - file: docs/funksjoner/oppgaver_rasjonalefunksjoner
   - file: docs/funksjoner/potensfunksjoner
   - file: docs/funksjoner/eksponentialfunksjoner
   - file: docs/funksjoner/vekstfart

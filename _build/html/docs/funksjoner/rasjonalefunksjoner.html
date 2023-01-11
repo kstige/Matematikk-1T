@@ -55,7 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Potensfunksjoner" href="potensfunksjoner.html" />
+    <link rel="next" title="Oppgaver om rasjonale funksjoner og asymptoter" href="oppgaver_rasjonalefunksjoner.html" />
     <link rel="prev" title="Polynomfunksjoner" href="polynomfunksjoner.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -182,10 +182,22 @@ const thebe_selector_output = ".output, .cell_output"
    Polynomfunksjoner
   </a>
  </li>
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
    Rasjonale funksjoner
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="oppgaver_rasjonalefunksjoner.html">
+     Oppgaver om rasjonale funksjoner og asymptoter
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="potensfunksjoner.html">
@@ -428,49 +440,19 @@ f(x)=\frac{2x+1}{x-3} \approx \frac{2x}{x}=2
 <a class="reference internal image-reference" href="../../_images/rasjonaleksempel.png"><img alt="../../_images/rasjonaleksempel.png" src="../../_images/rasjonaleksempel.png" style="width: 532.8000000000001px; height: 362.40000000000003px;" /></a>
 </figure>
 </div>
-<div class="oppgave admonition">
-<p class="admonition-title">Oppgave: Asymptoter</p>
-<p>Funksjonen <span class="math notranslate nohighlight">\(f\)</span> er gitt ved <span class="math notranslate nohighlight">\(f(x)=\frac{x^2+4x+4}{x^2-x-2}\)</span></p>
-<p><strong>a)</strong> Finn asymptotene til funksjonen.<br />
-<strong>b)</strong> Skisser funksjonen. <br />
-<strong>c)</strong> Finn definisjonsmengden og verdimengden til funksjonen.</p>
-<div class="losning dropdown admonition">
-<p class="admonition-title">Løsningsforslag</p>
-<p><strong>a)</strong> Starter med å finne loddrette asymptoter. Det er nullpunktene til nevneren. Må da løse likningen:</p>
-<div class="math notranslate nohighlight">
-\[x^2-x-2=0\]</div>
-<p>Med abc-formelen får vi <span class="math notranslate nohighlight">\(x=-2 \vee x=1\)</span> som også er likningene for de loddrette asymptotene.</p>
-<p>Neste steg er å finne eventuelle vannrette asymptoter. Lar <span class="math notranslate nohighlight">\(x\)</span> bli veldig stor. Da vil <span class="math notranslate nohighlight">\(x^2\)</span>-leddene dominere slik at: <span class="math notranslate nohighlight">\(f(x) \approx \frac{x^2}{x^2} = 1\)</span></p>
-<p>Vi har altså en vannrett asymptote for <span class="math notranslate nohighlight">\(y=1\)</span>.</p>
-<p><strong>b)</strong> Lager en enkel verditabell for noen verdier av funksjonen.</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../../_images/rasjonaltabell2.png"><img alt="../../_images/rasjonaltabell2.png" src="../../_images/rasjonaltabell2.png" style="width: 476.0px; height: 48.800000000000004px;" /></a>
-</figure>
-<p>Merker av punktene og asymptotene. Det gir følgende skisse av grafen:</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../../_images/rasjonalfunksjon2.png"><img alt="../../_images/rasjonalfunksjon2.png" src="../../_images/rasjonalfunksjon2.png" style="width: 525.6px; height: 362.40000000000003px;" /></a>
-</figure>
-<p><strong>c)</strong> Definisjonsmengden er alle tillatte verider for <span class="math notranslate nohighlight">\(x\)</span>. Vi kan bruke alle reelle tall utenom <span class="math notranslate nohighlight">\(x=-2\)</span> og <span class="math notranslate nohighlight">\(x=1\)</span>. Det gir</p>
-<div class="math notranslate nohighlight">
-\[D_f = \mathbf{R} \backslash \{-2, 1\}\]</div>
-<p>Vi ser at funksjonsgrafen krysser den vannrette asymptoten. Den er derfor med i verdimengden. Vi ser imidlertid at det er et område funksjonen ikke dekker. Dette området ligger mellom punktene <span class="math notranslate nohighlight">\(A\)</span> og <span class="math notranslate nohighlight">\(B\)</span> markert i figuren under.</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../../_images/rasjonalverdimengde.png"><img alt="../../_images/rasjonalverdimengde.png" src="../../_images/rasjonalverdimengde.png" style="width: 212.0px; height: 107.60000000000001px;" /></a>
-</figure>
-<p>Verdimengden blir derfor <span class="math notranslate nohighlight">\(V_f = \mathbf{R}\backslash \langle -1.78, 0 \rangle\)</span></p>
-</div>
-</div>
 <section id="videoer">
 <h2>Videoer<a class="headerlink" href="#videoer" title="Permalink to this headline">#</a></h2>
 <p>Her kan du se videoer for en del av innholdet på denne siden:</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="927e3d3d-5f9b-4777-ac38-5de845c19c87" name="8136ee88-8f5e-4a45-b9ae-59cd4eb9be7e" type="radio">
-</input><label class="sd-tab-label" for="927e3d3d-5f9b-4777-ac38-5de845c19c87">
+<input checked="checked" id="371df9f2-54b7-465e-a659-9c21af1d2e84" name="9bf5e445-d55f-4f88-a366-6872700b0a96" type="radio">
+</input><label class="sd-tab-label" for="371df9f2-54b7-465e-a659-9c21af1d2e84">
 Introduksjon og eksempel</label><div class="sd-tab-content docutils">
 <iframe width="800" height="600" src="https://www.youtube.com/embed/as-JDL1HFIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 </div>
 </section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -507,10 +489,10 @@ Introduksjon og eksempel</label><div class="sd-tab-content docutils">
             <p class="prev-next-title">Polynomfunksjoner</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="potensfunksjoner.html" title="next page">
+    <a class='right-next' id="next-link" href="oppgaver_rasjonalefunksjoner.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Potensfunksjoner</p>
+        <p class="prev-next-title">Oppgaver om rasjonale funksjoner og asymptoter</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
