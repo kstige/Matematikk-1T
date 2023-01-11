@@ -55,7 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Potensfunksjoner" href="potensfunksjoner.html" />
+    <link rel="next" title="Interaktiv oppgave om asymptoter" href="asymptote.html" />
     <link rel="prev" title="Polynomfunksjoner" href="polynomfunksjoner.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -182,10 +182,22 @@ const thebe_selector_output = ".output, .cell_output"
    Polynomfunksjoner
   </a>
  </li>
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
    Rasjonale funksjoner
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="asymptote.html">
+     Interaktiv oppgave om asymptoter
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="potensfunksjoner.html">
@@ -479,6 +491,8 @@ f(x)=\frac{2x+1}{x-3} \approx \frac{2x}{x}=2
 <li><p>Kan du finne en funksjon som har asymptoter <span class="math notranslate nohighlight">\(x=1\)</span> og <span class="math notranslate nohighlight">\(y=2\)</span>?</p></li>
 <li><p>Hvordan kan du få loddrett asymptote lik <span class="math notranslate nohighlight">\(x=0\)</span>?</p></li>
 <li><p>Kan du få vannrett asymptote <span class="math notranslate nohighlight">\(y=0\)</span>? Hvorfor/hvorfor ikke?</p></li>
+<li><p>Hvilke av koeffisientene påvirker den loddrette asymptoten?</p></li>
+<li><p>Hvilke av koeffisientene påvirker den vannrette asymptoten?</p></li>
 </ul>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
@@ -487,13 +501,39 @@ f(x)=\frac{2x+1}{x-3} \approx \frac{2x}{x}=2
 
 <script>  
     var params = {
-        "material_id": "bcxj8byv", 
+        "material_id": "c3qvbj5a", 
         "appName": "graphing", 
         "width": 800, "height": 600, 
         "showToolBar": false, 
         "showAlgebraInput": false, 
         "showMenuBar": false,
-        "showResetIcon": true 
+        "showResetIcon": true,
+        "language": "no"
+        };
+    var applet = new GGBApplet(params, false);
+    window.addEventListener("load", function() { 
+        applet.inject('ggb-element');
+    });
+</script>
+
+<div id="ggb-element"></div> 
+</div></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html">
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+
+<script>  
+    var params = {
+        "material_id": "jb7w8uj4", 
+        "appName": "graphing", 
+        "width": 800, "height": 600, 
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false,
+        "showResetIcon": true,
+        "language": "no"
         };
     var applet = new GGBApplet(params, false);
     window.addEventListener("load", function() { 
@@ -509,13 +549,15 @@ f(x)=\frac{2x+1}{x-3} \approx \frac{2x}{x}=2
 <h2>Videoer<a class="headerlink" href="#videoer" title="Permalink to this headline">#</a></h2>
 <p>Her kan du se videoer for en del av innholdet på denne siden:</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="142c4623-e999-4305-8d00-90929c3835d9" name="3b886ddc-aae6-4374-b2bb-8370941bdc48" type="radio">
-</input><label class="sd-tab-label" for="142c4623-e999-4305-8d00-90929c3835d9">
+<input checked="checked" id="c31cd645-45d7-44de-88ba-c8e72c834324" name="81948d7c-5c53-479a-befc-7449782c4275" type="radio">
+</input><label class="sd-tab-label" for="c31cd645-45d7-44de-88ba-c8e72c834324">
 Introduksjon og eksempel</label><div class="sd-tab-content docutils">
 <iframe width="800" height="600" src="https://www.youtube.com/embed/as-JDL1HFIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 </div>
 </section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -552,10 +594,10 @@ Introduksjon og eksempel</label><div class="sd-tab-content docutils">
             <p class="prev-next-title">Polynomfunksjoner</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="potensfunksjoner.html" title="next page">
+    <a class='right-next' id="next-link" href="asymptote.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Potensfunksjoner</p>
+        <p class="prev-next-title">Interaktiv oppgave om asymptoter</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
