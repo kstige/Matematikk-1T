@@ -3,7 +3,9 @@
 
 # # Potensfunksjoner
 # 
-# I polynomfunksjoner kan eksponenten kun være et heltall større eller lik 0. Det er imidlertid ingenting i veien for å ha negative tall eller desimaltall i en eksponent.
+# En funksjonstype som kan likne litt på eksponentialfunksjoner er potensfunksjoner. Det er imidlertid viktig å kunne skille de fra hverandre. Der variabelen $x$ i en eksponentialfunksjon er eksponenten i en potens, vil variabelen i en potensfunksjon være grunntallet.
+# 
+# Potensfunksjonen vil derfor minne en del om polynomfunksjoner. Eksponenten i en polynomfunksjon kan kun være et heltall større eller lik 0. Det er imidlertid ingenting i veien for å ha negative tall eller desimaltall i en eksponent, og bruker vi det får vi en potensfunksjon
 # 
 # ```{admonition} Definisjon av potensfunksjoner
 # :class: def
@@ -26,8 +28,11 @@
 # ---
 # ```
 # 
+# ```{admonition} Eksempel: Ukjent rente
+# :class: eksempel
+# Tenk deg at du har 10.000 kr du skal sette av til sparing i 10 år. Det finnes forskjellige sparealternativer med ulik rente. Dersom vi lar $x$ være vekstfaktoren (se side om [eksponentialfunksjoner](eksponentialfunksjoner.ipynb)) renta gir, så vil funksjonen $f(x)=10000\cdot x^10$ gi hva sparebeløpet har vokst til etter 10 år.
+# ```
 # 
-
 # 
 
 # ## Utforsk
