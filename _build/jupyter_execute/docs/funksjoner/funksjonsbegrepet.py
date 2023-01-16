@@ -92,11 +92,11 @@ plt.show()
 # 
 # ````{tab-set} 
 # ```{tab-item} Funksjonsbegrepet
-# <iframe width="800" height="600" src="https://www.youtube.com/embed/ajiYu0oFwJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+# <iframe width="680" height="350" src="https://www.youtube.com/embed/ajiYu0oFwJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 # ```
 # 
 # ```{tab-item} Definisjons- og verdimengde
-# <iframe width="800" height="600" src="https://www.youtube.com/embed/tuw28VOvGO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+# <iframe width="680" height="350" src="https://www.youtube.com/embed/tuw28VOvGO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 # ```
 # 
 # ````

@@ -63,7 +63,7 @@
 # 
 # ````{tab-set} 
 # ```{tab-item} Introduksjon
-# <iframe width="800" height="600" src="https://www.youtube.com/embed/_7Ioav29USE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+# <iframe width="680" height="350" src="https://www.youtube.com/embed/_7Ioav29USE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 # ```
 # 
 # ````

@@ -49,7 +49,7 @@ get_ipython().run_cell_magic('html', '', '\n<script src="https://www.geogebra.or
 # 
 # ````{tab-set} 
 # ```{tab-item} Introduksjon
-# <iframe width="800" height="600" src="https://www.youtube.com/embed/Vk5XVQ3WoIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+# <iframe width="680" height="350" src="https://www.youtube.com/embed/Vk5XVQ3WoIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 # ```
 # 
 # ````
