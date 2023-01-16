@@ -55,8 +55,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Eksponentialfunksjoner" href="eksponentialfunksjoner.html" />
-    <link rel="prev" title="Oppgaver om rasjonale funksjoner og asymptoter" href="oppgaver_rasjonalefunksjoner.html" />
+    <link rel="next" title="Vekstfart" href="vekstfart.html" />
+    <link rel="prev" title="Eksponentialfunksjoner" href="eksponentialfunksjoner.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -199,14 +199,14 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Potensfunksjoner
-  </a>
- </li>
  <li class="toctree-l1">
   <a class="reference internal" href="eksponentialfunksjoner.html">
    Eksponentialfunksjoner
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Potensfunksjoner
   </a>
  </li>
  <li class="toctree-l1">
@@ -400,14 +400,14 @@ title="Print to PDF"
 <p>En funksjonstype som kan likne litt på eksponentialfunksjoner er potensfunksjoner. Det er imidlertid viktig å kunne skille de fra hverandre. Der variabelen <span class="math notranslate nohighlight">\(x\)</span> i en eksponentialfunksjon er eksponenten i en potens, vil variabelen i en potensfunksjon være grunntallet.</p>
 <p>Potensfunksjonen vil derfor minne en del om polynomfunksjoner. Eksponenten i en polynomfunksjon kan kun være et heltall større eller lik 0. Det er imidlertid ingenting i veien for å ha negative tall eller desimaltall i en eksponent, og bruker vi det får vi en potensfunksjon</p>
 <div class="def admonition">
-<p class="admonition-title">Definisjon av potensfunksjoner</p>
+<p class="admonition-title">Definisjon: Potensfunksjoner</p>
 <p>Potensfunksjoner er funksjoner på formen <span class="math notranslate nohighlight">\(f(x) = a\cdot x^b\)</span>, der <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b \in \mathbf{R}\backslash\{0\}\)</span>.</p>
 <p>Dersom <span class="math notranslate nohighlight">\(b\)</span> ikke er et heltall, så vil potensfunksjonen kun være definert for positive verdier av <span class="math notranslate nohighlight">\(x\)</span>.</p>
 <p>Dersom <span class="math notranslate nohighlight">\(b\)</span> er negativ, så vil potensfunksjonen ikke være definert <span class="math notranslate nohighlight">\(x=0\)</span>.</p>
 </div>
 <p>Det er viktig å legge merke til at potensfunksjoner i motsetning til polynomfunksjoner kun inneholder ett ledd. Polynomfunksjoner med ett ledd er også potensfunksjoner.</p>
 <div class="eksempel admonition">
-<p class="admonition-title">Eksempel på potensfunksjoner</p>
+<p class="admonition-title">Eksempel: Potensfunksjoner</p>
 <p>Formen på en potensfunksjon avhenger av størrelsene <span class="math notranslate nohighlight">\(a\)</span> og <span class="math notranslate nohighlight">\(b\)</span>. Under er funksjonen <span class="math notranslate nohighlight">\(f(x)=2x^b\)</span> tegnet inn (for positive <span class="math notranslate nohighlight">\(x\)</span>-verdier) for noen forskjellige verdier av <span class="math notranslate nohighlight">\(b\)</span>.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../../_images/potensfunksjon.png"><img alt="../../_images/potensfunksjon.png" src="../../_images/potensfunksjon.png" style="width: 644.4000000000001px; height: 362.40000000000003px;" /></a>
@@ -415,7 +415,7 @@ title="Print to PDF"
 </div>
 <div class="eksempel admonition">
 <p class="admonition-title">Eksempel: Ukjent rente</p>
-<p>Tenk deg at du har 10.000 kr du skal sette av til sparing i 10 år. Det finnes forskjellige sparealternativer med ulik rente. Dersom vi lar <span class="math notranslate nohighlight">\(x\)</span> være vekstfaktoren (se side om <a class="reference internal" href="eksponentialfunksjoner.html"><span class="doc std std-doc">eksponentialfunksjoner</span></a>) renta gir, så vil funksjonen <span class="math notranslate nohighlight">\(f(x)=10000\cdot x^10\)</span> gi hva sparebeløpet har vokst til etter 10 år.</p>
+<p>Tenk deg at du har 10.000 kr du skal sette av til sparing i 10 år. Det finnes forskjellige sparealternativer med ulik rente. Dersom vi lar <span class="math notranslate nohighlight">\(x\)</span> være vekstfaktoren (se side om <a class="reference internal" href="eksponentialfunksjoner.html"><span class="doc std std-doc">eksponentialfunksjoner</span></a>) renta gir, så vil funksjonen <span class="math notranslate nohighlight">\(f(x)=10000\cdot x^{10}\)</span> gi hva sparebeløpet har vokst til etter 10 år.</p>
 </div>
 <section id="utforsk">
 <h2>Utforsk<a class="headerlink" href="#utforsk" title="Permalink to this headline">#</a></h2>
@@ -474,17 +474,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="oppgaver_rasjonalefunksjoner.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="eksponentialfunksjoner.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Oppgaver om rasjonale funksjoner og asymptoter</p>
+            <p class="prev-next-title">Eksponentialfunksjoner</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="eksponentialfunksjoner.html" title="next page">
+    <a class='right-next' id="next-link" href="vekstfart.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Eksponentialfunksjoner</p>
+        <p class="prev-next-title">Vekstfart</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

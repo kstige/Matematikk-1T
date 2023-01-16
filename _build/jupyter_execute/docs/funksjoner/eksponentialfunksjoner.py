@@ -3,9 +3,9 @@
 
 # # Eksponentialfunksjoner
 # 
-# En funksjonstype som kan likne litt på potensfunksjoner er eksponentialfunksjoner. Det er imidlertid viktig å kunne skille de fra hverandre. Der variabelen $x$ i potensfunksjoner er grunntallet i en potens, vil variabelen i en eksponentialfunksjon befinne seg i eksponenten.
+# Eksponentialfunksjoner er en funksjonstype som viser størrelser som endrer seg med en fast prosentstørrelse for hver tidsperiode.
 # 
-# ```{admonition} Definisjon av eksponentialfunksjoner
+# ```{admonition} Definisjon: Eksponentialfunksjoner
 # :class: def
 # Eksponentialfunksjoner kan skrives på formen $f(x)=a\cdot b^x$, der $b>0$.
 # 
@@ -17,7 +17,7 @@
 # 
 # Vekstfaktor er et begrep vi kjenner fra prosentregning.
 # 
-# ```{admonition} Definisjon av vekstfaktor
+# ```{admonition} Definisjon: Vekstfaktor
 # :class: def
 # Dersom en størrelse øker eller minker med $p$ % vil vekstfaktoren være gitt ved $1\pm \frac{p}{100}$ der $+$ er ved økning og $-$ er ved nedang.
 # 
