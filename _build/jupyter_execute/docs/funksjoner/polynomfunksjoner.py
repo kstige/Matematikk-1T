@@ -5,7 +5,7 @@
 # 
 # Et polynom er et uttrykk med flere ledd. I en polynomfunksjon med $x$ som variabel skal alle leddene inneholde potenser av $x$ opphøyd i et heltall større eller lik 0. Det kan vi skrive matematisk som:
 # 
-# ```{admonition} Definisjon av polynomfunksjoner
+# ```{admonition} Definisjon: Polynomfunksjoner
 # :class: def
 # Alle ledd i en polynomfunksjon er på formen $ax^n$ der $a\in \mathbf{R}$ og $n\in \mathbf{N}\cup \{0\}$. \
 # Den høyeste verdien av $n$ kaller vi graden til funksjonen.

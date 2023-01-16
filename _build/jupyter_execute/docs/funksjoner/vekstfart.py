@@ -7,7 +7,7 @@
 # 
 # Andre funksjonstyper har ikke et stignignstall, men det kan allikevel være nyttig å se på vekstfarten til funksjonen. Vi tar utgangspunkt i definisjonen av vekstfarten (stigningstallet) til en lineær funksjon når vi definerer det vi vil kalle gjennomsnittlig vekstfart.
 # 
-# ```{admonition} Definisjon av gjennomsnittlig vekstfart
+# ```{admonition} Definisjon: Gjennomsnittlig vekstfart
 # For å finne den gjennomsnittlige vekstfarten til funksjonen $f(x)$ på intervallet $[x_1, x_2]$ bruker vi
 # 
 # $$
@@ -18,3 +18,17 @@
 # 
 # Vekstfarten har en enhet som er gitt ved enheten til $f(x)$ delt på enheten til $x$.
 # ```
+
+# ## Videoer
+# Her kan du se videoer for en del av innholdet på denne siden:
+# 
+# ````{tab-set} 
+# ```{tab-item} Introduksjon
+# <iframe width="800" height="600" src="https://www.youtube.com/embed/arxmvGGeFdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+# ```
+# 
+# ```{tab-item} Eksempel i GeoGebra
+# <iframe width="800" height="600" src="https://www.youtube.com/embed/CDjh7ENzTQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+# ```
+# 
+# ````

@@ -57,3 +57,13 @@
 # 
 # Vi ser at funksjonen stiger raskere og raskere. Det er på grunn av at vi hele tiden også får renter av rentene. Penger du setter i banken gir altså et eksempel på eksponentiell vekst.
 # `````
+
+# ## Videoer
+# Her kan du se videoer for en del av innholdet på denne siden:
+# 
+# ````{tab-set} 
+# ```{tab-item} Introduksjon
+# <iframe width="800" height="600" src="https://www.youtube.com/embed/_7Ioav29USE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+# ```
+# 
+# ````

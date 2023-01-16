@@ -44,8 +44,12 @@
 get_ipython().run_cell_magic('html', '', '\n<script src="https://www.geogebra.org/apps/deployggb.js"></script>\n\n<script>  \n    var params = {\n        "material_id": "nqwqdtps", \n        "appName": "graphing", \n        "width": 800, "height": 600, \n        "showToolBar": false, \n        "showAlgebraInput": false, \n        "showMenuBar": false,\n        "showResetIcon": true \n        };\n    var applet = new GGBApplet(params, false);\n    window.addEventListener("load", function() { \n        applet.inject(\'ggb-element\');\n    });\n</script>\n\n<div id="ggb-element"></div> \n')
 
 
-# In[ ]:
-
-
-
-
+# ## Videoer
+# Her kan du se videoer for en del av innholdet på denne siden:
+# 
+# ````{tab-set} 
+# ```{tab-item} Introduksjon
+# <iframe width="800" height="600" src="https://www.youtube.com/embed/Vk5XVQ3WoIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+# ```
+# 
+# ````
