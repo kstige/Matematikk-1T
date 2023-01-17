@@ -31,3 +31,4 @@ parts:
   - file: docs/funksjoner/vekstfart
   - file: docs/funksjoner/derivert
   - file: docs/funksjoner/funksjoner_geogebra
+  - file: docs/funksjoner/funksjoner_programmering
