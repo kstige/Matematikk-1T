@@ -41,7 +41,7 @@
 # In[1]:
 
 
-get_ipython().run_cell_magic('html', '', '\n<script src="https://www.geogebra.org/apps/deployggb.js"></script>\n\n<script>  \n    var params = {\n        "material_id": "nqwqdtps", \n        "appName": "graphing", \n        "width": 800, "height": 600, \n        "showToolBar": false, \n        "showAlgebraInput": false, \n        "showMenuBar": false,\n        "showResetIcon": true \n        };\n    var applet = new GGBApplet(params, false);\n    window.addEventListener("load", function() { \n        applet.inject(\'ggb-element\');\n    });\n</script>\n\n<div id="ggb-element"></div> \n')
+get_ipython().run_cell_magic('html', '', '\n<meta name=viewport content="width=device-width,initial-scale=1">\n<meta charset="utf-8"/>\n<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>\n\n<script>  \n    var params = {\n        "material_id": "nqwqdtps", \n        "appName": "graphing", \n        "width": 800, "height": 600, \n        "showToolBar": false, \n        "showAlgebraInput": false, \n        "showMenuBar": false,\n        "showResetIcon": true \n        };\n    var applet = new GGBApplet(params, false);\n    window.addEventListener("load", function() { \n        applet.inject(\'ggb-element\');\n    });\n</script>\n\n<div id="ggb-element"></div> \n')
 
 
 # ## Videoer
