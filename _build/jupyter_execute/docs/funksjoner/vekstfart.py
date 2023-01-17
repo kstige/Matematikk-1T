@@ -20,7 +20,7 @@
 # 
 # ```{figure} ./bilder/vekstfart.png
 # ---
-# scale: 20%
+# scale: 40%
 # ---
 # ```
 # `````
