@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Den deriverte &#8212; Matematikk 1T</title>
+    <title>Momentan vekstfart &#8212; Matematikk 1T</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Funksjoner i GeoGebra" href="funksjoner_geogebra.html" />
@@ -214,12 +216,17 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Den deriverte
+   Momentan vekstfart
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="funksjoner_geogebra.html">
    Funksjoner i GeoGebra
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="funksjoner_programmering.html">
+   Programmering av grafer
   </a>
  </li>
 </ul>
@@ -344,7 +351,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Den deriverte</h1>
+                <h1>Momentan vekstfart</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -356,9 +363,11 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="den-deriverte">
-<h1>Den deriverte<a class="headerlink" href="#den-deriverte" title="Permalink to this headline">#</a></h1>
-<p>Den deriverte</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="momentan-vekstfart">
+<h1>Momentan vekstfart<a class="headerlink" href="#momentan-vekstfart" title="Permalink to this headline">#</a></h1>
+<p>Vi har sett på hvordan vi kan finne gjennomsnittlig vekstfart for en funksjon <span class="math notranslate nohighlight">\(f(x)\)</span> på intervallet <span class="math notranslate nohighlight">\([x_1, x_2]\)</span> ved å finne stigningstallet til den lineære funksjonen som går gjennom punktene <span class="math notranslate nohighlight">\(A = (x_1, f(x_1))\)</span> og <span class="math notranslate nohighlight">\(B = (x_2, f(x_2))\)</span>. Det gir oss god informasjon om hvor raskt funksjonsgrafen endrer seg i ulike intervaller.</p>
+<p>Men hva gjør vi om vi vil finne ut hvor raskt funksjonsgrafen endrer seg i punktet <span class="math notranslate nohighlight">\(A\)</span>? Vi ønsker altså å finne vekstfarten for en bestemt <span class="math notranslate nohighlight">\(x\)</span>-verdi og ikke for et intervall. Formelen for vekstfart som vi har brukt krever to punkt, så den vil ikke være mulig å bruke når vi kun ser på et punkt. Vi får derfor et problem.</p>
+<p>Når vi støter på slike problem i matematikken vil løsningen ofte være å nærme oss problemet ved noe som er kjent. Vi tar derfor utgangspunkt i den gjennomsnittlige vekstfarten og lar intervallet <span class="math notranslate nohighlight">\([x_1, x_2]\)</span> bli mindre. Det betyr at vi lar punktet <span class="math notranslate nohighlight">\(B\)</span> nærme seg punktet <span class="math notranslate nohighlight">\(A\)</span>. Prøv det i figuren under.</p>
 </section>
 
     <script type="text/x-thebe-config">
