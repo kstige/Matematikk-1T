@@ -22,7 +22,9 @@
 # 
 # (som man muligens kjenner igjen som delen før $\pm$ i abc-formelen)
 # 
-# At grafen er symmetrisk om denne $x$-verdien betyr at $f(-\frac{b}{2a}+x)=f(-\frac{b}{2a}-x)$
+# At grafen er symmetrisk om denne $x$-verdien betyr at 
+# 
+# $$f(-\frac{b}{2a}+x)=f(-\frac{b}{2a}-x)$$
 # ```
 # 
 # `````{admonition} Eksempel: Symmetrilinje og ekstremalpunkt
@@ -39,7 +41,7 @@
 # 
 # Siden $a=1>0$ har grafen et bunnpunkt. $x$-verdien til bunnpunktet er på symmetrilinja som vi finner ved $x=-\frac{-2}{2\cdot 1}=1$.
 # 
-# $y$-verdien er gitt ved $f(1)=1^2-2\cdot 1-3 = -4.
+# $y$-verdien er gitt ved $f(1)=1^2-2\cdot 1-3 = -4$.
 # 
 # Bunnpunktet er altså $(1, -4)$. 
 # 
