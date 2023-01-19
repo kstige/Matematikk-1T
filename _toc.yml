@@ -28,7 +28,8 @@ parts:
       - file: docs/funksjoner/oppgaver_rasjonalefunksjoner
   - file: docs/funksjoner/eksponentialfunksjoner
   - file: docs/funksjoner/potensfunksjoner
-  - file: docs/funksjoner/vekstfart
+  - file: docs/funksjoner/gjennomsnittligvekstfart
+  - file: docs/funksjoner/momentanvekstfart
   - file: docs/funksjoner/derivert
   - file: docs/funksjoner/funksjoner_geogebra
   - file: docs/funksjoner/funksjoner_programmering
