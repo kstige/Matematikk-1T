@@ -21,6 +21,7 @@ get_ipython().run_cell_magic('html', '', '\n<meta name=viewport content="width=d
 # ```
 # 
 # `````{admonition} Eksempel: Momentan vekstfart
+# :class: eksempel
 # Funksjonen $h(x)=-5x^2+30x+2$ viser høyden i meter en ball har over bakken ved tiden $x$ målt i sekunder. Vi finner den momentane vekstfarten for $x=1$, i toppunktet ($x=3$) og for $x=4$.
 # 
 # Skriver inn funksjonen i GeoGebra. Skriver inn punktene $A=(1, f(1))$, $B=(3, f(3))$ og $C=(4, f(4))$. Bruker verktøyet "Tangent" for å finne tangenten til grafen i hvert punkt. Bruker så verktøyet "Stigning" for å finne stigningstallet til tangentene. Stigningstallet til tangentene tilsvarer den momentane vekstfarten.
@@ -33,7 +34,7 @@ get_ipython().run_cell_magic('html', '', '\n<meta name=viewport content="width=d
 # 
 # ```{figure} ./bilder/ballmomentan.png
 # ---
-# scale: 30%
+# scale: 20%
 # ---
 # `````
 # 
