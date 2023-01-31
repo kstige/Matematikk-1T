@@ -34,7 +34,7 @@ parts:
   - file: docs/funksjoner/funksjoner_geogebra
   - file: docs/funksjoner/funksjoner_programmering
 - caption: Likningssett
-  chapter:
+  chapters:
   - file: docs/likningssett/metoder
   - file: docs/likningssett/flereukjente
   - file: docs/likningssett/ikkelineare

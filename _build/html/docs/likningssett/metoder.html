@@ -55,6 +55,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Likningsett med flere ukjente" href="flereukjente.html" />
+    <link rel="prev" title="Programmering av grafer" href="../funksjoner/funksjoner_programmering.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -233,6 +235,28 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
 </ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Likningssett
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Metoder for løsning av likningssett
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="flereukjente.html">
+   Likningsett med flere ukjente
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ikkelineare.html">
+   Ikke-lineære likningssett
+  </a>
+ </li>
+</ul>
 
     </div>
 </nav></div>
@@ -374,6 +398,26 @@ title="Print to PDF"
    Grafisk metode
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#losning-med-cas">
+   Løsning med CAS
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#innsettingsmetoden">
+   Innsettingsmetoden
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#addisjonsmetoden">
+   Addisjonsmetoden
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#losning-med-programmering">
+   Løsning med programmering
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -401,6 +445,26 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#grafisk-metode">
    Grafisk metode
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#losning-med-cas">
+   Løsning med CAS
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#innsettingsmetoden">
+   Innsettingsmetoden
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#addisjonsmetoden">
+   Addisjonsmetoden
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#losning-med-programmering">
+   Løsning med programmering
   </a>
  </li>
 </ul>
@@ -431,16 +495,16 @@ title="Print to PDF"
 <p>Vi skal her i innledningen se på metoder for å løse lineære likningssett med to ukjente. Det er et sett med to likninger der begge varibalene er av første grad. Metodene vi bruker her kan enkelt overføres til likningssett som er ikke-lineære eller som har flere variabler.</p>
 <p>I alle eksemplene under skal vi se på likningssettet</p>
 <div class="math notranslate nohighlight">
-\[
-2x - y = 4 \
+\[\begin{split}
+2x - y = 4 \\
 x + y = 5
-\]</div>
+\end{split}\]</div>
 <p>Når vi skal løse likningssett må vi finne et par av verdier for <span class="math notranslate nohighlight">\(x\)</span> og <span class="math notranslate nohighlight">\(y\)</span> som passer med begge likningene. Løsningen av dette likningssettet viser seg å være <span class="math notranslate nohighlight">\(x=3 \land y=2\)</span>. Symbolet <span class="math notranslate nohighlight">\(\land\)</span> kalles konjunksjon og betryr “og”.</p>
 </section>
 <section id="grafisk-metode">
 <h2>Grafisk metode<a class="headerlink" href="#grafisk-metode" title="Permalink to this headline">#</a></h2>
 <p>I innledningen tegnet vi opp likningen <span class="math notranslate nohighlight">\(2x-y=4\)</span> i et koordinatsystem. Den grafiske metoden går ut på å tegne inn begge likningene i det samme koordinatystemet og finne skjæringspunktet mellom dem.</p>
-<div class="admonition-grafisk-metode admonition">
+<div class="eksempel admonition">
 <p class="admonition-title">Grafisk metode</p>
 <p>Skriver inn begge likningene i GeoGebra. Vi ser at begge likningene hver for seg har uendelig mange løsninger, men en av løsningene passer i begge likningene. Det er den vi er ute etter. Vi bruker “Skjæring mellom to objekt” for å finne skjæringspunktet <span class="math notranslate nohighlight">\((3,2)\)</span>.</p>
 <figure class="align-default">
@@ -448,7 +512,132 @@ x + y = 5
 </figure>
 <p>Det betyr at løsningen av likningssettet er <span class="math notranslate nohighlight">\(x=3 \wedge y = 2\)</span>. Siden løsningen er et par av verdier som tilsvarer et punkt i et koordinatsystem kan vi også skrive løsningen som <span class="math notranslate nohighlight">\(L=\{(3,2)\}\)</span>.</p>
 </div>
+<div class="dropdown admonition">
+<p class="admonition-title">Sammenheng med vanlige likninger</p>
+<p>Vanlige likninger som <span class="math notranslate nohighlight">\(2x-4=x-5\)</span> har vi sett kan løses på en tilsvarende måte grafisk. Da setter vi opp hver side som en rett linje (eller funksjon):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+y=2x-4\\
+y=5-x
+\end{split}\]</div>
+<p>Så tegner vi grafene og finner skjæringspunktet. Likningssett med to ukjente og vanlige likninger har derfor en nær sammenheng.</p>
+</div>
 </section>
+<section id="losning-med-cas">
+<h2>Løsning med CAS<a class="headerlink" href="#losning-med-cas" title="Permalink to this headline">#</a></h2>
+<p>Med CAS har vi den enkleste metoden for å løse likningssett.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Løsning med CAS</p>
+<p>Vi skriver inn likningene i hver sin linje i CAS. Så merker vi begge linjene og trykker på løs-knappen.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/CASmetode.png"><img alt="../../_images/CASmetode.png" src="../../_images/CASmetode.png" style="width: 323.4px; height: 220.2px;" /></a>
+</figure>
+<p>Løsningen av likningssettet er <span class="math notranslate nohighlight">\(x=3 \wedge y = 2\)</span>, eller <span class="math notranslate nohighlight">\(L=\{(3,2)\}\)</span>.</p>
+</div>
+</section>
+<section id="innsettingsmetoden">
+<h2>Innsettingsmetoden<a class="headerlink" href="#innsettingsmetoden" title="Permalink to this headline">#</a></h2>
+<p>Den neste metoden kommer vi fram til ved å ta utgangspunkt i vanlig likningsløsning. Vi starter med å løse den ene likningen for en av variablene. Så setter vi denne inn den andre likninge for å ende opp med en likning i en variabel.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Innsettingsmetoden</p>
+<p>Skriver den andre likningen som <span class="math notranslate nohighlight">\(y=5-x\)</span> og setter det inn i den første likningen.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+2x-y=4 \\
+2x-(5-x)= 4\\
+3x-5=4\\
+3x=9\\
+x=3
+\end{split}\]</div>
+<p>Så setter vi det tilbake i den andre likninge og får</p>
+<div class="math notranslate nohighlight">
+\[
+y=5-x=5-3=2
+\]</div>
+<p>Løsningen av likningssettet er <span class="math notranslate nohighlight">\(x=3 \wedge y = 2\)</span>, eller <span class="math notranslate nohighlight">\(L=\{(3,2)\}\)</span>.</p>
+</div>
+</section>
+<section id="addisjonsmetoden">
+<h2>Addisjonsmetoden<a class="headerlink" href="#addisjonsmetoden" title="Permalink to this headline">#</a></h2>
+<p>Addisjonsmetoden er en effektiv metode for løsning av likningssett, men den kan være noe vanskeligere å forstå. Hovedessensen i løsningsmetoden er å legge sammen likningene på en “lur” måte slik at den ene ukjente forsvinner.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Addisjonsmetoden 1</p>
+<p>Vi legger sammen likningene våre. Det vil si at vi legger sammen alt på venstre side for seg og alt på høyre side for seg. Likningen vi ender opp med må fortsatt stemme.</p>
+<p>VS: <span class="math notranslate nohighlight">\((2x-y)+(x+y)=3x\)</span></p>
+<p>HS: <span class="math notranslate nohighlight">\(4+5=9\)</span></p>
+<p>Vi ender da opp med likningen <span class="math notranslate nohighlight">\(3x=9\)</span> som vi løser og får <span class="math notranslate nohighlight">\(x=3\)</span>. Vi setter <span class="math notranslate nohighlight">\(x=3\)</span> inn i den andre likningen og får <span class="math notranslate nohighlight">\(3+y=5\)</span> som gir <span class="math notranslate nohighlight">\(y=2\)</span>.</p>
+<p>Løsningen av likningssettet er <span class="math notranslate nohighlight">\(x=3 \wedge y = 2\)</span>, eller <span class="math notranslate nohighlight">\(L=\{(3,2)\}\)</span>.</p>
+</div>
+<p>I eksempelet over viste vi den enkleste varianten av addisjonsmetoden der den ene variabelen forsvinner bare ved å legge sammen likningene. Det er ikke alltid det er mulig og derfor skal vi løse likningssettet på nytt ved å prøve å få vekk <span class="math notranslate nohighlight">\(x\)</span> i stedet for <span class="math notranslate nohighlight">\(y\)</span>.</p>
+<div class="admonition-addisjonsmetoden-2 admonition">
+<p class="admonition-title">Addisjonsmetoden 2</p>
+<p>Vi ser at vi har <span class="math notranslate nohighlight">\(2x\)</span> i den første likningen og <span class="math notranslate nohighlight">\(1x\)</span> i den andre, så det vil ikke fungere å bare legge dem sammen. Men om vi ganger den andre likningen med -2 før vi legger sammen, så får vi:</p>
+<p>VS: <span class="math notranslate nohighlight">\((2x+y)-2(x+y)=-y\)</span>
+HS: <span class="math notranslate nohighlight">\(4+(-2)\cdot 5= -2\)</span></p>
+<p>Vi ender altså opp med likningen <span class="math notranslate nohighlight">\(-y=-2\)</span> som gir <span class="math notranslate nohighlight">\(y=2\)</span>. Vi setter inn i den andre likningen og får <span class="math notranslate nohighlight">\(2x+(-2)=4\)</span> som gir <span class="math notranslate nohighlight">\(x=3\)</span>.</p>
+<p>Løsningen av likningssettet er <span class="math notranslate nohighlight">\(x=3 \wedge y = 2\)</span>, eller <span class="math notranslate nohighlight">\(L=\{(3,2)\}\)</span>.</p>
+</div>
+</section>
+<section id="losning-med-programmering">
+<h2>Løsning med programmering<a class="headerlink" href="#losning-med-programmering" title="Permalink to this headline">#</a></h2>
+<p>Det er mange metoder som kan brukes for å løse lineære likningssett med programmering. For å forstå disse metodene er det stort sett nødvendig med kunnskap innenfor et område av matematikk som kalles “Lineær algebra”. Her nøyer vi oss med å vise hvordan vi kan bruke en ferdig implementert løsningsmetode i python.</p>
+<p>Vi ser fortsatt på likningssettet</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+2x - y = 4 \\
+x + y = 5
+\end{split}\]</div>
+<p>Datamaskinen vil se på problemet på formen <span class="math notranslate nohighlight">\(Ax=b\)</span>, der <span class="math notranslate nohighlight">\(A\)</span> består av koeffisientene (tallene foran de ukjente) på venstre side, mens <span class="math notranslate nohighlight">\(b\)</span> er tallene på høyre side.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A=
+\begin{bmatrix}
+    2&amp; -1\\
+    1 &amp; 1 \\
+\end{bmatrix}
+,\quad
+x=
+\begin{bmatrix}
+    x \\
+    y \\
+\end{bmatrix}
+,\quad
+b=\begin{bmatrix}
+    4 \\
+    5 \\
+\end{bmatrix}
+\end{split}\]</div>
+<p>Dette er noe som kalles matriser, men det trenger vi ikke bry oss om før på matematikk på universitetet. Det viktige er at første linje i <span class="math notranslate nohighlight">\(A\)</span> er tallene foran henholdsvis <span class="math notranslate nohighlight">\(x\)</span> og <span class="math notranslate nohighlight">\(y\)</span> i den første likningen, mens den andre linjen er tallene fra den andre likningen. Vi må skrive inn <span class="math notranslate nohighlight">\(A\)</span> og <span class="math notranslate nohighlight">\(b\)</span> i programmet vårt som noe som kalles “array” i python-språket.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>A = array([[2,-1],[1,1]])
+b = array([4,5])
+</pre></div>
+</div>
+<p>Videre bruker vi en kommando som løser likningssystemet for oss.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>x =linalg.solve(A,b)
+</pre></div>
+</div>
+<p>Det fullstendige programmet blir</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pylab</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[3. 2.]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Vi ser at vi får ut en løsning som betyr at <span class="math notranslate nohighlight">\(x=3\)</span> og <span class="math notranslate nohighlight">\(y=2\)</span> som vi forventet.</p>
+<p>Under kan du kjøre programmet og prøve å endre på det for å løse andre likningssett. Hva tror du at du må gjøre for å løse et likningssett med tre ukjente?</p>
+<iframe src="https://trinket.io/embed/python3/8878d4ed7a" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -478,6 +667,20 @@ x + y = 5
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../funksjoner/funksjoner_programmering.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Programmering av grafer</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="flereukjente.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Likningsett med flere ukjente</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>
