@@ -33,3 +33,8 @@ parts:
   - file: docs/funksjoner/derivert
   - file: docs/funksjoner/funksjoner_geogebra
   - file: docs/funksjoner/funksjoner_programmering
+- caption: Likningssett
+  chapter:
+  - file: docs/likningssett/metoder
+  - file: docs/likningssett/flereukjente
+  - file: docs/likningssett/ikkelineare
