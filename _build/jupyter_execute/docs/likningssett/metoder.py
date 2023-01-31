@@ -33,6 +33,15 @@
 # $$
 # 
 # Når vi skal løse likningssett må vi finne et par av verdier for $x$ og $y$ som passer med begge likningene. Løsningen av dette likningssettet viser seg å være $x=3 \land y=2$. Symbolet $\land$ kalles konjunksjon og betryr "og".
+# 
+# ```{admonition} Antall løsninger
+# :class: dropdown
+# Et likningssett med to likninger og to ukjente kan ha
+#  * ingen løsning
+#  * en løsning
+#  * uendelig mange løsninger
+# Andre muligheter finnes ikke
+# ```
 
 # ## Grafisk metode
 # 
@@ -135,7 +144,7 @@
 
 # ## Løsning med programmering
 # 
-# Det er mange metoder som kan brukes for å løse lineære likningssett med programmering. For å forstå disse metodene er det stort sett nødvendig med kunnskap innenfor et område av matematikk som kalles "Lineær algebra". Her nøyer vi oss med å vise hvordan vi kan bruke en ferdig implementert løsningsmetode i python. 
+# Det er mange metoder som kan brukes for å løse med programmering. For å forstå disse metodene er det stort sett nødvendig med kunnskap innenfor et område av matematikk som kalles "Lineær algebra". Her nøyer vi oss med å vise hvordan vi kan bruke en ferdig implementert løsningsmetode for lineære likningssett i python. 
 # 
 # Vi ser fortsatt på likningssettet
 # 

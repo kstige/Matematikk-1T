@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="prev" title="Likningsett med flere ukjente" href="flereukjente.html" />
@@ -389,7 +391,49 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="ikke-lineaere-likningssett">
 <h1>Ikke-lineære likningssett<a class="headerlink" href="#ikke-lineaere-likningssett" title="Permalink to this headline">#</a></h1>
-<p>Ikke</p>
+<p>Et ikke-lineært likningssett er et likningssett der en eller flere av de ukjente variablene er av grad to eller større. Vi kan også ha såkalte kryssledd der de ukjente størrelsene er multiplisert med hverandre.</p>
+<p>For å løse ikke-lineære likningssett bruker vi stort sett akkurat de samme metodene som vi har brukt på lineære likningssett. Forskjellen kommer i antall løsninger og mer kompleks algebra/likningsløsning dersom vi løser for hånd. Addisjonsmetoden vil sjelden være hensiktsmessig ved ikke-lineære likningssett, og vi må bruke andre funksjoner i programmering (de går vi ikke inn på her).</p>
+<p>Videre skal se på likningssettet</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+x-y=-2 \\
+2x^2-xy=8
+\end{split}\]</div>
+<p>Vi starter med å løse den for hånd med innsettingsmetoden.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Innsettingsmetoden</p>
+<p>Vi starter med å bruke den første likningen til å finne at <span class="math notranslate nohighlight">\(y=x+2\)</span>. Det setter vi inn i den andre likningen.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+2x^2-x(x+2)=8\\
+2x^2-x^2-2x-8=0\\
+x^2-2x-8=0
+\end{split}\]</div>
+<p>Denne likningen løser vi greit med abc-formelen og får at <span class="math notranslate nohighlight">\(x=-2\)</span> og <span class="math notranslate nohighlight">\(x=4\)</span>. Disse setter vi inn igjen i den første likningen for å finne <span class="math notranslate nohighlight">\(y\)</span>:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(x=-2\)</span> gir <span class="math notranslate nohighlight">\(y=-2+2=0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(x=4\)</span> gir <span class="math notranslate nohighlight">\(y=4+2=6\)</span></p></li>
+</ul>
+<p>Vi har altså to løsninger som vi kan skrive som <span class="math notranslate nohighlight">\(L={(-2,0), (4, 6)}\)</span>.</p>
+</div>
+<p>De fleste ikke-lineære likningssett vil være vanskelig/umulig å løse for hånd. Derfor må vi ta i bruk digitale metoder.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Grafisk metode</p>
+<p>Vi skriver inn de to likningene i GeoGebra og finner skjæringspunktene mellom linja og kurven.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/ikkelineargraf.png"><img alt="../../_images/ikkelineargraf.png" src="../../_images/ikkelineargraf.png" style="width: 535.2px; height: 362.40000000000003px;" /></a>
+</figure>
+<p>Vi ser at vi får løsningen <span class="math notranslate nohighlight">\(L={(-2,0), (4, 6)}\)</span>.</p>
+</div>
+<p>Den enkleste måten å løse likningssettet på er som vanlig med CAS. Når vi skriver inn likningene er det viktig å huske på gangetegn mellom ulike ukjente størrelser slik at vi skriver <span class="math notranslate nohighlight">\(x\cdot y\)</span>.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Løsning med CAS</p>
+<p>Vi skriver inn de to likningene i CAS, markerer linjene og bruker løs-knappen.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/ikkelineargraf.png"><img alt="../../_images/ikkelineargraf.png" src="../../_images/ikkelineargraf.png" style="width: 1605.6px; height: 1087.2px;" /></a>
+</figure>
+<p>Vi får løsningen <span class="math notranslate nohighlight">\(L={(-2,0), (4, 6)}\)</span>.</p>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
