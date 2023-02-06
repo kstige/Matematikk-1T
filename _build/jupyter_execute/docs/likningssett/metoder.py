@@ -135,6 +135,7 @@
 # Vi ser at vi har $2x$ i den første likningen og $1x$ i den andre, så det vil ikke fungere å bare legge dem sammen. Men om vi ganger den andre likningen med -2 før vi legger sammen, så får vi:
 # 
 # VS: $(2x+y)-2(x+y)=-y$
+# 
 # HS: $4+(-2)\cdot 5= -2$
 # 
 # Vi ender altså opp med likningen $-y=-2$ som gir $y=2$. Vi setter inn i den andre likningen og får $2x+(-2)=4$ som gir $x=3$.
