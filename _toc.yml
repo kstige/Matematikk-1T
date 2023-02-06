@@ -38,3 +38,8 @@ parts:
   - file: docs/likningssett/metoder
   - file: docs/likningssett/flereukjente
   - file: docs/likningssett/ikkelineare
+- caption: Ulikheter
+  chapters:
+  - file: docs/ulikheter/lineare_ulikheter
+  - file: docs/ulikheter/polynomulikheter
+  - file: docs/ulikheter/rasjonale_ulikheter
