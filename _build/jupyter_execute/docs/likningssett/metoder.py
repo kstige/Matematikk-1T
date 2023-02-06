@@ -208,4 +208,24 @@ print(x)
 
 # 
 
+# ## Videoer
+# Her kan du se videoer for en del av innholdet på denne siden:
 # 
+# ````{tab-set} 
+# ```{tab-item} Grafisk metode
+# <iframe width="680" height="350" src="https://www.youtube.com/embed/K__ldC6Ke2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+# ```
+# 
+# ```{tab-item} Løsning i CAS
+# <iframe width="680" height="350" src="https://www.youtube.com/embed/g1pBbdRCYC0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+# ```
+# 
+# ```{tab-item} Innsettingsmetoden
+# <iframe width="680" height="350" src="https://www.youtube.com/embed/hkXs5epJI6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+# ```
+# 
+# ```{tab-item} Addisjonsmetoden
+# <iframe width="680" height="350" src="https://www.youtube.com/embed/U72cdCNRT2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+# ```
+# 
+# ````
