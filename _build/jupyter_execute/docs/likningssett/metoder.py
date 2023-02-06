@@ -207,8 +207,6 @@ print(x)
 # 
 # <iframe src="https://trinket.io/embed/python3/8878d4ed7a" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-# 
-
 # ## Videoer
 # Her kan du se videoer for en del av innholdet på denne siden:
 # 
