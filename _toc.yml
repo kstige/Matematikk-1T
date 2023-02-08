@@ -33,6 +33,7 @@ parts:
   - file: docs/funksjoner/derivert
   - file: docs/funksjoner/funksjoner_geogebra
   - file: docs/funksjoner/funksjoner_programmering
+  - file: docs/funksjoner/modellering
 - caption: Likningssett
   chapters:
   - file: docs/likningssett/metoder
