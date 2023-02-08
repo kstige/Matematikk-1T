@@ -579,6 +579,29 @@ f(4) &amp;=16a+4b+c &amp;=&amp; 18
 </section>
 <section id="regresjon">
 <h2>Regresjon<a class="headerlink" href="#regresjon" title="Permalink to this headline">#</a></h2>
+<p>Vanligvis bruker vi digitale verktøy for å finne matematiske modeller. Metoden som brukes kalles for regresjon. Vi skal ikke gå i detalj på hva som skjer, men essensen er at datamaskinen prøver mange funksjoner av valgt type og finner den som totalt sett har minst avvik fra målepunktene.</p>
+<p>Vi kommer stort sett til å bruke GeoGebra til å utføre regresjon, men viser også hvordan det kan gjøres ved programmering. I GeoGebra er det enkelt å utføre regresjon, men gjennom programmering har vi flere muligheter til å tilpasse modellene våre.</p>
+<p>Regresjon i GeoGebra viser vi enklest ved et eksempel.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: regresjon</p>
+<p>I tabellen under vise statistikk fra <a class="reference external" href="http://ssb.no">ssb.no</a> over antall elbiler som ble solgt i Molde i perioden 2013-2017. Vi skal lage en eksponentialmodell som passer med dette. Vi lar <span class="math notranslate nohighlight">\(x\)</span> være antall år etter 2013.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/elbiltabell.png"><img alt="../../_images/elbiltabell.png" src="../../_images/elbiltabell.png" style="width: 590.8px; height: 70.0px;" /></a>
+</figure>
+<p>Det første vi gjør er å legge tallene fra tabellen inn i regnearket i GeoGebra.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/elbilregneark.png"><img alt="../../_images/elbilregneark.png" src="../../_images/elbilregneark.png" style="width: 188.29999999999998px; height: 154.7px;" /></a>
+</figure>
+<p>Så markerer vi tallene og velger “Regresjonsanalyse” i menyen.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/regresjonsmeny.png"><img alt="../../_images/regresjonsmeny.png" src="../../_images/regresjonsmeny.png" style="width: 310.79999999999995px; height: 205.79999999999998px;" /></a>
+</figure>
+<p>Da får vi bildet under der vi har valgt “Eksponentiell” under menyen for regresjonsmodell.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/elbilregresjon.png"><img alt="../../_images/elbilregresjon.png" src="../../_images/elbilregresjon.png" style="width: 932.4px; height: 630.6999999999999px;" /></a>
+</figure>
+<p>Vi ser at den eksponentialmodellen som passer best er <span class="math notranslate nohighlight">\(f(x)=56\cdot 1,63^x\)</span>. Det vil si at elbilsalget vokser med omtrent <span class="math notranslate nohighlight">\(63\%\)</span> i året.</p>
+</div>
 </section>
 </section>
 
