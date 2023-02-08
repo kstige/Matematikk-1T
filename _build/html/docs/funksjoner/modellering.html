@@ -558,6 +558,24 @@ title="Print to PDF"
 </ul>
 <p>Forventer vi at det vi måler skal ha jevn endring, så velger vi en lineær modell. Forventer vi en jevn prosentvis endring, så velger vi en eksponentiell modell.</p>
 </div>
+<p>Før vi går over på å lage modeller digitalt, så tar vi et eksempel som krever at vi har vært gjennom likningssett.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Andregradsmodell</p>
+<p>Finn en andregradsfunksjon som går gjennom punktene <span class="math notranslate nohighlight">\((1,0)\)</span>, <span class="math notranslate nohighlight">\((3,8)\)</span> og <span class="math notranslate nohighlight">\((4,18)\)</span>.</p>
+<p>Vi vet at andregradsfunksjoner er på formen <span class="math notranslate nohighlight">\(f(x)=ax^2+bx+c\)</span>. Det vil si at vi har tre parametre som vi kan finne ved hjelp av de tre punktene.</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+f(1) &amp;=a+b+c &amp;=&amp; 0 \\
+f(3) &amp;=9a+3b+c &amp;=&amp; 8 \\
+f(4) &amp;=16a+4b+c &amp;=&amp; 18
+\end{align}
+\)</span></p>
+<p>Løser likningssettet med CAS på følgende måte</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/andregradsmodellCAS.png"><img alt="../../_images/andregradsmodellCAS.png" src="../../_images/andregradsmodellCAS.png" style="width: 358.4px; height: 315.7px;" /></a>
+</figure>
+<p>Det vil si at den andregradsfunksjonen som går gjennom punktene er <span class="math notranslate nohighlight">\(f(x)=2x^2-4x+2\)</span>.</p>
+</div>
 </section>
 <section id="regresjon">
 <h2>Regresjon<a class="headerlink" href="#regresjon" title="Permalink to this headline">#</a></h2>
