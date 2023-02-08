@@ -586,21 +586,46 @@ f(4) &amp;=16a+4b+c &amp;=&amp; 18
 <p class="admonition-title">Eksempel: regresjon</p>
 <p>I tabellen under vise statistikk fra <a class="reference external" href="http://ssb.no">ssb.no</a> over antall elbiler som ble solgt i Molde i perioden 2013-2017. Vi skal lage en eksponentialmodell som passer med dette. Vi lar <span class="math notranslate nohighlight">\(x\)</span> være antall år etter 2013.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../../_images/elbiltabell.png"><img alt="../../_images/elbiltabell.png" src="../../_images/elbiltabell.png" style="width: 590.8px; height: 70.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/elbiltabell.png"><img alt="../../_images/elbiltabell.png" src="../../_images/elbiltabell.png" style="width: 472.49999999999994px; height: 70.0px;" /></a>
 </figure>
 <p>Det første vi gjør er å legge tallene fra tabellen inn i regnearket i GeoGebra.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../../_images/elbilregneark.png"><img alt="../../_images/elbilregneark.png" src="../../_images/elbilregneark.png" style="width: 188.29999999999998px; height: 154.7px;" /></a>
+<a class="reference internal image-reference" href="../../_images/elbilregneark.png"><img alt="../../_images/elbilregneark.png" src="../../_images/elbilregneark.png" style="width: 182.7px; height: 126.69999999999999px;" /></a>
 </figure>
 <p>Så markerer vi tallene og velger “Regresjonsanalyse” i menyen.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../../_images/regresjonsmeny.png"><img alt="../../_images/regresjonsmeny.png" src="../../_images/regresjonsmeny.png" style="width: 310.79999999999995px; height: 205.79999999999998px;" /></a>
+<a class="reference internal image-reference" href="../../_images/regresjonsmeny.png"><img alt="../../_images/regresjonsmeny.png" src="../../_images/regresjonsmeny.png" style="width: 307.29999999999995px; height: 203.7px;" /></a>
 </figure>
 <p>Da får vi bildet under der vi har valgt “Eksponentiell” under menyen for regresjonsmodell.</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../../_images/elbilregresjon.png"><img alt="../../_images/elbilregresjon.png" src="../../_images/elbilregresjon.png" style="width: 932.4px; height: 630.6999999999999px;" /></a>
+<a class="reference internal image-reference" href="../../_images/elbilregresjon.png"><img alt="../../_images/elbilregresjon.png" src="../../_images/elbilregresjon.png" style="width: 631.0px; height: 438.5px;" /></a>
 </figure>
-<p>Vi ser at den eksponentialmodellen som passer best er <span class="math notranslate nohighlight">\(f(x)=56\cdot 1,63^x\)</span>. Det vil si at elbilsalget vokser med omtrent <span class="math notranslate nohighlight">\(63\%\)</span> i året.</p>
+<p>Vi ser at den eksponentialmodellen som passer best er <span class="math notranslate nohighlight">\(f(x)=54\cdot 1,63^x\)</span>. Det vil si at elbilsalget vokser med omtrent <span class="math notranslate nohighlight">\(63\%\)</span> i året.</p>
+<p>Dersom vi ønsker å jobbe videre med funksjonen vil det være praktisk å overføre den til grafikkfeltet. Det gjør vi ved å trykke på knappen på bildet under.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/kopiertilgrafikkfelt.png"><img alt="../../_images/kopiertilgrafikkfelt.png" src="../../_images/kopiertilgrafikkfelt.png" style="width: 361.9px; height: 129.5px;" /></a>
+</figure>
+</div>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Interpolasjon og ekstrapolasjon</p>
+<p>Vi skal jobbe litt videre med eksempelet for å se på begrepene interpolasjon og ekstrapolasjon. Dersom vi henter ut flere tall fra <a class="reference external" href="http://ssb.no">ssb.no</a> finner vi at antall solgte elbiler i Molde i 2015 og 2019 var:</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/elbiltabell2.png"><img alt="../../_images/elbiltabell2.png" src="../../_images/elbiltabell2.png" style="width: 633.5px; height: 207.2px;" /></a>
+</figure>
+<p>Vi vil undersøke hvordan dette passer med modellen vi har funnet.</p>
+<p><strong>Interpolasjon</strong>
+Interpolasjon betyr å bruke modellen innenfor området begrenset av målepunktene. Når vi skal bruke modellen for 2015 (<span class="math notranslate nohighlight">\(x=2\)</span>), så interpoler vi. Vi kan overføre funksjonen til grafikkfeltet og lese av den der, men det enkleste er å bruke feltet for “Symbolsk inntasting”. Der skriver vi inn <span class="math notranslate nohighlight">\(x=2\)</span> og får ut verdien til funksjonen.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/symbolskutregning1.png"><img alt="../../_images/symbolskutregning1.png" src="../../_images/symbolskutregning1.png" style="width: 436.79999999999995px; height: 39.9px;" /></a>
+</figure>
+<p>Vi får <span class="math notranslate nohighlight">\(143\)</span> solgte elbiler som ligger noe under, men ikke så langt under den riktige verdien. At vi får en for lav verdi betyr at den virkelige veksten i starten av perioden var prosentvis større enn den var senere i perioden.</p>
+<p><strong>Ekstrapolasjon</strong>
+Ekstrapolasjon betyr å bruke modellen utenfor området begrenset av målepunktene. Når vi skal bruke modellen for 2019 (<span class="math notranslate nohighlight">\(x=6\)</span>), så ekstrapolerer vi.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/symbolskutregning2.png"><img alt="../../_images/symbolskutregning2.png" src="../../_images/symbolskutregning2.png" style="width: 448.0px; height: 31.499999999999996px;" /></a>
+</figure>
+<p>Vi får <span class="math notranslate nohighlight">\(1008\)</span> solgte elbiler som ligger langt over den riktige verdien.</p>
+<p>Det vi ser over stemmer med det vi vanligvis observerer. Verdier funnet ved interpolasjon vil passe bedre med modellen enn verdier funnet ved ekstrapolasjon.</p>
 </div>
 </section>
 </section>
