@@ -43,3 +43,4 @@ parts:
   - file: docs/ulikheter/lineare_ulikheter
   - file: docs/ulikheter/polynomulikheter
   - file: docs/ulikheter/rasjonale_ulikheter
+  - file: docs/ulikheter/lagefortegnsskjema
