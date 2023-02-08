@@ -44,3 +44,10 @@ parts:
   - file: docs/ulikheter/polynomulikheter
   - file: docs/ulikheter/rasjonale_ulikheter
   - file: docs/ulikheter/lagefortegnsskjema
+- caption: Trigonometri
+  chapters:
+  - file: docs/trigonometri/grunnleggende_trigonometri
+  - file: docs/trigonometri/tan_sin_cos
+  - file: docs/trigonometri/arealsetningen
+  - file: docs/trigonometri/sinussetningen
+  - file: docs/trigonometri/cosinussetningen
