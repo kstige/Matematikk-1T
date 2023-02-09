@@ -247,6 +247,12 @@ legend()
 show()
 
 
-# Under er hele programmet satt sammen. Prøv å endre på listene med $x$- og $y$-verdier og se hvordan modellen endrer seg. Kanskje klarer du også å endre programmet slik at det kan bruke en andregradsmodell. Da må du innføre en ekstra parameter.
+# Under er hele programmet satt sammen. 
+# 
+#  * Endre på listene med $x$- og $y$-verdier og se hvordan modellen endrer seg. 
+#  * Gjør om modellen til en andregradsmodell. Da må du innføre en ekstra parameter $c$, endre på linje 7, 8, 10 og 15. I tillegg må du legge til ei linje etter linje 12.
+#  * Klarer du å lage en eksponentialmodell.
 # 
 # <iframe src="https://trinket.io/embed/python3/3adb2590c6" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+# 
