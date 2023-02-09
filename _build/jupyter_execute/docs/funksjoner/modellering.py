@@ -104,7 +104,7 @@
 # Det vil si at den andregradsfunksjonen som går gjennom punktene er $f(x)=2x^2-4x+2$.
 # `````
 
-# ## Regresjon
+# ## Regresjon med GeoGebra
 # 
 # Vanligvis bruker vi digitale verktøy for å finne matematiske modeller. Metoden som brukes kalles for regresjon. Vi skal ikke gå i detalj på hva som skjer, men essensen er at datamaskinen prøver mange funksjoner av valgt type og finner den som totalt sett har minst avvik fra målepunktene.
 # 
