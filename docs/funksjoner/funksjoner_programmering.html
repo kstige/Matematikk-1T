@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Programmering av grafer &#8212; Matematikk 1T</title>
+    <title>Funksjoner i programmering &#8212; Matematikk 1T</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Metoder for løsning av likningssett" href="../likningssett/metoder.html" />
@@ -223,13 +225,18 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="modellering.html">
+   Modellering
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="funksjoner_geogebra.html">
    Funksjoner i GeoGebra
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Programmering av grafer
+   Funksjoner i programmering
   </a>
  </li>
 </ul>
@@ -279,6 +286,38 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../ulikheter/lagefortegnsskjema.html">
    Lage fortegnsskjema
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trigonometri
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/grunnleggende_trigonometri.html">
+   Grunnleggende trigonometri
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/tan_sin_cos.html">
+   Tangens, sinus og cosinus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/arealsetningen.html">
+   Arealsetningen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/sinussetningen.html">
+   Sinussetningen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/cosinussetningen.html">
+   Cosinussetningen
   </a>
  </li>
 </ul>
@@ -391,23 +430,60 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grafer">
+   Grafer
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Programmering av grafer</h1>
+                <h1>Funksjoner i programmering</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grafer">
+   Grafer
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -415,8 +491,91 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="programmering-av-grafer">
-<h1>Programmering av grafer<a class="headerlink" href="#programmering-av-grafer" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="funksjoner-i-programmering">
+<h1>Funksjoner i programmering<a class="headerlink" href="#funksjoner-i-programmering" title="Permalink to this headline">#</a></h1>
+<p>Funksjoner i programmering er ikke nødvendigvis det samme som funksjoner i matematikk, men vi kommer hovedsaklig til å programmere funksjoner som likner på de matematiske. Dersom vi skal jobbe med funksjonen <span class="math notranslate nohighlight">\(f(x)=x^2+2x-4\)</span> lager vi den slik:</p>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="o">-</span><span class="mi">4</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Vi ser at funksjonen er bygd opp av ei linje som definerer (med bruk av <strong>def</strong>) navnet <span class="math notranslate nohighlight">\(f\)</span> på funksjonen og variabelen <span class="math notranslate nohighlight">\(x\)</span> som settes inn i funksjonen. Den linja avsluttes med kolon tilsvarende som ved for eksempel løkker. Alt som hører til funksjonen skal stå med innrykk på linjene under. Normalt sett avsluttes en funksjon med <strong>return</strong> og uttrykket som skal returneres. Når vi ser på en matematisk funksjon vil det være funksjonsuttrykket som står bak return. I prinsippet kan funksjonen returnere andre ting (som for eksempel tekst) også.</p>
+<p>Tilsvarende som når vi oppretter variabler, så blir det ikke skrevet ut noe når vi definerer en funksjon (med mindre funksjonen inneholder en print-setning). For å skrive ut funksjonsverdier fra funksjonen over kan vi for eksempel skrive:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>11
+</pre></div>
+</div>
+</div>
+</div>
+<p>Vi kan også lagre resultatet av et <strong>kall</strong> til funksjonen til en variabel, og bruke det videre:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>13
+</pre></div>
+</div>
+</div>
+</div>
+<p>Selv om vi ikke skal bruke det videre kan vi også se på en funksjon som returnerer tekst.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hei</span><span class="p">(</span><span class="n">navn</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hei&quot;</span><span class="p">,</span> <span class="n">navn</span><span class="p">)</span>
+
+<span class="n">hei</span><span class="p">(</span><span class="s2">&quot;Per&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hei Per
+</pre></div>
+</div>
+</div>
+</div>
+<p>I denne funksjonen har vi ikke brukt return, men ei print-setning. Da vil resultatet skrives ut direkte. Siden vi ved en matematisk funksjon vanligvis ønsker å bruke resultatet videre, så vil det være mest hensiktsmessig å bruke return.</p>
+<section id="grafer">
+<h2>Grafer<a class="headerlink" href="#grafer" title="Permalink to this headline">#</a></h2>
+<p>For å tegne inn grafen til funksjonen må vi regne ut mange funksjonsverdier og sette punktene inn i et koordinatsystem. Dette kan gjøres veldig effektivt med disse linjene med kode.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x_verdier</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">y_verdier</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x_verdier</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Her bruker vi kommandoen linspace (den krever at vi har importert pylab) for å lage en liste med 1000 <span class="math notranslate nohighlight">\(x\)</span>-verdier mellom -4 og 4. Alle disse <span class="math notranslate nohighlight">\(x\)</span>-verdiene settes inn i funksjonen og lagres i ei liste med <span class="math notranslate nohighlight">\(y\)</span>-verdier.</p>
+<p>Når vi skal plotte disse i en graf bruker vi.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot</span><span class="p">(</span><span class="n">x_verdier</span><span class="p">,</span> <span class="n">y_verdier</span><span class="p">)</span>
+<span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/funksjoner_programmering_13_0.png" src="../../_images/funksjoner_programmering_13_0.png" />
+</div>
+</div>
+<p>Det er store muligheter for tilpasninger av grafen. Noen av dem er vist i det fullstendige programmet under. Prøv å endre på dem for å se hvordan det påvirker resultatet.</p>
+<iframe src="https://trinket.io/embed/python3/eac2d0e239" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></section>
 </section>
 
     <script type="text/x-thebe-config">

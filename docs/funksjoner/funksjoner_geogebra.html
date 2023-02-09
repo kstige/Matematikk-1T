@@ -55,8 +55,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Programmering av grafer" href="funksjoner_programmering.html" />
-    <link rel="prev" title="Den deriverte" href="derivert.html" />
+    <link rel="next" title="Funksjoner i programmering" href="funksjoner_programmering.html" />
+    <link rel="prev" title="Modellering" href="modellering.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -224,6 +224,11 @@ const thebe_selector_output = ".output, .cell_output"
    Den deriverte
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modellering.html">
+   Modellering
+  </a>
+ </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Funksjoner i GeoGebra
@@ -231,7 +236,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="funksjoner_programmering.html">
-   Programmering av grafer
+   Funksjoner i programmering
   </a>
  </li>
 </ul>
@@ -281,6 +286,38 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../ulikheter/lagefortegnsskjema.html">
    Lage fortegnsskjema
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trigonometri
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/grunnleggende_trigonometri.html">
+   Grunnleggende trigonometri
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/tan_sin_cos.html">
+   Tangens, sinus og cosinus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/arealsetningen.html">
+   Arealsetningen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/sinussetningen.html">
+   Sinussetningen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/cosinussetningen.html">
+   Cosinussetningen
   </a>
  </li>
 </ul>
@@ -473,10 +510,38 @@ title="Print to PDF"
 </ul>
 <div class="eksempel admonition">
 <p class="admonition-title">Eksempel: Graftegning i GeoGebra</p>
-<p>Vi ser på funksjonen <span class="math notranslate nohighlight">\(f(x)=2x^3 -4x^2-10x+12\)</span> og skal tegne funksjonen, lese av funksjonen, finne nullpunkt og finne ekstremalpunkt.</p>
+<p>Vi ser på funksjonen <span class="math notranslate nohighlight">\(f(x)=2x^3 -4x^2-10x+12\)</span> med og skal tegne funksjonen, lese av funksjonen, finne nullpunkt og ekstremalpunkt, finne gjennomsnittlig vekstfart i <span class="math notranslate nohighlight">\([-2,0]\)</span> og finne momentan vekstfart for <span class="math notranslate nohighlight">\(x=0\)</span>.</p>
 <div class="losning dropdown admonition">
-<p class="admonition-title">Tegne funksjonen</p>
-<p>Skriver inn <span class="math notranslate nohighlight">\(f(x)=2x^3-4x^2-10 +12\)</span> i algebrafeltet. Om vi ønsker å begrense definisjonsmengden til å være for eksempel <span class="math notranslate nohighlight">\(D_f = [-5, 6]\)</span> kan vi putte på <span class="math notranslate nohighlight">\(, -5&lt;=x&lt;=6 bak funksjonsuttrykket\)</span> som vist i bildet under. Om funksjonen vår s</p>
+<p class="admonition-title">Tegne funksjon og lese av funksjonen.</p>
+<p>Skriver inn <span class="math notranslate nohighlight">\(f(x)=2x^3-4x^2-10 +12\)</span> i algebrafeltet. Om vi ønsker å begrense definisjonsmengden til å være for eksempel <span class="math notranslate nohighlight">\(D_f = [-3, 4]\)</span> kan vi putte på <span class="math notranslate nohighlight">\(, -3&lt;=x&lt;=4\)</span> bak funksjonsuttrykket som vist i bildet under.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/funksjonmeddef.png"><img alt="../../_images/funksjonmeddef.png" src="../../_images/funksjonmeddef.png" style="width: 432.59999999999997px; height: 50.4px;" /></a>
+</figure>
+<p>Vi ønsker videre å finne funksjonsverdien for <span class="math notranslate nohighlight">\(x=2\)</span> og finne hvilke <span class="math notranslate nohighlight">\(x\)</span>-verdier som gir <span class="math notranslate nohighlight">\(f(x)=5\)</span>.</p>
+<p><strong>Lese av x=2:</strong></p>
+<p>Det enkleste er å bare skrive inn <span class="math notranslate nohighlight">\(f(2)\)</span> i algebrafeltet. Dersom vi vil vise det grafisk, så skriver vi inn <span class="math notranslate nohighlight">\(x=2\)</span> og velger videre “Skjæring mellom to objekt” fra menyen for å finne skjæringspunktet <span class="math notranslate nohighlight">\(A=(2, -8)\)</span> mellom grafen til <span class="math notranslate nohighlight">\(f(x)\)</span> og linja <span class="math notranslate nohighlight">\(x=2\)</span>. Det betyr at <span class="math notranslate nohighlight">\(f(2)=-8\)</span>.</p>
+<p><strong>Lese av f(x)=5:</strong></p>
+<p>Vi skriver inn <span class="math notranslate nohighlight">\(y=5\)</span> og bruker “Skjæring mellom to objekt” til å finne skjæringspunktene <span class="math notranslate nohighlight">\(B=(-1.82, 5)\)</span>, <span class="math notranslate nohighlight">\(C=(0.6, 5)\)</span> og <span class="math notranslate nohighlight">\(D=(3.22, 5)\)</span> mellom grafen til <span class="math notranslate nohighlight">\(f(x)\)</span> og linja <span class="math notranslate nohighlight">\(y=5\)</span>. Det betyr at <span class="math notranslate nohighlight">\(x\in\{-1.82, 0.6, 3.22\}\)</span> gir <span class="math notranslate nohighlight">\(f(x)=5\)</span>.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/eksempelgrafavlest.png"><img alt="../../_images/eksempelgrafavlest.png" src="../../_images/eksempelgrafavlest.png" style="width: 578.4px; height: 362.40000000000003px;" /></a>
+</figure>
+</div>
+<div class="losning dropdown admonition">
+<p class="admonition-title">Finne nullpunkt og ekstremalpunkt</p>
+<p>For å finne nullpunkt bruker vi knappen “Nullpunkt”. Det gir <span class="math notranslate nohighlight">\(A=(-2,0)\)</span>, <span class="math notranslate nohighlight">\(B=(1,0)\)</span> og <span class="math notranslate nohighlight">\(C=(3,0)\)</span>.</p>
+<p>For å finne ekstremalpunkt bruker vi knappen “Ekstremalpunkt”. Det gir <span class="math notranslate nohighlight">\(D=(-0.79, 16.42)\)</span> og <span class="math notranslate nohighlight">\(E=(2.12, -8.12)\)</span>.</p>
+<p>Merk at når vi finner ekstremalpunkt her, så finner vi ikke eventuelle ekstremalpunkt som er endepunkt i definisjonsmengden.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/eksempelgrafpunkt.png"><img alt="../../_images/eksempelgrafpunkt.png" src="../../_images/eksempelgrafpunkt.png" style="width: 578.4px; height: 362.40000000000003px;" /></a>
+</figure>
+</div>
+<div class="losning dropdown admonition">
+<p class="admonition-title">Finne gjennomsnittlig og momentan vekstfart</p>
+<p>Vi starter med å sette inn punktene på grafen. Den enkleste måten å gjøre det på er ved å skrive <span class="math notranslate nohighlight">\((-2, f(-2))\)</span> og <span class="math notranslate nohighlight">\((0, f(0))\)</span>. Så bruker vi linje-verktøyet til å lage ei rett linje gjennom punktene. Til slutt bruker vi verktøye “Stigning” for å få tegnet inn stigningstallet (det kan også leses av likninga for linja i algebrafeltet). Vi får da at gjennomsnittlig vekstfart i <span class="math notranslate nohighlight">\([-2,0]\)</span> er <span class="math notranslate nohighlight">\(a=6\)</span>.</p>
+<p>For å finne momentan vekstfart i <span class="math notranslate nohighlight">\((0, f(0))\)</span> bruker vi det punktet vi allerede har. Videre bruker vi verktøyet “Tangent” for å få tegnet inn tangenten i punktet. Til slutt bruker vi verktøyet “Stigning” for å få tegnet inn stigningstallet som er gitt ved <span class="math notranslate nohighlight">\(b=-10\)</span>.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/eksempelgrafvekstfart.png"><img alt="../../_images/eksempelgrafvekstfart.png" src="../../_images/eksempelgrafvekstfart.png" style="width: 578.4px; height: 362.40000000000003px;" /></a>
+</figure>
 </div>
 </div>
 <div class="oppgave admonition">
@@ -485,13 +550,30 @@ title="Print to PDF"
 <div class="math notranslate nohighlight">
 \[T(x) = -4x^3 + 66x^2 - 288x + 978\]</div>
 <p>der <span class="math notranslate nohighlight">\(x\)</span> er antall uker etter at ferien startet.</p>
-<p><strong>a)</strong> Tegn grafen til <span class="math notranslate nohighlight">\(T(x)\)</span> når <span class="math notranslate nohighlight">\(0\leq x\leq 10\)</span>.
-<strong>b)</strong> Hvor mange turister er det i uke 2?
-<strong>c)</strong> Hva er det høyeste og laveste antall turister i løpet av de 10 ukene?
-<strong>d)</strong> Finn den gjennomsnittlige vekstfarten i tallet på turister mellom uke 3 og uke 8. Hva betyr svaret?</p>
+<p><strong>a)</strong> Tegn grafen til <span class="math notranslate nohighlight">\(T(x)\)</span> når <span class="math notranslate nohighlight">\(0\leq x\leq 10\)</span>.</p>
+<p><strong>b)</strong> Hvor mange turister er det i uke 2?</p>
+<p><strong>c)</strong> Hva er det høyeste og laveste antall turister i løpet av de 10 ukene?</p>
+<p><strong>d)</strong> Finn den gjennomsnittlige vekstfarten i tallet på turister mellom uke 3 og uke 8. Hva betyr svaret?</p>
+<div class="losning dropdown admonition">
+<p class="admonition-title">Løsningsforslag</p>
+<p><strong>a)</strong> Tegner inn grafen ved å skrive inn <span class="math notranslate nohighlight">\(T(x)=-4x^3 + 66x^2 - 288x + 978, 0&lt;=x&lt;=10\)</span>.</p>
+<p>Tips:</p>
+<ul class="simple">
+<li><p>For å finne grafen bør du endre <span class="math notranslate nohighlight">\(y\)</span>-aksen til du kommer til konstantleddet 978.</p></li>
+<li><p>Husk også å sette på aksetitler.</p></li>
+<li><p>Zoom slik at grafen fyller størst mulig del av grafikkfeltet.</p></li>
+</ul>
+<p><strong>b)</strong> Skriver inn <span class="math notranslate nohighlight">\(x=2\)</span> og bruker <em>Skjæring mellom to objekt</em> til å finne skjæringspunktet <span class="math notranslate nohighlight">\(A=(2, 634)\)</span>. Det betyr at det var 634 turister i uke 2.</p>
+<p><strong>c)</strong> Bruker <em>Ekstremalpunkt</em> og finner punktene <span class="math notranslate nohighlight">\(B=(3, 600)\)</span> og <span class="math notranslate nohighlight">\(C=(8, 850)\)</span>. Ved å se på grafen ser vi at <span class="math notranslate nohighlight">\(B\)</span> gir det laveste antall turister, men vi ser også at startverdien ligger høyere enn punkt <span class="math notranslate nohighlight">\(C\)</span>. Skriver derfor inn <span class="math notranslate nohighlight">\((0, T(0))\)</span> for å få punktet <span class="math notranslate nohighlight">\(D=(0, 978)\)</span> (kan også bare lese av <span class="math notranslate nohighlight">\(T(0)\)</span>). For å være sikker på at endepunktet ved <span class="math notranslate nohighlight">\(x=10\)</span> ikke gir høyeste/laveste kan vi også lage punktet <span class="math notranslate nohighlight">\(E=(10, T(10))=(10,698)\)</span>, men vi ser at det må ligge mellom <span class="math notranslate nohighlight">\(B\)</span> og <span class="math notranslate nohighlight">\(C\)</span>.</p>
+<ul class="simple">
+<li><p>Høyeste antall: Punkt <span class="math notranslate nohighlight">\(D\)</span> gir 978 turister i uke 0.</p></li>
+<li><p>Laveste antall: Punkt <span class="math notranslate nohighlight">\(B\)</span> gir 600 turister i uke 3.</p></li>
+</ul>
+<p><strong>d)</strong> Vi har allerede punktene <span class="math notranslate nohighlight">\(B\)</span> og <span class="math notranslate nohighlight">\(C\)</span> for <span class="math notranslate nohighlight">\(x=3\)</span> og <span class="math notranslate nohighlight">\(x=8\)</span>. Lager ei linje gjennom dem og bruker verktøyet <em>Stigning</em> for å finne stigningstallet <span class="math notranslate nohighlight">\(a=50\)</span>. Det betyr at mellom uke 3 og uke 8 økte antallet turister i gjennomsnitt med 50 turister/uke.</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/tredjegradsfunksjon.png"><img alt="../../_images/tredjegradsfunksjon.png" src="../../_images/tredjegradsfunksjon.png" style="width: 278.4px; height: 256.8px;" /></a>
+<a class="reference internal image-reference" href="../../_images/turisteksempel1.png"><img alt="../../_images/turisteksempel1.png" src="../../_images/turisteksempel1.png" style="width: 535.2px; height: 362.40000000000003px;" /></a>
 </figure>
+</div>
 </div>
 </section>
 </section>
@@ -523,17 +605,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="derivert.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="modellering.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Den deriverte</p>
+            <p class="prev-next-title">Modellering</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="funksjoner_programmering.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Programmering av grafer</p>
+        <p class="prev-next-title">Funksjoner i programmering</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

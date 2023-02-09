@@ -1,0 +1,776 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Modellering &#8212; Matematikk 1T</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/myadmonitions.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Funksjoner i GeoGebra" href="funksjoner_geogebra.html" />
+    <link rel="prev" title="Den deriverte" href="derivert.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Matematikk 1T</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algebra
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebra/intro_algebra.html">
+   Introduksjon til algebra
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Likninger
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/uttrykk_likning_identitet.html">
+   Uttrykk, likning og identitet
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Funksjoner
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="funksjonsbegrepet.html">
+   Funksjonsbegrepet
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="viktige_punkt.html">
+   Viktige punkt
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="quiz_viktigepunkt.html">
+     Quiz om viktige punkt
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="rettelinjer.html">
+   Lineære funksjoner
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="quiz_rettelinjer.html">
+     Quiz om lineære funksjoner
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="polynomfunksjoner.html">
+   Polynomfunksjoner
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="rasjonalefunksjoner.html">
+   Rasjonale funksjoner
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="oppgaver_rasjonalefunksjoner.html">
+     Oppgaver om rasjonale funksjoner og asymptoter
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="eksponentialfunksjoner.html">
+   Eksponentialfunksjoner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="potensfunksjoner.html">
+   Potensfunksjoner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="gjennomsnittligvekstfart.html">
+   Gjennomsnittlig vekstfart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="momentanvekstfart.html">
+   Momentan vekstfart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="derivert.html">
+   Den deriverte
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Modellering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="funksjoner_geogebra.html">
+   Funksjoner i GeoGebra
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="funksjoner_programmering.html">
+   Funksjoner i programmering
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Likningssett
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likningssett/metoder.html">
+   Metoder for løsning av likningssett
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likningssett/flereukjente.html">
+   Likningsett med flere ukjente
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likningssett/ikkelineare.html">
+   Ikke-lineære likningssett
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Ulikheter
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ulikheter/lineare_ulikheter.html">
+   Lineære ulikheter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ulikheter/polynomulikheter.html">
+   Polynomulikheter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ulikheter/rasjonale_ulikheter.html">
+   Rasjonale ulikheter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ulikheter/lagefortegnsskjema.html">
+   Lage fortegnsskjema
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trigonometri
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/grunnleggende_trigonometri.html">
+   Grunnleggende trigonometri
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/tan_sin_cos.html">
+   Tangens, sinus og cosinus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/arealsetningen.html">
+   Arealsetningen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/sinussetningen.html">
+   Sinussetningen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/cosinussetningen.html">
+   Cosinussetningen
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/docs/funksjoner/modellering.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#matematiske-modeller-for-hand">
+   Matematiske modeller for hånd
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#regresjon-med-geogebra">
+   Regresjon med GeoGebra
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#regresjon-med-programmering">
+   Regresjon med programmering
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Modellering</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#matematiske-modeller-for-hand">
+   Matematiske modeller for hånd
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#regresjon-med-geogebra">
+   Regresjon med GeoGebra
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#regresjon-med-programmering">
+   Regresjon med programmering
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="modellering">
+<h1>Modellering<a class="headerlink" href="#modellering" title="Permalink to this headline">#</a></h1>
+<p>Matematikken vi bruker på skolen vil ofte føles virkelighetsfjern. Den skal imidlertid gi oss et grunnlag for å beskrive noe virkelig. For at matematikken skal bli nyttig for en lege, ingeniør, arkitekt eller en annen yrkesgruppe trengs det matematiske modeller som kan beskrive virkeligheten. En matematisk modell gir en forenklet beskrivelse av virkeligheten ved hjelp av matematikk. Modellene kan for eksempel være formler, funksjoner grafer eller tabeller. Her skal vi fokusere på funksjoner som matematiske modeller.</p>
+<p>Fram til nå har vi sett på mange vilkårlige funksjoner for å undersøke egenskaper til de ulike funksjonstypene. Når vi arbeider med funksjoner i “det virkelige liv” skal funksjonene være en modell for noe reellt. Det kan være en funksjon som beskriver innbyggertallet i en kommune, posisjonen til en bil, havnivå, inntjening for en bedrift, eller noe helt annet.</p>
+<p>Først tar vi for oss noen viktige ord. Ordene og forklaringene vil gi mer mening etter at vi har tatt noen eksempler. Gå derfor tilbake til disse definisjonene når du møter ord du ikke forstår.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Gyldighetsområde</p>
+<p>Dersom modellen vår er gitt ved en funksjon, så vil gyldighetsområdet være verdiene av variabelen som modellen gjelder for. Det her henger tett sammen med begrepet definisjonsmengde.</p>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Regresjon</p>
+<p>Regresjon er en matematisk metode for å lage den funksjonen som passer best til målinger vi har gjort.</p>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Parametre</p>
+<p>Antall størrelser som bestemmes for å tilpasse målte data til en gitt modell.</p>
+<ul class="simple">
+<li><p>Til en lineær modell <span class="math notranslate nohighlight">\(ax+b\)</span> må vi bestemme to parametre <span class="math notranslate nohighlight">\(a\)</span> og <span class="math notranslate nohighlight">\(b\)</span>.</p></li>
+<li><p>Til en andregradsmodell <span class="math notranslate nohighlight">\(ax^2+bx+c\)</span> må vi bestemme tre parametre <span class="math notranslate nohighlight">\(ax^2+bx+c\)</span>.</p></li>
+</ul>
+<p>Vi renger minst like mange målepunkt som vi har parametre for å kunne lage en modell. Om vi har flere målepunkt enn antall parametre vil vi se at funksjonen vår ikke går nøyaktig gjennom alle målepunktene.</p>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Interpolere og ekstrapolere</p>
+<p>Interpolasjon betyr å bruke en modell til å anslå verdier innenfor området til målepunktene.</p>
+<p>Ekstrapolasjon betyr å bruke en modell til å anslå verdier utenfor området til målepunktene.</p>
+</div>
+<section id="matematiske-modeller-for-hand">
+<h2>Matematiske modeller for hånd<a class="headerlink" href="#matematiske-modeller-for-hand" title="Permalink to this headline">#</a></h2>
+<p>I prinsippet kan vi lage de fleste matematiske modeller for hånd. Vi har også gjort det tidligere når vi har funnet funksjonsuttrykk for rette linjer gjennom to punkt eller andre funksjonstyper gjennom et gitt antall punkt.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Modell - eksponentiell modell</p>
+<p>Innbyggertallet i en kommune er 5000 i 2010. 10 år senere har innbyggertallet økt til 6400.</p>
+<p>Dersom innbyggertallet følger en lineær modell, så vil antall innbyggere stige med <span class="math notranslate nohighlight">\(\frac{6400-5000}{10}=140\)</span> personer i året. Dette tilsvarer stigningstallet til den lineære modellen. For enkelthetsskyld setter vi 2010 til å være <span class="math notranslate nohighlight">\(x=0\)</span>. Da vil konstantleddet være 5000.</p>
+<p>En lineær modell vil være <span class="math notranslate nohighlight">\(l(x)=140x+5000\)</span>, der <span class="math notranslate nohighlight">\(x\)</span> er antall år etter 2010 og gyldighetsområdet er <span class="math notranslate nohighlight">\(x\in [0,10]\)</span>.</p>
+<p>For å sette opp den lineære modellen brukte vi to punkt: <span class="math notranslate nohighlight">\((0,5000)\)</span> og <span class="math notranslate nohighlight">\((10,6400)\)</span>. Det stemmer med at det er to parametre <span class="math notranslate nohighlight">\(a\)</span> og <span class="math notranslate nohighlight">\(b\)</span> i en lineær modell <span class="math notranslate nohighlight">\(ax+b\)</span>.</p>
+</div>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Modell - eksponentiell modell</p>
+<p>Innbyggertallet i en kommune er 5000 i 2010. 10 år senere har innbyggertallet økt til 6400.</p>
+<p>Dersom innbyggertallet følger en eksponentiell modell, så vil antall innbyggere stige med en fast prosent i året. Den eksponentielle modellen er generelt gitt ved <span class="math notranslate nohighlight">\(e(x)=a\cdot b^x\)</span>. Vi må altså bestemme de to parametrene <span class="math notranslate nohighlight">\(a\)</span> og <span class="math notranslate nohighlight">\(b\)</span> ved hjelp av punktene <span class="math notranslate nohighlight">\((0,5000)\)</span> og <span class="math notranslate nohighlight">\((10,6400)\)</span>.</p>
+<p>Med det første punktet får vi at <span class="math notranslate nohighlight">\(e(0)=a=5000\)</span> som bestemmer parameteren <span class="math notranslate nohighlight">\(a\)</span>.</p>
+<p>Med det andre punktet får vi at <span class="math notranslate nohighlight">\(l(10)=5000\cdot b^10=6400\)</span>. Vi løser likningen med CAS og får at <span class="math notranslate nohighlight">\(b=1,025\)</span>.</p>
+<p>En eksponentiell modell blir da <span class="math notranslate nohighlight">\(e(x)=5000\cdot 1,025^x\)</span>, er <span class="math notranslate nohighlight">\(x\)</span> er antall år etter 2010 og gyldighetsområdet er <span class="math notranslate nohighlight">\(x\in [0,10]\)</span>. Modellen tilsier at innbyggertallet øker med <span class="math notranslate nohighlight">\(2,5\%\)</span> i året.</p>
+</div>
+<p>Over ser vi at det går an å lage ulike modeller for de samme målingene.</p>
+<div class="admonition-valg-av-modell admonition">
+<p class="admonition-title">Valg av modell</p>
+<p>Ved valg av modell er det flere ting vi bør ta hensyn til, og det kan være flere modeller som passer med det vi skal beskrive. Noen punkt vi bør ta hensyn til er:</p>
+<ul class="simple">
+<li><p>Modellen må ligge nær til målepunktene</p></li>
+<li><p>Hvis flere modeller passer, så velger vi den enkleste (færrest parametre)</p></li>
+<li><p>Vil modellen kunne gi fornuftige anslag utenfor målepunktene</p></li>
+<li><p>Om modellen beskriver naturen bør vi se om den stemmer med naturlover</p></li>
+</ul>
+<p>Forventer vi at det vi måler skal ha jevn endring, så velger vi en lineær modell. Forventer vi en jevn prosentvis endring, så velger vi en eksponentiell modell.</p>
+</div>
+<p>Før vi går over på å lage modeller digitalt, så tar vi et eksempel som krever at vi har vært gjennom likningssett.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Andregradsmodell</p>
+<p>Finn en andregradsfunksjon som går gjennom punktene <span class="math notranslate nohighlight">\((1,0)\)</span>, <span class="math notranslate nohighlight">\((3,8)\)</span> og <span class="math notranslate nohighlight">\((4,18)\)</span>.</p>
+<p>Vi vet at andregradsfunksjoner er på formen <span class="math notranslate nohighlight">\(f(x)=ax^2+bx+c\)</span>. Det vil si at vi har tre parametre som vi kan finne ved hjelp av de tre punktene.</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+f(1) &amp;=a+b+c &amp;=&amp; 0 \\
+f(3) &amp;=9a+3b+c &amp;=&amp; 8 \\
+f(4) &amp;=16a+4b+c &amp;=&amp; 18
+\end{align}
+\)</span></p>
+<p>Løser likningssettet med CAS på følgende måte</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/andregradsmodellCAS.png"><img alt="../../_images/andregradsmodellCAS.png" src="../../_images/andregradsmodellCAS.png" style="width: 358.4px; height: 315.7px;" /></a>
+</figure>
+<p>Det vil si at den andregradsfunksjonen som går gjennom punktene er <span class="math notranslate nohighlight">\(f(x)=2x^2-4x+2\)</span>.</p>
+</div>
+</section>
+<section id="regresjon-med-geogebra">
+<h2>Regresjon med GeoGebra<a class="headerlink" href="#regresjon-med-geogebra" title="Permalink to this headline">#</a></h2>
+<p>Vanligvis bruker vi digitale verktøy for å finne matematiske modeller. Metoden som brukes kalles for regresjon. Vi skal ikke gå i detalj på hva som skjer, men essensen er at datamaskinen prøver mange funksjoner av valgt type og finner den som totalt sett har minst avvik fra målepunktene.</p>
+<p>Vi kommer stort sett til å bruke GeoGebra til å utføre regresjon, men viser også hvordan det kan gjøres ved programmering. I GeoGebra er det enkelt å utføre regresjon, men gjennom programmering har vi flere muligheter til å tilpasse modellene våre.</p>
+<p>Regresjon i GeoGebra viser vi enklest ved et eksempel.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: regresjon</p>
+<p>I tabellen under vise statistikk fra <a class="reference external" href="http://ssb.no">ssb.no</a> over antall elbiler som ble solgt i Molde i perioden 2013-2017. Vi skal lage en eksponentialmodell som passer med dette. Vi lar <span class="math notranslate nohighlight">\(x\)</span> være antall år etter 2013.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/elbiltabell.png"><img alt="../../_images/elbiltabell.png" src="../../_images/elbiltabell.png" style="width: 472.49999999999994px; height: 70.0px;" /></a>
+</figure>
+<p>Det første vi gjør er å legge tallene fra tabellen inn i regnearket i GeoGebra.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/elbilregneark.png"><img alt="../../_images/elbilregneark.png" src="../../_images/elbilregneark.png" style="width: 182.7px; height: 126.69999999999999px;" /></a>
+</figure>
+<p>Så markerer vi tallene og velger “Regresjonsanalyse” i menyen.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/regresjonsmeny.png"><img alt="../../_images/regresjonsmeny.png" src="../../_images/regresjonsmeny.png" style="width: 307.29999999999995px; height: 203.7px;" /></a>
+</figure>
+<p>Da får vi bildet under der vi har valgt “Eksponentiell” under menyen for regresjonsmodell.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/elbilregresjon.png"><img alt="../../_images/elbilregresjon.png" src="../../_images/elbilregresjon.png" style="width: 631.0px; height: 438.5px;" /></a>
+</figure>
+<p>Vi ser at den eksponentialmodellen som passer best er <span class="math notranslate nohighlight">\(f(x)=54\cdot 1,63^x\)</span>. Det vil si at elbilsalget vokser med omtrent <span class="math notranslate nohighlight">\(63\%\)</span> i året.</p>
+<p>Dersom vi ønsker å jobbe videre med funksjonen vil det være praktisk å overføre den til grafikkfeltet. Det gjør vi ved å trykke på knappen på bildet under.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/kopiertilgrafikkfelt.png"><img alt="../../_images/kopiertilgrafikkfelt.png" src="../../_images/kopiertilgrafikkfelt.png" style="width: 361.9px; height: 129.5px;" /></a>
+</figure>
+</div>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Interpolasjon og ekstrapolasjon</p>
+<p>Vi skal jobbe litt videre med eksempelet for å se på begrepene interpolasjon og ekstrapolasjon. Dersom vi henter ut flere tall fra <a class="reference external" href="http://ssb.no">ssb.no</a> finner vi at antall solgte elbiler i Molde i 2015 og 2019 var:</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/elbiltabell2.png"><img alt="../../_images/elbiltabell2.png" src="../../_images/elbiltabell2.png" style="width: 271.5px; height: 88.8px;" /></a>
+</figure>
+<p>Vi vil undersøke hvordan dette passer med modellen vi har funnet.</p>
+<p><strong>Interpolasjon</strong>
+Interpolasjon betyr å bruke modellen innenfor området begrenset av målepunktene. Når vi skal bruke modellen for 2015 (<span class="math notranslate nohighlight">\(x=2\)</span>), så interpoler vi. Vi kan overføre funksjonen til grafikkfeltet og lese av den der, men det enkleste er å bruke feltet for “Symbolsk inntasting”. Der skriver vi inn <span class="math notranslate nohighlight">\(x=2\)</span> og får ut verdien til funksjonen.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/symbolskutregning1.png"><img alt="../../_images/symbolskutregning1.png" src="../../_images/symbolskutregning1.png" style="width: 436.79999999999995px; height: 39.9px;" /></a>
+</figure>
+<p>Vi får <span class="math notranslate nohighlight">\(143\)</span> solgte elbiler som ligger noe under, men ikke så langt under den riktige verdien. At vi får en for lav verdi betyr at den virkelige veksten i starten av perioden var prosentvis større enn den var senere i perioden.</p>
+<p><strong>Ekstrapolasjon</strong>
+Ekstrapolasjon betyr å bruke modellen utenfor området begrenset av målepunktene. Når vi skal bruke modellen for 2019 (<span class="math notranslate nohighlight">\(x=6\)</span>), så ekstrapolerer vi.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/symbolskutregning2.png"><img alt="../../_images/symbolskutregning2.png" src="../../_images/symbolskutregning2.png" style="width: 448.0px; height: 31.499999999999996px;" /></a>
+</figure>
+<p>Vi får <span class="math notranslate nohighlight">\(1008\)</span> solgte elbiler som ligger langt over den riktige verdien.</p>
+<p>Det vi ser over stemmer med det vi vanligvis observerer. Verdier funnet ved interpolasjon vil passe bedre med modellen enn verdier funnet ved ekstrapolasjon.</p>
+</div>
+</section>
+<section id="regresjon-med-programmering">
+<h2>Regresjon med programmering<a class="headerlink" href="#regresjon-med-programmering" title="Permalink to this headline">#</a></h2>
+<p>Under er det gitt et program som utfører lineær regresjon på listene med <span class="math notranslate nohighlight">\(x\)</span>- og <span class="math notranslate nohighlight">\(y\)</span>-verdier. Programmet er delt opp med korte forklaringer før hele programmet (med mulighet for å endre) er gitt til slutt.</p>
+<p>Vi starter med å importere ekstra bibliotek som vi trenger.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pylab</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">curve_fit</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Så skriver vi inn listene med <span class="math notranslate nohighlight">\(x\)</span>- og <span class="math notranslate nohighlight">\(y\)</span>-verdier som vi skal utføre regresjonen på. Disse listene kommer fra datapunktene våre (målinger).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.9</span><span class="p">,</span> <span class="mf">4.1</span><span class="p">,</span> <span class="mf">6.3</span><span class="p">,</span> <span class="mf">7.2</span><span class="p">,</span> <span class="mf">10.8</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Videre lager vi en funksjon som viser hvilken modell vi ønsker å bruke. I dette eksempelet er det en lineær modell med variabel <span class="math notranslate nohighlight">\(x\)</span> og parametre <span class="math notranslate nohighlight">\(a\)</span> og <span class="math notranslate nohighlight">\(b\)</span>. Her kan vi lage akkurat den funksjonstypen vi ønsker, eller sette opp en kombinasjon av flere funksjonstyper. Under definisjonen av modellen bruker vi kommandoen curve_fit som utfører selve regresjonen og finner parametrene. De skrives så ut med to desimaler.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">modell</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="n">b</span>
+
+<span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">]</span> <span class="o">=</span> <span class="n">curve_fit</span><span class="p">(</span><span class="n">modell</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a = &quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b = &quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a =  2.09
+b =  -0.21
+</pre></div>
+</div>
+</div>
+</div>
+<p>Dersom vi ønsker å lage en graf av modellen kan vi bruke koden under. Den starter med å velge verdiene for <span class="math notranslate nohighlight">\(x\)</span> som vi skal sette inn i modellen. Så beregner den <span class="math notranslate nohighlight">\(y\)</span>-verdiene for alle disse <span class="math notranslate nohighlight">\(x\)</span>-verdiene. Resten av koden er ulike kommandoer for å tilpasse grafen.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x_akse</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">y_modell</span> <span class="o">=</span> <span class="n">modell</span><span class="p">(</span><span class="n">x_akse</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+
+<span class="n">plot</span><span class="p">(</span><span class="n">x_akse</span><span class="p">,</span> <span class="n">y_modell</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Lineær modell&quot;</span><span class="p">)</span>
+<span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Datapunkter&quot;</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">)</span>
+<span class="n">grid</span><span class="p">()</span>
+<span class="n">legend</span><span class="p">()</span>
+<span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/modellering_10_0.png" src="../../_images/modellering_10_0.png" />
+</div>
+</div>
+<p>Under er hele programmet satt sammen.</p>
+<ul class="simple">
+<li><p>Endre på listene med <span class="math notranslate nohighlight">\(x\)</span>- og <span class="math notranslate nohighlight">\(y\)</span>-verdier og se hvordan modellen endrer seg.</p></li>
+<li><p>Gjør om modellen til en andregradsmodell. Da må du innføre en ekstra parameter <span class="math notranslate nohighlight">\(c\)</span>, endre på linje 7, 8, 10 og 15. I tillegg må du legge til ei linje etter linje 12.</p></li>
+<li><p>Klarer du å lage en eksponentialmodell.</p></li>
+</ul>
+<iframe src="https://trinket.io/embed/python3/3adb2590c6" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./docs\funksjoner"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="derivert.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Den deriverte</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="funksjoner_geogebra.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Funksjoner i GeoGebra</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Kristoffer Stige<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
