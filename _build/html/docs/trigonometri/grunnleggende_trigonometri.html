@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Tangens, sinus og cosinus" href="tan_sin_cos.html" />
@@ -454,6 +456,52 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="grunnleggende-trigonometri">
 <h1>Grunnleggende trigonometri<a class="headerlink" href="#grunnleggende-trigonometri" title="Permalink to this headline">#</a></h1>
+<p>Ordet trigonometri betyr <em>trekantmåling</em>. Trigonometrien er den delen av geometrien som omhandler egenskaper til trekanter. Dette er et viktig matematisk felt som brukes i for eksempel astronomi, landmåling, mekanikk og regning på bølger.</p>
+<p>Selv om ordet trigonometri ikke har vært brukt, så har dere sett mye på trigonometri i ungdomsskolen.</p>
+<div class="admonition-areal admonition">
+<p class="admonition-title">Areal</p>
+<p>Arealet av en trekant er gitt ved</p>
+<div class="math notranslate nohighlight">
+\[A=\frac{gh}{2}\]</div>
+<p>der <span class="math notranslate nohighlight">\(g\)</span> er grunnlinjen og <span class="math notranslate nohighlight">\(h\)</span> er høyden. Høyden er den lengden til det kortete linjestykket mellom grunnlinjen og motstående hjørne.</p>
+</div>
+<div class="admonition-vinkler admonition">
+<p class="admonition-title">Vinkler</p>
+<p>Vi navngir hjørnene i en trekant med store bokstaver og følger vanligvis alfabetet og går mot klokka rundt trekanten. Dersom hjørnene i en trekant er <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> og <span class="math notranslate nohighlight">\(C\)</span>, så kan vinkelen til hjørne <span class="math notranslate nohighlight">\(A\)</span> navngis på tre måter:</p>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../_images/trekantvinkler.png"><img alt="../../_images/trekantvinkler.png" src="../../_images/trekantvinkler.png" style="width: 200.4px; height: 151.6px;" /></a>
+</figure>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\angle A\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\angle CAB\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\angle BAC\)</span></p></li>
+</ul>
+<p>Vi velger den første varianten hvis det ikke er tvetydig.</p>
+<p>Vinkelsummen i en trekant er <span class="math notranslate nohighlight">\(180^{\circ}\)</span>. Det betyr at <span class="math notranslate nohighlight">\(\angle A + \angle B + \angle C = 180^{\circ}\)</span>.</p>
+</div>
+<div class="admonition-lengder-og-sider admonition">
+<p class="admonition-title">Lengder og sider</p>
+<p>Sidene i en trekant kan navngis ved å bruke hjørnene siden går mellom. For eksempel vil siden mellom <span class="math notranslate nohighlight">\(B\)</span> og <span class="math notranslate nohighlight">\(C\)</span> være gitt ved <span class="math notranslate nohighlight">\(BC\)</span>. Det er også vanlig å navngi motstående side til en vinkel med samme navn med små bokstaver. Vi kan derfor skrive:</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/trekantsider.png"><img alt="../../_images/trekantsider.png" src="../../_images/trekantsider.png" style="width: 206.4px; height: 155.60000000000002px;" /></a>
+</figure>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(BC = a\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(AC = b\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(AB = c\)</span></p></li>
+</ul>
+</div>
+<div class="admonition-spesielle-trekanter admonition">
+<p class="admonition-title">Spesielle trekanter</p>
+<p><strong>Rettvinklet trekant</strong>
+Trekant der en vinkel er <span class="math notranslate nohighlight">\(90^{\circ}\)</span>. I slike trekanter kalles de to korteste sidene for <em>katet</em> og den lengste siden for <em>hypotenus</em>.</p>
+<p><strong>Likesidet trekant</strong>
+Trekant der alle sidene er like lange. Da vil alle vinklene være <span class="math notranslate nohighlight">\(60^{\circ}\)</span>.</p>
+<p><strong>30-60-90 trekant (halvt likesidet trekant)</strong>
+Trekant der vinklene er <span class="math notranslate nohighlight">\(30^{\circ}\)</span>, <span class="math notranslate nohighlight">\(60^{\circ}\)</span> og <span class="math notranslate nohighlight">\(90^{\circ}\)</span>. I disse trekantene vil alltid hypotenusen være dobbelt så lang som den korteste kateten.</p>
+<p><strong>Likebeint trekant</strong>
+Trekant der to sider er like lange. Vinklene i motstående hjørne til disse sidene vil også være like lange.</p>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
