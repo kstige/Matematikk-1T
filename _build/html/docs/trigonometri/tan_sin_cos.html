@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Tangens, sinus og cosinus &#8212; Matematikk 1T</title>
+    <title>Trigonometriske forhold &#8212; Matematikk 1T</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -55,7 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Arealsetningen" href="arealsetningen.html" />
+    <link rel="next" title="Bruk av tangens, sinus og cosinus" href="bruk_av_tansincos.html" />
     <link rel="prev" title="Grunnleggende trigonometri" href="grunnleggende_trigonometri.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -302,7 +302,17 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Tangens, sinus og cosinus
+   Trigonometriske forhold
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="bruk_av_tansincos.html">
+   Bruk av tangens, sinus og cosinus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="enhetssirkelen.html">
+   Enhetssirkelen
   </a>
  </li>
  <li class="toctree-l1">
@@ -430,23 +440,70 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inverser">
+   Inverser
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#eksakte-verdier">
+   Eksakte verdier
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Tangens, sinus og cosinus</h1>
+                <h1>Trigonometriske forhold</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inverser">
+   Inverser
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#eksakte-verdier">
+   Eksakte verdier
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -454,8 +511,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tangens-sinus-og-cosinus">
-<h1>Tangens, sinus og cosinus<a class="headerlink" href="#tangens-sinus-og-cosinus" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="trigonometriske-forhold">
+<h1>Trigonometriske forhold<a class="headerlink" href="#trigonometriske-forhold" title="Permalink to this headline">#</a></h1>
 <figure class="align-right">
 <a class="reference internal image-reference" href="../../_images/formlik.png"><img alt="../../_images/formlik.png" src="../../_images/formlik.png" style="width: 308.7px; height: 223.5px;" /></a>
 </figure>
@@ -463,7 +520,107 @@ title="Print to PDF"
 <p>Fra formlikhet vet vi at <span class="math notranslate nohighlight">\(\frac{AB}{DE}=\frac{BC}{EF}\)</span>. Sett inn tall og sjekk at det stemmer. Hvis vi deler begge sider av denne likningen (proporsjonen) med <span class="math notranslate nohighlight">\(BC\)</span> og multipliserer med <span class="math notranslate nohighlight">\(DE\)</span>, så får vi:</p>
 <div class="math notranslate nohighlight">
 \[\frac{AB}{BC}=\frac{DE}{EF}\]</div>
-<p>Vi ser at forholdet mellom to sider i <span class="math notranslate nohighlight">\(\bigtriangleup ABC\)</span> er likt forholdet mellom de to samsvarende i <span class="math notranslate nohighlight">\(\bigtriangleup DEF\)</span>.</p>
+<p>Vi ser at forholdet mellom to sider i <span class="math notranslate nohighlight">\(\bigtriangleup ABC\)</span> er likt forholdet mellom de to samsvarende i <span class="math notranslate nohighlight">\(\bigtriangleup DEF\)</span>. Alle trekanter som er formlike med disse må ha det samme forholdet mellom disse sidene. Det betyr at det er en sammenheng mellom sidene til en trekant og vinklene i trekanten. Det er disse sammenhengene vi skal se på her. Først må vi få plass hvordan vi skiller katetene i rettvinklede trekanter fra hverandre.</p>
+<div class="admonition-hosliggende-og-motstaende-katet admonition">
+<p class="admonition-title">Hosliggende og motstående katet</p>
+<p>I en rettvinklet trekant vet vi at den lengste siden kalles hypotenus, mens de to andre sidene kalles kateter. For å skille mellom katetene sier vi at:</p>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../_images/mothos.png"><img alt="../../_images/mothos.png" src="../../_images/mothos.png" style="width: 231.6px; height: 142.79999999999998px;" /></a>
+</figure>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(AB\)</span> er hosliggende katet til <span class="math notranslate nohighlight">\(\angle A\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(BC\)</span> er motstående katet til <span class="math notranslate nohighlight">\(\angle A\)</span></p></li>
+</ul>
+<p>Tilsvarende er</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(BC\)</span> er hosliggende katet til <span class="math notranslate nohighlight">\(\angle C\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(AB\)</span> er motstående katet til <span class="math notranslate nohighlight">\(\angle C\)</span></p></li>
+</ul>
+</div>
+<p>Tilbake til eksempelet over, så ser vi altså at forholdet mellom motstående og hosliggende katet til <span class="math notranslate nohighlight">\(\angle A\)</span> er <span class="math notranslate nohighlight">\(\frac{4}{3}\)</span>, og at dette forholdet stemmer for alle trekanter med denne vinkelen. Dette forholdet kalles <em>tangens</em> til <span class="math notranslate nohighlight">\(\angle A\)</span>.</p>
+<p>Tilsvarende er det gitt navn til noen andre forhold mellom sider i rettvinklede trekanter.</p>
+<div class="admonition-tangens-sinus-og-cosinus admonition">
+<p class="admonition-title">Tangens, sinus og cosinus</p>
+<p>Dersom <span class="math notranslate nohighlight">\(v\)</span> er en av de to spisse vinklene i en rettvinklet trekant, så er:</p>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../_images/tansincos.png"><img alt="../../_images/tansincos.png" src="../../_images/tansincos.png" style="width: 269.5px; height: 161.35px;" /></a>
+</figure>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+\tan v &amp;= \frac{\text{motstående katet til } v}{\text{hosliggende katet til } v} \\
+\sin v &amp;= \frac{\text{motstående katet til } v}{\text{hypotenus}} \\
+\cos v &amp;= \frac{\text{hosliggende katet til } v}{\text{hypotenus}}
+\end{align}
+\)</span></p>
+</div>
+<p>Tenk på disse tre begrepene som navn på forhold mellom sider. Det betyr at vi i stedet for å måtte si <em>forholdet mellom motstående side og hypotenusen til vinkel v</em>, så kan vi si <span class="math notranslate nohighlight">\(\sin v\)</span>. Bruken av disse tre forholdstallene utvider informasjonen vår om rettvinklede trekanter betraktelig. GeoGebra (og mange kalkulatorer) har innebygd tabeller med verdier over tangens, sinus og cosinus til alle mulige vinkler. Det ser vi på i det første eksempelet.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Utregning ved hjelp av GeoGebra</p>
+<p>Vi skal finne tangens, sinus og cosinus til vinkelen <span class="math notranslate nohighlight">\(50^{\circ}\)</span>. Det enkleste er å bruke CAS. For at GeoGebra skal skjønne at vi skriver inn et tall i grader, så må vi sette inn gradetegnet med å trykke *Alt + o$.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/tansincos50.png"><img alt="../../_images/tansincos50.png" src="../../_images/tansincos50.png" style="width: 133.0px; height: 147.5px;" /></a>
+</figure>
+<p><em>Merk: Her har vi brukt tilnærmetlik-knappen nest lengst til venstre i menyen for å få avrundet til desimaltall.</em></p>
+<p>Ut fra dette, så vet vi altså forholdet mellom alle sidene i trekanten. For eksempel, så betyr verdien vi får fra tangens at den motstående kateten delt på den hosliggende kateten gir 1,19. Dersom vi i tillegg kjenner en av sidene, så har vi mulighet til å finne de to andre. Det skal vi se på i et senere eksempel.</p>
+</div>
+<section id="inverser">
+<h2>Inverser<a class="headerlink" href="#inverser" title="Permalink to this headline">#</a></h2>
+<p>Det er også bygd inn omvendte funksjoner som kan ta oss fra fra forholdstallet til vinkelen. Disse kalles for invers (eller <em>arcus</em>) tangens og så videre.</p>
+<div class="admonition-inverser admonition">
+<p class="admonition-title">Inverser</p>
+<p><span class="math notranslate nohighlight">\(\tan\)</span>, <span class="math notranslate nohighlight">\(\sin\)</span> og <span class="math notranslate nohighlight">\(\cos\)</span> gir oss forholdstall mellom sider i en trekant.</p>
+<p><span class="math notranslate nohighlight">\(\tan^{-1}\)</span>, <span class="math notranslate nohighlight">\(\sin^{-1}\)</span> og <span class="math notranslate nohighlight">\(\cos^{-1}\)</span> gir oss vinklene når et forholdstall er kjent.</p>
+</div>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Inverser</p>
+<p>Finn ut hvor stor den markerte vinkelen er i figuren under.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/invers.png"><img alt="../../_images/invers.png" src="../../_images/invers.png" style="width: 188.0px; height: 144.0px;" /></a>
+</figure>
+<p>Først ser vi at vi kjenner motstående og hosliggende katet til vinkelen. Da kan vi bruke <span class="math notranslate nohighlight">\(\tan^{-1}\)</span>. For å finne denne er det enklest å skrive inn <em>atand(3/4)</em>. atan står for inverstangens, mens d-en på slutten sier at vi vil ha svaret i grader.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/taninvers.png"><img alt="../../_images/taninvers.png" src="../../_images/taninvers.png" style="width: 176.5px; height: 71.5px;" /></a>
+</figure>
+</div>
+</section>
+<section id="eksakte-verdier">
+<h2>Eksakte verdier<a class="headerlink" href="#eksakte-verdier" title="Permalink to this headline">#</a></h2>
+<p>For de fleste vinkler vil tangens, sinus og cosinus best være representert ved et desimaltall. Det finnes imidlertid noen spesielle vinkler som kan være verdt å merke seg.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Vinkel v</strong></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(0^{\circ}\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(30^{\circ}\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(45^{\circ}\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(60^{\circ}\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(90^{\circ}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>tan v</strong></p></td>
+<td><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{\sqrt{3}}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\sqrt{3}\)</span></p></td>
+<td><p>ikke definert</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>sin v</strong></p></td>
+<td><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{2}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{\sqrt{2}}{2}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{\sqrt{3}}{2}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>cos v</strong></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{\sqrt{3}}{2}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{\sqrt{2}}{2}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{2}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -500,10 +657,10 @@ title="Print to PDF"
             <p class="prev-next-title">Grunnleggende trigonometri</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="arealsetningen.html" title="next page">
+    <a class='right-next' id="next-link" href="bruk_av_tansincos.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Arealsetningen</p>
+        <p class="prev-next-title">Bruk av tangens, sinus og cosinus</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

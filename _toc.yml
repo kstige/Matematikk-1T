@@ -49,6 +49,8 @@ parts:
   chapters:
   - file: docs/trigonometri/grunnleggende_trigonometri
   - file: docs/trigonometri/tan_sin_cos
+  - file: docs/trigonometri/bruk_av_tansincos
+  - file: docs/trigonometri/enhetssirkelen
   - file: docs/trigonometri/arealsetningen
   - file: docs/trigonometri/sinussetningen
   - file: docs/trigonometri/cosinussetningen
