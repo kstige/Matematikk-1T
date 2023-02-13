@@ -54,10 +54,10 @@ repository:
 
 
 # GDPR
-sphinx:
-  config:
-    templates_path: ['_templates']
+# sphinx:
+#   config:
+#     templates_path: ['_templates']
 
-html:
-  extra_navbar: |
-    <a href="#" id="open_preferences_center">Update cookies preferences</a>
+# html:
+#   extra_navbar: |
+#     <a href="#" id="open_preferences_center">Update cookies preferences</a>
