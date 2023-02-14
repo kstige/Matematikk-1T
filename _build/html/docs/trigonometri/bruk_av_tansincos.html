@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Enhetssirkelen" href="enhetssirkelen.html" />
@@ -464,6 +466,63 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="bruk-av-tangens-sinus-og-cosinus">
 <h1>Bruk av tangens, sinus og cosinus<a class="headerlink" href="#bruk-av-tangens-sinus-og-cosinus" title="Permalink to this headline">#</a></h1>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: En kjent side og en kjent vinkel</p>
+<p>Vi skal finne de to ukjente sidene i trekanten under.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/eksempeltrig.png"><img alt="../../_images/eksempeltrig.png" src="../../_images/eksempeltrig.png" style="width: 431.0px; height: 244.5px;" /></a>
+</figure>
+<p>Vi starter med å se at vi kjenner en vinkel og den hosliggende kateten. Hvis vi settet opp de tre trigonometriske forholdene, så får vi:</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+\tan (26,6^{\circ}) &amp;= \frac{\text{motstående katet}}{4} \\
+\sin (26,6^{\circ}) &amp;= \frac{\text{motstående katet}}{\text{hypotenus}} \\
+\cos (26,6^{\circ}) &amp;= \frac{4}{\text{hypotenus}}
+\end{align}
+\)</span></p>
+<p>Vi ser da at vi kan bruke tangens for å finne motstående katet og cosinus for å finne hypotenus.</p>
+<p>Fra likninga for tangens får vi</p>
+<p><span class="math notranslate nohighlight">\(\text{motstående katet} = 4\cdot \tan (26,6^{\circ}) \approx 2\)</span></p>
+<p>Fra likninga for cosinus får vi</p>
+<p><span class="math notranslate nohighlight">\(\text{hypotenus} = \frac{4}{\cos (26,6^{\circ}) } \approx 4,5\)</span></p>
+</div>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: To kjente sider</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/eksempeltrig2.png"><img alt="../../_images/eksempeltrig2.png" src="../../_images/eksempeltrig2.png" style="width: 431.5px; height: 265.0px;" /></a>
+</figure>
+<p>Vi ser at vi kjenner motstående katet til <span class="math notranslate nohighlight">\(v\)</span> og hypotenusen. Da kan vi bruke sinus.</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+\sin v &amp;= \frac{\text{motstående katet}}{\text{hypotenus}}=\frac{2,8}{4} \\
+v &amp;=\sin^{-1}\frac{2,8}{4}\approx 44,4^{\circ}
+\end{align}
+\)</span></p>
+</div>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Bevise eksakt verdi</p>
+<p>Vi skal bruke en 30-60-90 trekant og Pytagoras til å bevise de eksakte verdiene for sinus, cosinus og tangens til en vinkel på <span class="math notranslate nohighlight">\(30^{\circ}\)</span>.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/beviseksakt30.png"><img alt="../../_images/beviseksakt30.png" src="../../_images/beviseksakt30.png" style="width: 326.0px; height: 218.0px;" /></a>
+</figure>
+<p>Vi vet at den korteste kateten er halvparten så lang som hypotenusen i en 30-60-90 trekant. Det betyr at:</p>
+<p><span class="math notranslate nohighlight">\(\sin 30^{\circ} = \frac{BC}{AC}=\frac{BC}{2BC}=\frac{1}{2}\)</span></p>
+<p>Pytagoras sier at AB^2+BC^2=AC^2 som gir:</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+AB = \sqrt{AC^2-BC^2} &amp;= \sqrt{(2BC)^2-BC^2}  \\
+&amp;= \sqrt{3BC^2}=\sqrt{3}BC
+\end{align}
+\)</span></p>
+<p>Da blir:</p>
+<p><span class="math notranslate nohighlight">\(
+\cos 30^{\circ}=\frac{AB}{AC}=\frac{\sqrt{3}BC}{2BC}=\frac{\sqrt{3}}{2}
+\)</span></p>
+<p>Til slutt får vi:</p>
+<p><span class="math notranslate nohighlight">\(
+\tan 30^{\circ}=\frac{BC}{AB}=\frac{BC}{\sqrt{3}BC}=\frac{1}{\sqrt{3}}
+\)</span></p>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
