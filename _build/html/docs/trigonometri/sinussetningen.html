@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Cosinussetningen" href="cosinussetningen.html" />
@@ -464,6 +466,65 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="sinussetningen">
 <h1>Sinussetningen<a class="headerlink" href="#sinussetningen" title="Permalink to this headline">#</a></h1>
+<p>Sinussetningen er en direkte konsekvens av arealsetningen. Vi husker at vi med arealsetningen kan finne arealet på tre måter.</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{2}bc\sin A = \frac{1}{2}ac\sin B = \frac{1}{2}ab\sin C\]</div>
+<p>Vi deler med <span class="math notranslate nohighlight">\(\frac{1}{2}abc\)</span> i hvert uttrykk. Da får vi:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\sin A}{A}=\frac{\sin B}{B}=\frac{\sin C}{C}\]</div>
+<p>Dette er sinussetningen.</p>
+<div class="admonition-sinussetningen admonition">
+<p class="admonition-title">Sinussetningen</p>
+<p>For alle trekanter gjelder det at forholdet mellom sinus til en vinkel og lengden av motstående side er konstant.</p>
+<div class="math notranslate nohighlight">
+\[\frac{\sin A}{A}=\frac{\sin B}{B}=\frac{\sin C}{C}\]</div>
+<p>Vi kan også skrive sinussetningen <em>oppned</em>:</p>
+<div class="math notranslate nohighlight">
+\[\frac{A}{\sin A}=\frac{B}{\sin B}=\frac{C}{\sin C}\]</div>
+</div>
+<p>Sinussetningen viser at de tre forholdene er lik hverandre. Når vi skal bruke sinussetningen velger vi to av forholdene og setter de lik hverandre.</p>
+<p>Dersom vi skal bruke sinussetningen til å finne en ukjent vinkel må vi være oppmerksom på at det kan være to vinkler (supplementvinkler) som passer med opplysningene i oppgaven.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Bruk av sinussetningen</p>
+<p>I <span class="math notranslate nohighlight">\(\bigtriangleup ABC\)</span> er <span class="math notranslate nohighlight">\(a=6\)</span>, <span class="math notranslate nohighlight">\(b=8\)</span>, og <span class="math notranslate nohighlight">\(\angle A= 35^{\circ}\)</span>. Finn <span class="math notranslate nohighlight">\(\angle B\)</span>.</p>
+<p>Vi starter med å tegne en hjelpefigur. Vi starter med å tegne <span class="math notranslate nohighlight">\(b=8\)</span> og <span class="math notranslate nohighlight">\(\angle A = 35^{\circ}\)</span>. Så setter vi en passer i <span class="math notranslate nohighlight">\(C\)</span> med radius 6 og finner to mulige punkt <span class="math notranslate nohighlight">\(B_1\)</span> og <span class="math notranslate nohighlight">\(B_2\)</span>.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/sinussetningen.png"><img alt="../../_images/sinussetningen.png" src="../../_images/sinussetningen.png" style="width: 459.6px; height: 245.20000000000002px;" /></a>
+</figure>
+<p>Så bruker vi sinussetningen</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+\frac{\sin A}{a} &amp;= \frac{\sin B}{b} \\
+\sin B &amp;= \frac{b\cdot \sin A}{a} = \frac{8\sin 35^{\circ}}{6}\approx 0,76 \\
+\angle B &amp;= \sin^{-1} 0,76 \approx 49,5^{\circ}
+\)</span></p>
+<p>Fra figuren ser vi at det her må være <span class="math notranslate nohighlight">\(\angle B_2\)</span>. Det vil si at de to mulighetene for <span class="math notranslate nohighlight">\(\angle B\)</span> er:</p>
+<p><span class="math notranslate nohighlight">\(
+\angle B_1 = 180^{\circ} - 49,5^{\circ} = 130,5^{\circ} \\
+\angle B_2 = 49,5^{\circ}
+\)</span></p>
+</div>
+<p>Hvis vi ikke tegner skikkelig hjelpefigur som viser at det er mulig med to løsninger, bør vi til slutt gjøre en vurdering av om løsningene stemmer. Det ser vi i neste eksempel.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Bruk av sinussetningen</p>
+<p>I <span class="math notranslate nohighlight">\(\bigtriangleup ABC\)</span> er <span class="math notranslate nohighlight">\(a=6\)</span>, <span class="math notranslate nohighlight">\(b=8\)</span>, og <span class="math notranslate nohighlight">\(\angle A= 50^{\circ}\)</span>. Finn <span class="math notranslate nohighlight">\(\angle B\)</span>.</p>
+<p>Vi starter med å tegne en hjelpefigur. Vi starter med å tegne <span class="math notranslate nohighlight">\(b=8\)</span> og <span class="math notranslate nohighlight">\(\angle A = 35^{\circ}\)</span>. Så setter vi en passer i <span class="math notranslate nohighlight">\(C\)</span> med radius 6 og finner to mulige punkt <span class="math notranslate nohighlight">\(B_1\)</span> og <span class="math notranslate nohighlight">\(B_2\)</span>.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/sinussetningen.png"><img alt="../../_images/sinussetningen.png" src="../../_images/sinussetningen.png" style="width: 459.6px; height: 245.20000000000002px;" /></a>
+</figure>
+<p>Så bruker vi sinussetningen</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+\frac{\sin A}{a} &amp;= \frac{\sin B}{b} \\
+\sin B &amp;= \frac{b\cdot \sin A}{a} = \frac{8\sin 35^{\circ}}{6}\approx 0,76 \\
+\angle B &amp;= \sin^{-1} 0,76 \approx 49,5^{\circ}
+\)</span></p>
+<p>Fra figuren ser vi at det her må være <span class="math notranslate nohighlight">\(\angle B_2\)</span>. Det vil si at de to mulighetene for <span class="math notranslate nohighlight">\(\angle B\)</span> er:</p>
+<p><span class="math notranslate nohighlight">\(
+\angle B_1 = 180^{\circ} - 49,5^{\circ} = 130,5^{\circ} \\
+\angle B_2 = 49,5^{\circ}
+\)</span></p>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
