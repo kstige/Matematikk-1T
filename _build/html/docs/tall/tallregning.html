@@ -482,6 +482,16 @@ title="Print to PDF"
    Potenser
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kvadratrotter">
+   Kvadratrøtter
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#primtall-og-faktorisering">
+   Primtall og faktorisering
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -511,6 +521,16 @@ title="Print to PDF"
    Potenser
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kvadratrotter">
+   Kvadratrøtter
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#primtall-og-faktorisering">
+   Primtall og faktorisering
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -526,18 +546,7 @@ title="Print to PDF"
 <p>Vi skal her raskt repetere litt om grunnleggende tallregning.</p>
 <section id="regnerekkefolge">
 <h2>Regnerekkefølge<a class="headerlink" href="#regnerekkefolge" title="Permalink to this headline">#</a></h2>
-<p>De fire grunnleggende regneoperasjonene er:</p>
-<ul class="simple">
-<li><p>addisjon</p></li>
-<li><p>subtraksjon</p></li>
-<li><p>multiplikasjon</p></li>
-<li><p>divisjon</p></li>
-</ul>
-<p>I tillegg kommer vi til å ha bruk for:</p>
-<ul class="simple">
-<li><p>potenser</p></li>
-<li><p>røtter (kvadratrøtter)</p></li>
-</ul>
+<p>De fire grunnleggende regneoperasjonene er addisjon, subtraksjon, multiplikasjon og divisjon. I tillegg kommer vi til å ha bruk for potenser og røtter (kvadratrøtter).</p>
 <p>Når vi skal utføre et sammensatt regnestykke, så benytter vi oss av denne regnerekkefølgen</p>
 <div class="admonition-regnerekkefolgen admonition">
 <p class="admonition-title">Regnerekkefølgen</p>
@@ -548,16 +557,63 @@ title="Print to PDF"
 <li><p>Addisjon og subtraksjon</p></li>
 </ol>
 </div>
+<p>Vi minner også om noen viktige regneregler.</p>
+<div class="admonition-regneregler-for-reelle-tall admonition">
+<p class="admonition-title">Regneregler for reelle tall</p>
+<p>Vi lar <span class="math notranslate nohighlight">\(a, b \in \mathbf{R}\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(
+a+b=b+a \ 
+a\cdot b = b\cdot a \\
+a\cdot(b \pm c)= a\cdot b \pm a\cdot c \\
+(-a)\cdot b = -a\cdot b \\
+(-a) \cdot (-b) = a\cdot b
+\)</span>
+De to første bruker vi stort sett uten å tenke over dem. Det er den <em>kommutative</em> egenskapen til addisjon og multiplikasjon. Vi kan addere og multiplisere i den rekkefølgen vi ønsker.</p>
+<p>Nummer tre er den såkalte <em>assosiative</em> egenskapen til multiplikasjon med en parentes. <span class="math notranslate nohighlight">\(\pm\)</span> inne i parentesen betyr at egenskapen gjelder uansett om det står <span class="math notranslate nohighlight">\(+\)</span> eller <span class="math notranslate nohighlight">\(-\)</span>.</p>
+<p>De to siste reglene er det vi husker som at multiplikasjon (eller divisjon) med samme fortegn gir positivt svar, mens multiplikasjon/divisjon med ulike fortegn gir negativt svar.</p>
+</div>
 </section>
 <section id="potenser">
 <h2>Potenser<a class="headerlink" href="#potenser" title="Permalink to this headline">#</a></h2>
 <p>En potens er en gjentatt multiplikasjon.</p>
 <div class="admonition-definisjon-av-potens admonition">
 <p class="admonition-title">Definisjon av potens</p>
-<p><span class="math notranslate nohighlight">\(a^n\)</span> betyr at vi skal multiplisere <span class="math notranslate nohighlight">\(a\)</span> med seg selv <span class="math notranslate nohighlight">\(n\)</span> ganger.</p>
+<p>Dersom <span class="math notranslate nohighlight">\(a\in\mathbf{R}\)</span> og <span class="math notranslate nohighlight">\(n\in\mathbf{N}\)</span>, så betyr <span class="math notranslate nohighlight">\(a^n\)</span> at vi skal multiplisere <span class="math notranslate nohighlight">\(a\)</span> med seg selv <span class="math notranslate nohighlight">\(n\)</span> ganger. <span class="math notranslate nohighlight">\(a\)</span> kalles grunntallet, mens <span class="math notranslate nohighlight">\(n\)</span> er eksponenten.</p>
 <div class="math notranslate nohighlight">
-\[a^n=\underbrace{a\cdot a \cdots a}_{n \text{ganger}}\]</div>
+\[a^n=\underbrace{a\cdot a \cdots a}_{n \text{ ganger}}\]</div>
 </div>
+<p>All regning med potenser kan utføres fra definisjonen, men det blir mye mer effektivt dersom vi tar i bruk regnereglene for potenser. Vi beviser ikke regnereglene her, men de fleste faller ganske logisk ut fra definisjonen over.</p>
+<div class="admonition-regneregler-for-potenser admonition">
+<p class="admonition-title">Regneregler for potenser</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(a^n \cdot a^m = a^{n+m}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{a^n}{a^m} = a^{n-m}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\left(a\cdot b\right)^n = a^n \cdot a^m\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\left(a^n\right)^m = a^{n\cdot m}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(a^0 = 1\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(a^{-n} = \frac{1}{a^n}\)</span></p></li>
+</ol>
+</div>
+</section>
+<section id="kvadratrotter">
+<h2>Kvadratrøtter<a class="headerlink" href="#kvadratrotter" title="Permalink to this headline">#</a></h2>
+<p>De fleste vet nok at <span class="math notranslate nohighlight">\(\sqrt{16} = 4\)</span>, men det kan være greit å definere begrepet kvadratrot skikkelig siden vi kommer til å benytte det inn mot blant annet andregradslikninger senere.</p>
+<div class="admonition-definisjon-av-kvadratrot admonition">
+<p class="admonition-title">Definisjon av kvadratrot</p>
+<p>Vi lar <span class="math notranslate nohighlight">\(a\)</span> være et positivt reelt tall. Kvadratroten av <span class="math notranslate nohighlight">\(a\)</span> er det positive tallet som multiplisert med seg selv gir <span class="math notranslate nohighlight">\(a\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\left(\sqrt{a}\right)^2=a\]</div>
+</div>
+<p>I definisjonen over er det to ting som er viktig å legge merke til.</p>
+<ol class="simple">
+<li><p>Vi kan kun ta kvadratroten av positive reelle tall.</p></li>
+<li><p>Kvadratroten er et positivt tall. Selv om både <span class="math notranslate nohighlight">\((-4)^2=16\)</span> og <span class="math notranslate nohighlight">\(4^2=16\)</span>, så er <span class="math notranslate nohighlight">\(\sqrt{16}= 4\)</span>.</p></li>
+</ol>
+<p>Generelt kan vi skrive at <span class="math notranslate nohighlight">\(\sqrt{a^2}=|a|\)</span>. Der <span class="math notranslate nohighlight">\(|a|\)</span> er absoluttverdien til tallet <span class="math notranslate nohighlight">\(a\)</span>. Med absoluttverdien mener vi avstanden tallet har fra <span class="math notranslate nohighlight">\(0\)</span> på tallinja. Vi kan derfor si at <span class="math notranslate nohighlight">\(|-4|=|4|=4\)</span> siden begge tall har avstanden <span class="math notranslate nohighlight">\(4\)</span> fra <span class="math notranslate nohighlight">\(0\)</span>.</p>
+</section>
+<section id="primtall-og-faktorisering">
+<h2>Primtall og faktorisering<a class="headerlink" href="#primtall-og-faktorisering" title="Permalink to this headline">#</a></h2>
 </section>
 </section>
 
