@@ -11,6 +11,7 @@ parts:
   chapters:
   - file: docs/tall/tallmengder
   - file: docs/tall/tallregning
+  - file: docs/tall/bevis
 - caption: Algebra og likninger
   chapters:
   - file: docs/algebralikninger/intro_algebra
