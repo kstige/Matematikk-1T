@@ -492,6 +492,11 @@ title="Print to PDF"
    Primtall og faktorisering
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#brokregning">
+   Brøkregning
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -531,6 +536,11 @@ title="Print to PDF"
    Primtall og faktorisering
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#brokregning">
+   Brøkregning
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -557,18 +567,16 @@ title="Print to PDF"
 <li><p>Addisjon og subtraksjon</p></li>
 </ol>
 </div>
-<p>Vi minner også om noen viktige regneregler.</p>
-<div class="admonition-regneregler-for-reelle-tall admonition">
+<p>Vi minner også om noen viktige regneregler for reelle tall.</p>
+<div class="dropdown admonition">
 <p class="admonition-title">Regneregler for reelle tall</p>
 <p>Vi lar <span class="math notranslate nohighlight">\(a, b \in \mathbf{R}\)</span>.</p>
-<p><span class="math notranslate nohighlight">\(
-a+b=b+a \ 
-a\cdot b = b\cdot a \\
-a\cdot(b \pm c)= a\cdot b \pm a\cdot c \\
-(-a)\cdot b = -a\cdot b \\
-(-a) \cdot (-b) = a\cdot b
-\)</span>
-De to første bruker vi stort sett uten å tenke over dem. Det er den <em>kommutative</em> egenskapen til addisjon og multiplikasjon. Vi kan addere og multiplisere i den rekkefølgen vi ønsker.</p>
+<p><span class="math notranslate nohighlight">\(a+b=b+a\)</span></p>
+<p><span class="math notranslate nohighlight">\(a\cdot b = b\cdot a\)</span></p>
+<p><span class="math notranslate nohighlight">\(a\cdot(b \pm c)= a\cdot b \pm a\cdot c\)</span></p>
+<p><span class="math notranslate nohighlight">\((-a)\cdot b = -a\cdot b\)</span></p>
+<p><span class="math notranslate nohighlight">\((-a) \cdot (-b) = a\cdot b\)</span></p>
+<p>De to første bruker vi stort sett uten å tenke over dem. Det er den <em>kommutative</em> egenskapen til addisjon og multiplikasjon. Vi kan addere og multiplisere i den rekkefølgen vi ønsker.</p>
 <p>Nummer tre er den såkalte <em>assosiative</em> egenskapen til multiplikasjon med en parentes. <span class="math notranslate nohighlight">\(\pm\)</span> inne i parentesen betyr at egenskapen gjelder uansett om det står <span class="math notranslate nohighlight">\(+\)</span> eller <span class="math notranslate nohighlight">\(-\)</span>.</p>
 <p>De to siste reglene er det vi husker som at multiplikasjon (eller divisjon) med samme fortegn gir positivt svar, mens multiplikasjon/divisjon med ulike fortegn gir negativt svar.</p>
 </div>
@@ -611,9 +619,81 @@ De to første bruker vi stort sett uten å tenke over dem. Det er den <em>kommut
 <li><p>Kvadratroten er et positivt tall. Selv om både <span class="math notranslate nohighlight">\((-4)^2=16\)</span> og <span class="math notranslate nohighlight">\(4^2=16\)</span>, så er <span class="math notranslate nohighlight">\(\sqrt{16}= 4\)</span>.</p></li>
 </ol>
 <p>Generelt kan vi skrive at <span class="math notranslate nohighlight">\(\sqrt{a^2}=|a|\)</span>. Der <span class="math notranslate nohighlight">\(|a|\)</span> er absoluttverdien til tallet <span class="math notranslate nohighlight">\(a\)</span>. Med absoluttverdien mener vi avstanden tallet har fra <span class="math notranslate nohighlight">\(0\)</span> på tallinja. Vi kan derfor si at <span class="math notranslate nohighlight">\(|-4|=|4|=4\)</span> siden begge tall har avstanden <span class="math notranslate nohighlight">\(4\)</span> fra <span class="math notranslate nohighlight">\(0\)</span>.</p>
+<p>Om kvadratrøtter kan det videre være nyttig å vite følgende.</p>
+<div class="admonition-viktig-om-kvadratrotter admonition">
+<p class="admonition-title">Viktig om kvadratrøtter</p>
+<div class="math notranslate nohighlight">
+\[\sqrt{a+b}\neq \sqrt{a}+\sqrt{b}\]</div>
+<div class="math notranslate nohighlight">
+\[\sqrt{a\cdot b} = \sqrt{a}\cdot \sqrt{b}\]</div>
+</div>
 </section>
 <section id="primtall-og-faktorisering">
 <h2>Primtall og faktorisering<a class="headerlink" href="#primtall-og-faktorisering" title="Permalink to this headline">#</a></h2>
+<p>Et primtall er et tall som kun kan divideres på seg selv og <span class="math notranslate nohighlight">\(1\)</span>. De første primtallene er <span class="math notranslate nohighlight">\(2, 3, 5, 7, 11 og 13\)</span>. Det kan bevises at det finnes uendelig antall primtall.</p>
+<p>Alle tall som ikke er primtall (bortsett fra <span class="math notranslate nohighlight">\(1\)</span>) kaller vi for sammensatte tall. Sammensatte tall kan vi skrive som et produkt av andre tall. Det kalles å faktorisere tallet. Et fundamentalt teorem i matematikken sier at alle tall kan skrives som et produkt av primtall på en unik måte. En slik faktorisering kalles <em>primtallsfaktorisering</em>. Vi kan for eksempel primtallsfaktorisere <span class="math notranslate nohighlight">\(84=2\cdot 2\cdot 3\cdot 7\)</span>.</p>
+<p>Faktorisering blir et viktig redskap når vi skal arbeide med likninger. Her nøyer vi oss med å se et eksempel på hvordan vi kan bruke faktorisering til å forenkle uttrykk med kvadratrøtter.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Forenkling av kvadratrøtter</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+\sqrt{250}-\sqrt{40} &amp;=\sqrt{25\cdot 10}-\sqrt{4\cdot 10}\\
+&amp;= \sqrt{25}\cdot\sqrt{10}-\sqrt{4}\cdot\sqrt{10} \\
+&amp;=5\cdot\sqrt{10}-2\cdot\sqrt{10} \\
+&amp;=3\sqrt{10}
+\end{align}
+\end{split}\]</div>
+</div>
+</section>
+<section id="brokregning">
+<h2>Brøkregning<a class="headerlink" href="#brokregning" title="Permalink to this headline">#</a></h2>
+<p>Når vi arbeider med brøker blir vi ofte nødt til å utvide eller forkorte en brøk. Det er viktig å huske på at det ikke endrer verdien til brøken. For å forkorte en brøk lønner det seg å starte med å faktorisere teller og nevner for så å forkorte vekk felles faktorer.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Utvide og forkorte en brøk</p>
+<p><strong>Utviding av brøk</strong></p>
+<p><span class="math notranslate nohighlight">\(\frac{1}{2}=\frac{1\cdot 5}{2\cdot 5}=\frac{5}{10}\)</span></p>
+<p><strong>Forkorting av brøk</strong></p>
+<p><span class="math notranslate nohighlight">\(\frac{84}{420}=\frac{2\cdot 2\cdot 3\cdot 7}{2\cdot 2\cdot 3\cdot 5\cdot 7}=\frac{1}{5}\)</span></p>
+</div>
+<p>Når vi skal addere eller subtrahere med brøk må vi først utvide alle brøkene til fellesnevner. Fellesnevneren er et tall som alle nevnerene går opp i (fellesnevneren kan divideres på alle de opprinnelige nevnerne). Vi vil alltid finne en fellesnevner ved å multiplisere alle nevnerene, men som oftest vil vi kunne finne enklere fellesnevnere enn det. Vi kommer tilbake til teknikker for å finne fellesnevner når vi arbeider med brøk og algebra.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Addisjon og subtraksjon av brøk</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+\frac{5}{12}+\frac{1}{4}-\frac{1}{3} &amp;=\frac{5}{12}+\frac{3}{12}-\frac{4}{12} \\
+&amp;= \frac{5+3-4}{12} \\ 
+&amp;=\frac{4}{12} \\
+&amp;= \frac{1}{3}
+\end{align}
+\end{split}\]</div>
+</div>
+<p>Multiplikasjon med brøk utføres ved å multiplisere teller med teller og nevner med nevner. Et viktig spesialtilfelle er multiplikasjon av brøk med heltall. Det kan vi utføre ved å gjøre om heltallet til en brøk med <span class="math notranslate nohighlight">\(1\)</span> i nevneren. Da ser vi at det effektivt sett blir det samme som å multiplisere heltallet inn i telleren.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Multiplikasjon med brøk</p>
+<p><strong>Multiplikasjon av to brøker</strong></p>
+<p><span class="math notranslate nohighlight">\(
+\frac{1}{4}\cdot\frac{2}{3} =\frac{1\cdot 2}{4\cdot 3}=\frac{2}{12}=\frac{1}{6}
+\)</span></p>
+<p><strong>Multiplikasjon av brøk med heltall</strong></p>
+<p><span class="math notranslate nohighlight">\(
+5\cdot\frac{2}{3}=\frac{5}{1}\cdot\frac{2}{3}=\frac{5\cdot 2}{1\cdot 3}=\frac{10}{3}
+\)</span></p>
+</div>
+<p>Divisjon med brøk utføres ved å multiplisere med den omvendte brøken. At det må være slik ser vi ved å skrive det som en brudden brøk (brøk med brøk) og utvide.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Divisjon med brøk</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{4} : \frac{2}{3}=\frac{1}{4}\cdot \frac{3}{2}=\frac{1\cdot 3}{4\cdot 2}= \frac{3}{8}
+\]</div>
+<p><strong>Forklaring med brudden brøk</strong></p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\frac{1}{4}}{\frac{2}{3}}=\frac{\frac{1}{4}\cdot 4\cdot 3}{\frac{2}{3}\cdot 4\cdot 3}=\frac{1\cdot 3}{4\cdot 2}=\frac{1}{4}\cdot \frac{3}{2}
+\]</div>
+</div>
 </section>
 </section>
 
