@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Tallmengder &#8212; Matematikk 1T</title>
+    <title>Tallregning &#8212; Matematikk 1T</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -55,8 +55,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Tallregning" href="tallregning.html" />
-    <link rel="prev" title="Matematikk 1T" href="../intro.html" />
+    <link rel="next" title="Introduksjon til algebra" href="../algebralikninger/intro_algebra.html" />
+    <link rel="prev" title="Tallmengder" href="tallmengder.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -114,13 +114,13 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tallmengder.html">
    Tallmengder
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tallregning.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Tallregning
   </a>
  </li>
@@ -413,7 +413,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/docs/tall/tallmengder.ipynb"
+        <a href="../../_sources/docs/tall/tallregning.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -473,13 +473,13 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#lister-og-intervaller">
-   Lister og intervaller
+  <a class="reference internal nav-link" href="#regnerekkefolge">
+   Regnerekkefølge
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#bruk-av-tallmengder">
-   Bruk av tallmengder
+  <a class="reference internal nav-link" href="#potenser">
+   Potenser
   </a>
  </li>
 </ul>
@@ -491,7 +491,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Tallmengder</h1>
+                <h1>Tallregning</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -502,13 +502,13 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#lister-og-intervaller">
-   Lister og intervaller
+  <a class="reference internal nav-link" href="#regnerekkefolge">
+   Regnerekkefølge
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#bruk-av-tallmengder">
-   Bruk av tallmengder
+  <a class="reference internal nav-link" href="#potenser">
+   Potenser
   </a>
  </li>
 </ul>
@@ -521,54 +521,42 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tallmengder">
-<h1>Tallmengder<a class="headerlink" href="#tallmengder" title="Permalink to this headline">#</a></h1>
-<p>I matematikk arbeider vi mye med tall og ofte vil vi være interessert i å se på ulike grupper av tall. Vi starter derfor med å definere noen viktige tallmengder som vi kommer til å arbeide med.</p>
-<p>De første tallene vi lærer oss er de naturlige tallene, eller telletallene. Videre kan vi utvide dem ved å legge til negative heltall. Det neste naturlige steget er å lage brøker, såkalte rasjonale tall. Når vi i tillegg tar med alle de irrasjonale tallene som ikke kan skrives som brøker, så har vi fylt opp hele tallinja av reelle tall.</p>
-<div class="admonition-noen-viktige-tallmengder admonition">
-<p class="admonition-title">Noen viktige tallmengder</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="tallregning">
+<h1>Tallregning<a class="headerlink" href="#tallregning" title="Permalink to this headline">#</a></h1>
+<p>Vi skal her raskt repetere litt om grunnleggende tallregning.</p>
+<section id="regnerekkefolge">
+<h2>Regnerekkefølge<a class="headerlink" href="#regnerekkefolge" title="Permalink to this headline">#</a></h2>
+<p>De fire grunnleggende regneoperasjonene er:</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(\mathbf{N}\)</span>: Naturlige tall - Hele positive tall - <span class="math notranslate nohighlight">\(1,2,3,\ldots\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\mathbf{Z}\)</span>: Hele tall - Alle hele tall - <span class="math notranslate nohighlight">\(\ldots, -2, -1, 0, 1, 2,\ldots\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\mathbf{Q}\)</span>: Rasjonale tall - Alle tall som kan skrives som brøker av hele tall</p></li>
-<li><p>Irrasjonale tall - Alle tall som ikke er rasjonale - <span class="math notranslate nohighlight">\(\pi, \sqrt{2}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\mathbf{R}\)</span>: Reelle tall - Alle tall på tallinja - Rasjonale + irrasjonale</p></li>
+<li><p>addisjon</p></li>
+<li><p>subtraksjon</p></li>
+<li><p>multiplikasjon</p></li>
+<li><p>divisjon</p></li>
 </ul>
-<p>Vi ser at rasjonale tall er en delmengde av de reelle tallene, de hele tallene er en delmengde av de rasjonale og at de naturlige tallene er en delmengde av de hele tallene. Dette kan vi illustrere med figuren under.</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../../_images/tallmengder.png"><img alt="../../_images/tallmengder.png" src="../../_images/tallmengder.png" style="width: 198.29999999999998px; height: 192.29999999999998px;" /></a>
-</figure>
-</div>
-<p>For å skrive at et tall hører til i en mengde bruker vi elementtegnet <span class="math notranslate nohighlight">\(\in\)</span>. Vi kan for eksempel skrive at <span class="math notranslate nohighlight">\(-2\in \mathbf{Z}\)</span> som betyr at <span class="math notranslate nohighlight">\(-2\)</span> hører til i de hele tallene. Dersom vi ønsker å skrive at et tall ikke er i en gitt mengde kan vi bruke <span class="math notranslate nohighlight">\(\notin\)</span>.</p>
-<section id="lister-og-intervaller">
-<h2>Lister og intervaller<a class="headerlink" href="#lister-og-intervaller" title="Permalink to this headline">#</a></h2>
-<p>Ofte vil svarene på oppgaver være konkrete lister av tall, eller intervaller på tallinjene. Da trenger vi symboler for å spesifisere disse.</p>
+<p>I tillegg kommer vi til å ha bruk for:</p>
 <ul class="simple">
-<li><p>{} - brukes for lister av tall</p></li>
-<li><p>[] - brukes for intervaller der endepunkt er med</p></li>
-<li><p><span class="math notranslate nohighlight">\(\langle \rangle\)</span> - brukes for intervaller der endepunktene ikke er med</p></li>
-<li><p><span class="math notranslate nohighlight">\(\setminus\)</span> - bortsett fra</p></li>
-<li><p><span class="math notranslate nohighlight">\(\cup\)</span> - kalles union i matematikken og betyr omtrent det samme som <em>og</em></p></li>
+<li><p>potenser</p></li>
+<li><p>røtter (kvadratrøtter)</p></li>
 </ul>
-<div class="eksempel admonition">
-<p class="admonition-title">Eksempel: Lister og intervaller</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(x\in \{2,4,6\}\)</span> - <span class="math notranslate nohighlight">\(x\)</span> er i mengden av tallene 2, 4 og 6</p></li>
-<li><p><span class="math notranslate nohighlight">\(x\in [2,6]\)</span> - <span class="math notranslate nohighlight">\(x\)</span> er fra og med 2 til og med 6</p></li>
-<li><p><span class="math notranslate nohighlight">\(x\in \langle 2,6\rangle\)</span> - <span class="math notranslate nohighlight">\(x\)</span> er mellom 2 og 6</p></li>
-<li><p><span class="math notranslate nohighlight">\(x\in [2, 4\rangle\cup[6,\rightarrow\rangle\)</span> - <span class="math notranslate nohighlight">\(x\)</span> er fra og med 2, til men ikke med 4 og fra og med 6 til uendelig</p></li>
-<li><p><span class="math notranslate nohighlight">\(x\in \mathbf{R} \setminus \mathbf{Z}\)</span> - <span class="math notranslate nohighlight">\(x\)</span> er et reelt tall, men ikke et heltall</p></li>
-</ul>
+<p>Når vi skal utføre et sammensatt regnestykke, så benytter vi oss av denne regnerekkefølgen</p>
+<div class="admonition-regnerekkefolgen admonition">
+<p class="admonition-title">Regnerekkefølgen</p>
+<ol class="simple">
+<li><p>Parenteser</p></li>
+<li><p>Potenser og røtter</p></li>
+<li><p>Multiplikasjon og divisjon</p></li>
+<li><p>Addisjon og subtraksjon</p></li>
+</ol>
 </div>
 </section>
-<section id="bruk-av-tallmengder">
-<h2>Bruk av tallmengder<a class="headerlink" href="#bruk-av-tallmengder" title="Permalink to this headline">#</a></h2>
-<p>Vi kommer til å bruke symbolene over når vi skal skrive svar på likninger og ulikheter, når vi skal spesifisere intervaller for definisjonsmengde og verdimengde for funksjoner og ved definisjon av ulike sammenhenger og mønster. Alt det her kommer vi tilbake til senere, men vi gir et kort eksempel her.</p>
-<div class="eksempel admonition">
-<p class="admonition-title">Partall og oddetall</p>
-<p>Partall er tall som kan skrives på formen <span class="math notranslate nohighlight">\(2n\)</span> der <span class="math notranslate nohighlight">\(n\in\mathbf{N}\)</span>.</p>
-<p>Oddetall er tall som kan skrives på formen <span class="math notranslate nohighlight">\(2n-1\)</span> der <span class="math notranslate nohighlight">\(n\in\mathbf{N}\)</span>.</p>
-<p>Om vi ønsker å ta med de negative par- og oddetallene, så kan vi bytte ut <span class="math notranslate nohighlight">\(\mathbf{N}\)</span> med <span class="math notranslate nohighlight">\(\mathbf{Z}\)</span>.</p>
+<section id="potenser">
+<h2>Potenser<a class="headerlink" href="#potenser" title="Permalink to this headline">#</a></h2>
+<p>En potens er en gjentatt multiplikasjon.</p>
+<div class="admonition-definisjon-av-potens admonition">
+<p class="admonition-title">Definisjon av potens</p>
+<p><span class="math notranslate nohighlight">\(a^n\)</span> betyr at vi skal multiplisere <span class="math notranslate nohighlight">\(a\)</span> med seg selv <span class="math notranslate nohighlight">\(n\)</span> ganger.</p>
+<div class="math notranslate nohighlight">
+\[a^n=\underbrace{a\cdot a \cdots a}_{n \text{ganger}}\]</div>
 </div>
 </section>
 </section>
@@ -600,17 +588,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../intro.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="tallmengder.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Matematikk 1T</p>
+            <p class="prev-next-title">Tallmengder</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="tallregning.html" title="next page">
+    <a class='right-next' id="next-link" href="../algebralikninger/intro_algebra.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Tallregning</p>
+        <p class="prev-next-title">Introduksjon til algebra</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

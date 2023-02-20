@@ -10,6 +10,7 @@ parts:
 - caption: Tall og tallmengder
   chapters:
   - file: docs/tall/tallmengder
+  - file: docs/tall/tallregning
 - caption: Algebra og likninger
   chapters:
   - file: docs/algebralikninger/intro_algebra
