@@ -7,12 +7,13 @@ options:
   numbered: true
 
 parts:
-- caption: Algebra
+- caption: Tall og tallmengder
   chapters:
-  - file: docs/algebra/intro_algebra
-- caption: Likninger
+  - file: docs/tall/tallmengder
+- caption: Algebra og likninger
   chapters:
-  - file: docs/likninger/uttrykk_likning_identitet
+  - file: docs/algebralikninger/intro_algebra
+  - file: docs/algebralikninger/uttrykk_likning_identitet
 - caption: Funksjoner
   chapters:
   - file: docs/funksjoner/funksjonsbegrepet

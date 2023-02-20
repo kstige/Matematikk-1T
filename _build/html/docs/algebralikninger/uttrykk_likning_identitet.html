@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Lineære ulikheter &#8212; Matematikk 1T</title>
+    <title>Uttrykk, likning og identitet &#8212; Matematikk 1T</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -51,12 +51,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Polynomulikheter" href="polynomulikheter.html" />
-    <link rel="prev" title="Ikke-lineære likningssett" href="../likningssett/ikkelineare.html" />
+    <link rel="next" title="Funksjonsbegrepet" href="../funksjoner/funksjonsbegrepet.html" />
+    <link rel="prev" title="Introduksjon til algebra" href="intro_algebra.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -125,14 +123,14 @@ const thebe_selector_output = ".output, .cell_output"
   Algebra og likninger
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../algebralikninger/intro_algebra.html">
+  <a class="reference internal" href="intro_algebra.html">
    Introduksjon til algebra
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../algebralikninger/uttrykk_likning_identitet.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Uttrykk, likning og identitet
   </a>
  </li>
@@ -272,24 +270,24 @@ const thebe_selector_output = ".output, .cell_output"
   Ulikheter
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ulikheter/lineare_ulikheter.html">
    Lineære ulikheter
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="polynomulikheter.html">
+  <a class="reference internal" href="../ulikheter/polynomulikheter.html">
    Polynomulikheter
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="rasjonale_ulikheter.html">
+  <a class="reference internal" href="../ulikheter/rasjonale_ulikheter.html">
    Rasjonale ulikheter
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="lagefortegnsskjema.html">
+  <a class="reference internal" href="../ulikheter/lagefortegnsskjema.html">
    Lage fortegnsskjema
   </a>
  </li>
@@ -408,7 +406,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/docs/ulikheter/lineare_ulikheter.ipynb"
+        <a href="../../_sources/docs/algebralikninger/uttrykk_likning_identitet.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -445,80 +443,23 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#eksempler-for-hand">
-   Eksempler for hånd
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#ulikheter-med-cas">
-   Ulikheter med CAS
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#grafisk-losning-av-ulikheter">
-   Grafisk løsning av ulikheter
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Lineære ulikheter</h1>
+                <h1>Uttrykk, likning og identitet</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#eksempler-for-hand">
-   Eksempler for hånd
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#ulikheter-med-cas">
-   Ulikheter med CAS
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#grafisk-losning-av-ulikheter">
-   Grafisk løsning av ulikheter
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -526,113 +467,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="lineaere-ulikheter">
-<h1>Lineære ulikheter<a class="headerlink" href="#lineaere-ulikheter" title="Permalink to this headline">#</a></h1>
-<p>En ulikhet er på mange måter det samme som ei likning og vi vil i de fleste tilfeller ta utgangspunkt i de samme løsningsmetodene som vi bruker for likninger. Men der vi ei likning ønsker å bestemme den ukjente slik at sidene blir like store, så vil vi i en ulikhet avgjøre hvilke verdier av den ukjente som oppfyller et annet type krav.</p>
-<p>Et eksempel på en ulikhet er <span class="math notranslate nohighlight">\(3x+2&lt;5\)</span>. Den likner veldig på likningen <span class="math notranslate nohighlight">\(3x+2=5\)</span>. I likningen ønsker vi å komme fram til verdien for <span class="math notranslate nohighlight">\(x\)</span> som gjør at <span class="math notranslate nohighlight">\(3x+2\)</span> blir <span class="math notranslate nohighlight">\(5\)</span>. I ulikheten ønsker vi å komme fram til alle verdiene av <span class="math notranslate nohighlight">\(x\)</span> som gjør at <span class="math notranslate nohighlight">\(3x+2\)</span> blir mindre enn <span class="math notranslate nohighlight">\(5\)</span>.</p>
-<p>Som nevnt vil vi bruke mange av de samme løsningsmetodene som vi allerede har lært oss for likninger. Det er imidlertid en viktig forskjell å legge merke til.</p>
-<div class="admonition-losning-av-ulikheter admonition">
-<p class="admonition-title">Løsning av ulikheter</p>
-<p>For å løse en ulikhet kan vi gjøre det samme på begge sider av ulikhetstegnet.</p>
-<p>Om vi multipliserer eller dividerer med et negativt tall må vi snu ulikhetstegnet.</p>
-</div>
-<p>For å forklare hvorfor vi må snu ulikhetstegnet er det enklest å se på et talleksempel.</p>
-<div class="eksempel dropdown admonition">
-<p class="admonition-title">Eksempel: snu ulikhetstegnet</p>
-<p>En ulikhet vi vet at stemmer er at <span class="math notranslate nohighlight">\(5&lt;10\)</span>. Hva skjer dersom vi multipliserer begge sider med <span class="math notranslate nohighlight">\(-1\)</span>?</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-5&lt;10\\
-5(-1)&lt;10(-1)\\
--5&lt;-10
-\end{split}\]</div>
-<p>Det her ser vi at ikke stemmer siden vi vet at <span class="math notranslate nohighlight">\(-5&gt;-10\)</span>. Feilen oppstår når vi multipliserer med et negativt tall uten å snu ulikhetstegnet. Grunnen til at det blir feil er at positive tall er størst når de har stor absoluttverdi, mens negative tall er størst når absoluttverdien er liten. Når vi multipliserer (eller dividerer) med et negativt tall endrer vi fortegnet og må samtidig ta hensyn til at vi “endrer rekkefølgen” på hva som er størst og minst. Det riktige blir derfor</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-5&lt;10\\
-5(-1)&gt;10(-1)\\
--5&gt;-10
-\end{split}\]</div>
-</div>
-<p>Vi skal videre se på noen eksempler med lineære ulikheter løst for hånd.</p>
-<section id="eksempler-for-hand">
-<h2>Eksempler for hånd<a class="headerlink" href="#eksempler-for-hand" title="Permalink to this headline">#</a></h2>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="be7e9282-f75d-4a87-953f-1574ba2bbaea" name="a6d22f4a-b837-4f99-8398-c793422e6ff2" type="radio">
-</input><label class="sd-tab-label" for="be7e9282-f75d-4a87-953f-1574ba2bbaea">
-Eksempel 1</label><div class="sd-tab-content docutils">
-<div class="eksempel admonition">
-<p class="admonition-title">Enkel ulikhet</p>
-<p><span class="math notranslate nohighlight">\(
-\begin{align}
-3x-4&amp;&lt;x+2 \\
-3x-x&amp;&lt;2+4 \\
-2x &amp;&lt;6 \\
-x &amp;&lt;3
-\end{align}
-\)</span></p>
-</div>
-</div>
-<input id="91039bb9-b4f5-4091-b3c8-900cc1227e23" name="a6d22f4a-b837-4f99-8398-c793422e6ff2" type="radio">
-</input><label class="sd-tab-label" for="91039bb9-b4f5-4091-b3c8-900cc1227e23">
-Eksempel 2</label><div class="sd-tab-content docutils">
-<div class="eksempel admonition">
-<p class="admonition-title">Snu ulikehtstegnet</p>
-<p><span class="math notranslate nohighlight">\(
-\begin{align}
--2x+3&amp;\leq x-3 \\
--2x-x&amp;\leq -3-3 \\
--3x &amp;\leq -6 \\
-\frac{-3x}{-3} &amp;\geq \frac{-6}{-3} \\
-x &amp;&gt;2
-\end{align}
-\)</span></p>
-<p>Her har vi snudd ulikhetstegnet når vi deler på <span class="math notranslate nohighlight">\(-3\)</span>.</p>
-</div>
-</div>
-<input id="192089b1-3ced-4c83-b377-a7ca18277142" name="a6d22f4a-b837-4f99-8398-c793422e6ff2" type="radio">
-</input><label class="sd-tab-label" for="192089b1-3ced-4c83-b377-a7ca18277142">
-Eksempel 3</label><div class="sd-tab-content docutils">
-<div class="eksempel admonition">
-<p class="admonition-title">Ulikhet med brøk</p>
-<p><span class="math notranslate nohighlight">\(
-\begin{align}
-\frac{x}{2}+2 &amp;&gt;\frac{x}{3}-1 \quad \quad \cdot 6 \text{ på begge sider} \\
-\frac{6x}{2}+6\cdot2 &amp;&gt;\frac{6x}{3}-6\cdot 1 \\
-3x +12 &amp;&gt;2x-6 \\
-3x-2x &amp;&gt;-6-12 \\
-x &amp;&gt;-18
-\end{align}
-\)</span></p>
-</div>
-</div>
-</div>
-</section>
-<section id="ulikheter-med-cas">
-<h2>Ulikheter med CAS<a class="headerlink" href="#ulikheter-med-cas" title="Permalink to this headline">#</a></h2>
-<p>Vi kan også ta i bruk digitale hjelpemidler for å løse ulikheter. Det enkleste å bruke er CAS, og vi går fram på akkurat samme måte som om vi skulle løse ei likning.</p>
-<div class="eksempel admonition">
-<p class="admonition-title">Ulikhet med CAS</p>
-<p>Vi skal løse ulikheten <span class="math notranslate nohighlight">\(\frac{x}{2}+2 &gt;\frac{x}{3}-1\)</span> med CAS. Skriver den inn, markerer linja og trykker på løs-knappen.</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../../_images/ulikhetCAS.png"><img alt="../../_images/ulikhetCAS.png" src="../../_images/ulikhetCAS.png" style="width: 264.0px; height: 90.6px;" /></a>
-</figure>
-<p>Løsninga av ulikheten er <span class="math notranslate nohighlight">\(x&gt;-18\)</span>.</p>
-</div>
-</section>
-<section id="grafisk-losning-av-ulikheter">
-<h2>Grafisk løsning av ulikheter<a class="headerlink" href="#grafisk-losning-av-ulikheter" title="Permalink to this headline">#</a></h2>
-<p>Den siste metoden vi skal se på for å løse ulikheter er grafisk.</p>
-<div class="eksempel admonition">
-<p class="admonition-title">Grafisk løsning av ulikhet</p>
-<p>Vi skal løse ulikheten <span class="math notranslate nohighlight">\(2x+1&lt;-3x+6\)</span> grafisk. Det første vi gjør er å skrive inn hver side av ulikheten som en funksjon i GeoGebra. Vi skriver inn <span class="math notranslate nohighlight">\(f(x)=2x+1\)</span> og <span class="math notranslate nohighlight">\(g(x)=-3x+6\)</span>. Så bruker vi “skjæring mellom to objekt” til å finne skjæringspunktet <span class="math notranslate nohighlight">\(A=(1,3)\)</span>. Vi ser at funksjonen <span class="math notranslate nohighlight">\(f(x)\)</span> ligger under <span class="math notranslate nohighlight">\(g(x)\)</span> til venstre for <span class="math notranslate nohighlight">\(x=1\)</span>. Det vil si at <span class="math notranslate nohighlight">\(f(x)&lt;g(x)\)</span> i dette området.</p>
-<p>Løsningen av ulikheten blir derfor <span class="math notranslate nohighlight">\(x&lt;1\)</span>.</p>
-<p>For å se det litt mer visuelt kan vi også skrive inn <span class="math notranslate nohighlight">\(f(x)&lt;g(x)\)</span> for å få markert det blå området som løser ulikheten.</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../../_images/ulikhetgrafisk.png"><img alt="../../_images/ulikhetgrafisk.png" src="../../_images/ulikhetgrafisk.png" style="width: 552.0px; height: 362.40000000000003px;" /></a>
-</figure>
-</div>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="uttrykk-likning-og-identitet">
+<h1>Uttrykk, likning og identitet<a class="headerlink" href="#uttrykk-likning-og-identitet" title="Permalink to this headline">#</a></h1>
 </section>
 
     <script type="text/x-thebe-config">
@@ -648,7 +484,7 @@ x &amp;&gt;-18
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./docs\ulikheter"
+            path: "./docs\algebralikninger"
         },
         predefinedOutput: true
     }
@@ -662,17 +498,17 @@ x &amp;&gt;-18
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../likningssett/ikkelineare.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="intro_algebra.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Ikke-lineære likningssett</p>
+            <p class="prev-next-title">Introduksjon til algebra</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="polynomulikheter.html" title="next page">
+    <a class='right-next' id="next-link" href="../funksjoner/funksjonsbegrepet.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Polynomulikheter</p>
+        <p class="prev-next-title">Funksjonsbegrepet</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
