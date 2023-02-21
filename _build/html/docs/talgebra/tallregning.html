@@ -1,0 +1,883 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Tallregning &#8212; Matematikk 1T</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/myadmonitions.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Potenser" href="potenser.html" />
+    <link rel="prev" title="Tallmengder" href="tallmengder.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Matematikk 1T</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tall og algebra
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tallmengder.html">
+   Tallmengder
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   Tallregning
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="potenser.html">
+     Potenser
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="primtallsfaktorisering.html">
+     Primtallsfaktorisering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="brokregning.html">
+     Brøkregning
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="grunnleggende_algebra.html">
+   Introduksjon til algebra
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kvadratsetningene.html">
+   Kvadratsetningene
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="faktorisering.html">
+   Faktorisering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="fullstendig_kvadrat.html">
+   Fullstendig kvadrat
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="rasjonaleuttrykk.html">
+   Rasjonale uttrykk
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="bevis.html">
+   Bevis
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Formler og likninger
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/uttrykk_likning_identitet.html">
+   Uttrykk, likning og identitet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/linearelikninger.html">
+   Lineære likninger
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/formler.html">
+   Formler
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/andregradslikninger.html">
+   Andregradslikninger
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/nullpunktfaktorisering.html">
+   Nullpunktfaktorisering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/polynomdivisjon.html">
+   Polynomdivisjon
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/rasjonale_likninger.html">
+   Rasjonale likninger
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Funksjoner og modellering
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../funksjoner/funksjonsbegrepet.html">
+   Funksjonsbegrepet
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../funksjoner/viktige_punkt.html">
+   Viktige punkt
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../funksjoner/quiz_viktigepunkt.html">
+     Quiz om viktige punkt
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../funksjoner/rettelinjer.html">
+   Lineære funksjoner
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../funksjoner/quiz_rettelinjer.html">
+     Quiz om lineære funksjoner
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../funksjoner/polynomfunksjoner.html">
+   Polynomfunksjoner
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../funksjoner/rasjonalefunksjoner.html">
+   Rasjonale funksjoner
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../funksjoner/oppgaver_rasjonalefunksjoner.html">
+     Oppgaver om rasjonale funksjoner og asymptoter
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../funksjoner/eksponentialfunksjoner.html">
+   Eksponentialfunksjoner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../funksjoner/potensfunksjoner.html">
+   Potensfunksjoner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../funksjoner/modellering.html">
+   Modellering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../funksjoner/funksjoner_geogebra.html">
+   Funksjoner i GeoGebra
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../funksjoner/funksjoner_programmering.html">
+   Funksjoner i programmering
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Vekstfart og derivasjon
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../vekstfart/gjennomsnittligvekstfart.html">
+   Gjennomsnittlig vekstfart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../vekstfart/momentanvekstfart.html">
+   Momentan vekstfart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../vekstfart/derivert.html">
+   Den deriverte
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../vekstfart/numeriskderivert.html">
+   Numerisk derivert
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Likningssett
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likningssett/metoder.html">
+   Metoder for løsning av likningssett
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likningssett/flereukjente.html">
+   Likningsett med flere ukjente
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likningssett/ikkelineare.html">
+   Ikke-lineære likningssett
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Ulikheter
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ulikheter/lineare_ulikheter.html">
+   Lineære ulikheter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ulikheter/polynomulikheter.html">
+   Polynomulikheter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ulikheter/rasjonale_ulikheter.html">
+   Rasjonale ulikheter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ulikheter/lagefortegnsskjema.html">
+   Lage fortegnsskjema
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trigonometri
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/grunnleggende_trigonometri.html">
+   Grunnleggende trigonometri
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/tan_sin_cos.html">
+   Trigonometriske forhold
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/bruk_av_tansincos.html">
+   Bruk av tangens, sinus og cosinus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/enhetssirkelen.html">
+   Enhetssirkelen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/arealsetningen.html">
+   Arealsetningen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/sinussetningen.html">
+   Sinussetningen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/cosinussetningen.html">
+   Cosinussetningen
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/docs/talgebra/tallregning.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#regnerekkefolge">
+   Regnerekkefølge
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#potenser-og-standardform">
+   Potenser og standardform
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kvadratrotter">
+   Kvadratrøtter
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#primtall-og-faktorisering">
+   Primtall og faktorisering
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#brokregning">
+   Brøkregning
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Tallregning</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#regnerekkefolge">
+   Regnerekkefølge
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#potenser-og-standardform">
+   Potenser og standardform
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kvadratrotter">
+   Kvadratrøtter
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#primtall-og-faktorisering">
+   Primtall og faktorisering
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#brokregning">
+   Brøkregning
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="tallregning">
+<h1>Tallregning<a class="headerlink" href="#tallregning" title="Permalink to this headline">#</a></h1>
+<p>Her gir vi en rask oversikt over noen viktige temaer innenfor tallregning. Det danner grunnlaget for mye av det vi skal arbeide med innenfor algebra. Noen av temaene er dekt grundigere på egne sider.</p>
+<section id="regnerekkefolge">
+<h2>Regnerekkefølge<a class="headerlink" href="#regnerekkefolge" title="Permalink to this headline">#</a></h2>
+<p>De fire grunnleggende regneoperasjonene er addisjon, subtraksjon, multiplikasjon og divisjon. I tillegg kommer vi til å ha bruk for potenser og røtter (kvadratrøtter).</p>
+<p>Når vi skal utføre et sammensatt regnestykke, så benytter vi oss av denne regnerekkefølgen</p>
+<div class="admonition-regnerekkefolgen admonition">
+<p class="admonition-title">Regnerekkefølgen</p>
+<ol class="simple">
+<li><p>Parenteser</p></li>
+<li><p>Potenser og røtter</p></li>
+<li><p>Multiplikasjon og divisjon</p></li>
+<li><p>Addisjon og subtraksjon</p></li>
+</ol>
+</div>
+<p>Vi minner også om noen viktige regneregler for reelle tall.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Regneregler for reelle tall</p>
+<p>Vi lar <span class="math notranslate nohighlight">\(a, b \in \mathbf{R}\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(a+b=b+a\)</span></p>
+<p><span class="math notranslate nohighlight">\(a\cdot b = b\cdot a\)</span></p>
+<p><span class="math notranslate nohighlight">\(a\cdot(b \pm c)= a\cdot b \pm a\cdot c\)</span></p>
+<p><span class="math notranslate nohighlight">\((-a)\cdot b = -a\cdot b\)</span></p>
+<p><span class="math notranslate nohighlight">\((-a) \cdot (-b) = a\cdot b\)</span></p>
+<p>De to første bruker vi stort sett uten å tenke over dem. Det er den <em>kommutative</em> egenskapen til addisjon og multiplikasjon. Vi kan addere og multiplisere i den rekkefølgen vi ønsker.</p>
+<p>Nummer tre er den såkalte <em>assosiative</em> egenskapen til multiplikasjon med en parentes. <span class="math notranslate nohighlight">\(\pm\)</span> inne i parentesen betyr at egenskapen gjelder uansett om det står <span class="math notranslate nohighlight">\(+\)</span> eller <span class="math notranslate nohighlight">\(-\)</span>.</p>
+<p>De to siste reglene er det vi husker som at multiplikasjon (eller divisjon) med samme fortegn gir positivt svar, mens multiplikasjon/divisjon med ulike fortegn gir negativt svar.</p>
+</div>
+</section>
+<section id="potenser-og-standardform">
+<h2>Potenser og standardform<a class="headerlink" href="#potenser-og-standardform" title="Permalink to this headline">#</a></h2>
+<p>En potens er en gjentatt multiplikasjon.</p>
+<div class="admonition-definisjon-av-potens admonition">
+<p class="admonition-title">Definisjon av potens</p>
+<p>Dersom <span class="math notranslate nohighlight">\(a\in\mathbf{R}\)</span> og <span class="math notranslate nohighlight">\(n\in\mathbf{N}\)</span>, så betyr <span class="math notranslate nohighlight">\(a^n\)</span> at vi skal multiplisere <span class="math notranslate nohighlight">\(a\)</span> med seg selv <span class="math notranslate nohighlight">\(n\)</span> ganger. <span class="math notranslate nohighlight">\(a\)</span> kalles grunntallet, mens <span class="math notranslate nohighlight">\(n\)</span> er eksponenten.</p>
+<div class="math notranslate nohighlight">
+\[a^n=\underbrace{a\cdot a \cdots a}_{n \text{ ganger}}\]</div>
+</div>
+<p>All regning med potenser kan utføres fra definisjonen, men det blir mye mer effektivt dersom vi tar i bruk regnereglene for potenser. Vi beviser ikke regnereglene her, men de fleste faller ganske logisk ut fra definisjonen over.</p>
+<div class="admonition-regneregler-for-potenser admonition">
+<p class="admonition-title">Regneregler for potenser</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(a^n \cdot a^m = a^{n+m}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{a^n}{a^m} = a^{n-m}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\left(a\cdot b\right)^n = a^n \cdot a^m\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\left(a^n\right)^m = a^{n\cdot m}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(a^0 = 1\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(a^{-n} = \frac{1}{a^n}\)</span></p></li>
+</ol>
+</div>
+<p>Når vi arbeider med tall som er veldig store, eller med tall som er veldig små kan en spesiell skrivemåte med potenser hjelpe oss.</p>
+<div class="admonition-standardform admonition">
+<p class="admonition-title">Standardform</p>
+<p>Standardform for et tall er</p>
+<p><span class="math notranslate nohighlight">\(a\cdot 10^n\)</span>, der <span class="math notranslate nohighlight">\(n\in \mathbf{Z}\)</span> og <span class="math notranslate nohighlight">\(|a|\in[1,10\rangle\)</span>.</p>
+<p>Vi skriver altså tallet med et siffer (1 eller større) før komma og multipliserer med en tierpotens for å beksrive størrelsen på tallet.</p>
+</div>
+<p>Standardform forklares enklest med noen eksempler.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel: Skrive tall på standardform</p>
+<p>For å skrive et tall på standardform teller vi antall plasser vi må flytte komma for å ha kun et siffer større eller lik 1 før komma. Eksponenten til tierpotensen blir antall plasser vi har flyttet komma mot venstre.</p>
+<p><span class="math notranslate nohighlight">\(53600000=5,36\cdot 10^7\)</span></p>
+<p>Her har vi flyttet komma 7 plasser mot venstre.</p>
+<p><span class="math notranslate nohighlight">\(0,0000000345 = 3,45\cdot 10^{-8}\)</span></p>
+<p>Her har vi flyttet komma 8 plasser mot høyre og får en negativ eksponent. Det er fordi <span class="math notranslate nohighlight">\(0,0000000345=\frac{3,45}{10^8}\)</span>.</p>
+</div>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel: Regne med potenser og standardform</p>
+<p><span class="math notranslate nohighlight">\(\frac{160000\cdot 0,02}{0,008}=\frac{16\cdot 10^4\cdot 2\cdot 10^{-2}}{8\cdot 10^{-3}}=\frac{16\cdot 2}{8}\cdot 10^{4+(-2)-(-3)}=4\cdot 10^5\)</span></p>
+<p>Her ar vi ikke brukt skikkelig standardform før i svaret, men vi ser hvordan regnestykket forenkles ved å bruke tierpotenser og potensreglene.</p>
+</div>
+</section>
+<section id="kvadratrotter">
+<h2>Kvadratrøtter<a class="headerlink" href="#kvadratrotter" title="Permalink to this headline">#</a></h2>
+<p>De fleste vet nok at <span class="math notranslate nohighlight">\(\sqrt{16} = 4\)</span>, men det kan være greit å definere begrepet kvadratrot skikkelig siden vi kommer til å benytte det inn mot blant annet andregradslikninger senere.</p>
+<div class="admonition-definisjon-av-kvadratrot admonition">
+<p class="admonition-title">Definisjon av kvadratrot</p>
+<p>Vi lar <span class="math notranslate nohighlight">\(a\)</span> være et positivt reelt tall. Kvadratroten av <span class="math notranslate nohighlight">\(a\)</span> er det positive tallet som multiplisert med seg selv gir <span class="math notranslate nohighlight">\(a\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\left(\sqrt{a}\right)^2=a\]</div>
+</div>
+<p>I definisjonen over er det to ting som er viktig å legge merke til.</p>
+<ol class="simple">
+<li><p>Vi kan kun ta kvadratroten av positive reelle tall.</p></li>
+<li><p>Kvadratroten er et positivt tall. Selv om både <span class="math notranslate nohighlight">\((-4)^2=16\)</span> og <span class="math notranslate nohighlight">\(4^2=16\)</span>, så er <span class="math notranslate nohighlight">\(\sqrt{16}= 4\)</span>.</p></li>
+</ol>
+<p>Generelt kan vi skrive at <span class="math notranslate nohighlight">\(\sqrt{a^2}=|a|\)</span>. Der <span class="math notranslate nohighlight">\(|a|\)</span> er absoluttverdien til tallet <span class="math notranslate nohighlight">\(a\)</span>. Med absoluttverdien mener vi avstanden tallet har fra <span class="math notranslate nohighlight">\(0\)</span> på tallinja. Vi kan derfor si at <span class="math notranslate nohighlight">\(|-4|=|4|=4\)</span> siden begge tall har avstanden <span class="math notranslate nohighlight">\(4\)</span> fra <span class="math notranslate nohighlight">\(0\)</span>.</p>
+<p>Om kvadratrøtter kan det videre være nyttig å vite følgende.</p>
+<div class="admonition-viktig-om-kvadratrotter admonition">
+<p class="admonition-title">Viktig om kvadratrøtter</p>
+<div class="math notranslate nohighlight">
+\[\sqrt{a+b}\neq \sqrt{a}+\sqrt{b}\]</div>
+<div class="math notranslate nohighlight">
+\[\sqrt{a\cdot b} = \sqrt{a}\cdot \sqrt{b}\]</div>
+</div>
+</section>
+<section id="primtall-og-faktorisering">
+<h2>Primtall og faktorisering<a class="headerlink" href="#primtall-og-faktorisering" title="Permalink to this headline">#</a></h2>
+<p>Et primtall er et tall som kun kan divideres på seg selv og <span class="math notranslate nohighlight">\(1\)</span>. De første primtallene er <span class="math notranslate nohighlight">\(2, 3, 5, 7, 11 og 13\)</span>. Det kan bevises at det finnes uendelig antall primtall.</p>
+<p>Alle tall som ikke er primtall (bortsett fra <span class="math notranslate nohighlight">\(1\)</span>) kaller vi for sammensatte tall. Sammensatte tall kan vi skrive som et produkt av andre tall. Det kalles å faktorisere tallet. Et fundamentalt teorem i matematikken sier at alle tall kan skrives som et produkt av primtall på en unik måte. En slik faktorisering kalles <em>primtallsfaktorisering</em>. Vi kan for eksempel primtallsfaktorisere <span class="math notranslate nohighlight">\(84=2\cdot 2\cdot 3\cdot 7\)</span>.</p>
+<p>Faktorisering blir et viktig redskap når vi skal arbeide med likninger. Her nøyer vi oss med å se et eksempel på hvordan vi kan bruke faktorisering til å forenkle uttrykk med kvadratrøtter.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Forenkling av kvadratrøtter</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+\sqrt{250}-\sqrt{40} &amp;=\sqrt{25\cdot 10}-\sqrt{4\cdot 10}\\
+&amp;= \sqrt{25}\cdot\sqrt{10}-\sqrt{4}\cdot\sqrt{10} \\
+&amp;=5\cdot\sqrt{10}-2\cdot\sqrt{10} \\
+&amp;=3\sqrt{10}
+\end{align}
+\end{split}\]</div>
+</div>
+</section>
+<section id="brokregning">
+<h2>Brøkregning<a class="headerlink" href="#brokregning" title="Permalink to this headline">#</a></h2>
+<p>Når vi arbeider med brøker blir vi ofte nødt til å utvide eller forkorte en brøk. Det er viktig å huske på at det ikke endrer verdien til brøken. For å forkorte en brøk lønner det seg å starte med å faktorisere teller og nevner for så å forkorte vekk felles faktorer.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Utvide og forkorte en brøk</p>
+<p><strong>Utviding av brøk</strong></p>
+<p><span class="math notranslate nohighlight">\(\frac{1}{2}=\frac{1\cdot 5}{2\cdot 5}=\frac{5}{10}\)</span></p>
+<p><strong>Forkorting av brøk</strong></p>
+<p><span class="math notranslate nohighlight">\(\frac{84}{420}=\frac{2\cdot 2\cdot 3\cdot 7}{2\cdot 2\cdot 3\cdot 5\cdot 7}=\frac{1}{5}\)</span></p>
+</div>
+<p>Når vi skal addere eller subtrahere med brøk må vi først utvide alle brøkene til fellesnevner. Fellesnevneren er et tall som alle nevnerene går opp i (fellesnevneren kan divideres på alle de opprinnelige nevnerne). Vi vil alltid finne en fellesnevner ved å multiplisere alle nevnerene, men som oftest vil vi kunne finne enklere fellesnevnere enn det. Vi kommer tilbake til teknikker for å finne fellesnevner når vi arbeider med brøk og algebra.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Addisjon og subtraksjon av brøk</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+\frac{5}{12}+\frac{1}{4}-\frac{1}{3} &amp;=\frac{5}{12}+\frac{3}{12}-\frac{4}{12} \\
+&amp;= \frac{5+3-4}{12} \\ 
+&amp;=\frac{4}{12} \\
+&amp;= \frac{1}{3}
+\end{align}
+\end{split}\]</div>
+</div>
+<p>Multiplikasjon med brøk utføres ved å multiplisere teller med teller og nevner med nevner. Et viktig spesialtilfelle er multiplikasjon av brøk med heltall. Det kan vi utføre ved å gjøre om heltallet til en brøk med <span class="math notranslate nohighlight">\(1\)</span> i nevneren. Da ser vi at det effektivt sett blir det samme som å multiplisere heltallet inn i telleren.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Multiplikasjon med brøk</p>
+<p><strong>Multiplikasjon av to brøker</strong></p>
+<p><span class="math notranslate nohighlight">\(
+\frac{1}{4}\cdot\frac{2}{3} =\frac{1\cdot 2}{4\cdot 3}=\frac{2}{12}=\frac{1}{6}
+\)</span></p>
+<p><strong>Multiplikasjon av brøk med heltall</strong></p>
+<p><span class="math notranslate nohighlight">\(
+5\cdot\frac{2}{3}=\frac{5}{1}\cdot\frac{2}{3}=\frac{5\cdot 2}{1\cdot 3}=\frac{10}{3}
+\)</span></p>
+</div>
+<p>Divisjon med brøk utføres ved å multiplisere med den omvendte brøken. At det må være slik ser vi ved å skrive det som en brudden brøk (brøk med brøk) og utvide.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Divisjon med brøk</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{4} : \frac{2}{3}=\frac{1}{4}\cdot \frac{3}{2}=\frac{1\cdot 3}{4\cdot 2}= \frac{3}{8}
+\]</div>
+<p><strong>Forklaring med brudden brøk</strong></p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\frac{1}{4}}{\frac{2}{3}}=\frac{\frac{1}{4}\cdot 4\cdot 3}{\frac{2}{3}\cdot 4\cdot 3}=\frac{1\cdot 3}{4\cdot 2}=\frac{1}{4}\cdot \frac{3}{2}
+\]</div>
+</div>
+<p>Helt til slutt nevner vi at en andel skrevet som brøk kan gjøres om til henholdsvis desimaltall og prosentandel.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Brøk, desimaltall og prosent</p>
+<p><span class="math notranslate nohighlight">\(\frac{1}{5}=0,20=20 \%\)</span></p>
+</div>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./docs\talgebra"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="tallmengder.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Tallmengder</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="potenser.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Potenser</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Kristoffer Stige<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

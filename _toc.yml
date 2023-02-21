@@ -7,16 +7,30 @@ options:
   numbered: true
 
 parts:
-- caption: Tall og tallmengder
+- caption: Tall og algebra
   chapters:
-  - file: docs/tall/tallmengder
-  - file: docs/tall/tallregning
-  - file: docs/tall/bevis
-- caption: Algebra og likninger
+  - file: docs/talgebra/tallmengder
+  - file: docs/talgebra/tallregning
+    sections:
+      - file: docs/talgebra/potenser
+      - file: docs/talgebra/primtallsfaktorisering
+      - file: docs/talgebra/brokregning
+  - file: docs/talgebra/grunnleggende_algebra
+  - file: docs/talgebra/kvadratsetningene
+  - file: docs/talgebra/faktorisering
+  - file: docs/talgebra/fullstendig_kvadrat
+  - file: docs/talgebra/rasjonaleuttrykk
+  - file: docs/talgebra/bevis
+- caption: Formler og likninger
   chapters:
-  - file: docs/algebralikninger/intro_algebra
-  - file: docs/algebralikninger/uttrykk_likning_identitet
-- caption: Funksjoner
+  - file: docs/likninger/uttrykk_likning_identitet
+  - file: docs/likninger/linearelikninger
+  - file: docs/likninger/formler
+  - file: docs/likninger/andregradslikninger
+  - file: docs/likninger/nullpunktfaktorisering
+  - file: docs/likninger/polynomdivisjon
+  - file: docs/likninger/rasjonale_likninger
+- caption: Funksjoner og modellering
   chapters:
   - file: docs/funksjoner/funksjonsbegrepet
   - file: docs/funksjoner/viktige_punkt
@@ -31,12 +45,15 @@ parts:
       - file: docs/funksjoner/oppgaver_rasjonalefunksjoner
   - file: docs/funksjoner/eksponentialfunksjoner
   - file: docs/funksjoner/potensfunksjoner
-  - file: docs/funksjoner/gjennomsnittligvekstfart
-  - file: docs/funksjoner/momentanvekstfart
-  - file: docs/funksjoner/derivert
   - file: docs/funksjoner/modellering
   - file: docs/funksjoner/funksjoner_geogebra
   - file: docs/funksjoner/funksjoner_programmering
+- caption: Vekstfart og derivasjon
+  chapters:
+  - file: docs/vekstfart/gjennomsnittligvekstfart
+  - file: docs/vekstfart/momentanvekstfart
+  - file: docs/vekstfart/derivert
+  - file: docs/vekstfart/numeriskderivert
 - caption: Likningssett
   chapters:
   - file: docs/likningssett/metoder

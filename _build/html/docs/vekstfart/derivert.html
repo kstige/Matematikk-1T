@@ -1,0 +1,857 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Den deriverte &#8212; Matematikk 1T</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/myadmonitions.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Numerisk derivert" href="numeriskderivert.html" />
+    <link rel="prev" title="Momentan vekstfart" href="momentanvekstfart.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Matematikk 1T</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tall og algebra
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../talgebra/tallmengder.html">
+   Tallmengder
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../talgebra/tallregning.html">
+   Tallregning
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../talgebra/potenser.html">
+     Potenser
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../talgebra/primtallsfaktorisering.html">
+     Primtallsfaktorisering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../talgebra/brokregning.html">
+     Brøkregning
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../talgebra/grunnleggende_algebra.html">
+   Introduksjon til algebra
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../talgebra/kvadratsetningene.html">
+   Kvadratsetningene
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../talgebra/faktorisering.html">
+   Faktorisering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../talgebra/fullstendig_kvadrat.html">
+   Fullstendig kvadrat
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../talgebra/rasjonaleuttrykk.html">
+   Rasjonale uttrykk
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../talgebra/bevis.html">
+   Bevis
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Formler og likninger
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/uttrykk_likning_identitet.html">
+   Uttrykk, likning og identitet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/linearelikninger.html">
+   Lineære likninger
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/formler.html">
+   Formler
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/andregradslikninger.html">
+   Andregradslikninger
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/nullpunktfaktorisering.html">
+   Nullpunktfaktorisering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/polynomdivisjon.html">
+   Polynomdivisjon
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/rasjonale_likninger.html">
+   Rasjonale likninger
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Funksjoner og modellering
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../funksjoner/funksjonsbegrepet.html">
+   Funksjonsbegrepet
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../funksjoner/viktige_punkt.html">
+   Viktige punkt
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../funksjoner/quiz_viktigepunkt.html">
+     Quiz om viktige punkt
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../funksjoner/rettelinjer.html">
+   Lineære funksjoner
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../funksjoner/quiz_rettelinjer.html">
+     Quiz om lineære funksjoner
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../funksjoner/polynomfunksjoner.html">
+   Polynomfunksjoner
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../funksjoner/rasjonalefunksjoner.html">
+   Rasjonale funksjoner
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../funksjoner/oppgaver_rasjonalefunksjoner.html">
+     Oppgaver om rasjonale funksjoner og asymptoter
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../funksjoner/eksponentialfunksjoner.html">
+   Eksponentialfunksjoner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../funksjoner/potensfunksjoner.html">
+   Potensfunksjoner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../funksjoner/modellering.html">
+   Modellering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../funksjoner/funksjoner_geogebra.html">
+   Funksjoner i GeoGebra
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../funksjoner/funksjoner_programmering.html">
+   Funksjoner i programmering
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Vekstfart og derivasjon
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="gjennomsnittligvekstfart.html">
+   Gjennomsnittlig vekstfart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="momentanvekstfart.html">
+   Momentan vekstfart
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Den deriverte
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="numeriskderivert.html">
+   Numerisk derivert
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Likningssett
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likningssett/metoder.html">
+   Metoder for løsning av likningssett
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likningssett/flereukjente.html">
+   Likningsett med flere ukjente
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likningssett/ikkelineare.html">
+   Ikke-lineære likningssett
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Ulikheter
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ulikheter/lineare_ulikheter.html">
+   Lineære ulikheter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ulikheter/polynomulikheter.html">
+   Polynomulikheter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ulikheter/rasjonale_ulikheter.html">
+   Rasjonale ulikheter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ulikheter/lagefortegnsskjema.html">
+   Lage fortegnsskjema
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trigonometri
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/grunnleggende_trigonometri.html">
+   Grunnleggende trigonometri
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/tan_sin_cos.html">
+   Trigonometriske forhold
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/bruk_av_tansincos.html">
+   Bruk av tangens, sinus og cosinus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/enhetssirkelen.html">
+   Enhetssirkelen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/arealsetningen.html">
+   Arealsetningen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/sinussetningen.html">
+   Sinussetningen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../trigonometri/cosinussetningen.html">
+   Cosinussetningen
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/docs/vekstfart/derivert.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uttrykk-for-den-deriverte">
+   Uttrykk for den deriverte
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fortegn-til-den-deriverte">
+   Fortegn til den deriverte
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Den deriverte</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uttrykk-for-den-deriverte">
+   Uttrykk for den deriverte
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fortegn-til-den-deriverte">
+   Fortegn til den deriverte
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="den-deriverte">
+<h1>Den deriverte<a class="headerlink" href="#den-deriverte" title="Permalink to this headline">#</a></h1>
+<p>Den momentane vekstfarten er en viktig størrelse fordi den leder oss mot en av de viktigste størrelsene i matematikken. Vi ser først på et eksempel.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel: Momentan vekstfart</p>
+<p>Bruker GeoGebra-under eksempelet til å finne den momentane vekstfarten (MV) til <span class="math notranslate nohighlight">\(f(x)=x^2\)</span> for <span class="math notranslate nohighlight">\(x\in\{-4,-3,-2,-1,0,1,2,3,4\}\)</span>. Verdiene fyller vi inn i en tabell.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>x</strong></p></th>
+<th class="head"><p>-4</p></th>
+<th class="head"><p>-3</p></th>
+<th class="head"><p>-2</p></th>
+<th class="head"><p>-1</p></th>
+<th class="head"><p>0</p></th>
+<th class="head"><p>1</p></th>
+<th class="head"><p>2</p></th>
+<th class="head"><p>3</p></th>
+<th class="head"><p>4</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>MV</strong></p></td>
+<td><p>-8</p></td>
+<td><p>-6</p></td>
+<td><p>-4</p></td>
+<td><p>-2</p></td>
+<td><p>0</p></td>
+<td><p>2</p></td>
+<td><p>4</p></td>
+<td><p>6</p></td>
+<td><p>8</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>I eksempelet over ser vi at for hver verdi vi har av <span class="math notranslate nohighlight">\(x\)</span>, så får vi en verdi for den momentane vekstfarten. Det vil si at den momentane vekstfarten oppfyller kravet til å være en funksjon. Denne funksjonen gir vi et eget navn: Vi kaller den for “den deriverte av <span class="math notranslate nohighlight">\(f(x)\)</span>”, og vi bruker skrivemåten <span class="math notranslate nohighlight">\(f'(x)\)</span>.</p>
+<div class="def admonition">
+<p class="admonition-title">Definisjon: Den deriverte</p>
+<p><span class="math notranslate nohighlight">\(f'(x)\)</span> (leses “f derivert av x”) er en funksjon som har funksjonsverdi lik stigningstallet til tangenten til <span class="math notranslate nohighlight">\(f(x)\)</span> i punktet <span class="math notranslate nohighlight">\((x, f(x))\)</span>.</p>
+<p>Den deriverte i et punkt har samme verdi som den momentane vekstfarten i punktet.</p>
+</div>
+<p>Vi kommer nå til å bruke for eksempel <span class="math notranslate nohighlight">\(f'(2)\)</span> i stedet for å snakke om den momentane vekstfarten til <span class="math notranslate nohighlight">\(f(x)\)</span> i punktet <span class="math notranslate nohighlight">\((2, f(2))\)</span>. Det er allikevel viktig å huske på at den deriverte er en funksjon som gir oss den momentane vekstfarten.</p>
+<section id="uttrykk-for-den-deriverte">
+<h2>Uttrykk for den deriverte<a class="headerlink" href="#uttrykk-for-den-deriverte" title="Permalink to this headline">#</a></h2>
+<p>I 1T kommer vi ikke til å ha arbeide med å finne funksjonsuttrykket for den deriverte (det kommer i R1/S1). Fokuset kommer til å være på forståelsen av hva den deriverte sier oss. Det kan allikevel være greit å se at den deriverte også vil være gitt ved et funksjonsuttrykk.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel: Funksjonsuttrykk for den deriverte</p>
+<p>Vi ser på tabellen fra forrige eksempel en gang til, me kaller nå verdiene for den momentane vekstfarten for <span class="math notranslate nohighlight">\(f'(x)\)</span>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>x</strong></p></th>
+<th class="head"><p>-4</p></th>
+<th class="head"><p>-3</p></th>
+<th class="head"><p>-2</p></th>
+<th class="head"><p>-1</p></th>
+<th class="head"><p>0</p></th>
+<th class="head"><p>1</p></th>
+<th class="head"><p>2</p></th>
+<th class="head"><p>3</p></th>
+<th class="head"><p>4</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>f’(x)</strong></p></td>
+<td><p>-8</p></td>
+<td><p>-6</p></td>
+<td><p>-4</p></td>
+<td><p>-2</p></td>
+<td><p>0</p></td>
+<td><p>2</p></td>
+<td><p>4</p></td>
+<td><p>6</p></td>
+<td><p>8</p></td>
+</tr>
+</tbody>
+</table>
+<p>Vi ser at <span class="math notranslate nohighlight">\(f'(x)\)</span> har den doble verdien av <span class="math notranslate nohighlight">\(x\)</span>. Det må bety at funksjonsuttrykket for <span class="math notranslate nohighlight">\(f'(x)\)</span> må være</p>
+<div class="math notranslate nohighlight">
+\[
+f'(x)=2x
+\]</div>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../_images/derivertuttrykk.png"><img alt="../../_images/derivertuttrykk.png" src="../../_images/derivertuttrykk.png" style="width: 285.6px; height: 153.60000000000002px;" /></a>
+</figure>
+<p>Vi kan bruke CAS for å undersøke om dette stemmer. Vi definerer funksjonen ved <span class="math notranslate nohighlight">\(f(x):=x^2\)</span> før vi i linje 2 skriver inn <span class="math notranslate nohighlight">\(f'(x)\)</span> slik vi ser i figuren til høyre.</p>
+</div>
+</section>
+<section id="fortegn-til-den-deriverte">
+<h2>Fortegn til den deriverte<a class="headerlink" href="#fortegn-til-den-deriverte" title="Permalink to this headline">#</a></h2>
+<p>Siden den deriverte er stigningstallet til tangenten i et punkt på grafen, så vil fortegnet til den deriverte vise oss om grafen stiger eller synker. Bruk GeoGebra-appen over til å kontrollere at den deriverte (den momentane vekstfarten) er positiv når grafen stiger og negativ når grafen synker.</p>
+<p>På samme måte som vi er interessert i punktene der <span class="math notranslate nohighlight">\(f(x)=0\)</span> (nullpunktene til funksjonen), så har også punkt der <span class="math notranslate nohighlight">\(f'(x)=0\)</span> spesiell interesse. At den deriverte er 0 i et punkt må bety at tangenten til grafen er vannrett i punktet. Hvis vi ser for oss en graf, så ser vi at det skjer i topp- og bunnpunkt. Ved å finne nullpunktene til <span class="math notranslate nohighlight">\(f'(x)\)</span> kan vi altså finne topp- og bunnpunkt for <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+<div class="def admonition">
+<p class="admonition-title">Fortegnet til den deriverte</p>
+<p>For en funksjon <span class="math notranslate nohighlight">\(f(x)\)</span> gjelder det at:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f'(x)&gt;0\)</span> når grafen stiger mot høyre</p></li>
+<li><p><span class="math notranslate nohighlight">\(f'(x)&lt;0\)</span> når grafen synker mot høyre</p></li>
+<li><p><span class="math notranslate nohighlight">\(f'(x)=0\)</span> og skifter fortegn når grafen har topp- eller bunnpunkt</p></li>
+</ul>
+<p>Det siste punktet gjelder ikke for eventuelle topp- og bunnpunkt som er endepunkter i definisjonsmengden til funksjonen.</p>
+</div>
+<p>Når vi skal analysere en funksjon og finne ut hvordan den oppfører seg ønsker vi ofte å bare se på fortegnene til funksjonen og den deriverte. Til det bruker vi det vi kaller ei fortegnslinje. Vi bruker hel linje for å markere at funksjonen (eller den deriverte) er positiv, stipla linje om den er negativ, og en <span class="math notranslate nohighlight">\(0\)</span> om det er nullpunkt.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel: Fortegnslinje</p>
+<p>Ei fortegnslinje kan se ut som på figuren under</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/eksempelfortegnslinje.png"><img alt="../../_images/eksempelfortegnslinje.png" src="../../_images/eksempelfortegnslinje.png" style="width: 374.5px; height: 125.0px;" /></a>
+</figure>
+<p>Denne fortegnslinja viser at funksjonen har nullpunkt for <span class="math notranslate nohighlight">\(x=-2\)</span> og <span class="math notranslate nohighlight">\(x=2\)</span>. For <span class="math notranslate nohighlight">\(x&lt;-2\)</span> og <span class="math notranslate nohighlight">\(x&gt;2\)</span> er funksjonen positiv. For <span class="math notranslate nohighlight">\(-2&lt;x&lt;2\)</span> er funksjonsverdien negativ. Fortegnslinja for den deriverte viser et nullpunkt for <span class="math notranslate nohighlight">\(x=0\)</span> og at den deriverte er negativ før <span class="math notranslate nohighlight">\(x=0\)</span> og positiv etter. Det betyr at <span class="math notranslate nohighlight">\(x=0\)</span> må være et bunnpunkt for funksjonen.</p>
+<p>Det kan være flere funksjoner som passer med dette, men et eksempel er:</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/fortegnslinjemedgraf.png"><img alt="../../_images/fortegnslinjemedgraf.png" src="../../_images/fortegnslinjemedgraf.png" style="width: 567.6px; height: 362.40000000000003px;" /></a>
+</figure>
+</div>
+<p>Under kan skrive inn funksjonsuttrykk for polynomfunksjoner og få fram fortegnslinje for <span class="math notranslate nohighlight">\(f(x)\)</span> og <span class="math notranslate nohighlight">\(f'(x)\)</span> (og for den andrederiverte <span class="math notranslate nohighlight">\(f''(x)\)</span>, men den ser vi ikke på i 1T). Prøv deg fram med ulike funksjonsuttrykk og se hvordan fortegnslinja for <span class="math notranslate nohighlight">\(f(x)\)</span> viser hvor funksjonen er positiv/negativ og hvordan fortegnslinja <span class="math notranslate nohighlight">\(f'(x)\)</span> viser hvor funksjonen stiger/synker. Du kan også tegne inn grafen til <span class="math notranslate nohighlight">\(f'(x)\)</span> dersom du vil se den.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+
+<script> 
+    var views = {'is3D': 1,'AV': 0,'SV': 0,'CV': 1,'EV2': 1,'CP': 0,'PC': 0,'DA': 0,'FI': 0,'macro': 0};
+    var parameters = {
+   "width":1550, "height":658, 
+   "bordercolor": "#be8322", 
+   "showResetIcon":true,
+   "enableLabelDrags":false,
+   "enableRightClick":false,
+   "errorDialogsActive":false,
+   "useBrowserForJS":false,
+   "showZoomButtons":true,
+   "appletOnLoad":function(api){ /* api.evalCommand('Segment((1,2),(3,4))');*/ },
+   "showFullscreenButton":true,  
+   "disableAutoScale":false,
+   "allowUpscale":false,
+   "clickToLoad":false,
+   "appName":"classic",
+   "buttonRounding":0.7,
+   "buttonShadows":false,
+   "language":"nb",
+   "ggbBase64":"UEsDBBQAAAAIAIy4VVY9HnceHAUAADEmAAAXAAAAZ2VvZ2VicmFfZGVmYXVsdHMyZC54bWztWl9v2zYQf14/hcCn7SG2ZFu2U0Qp0gLDAqRpsQTDXmmJlrnQpCZSsZxPv+MfS3Jsp6n/LHbRPIQ+ijzxfr/j8Ujq4kM5Zd4jySUVPEJBy0ce4bFIKE8jVKjx2RB9uHx3kRKRklGOvbHIp1hFKNQtq34gtQZ9X9fhLItQzLCUNEZexrDSXSIkxmNGOUGeV0r6notbPCUywzG5iydkim9EjJXRNVEqe99uz2az1uKtLZGnbVAs26VM2mmqWlAiD4bOZYTcj/egd6n3rGv6dXw/aP/9+ca+54xyqTCPYSBgVkLGuGBKwk/CyJRw5al5RiKUCcoV8hgeERahr1ryfh3nhPyGPNcJ0PLR5btfLuREzDwx+ofEUKfyAlS7fkZo6zbw+JNgIvfyCA0GyANwdTGKUCcMATSWTXCEfNuY4TnJvUcMGlwNLpSITX9TO8ZMOsXmTZ9FQuyTnmvPKbAEcHpSEeDDbwXIkxkhCYwaORvhB9AzN0w3NBrT7+iT0xg2a9WcuWo3sFiIPJFeGaFbfIu8uSufbAlNLtoO2NdBnJCM8AQaLeEcbIVzf2hw1gXgrIsjhtlpfFOY+ycC875Bhnl8AJS/8Ca2na2wDToQHMAkU/4MFkv4XvM/SQqjbqLcPR2UTwLjZR/ubYUu5ARgD/w/PmQNWBZDqf9D4iKmGSPl/wu8zYsciDdGqEDvbJdjNEHXSdlbhAx47zrQtbUWPjWh8QMnEnI4cIuqk/7xB01geTLKBCSJVAGewWBoNZB/+RJpFDij0GZnIsYFj7VVFbifivyxyUa3578FH7XOrWfAgcjYjKUkqZYqXO4Wcu3a26V1P7Rri0IxrfaaK9hbASQwELky8gdCsntQ9YXf55hLvcF67iiwycmbUcqh7iYQd1Fv9dEOsyfH85fYDk+B7ZPkeg8Rjz/ivGKiydp2GdXGNb8FbvDG1H1H+G8CsXvyc8ruu5MT9beb+h2/tx691uCInegRzBM1DH85sU4hfiZ0K5FwTR4OqxeRFPM97GrYPG3M6a8LuWJkYBnZ3YzNnDbQWtp4hl1Dawjqnrl44Nu/oHfuB0Efzg+O1uM1wktbGA2xragxtrneITE+sXmzGc9YcH10vtiCWKlCsncS8eN4toOEpoTboAwBxDc65lCA5ict6TuLMjDyHAp4+qQLqDbdwaqclt6V7XFlG151bNG1Rc8WoUPvG8xmENoaefKz5aG33abolCLJ4TnfW2Z9TM7DiynJG4HhdiFXvhPa0AA2FMtnU5LRBMieUoDzDHCeYlhJdVY+koIVCq7g4GaL11dw1uFmNFETnYbB+Ma01MRa9LyJyOmT4KoCy9P+esXMZd3SccU6ojsvZZmvilqbfHqzBzd8dbfgjHnK6sl4ZaWaAXvMbxqtHhG+TAwMxPDSb3WG3WAYdv1BMDgPh/1X8hQMa57sg91o2jQfgb7V+YjzuD4ohRR3A5PA2165dGuuHwx6Ybdz3gmD8/Me/ICx73sv+HtVUe9rjvEs0HjAStODHfMxEReyPry2UoUQuORWifHRZiu4KCmjOJ+vvulgECtS1gnDvREanyAcYTq42RSAPa2Hdm2lxj2/NWZMAUUO34fAKYJ5CeUfcfyQ5qLgzrUbI9iP6W7xOcb91UgIRmAnvDDr40Ju3C6vrPybAHIr+FvuFeA7nPhhJMqlxeobF2SyngE3Rmjc+a6ZAa+3cnVFOjuYKxzwUMX0+a77yrU5SpOCduPjqPbiS6zL/wBQSwMEFAAAAAgAjLhVVrVrku95AwAAPREAABcAAABnZW9nZWJyYV9kZWZhdWx0czNkLnhtbO1YzXLTMBA+w1NodCe2E9upO3WZDBxgBpgyXLiqtpIIHMlIShz31XgHnomVVm0daIF0Qpl28MGrH++u9O2nleST59tVQzZcG6FkSZNRTAmXlaqFXJR0befPjujz06cnC64W/FwzMld6xWxJM/fllR7URtM8dm2sbUtaNcwYUVHSNsw6lZKq+bwRklNCtkYcS/WOrbhpWcU/VEu+Ym9Uxay3tbS2PY6irutGl15HSi8iMGyiramjxcKOQFICQ5empKFwDHZ3tLuJ1xvHcRJ9fPsG/TwT0lgmKxgITKvmc7ZurIEib/iKS0ts33KYgJKimoCPhp3zpqSvpYW58soNkVRrvQH9oFzSSZLF9PTpk5NKKV0borYlBSRUj+ICRQfwAmTYt8G+DfZ12NhhY+cbI2fQLFVH1PkncFxSq9fgNQzIV/w30P1CNUoTXdIxeIC4JTHIc5DFGALStEsGFkdJjE+SFnGS5MkY9RvWc002DIwGr2xtVeVN+tY5a0zw5Z2/VTXHnjR8LwVwwiFjLIfog3PTcl77EuIJ0wIq9J5VQ3vAiA+2bzixS1F9ltxAPLOBkiu8EnXNHTlRh3+RqGLcu6Qt00Alq4Fu2C8WXG4AMaUN2cZ+ED0IsHbhao6k28TXexDQe+EENHt1mIkWWzJDjRl+OBujmKBIUWQBsZMokOcnGrGtMJOXV0GbheqAOfHEM2ffQIN7QBLeEGW36EKM/1ZEgTz/KqYklDnM+tvXX8PtF2bFtOVGMDlYvi9cx4/I5w8B+b+J++1Agn3JB/id+foOfpBW74RfUXgAxwlIgNDLqxSVHQrGOXM7WDAB5L0doQDMbcwMKR0TNObnkLN/u/hb1fRLXmslr3EcNF1DOQlQ3mXl7At/kk08/hnuEAMGj9KwP2RFHqd5erBY3JXSeyE709VSrHjN2S60sMvdF7TjBHffdOqhdeJxYHvWQwYWkA2GuN4fZX2KgMEXiOv40XD2TAuz2kU1uUdUc0zEiGoBtQeIquT2ap7vXHmYVbP/WXUfLL+sWe1PXGGq7y/rQ0yRoIdMjXlauGeaJ9lRksIN5kAAHeIcKlZtIyph/+hmceO9wjXi5aFHcQEieNv3qkFmOYopiiMUxW9PImat53DTvulkHLp2g5zeLcigd+PZeDT9U9ZfG76X0/FQ6Zen42jwoyC6/Ctx+h1QSwMEFAAAAAgAjLhVVkBtPDQbAAAAGQAAABYAAABnZW9nZWJyYV9qYXZhc2NyaXB0LmpzSyvNSy7JzM9TSE9P8s/zzMss0dBUqK7l4gIAUEsDBBQAAAAIAIy4VVbA6e2olBIAAP95AAAMAAAAZ2VvZ2VicmEueG1s7V3rcttGlv6deYpezlSKHJMSrrwkYqYcJ7vrLTtJWZ6Ua1TaKZBsUhiBAAcAZSoe/9832T/7FPso8yTzne7GhSBIAhRlSy4lJgE0+nrO1+fW3dTZn1Zzj93wMHIDf9jQT7QG4/44mLj+bNhYxtNOv/Gn7353NuPBjI9Ch02DcO7Ew4ZNOdNyeDrpdTVKcxaLYWPsOVHkjhts4TkxFRk2gunUc33eYO5k2JhqFu91+73OeDCyOtZ4NOoMuNbrjPrWZDDoatzRRg3GVpH7jR/85Mx5tHDG/Hx8xefOq2DsxKLVqzhefHN6+v79+5OkfydBODtFF6LTVTQ5nc1GJ7g2GAbpR8OGuvkG9a6Vfm+Kcoam6afvXr+S7XRcP4odf4wuEwGW7ne/++rsvetPgvfsvTuJr0Au28aIr7g7uwJJuna/wU4p1wJ0WfBx7N7wCGVzj2L08XzRENkcn95/Je+Ylw6swSbujTvh4bChndh9zbZ6um5YXXSwqzdYELrcj1VedEC0eZrUdnbj8veyWroTLdq60WBxEHgjh+pk/2A6szV8mD5gbdbtIcVgus0spPSR0mMmpdm6xUxGWXSTWRauFiXrXbyh1/gGCZiu4w0zNGYYzNCZYeLRtpmNbD0qayBvdyDq0/Ch3OgRPialmSY+Is208DHoDhXZshr0wza74s4W330qg1ZstPcPJl4hzRqgOUqwezoz0RM89zSGelE9eixGY2mM/unMokaMHjP6TNQq6tdAoxs3ckceB0IdLyKw+tMQ8Eufo/jW44KIKiFjmt7G/8jh/obstga+SLDgjaa16dPFx6IXxLAcd6x13oAVGsaGDmoYpriAgJQKjtGjRoTBRQxC04gtuNgyDwZIjxikuMg8gnW4mHcdYTI+s874UCptNQ6X9RpFdarJPvhTtclarJR9ypoElVST3R5Y44yGjeev/uPH7988r94BiIKUp8hHswUXmgi4mIx4hRvwjC6WeuzKRzHFNEwVmUqAxwXzB7PoTgzMBlaLfflGa/MPnJBtGrqdtWlrbfFPfDZaNO/EvnKQ7m6xuzYH7zZLkuatfuXmdQN4+cRtWtoA6D4CmXVDQ++LaOpRs6QeC832kFQi7eQV00Rcj8P/wR7+n50mqvJM9YhFV5RXgTzmcxgNGuuZrCtmrtCZUJZQFlJx9gzWs1mP5m2iPqHu+qxLV6VDSYP213SoTRo2p0i7lAhlRdOcCR0oNaphJUoV90KtkspdV6vQf1amAtFBqkpnDIqbdUlyKF2IXhipNjTQfSi/LoPGtA3WJem0RTHChAsiNyXsFfdg3ikWCBq6/mIZr9FtPCcbR9zGAXI7njDNVP5JML7+PqW0qok7EQyorFpYM5nNJK2bNZPqqzPPGXHYk7NzggFjN45H81a0MA38mCVCR6SdnQrz7Ywvx547cR3/V/A9MZV+Ws5HPATecBvQIEUlVJyldp5B0yqx80gRiTzjIAgn57cRcMJWf+EhSnf71slgoA+gOfqGYYB8t/KFYZgn3YFp6d0uVDSMFIB07BC+dbsP29nEXLEGA63f60FK36p3JmqzYFd2Dd00eyhty5b5zTmPYww/Ys6KA6SS3LNQGNeSjPTwMvo+8LKkReD68QtnES9DYd+jpZDG9NyfeVxQUjAZ5u/4ehSsziUJMQiq6+3tAk8dRZ/R7EXgBSHD/DNsCHbUJq7QlXQVeahraS4TwoaaxAV5cBFZqOI0iz7AvEcecUUmuopc5DhIRsvRoo9yqIrjzsqNhHAhYyGHRAESMqeXvhu/Sh5id3ydDZbySwgkZFyvUmW5c5VnpwX0VUKjIsAONBq6VYLG1y7m6+oGDs9rZ4W7K2BKpHVA/1uRpqregFIOPk9Yysmoo4Lp0DpluVI4KTGbgGkeTLgUi4rKznLleq4T3ubxrJDjec4i4pOcGD07Xavv7JqHPvco9zLikfmDzJqvwweIlsEykm/SjooCvzjx1XN/8obPoEh+cUiRxxhPsZIJH7tzFJTpimEOAerPoI9MnfBZyBO6yi5Kdqq+s2gRcmcSXXGO2aGYKudGPpsYYjKoM9j4HhcmypwmCWqZ0xSh2mIOFSbzR+PQXdBUYSNYG9c8mwwTN6Ia0gTKDYpEGBpUVuCDpbGwZYIw5jM/Agj/hmLOMr4KAFZU4MR4jajAGV+h/wieoJBCxxT6cUVat7lqsSFrNlfsGTNa7I8Mdx2mt/67abRagI2YVNOlL5oUfeAenyNUUHyV1SyEC+DAgtHfoF0LUi7RzjfkowpCIls6xUAdmmBkTWGCUejHW1w5Kc0955YEWU4xi1pfp7hM1LW7SpCXIQGRG0ltFvh/XkjqvFn6LzyaGuJFM/Igt1pf/37lfFt4QyQuffFbEMxbRTEQXyEDQieYXZA5klJko+LmP93JhEvDJ0AAyo1vcd/rq/knaVvOsq8dmE3fJoyTT5J92YO0dPaxSNW0wah1CSLZtoVRug3hDFbZGIeSqcfk1SchZRlBS8h6EHHrklj0ep3Eid7qS7V13MlwTAKPg/nc8SfMF77UGz4PbiBcJ3yKNiaCBNKgd7Rh48ObIIgvipS9/KiGv4yTjJPJVElUVf0G6T03ilNKiuxVqH1fIqcmQWVMl+wdsmJkTcoskakFxaJ01qa+OQIbtjCgHv0rkv+eBf+j5EIJ8WvR/on0StCvkWiE8At3MsHsCCKh5FKVz8TBdmtll8ioR6+fp9OIxwwWIKlMEqTaYBc5EyeHCfF9uB0jc7zIGY7N7QaOahoeGGlL0Z1f4WaQlViP2KOHRmyscT0WYmf2Ri2Sj4skz7lLn4XmaRTh0dB8O+U3TEjPD5Xh+OHl9MJB5LTNtMs2owf2z//5XzZCzFM8jsRj8///z2mpXGvZxPcYwVaROM4yJ3cjWSx9uVafbEK+kBWqEniBhi6hWkqM1jXtQSOprBJOkCb+062BpmNWbURAPqXwB7Bv56MATM4JGRnr3aaQz+EtF7Twf6HFiw9Trc1gxOAL3x8vNzTy80UNjYzMlTWyijR9mRp5Y96snIWaN6vm80WpS7VGScr/SNG5hxAInyo6vAgQMgovjMtScvjLOQ9p30tWsCDozZMetiF0da2LaL7Rta0SZ3KLRC+n2J6eIwS83nO9Ys9vij3vWCcmVvoszTAtWpHoKoYdpefrE59medH8/tBc3SDuBYw19VaLnTLjY5utmhAAkKB4eaVedpK3m4b6ajIFQqtLBpn/C0D0OnUR/S8QV07vDXLNnetoN7k2UCOKFICjhnQPOMGKRsWRIGPNgaiq8xNgK+Arg2HPZJ240yTYKyiJ6K7oSJX5KsoWhc0npDz8DqeE9Le1SS9KFAaigH4fA9mYDFsHUns2yCKFoWx16o8CodschETzgJAgaAUIybL32d11n2gZx7lYLJn8hwUFy9YMC1ZYboURG6tkpFYuHhp6NoR0sXGv12RZ2C9EbpPS3uU2neNjNUs4L2oV6YSW8xacPCjcpfIfm2RvxRpqzgvMVuu2royIF1i8fS52RdA6HdaBhDeVff2evXJmGMuqAyxwNqfgMg8nLpKwFoWBQ2dch9jfEV1ztlj617Eo9uOKj5cxvzjnf19iOzC/+PrvyyD+9t3irx/k3bOm23ombz8O3y2aKtVVaS15aTNX+EOvuD+Lr5rvFq3Ly131YzC/pCoO2ctag/e1r/aX0+a/8Tbb0ki8yupN+vtx+Jav4uYKlWwMpdXOdSQt8KyJbU6tNvFFfmltLemXi52g+U5JpqBXB3XqfBlOdvTuWN3bxhLMRrEwnWdH2kybCcjuY8gmHtcWQgUUKW6l6AQXfUtvpl4pAM/5jARL85eplxGIKQq1WZYMG7Hp4ktv4SuhYGnnUaZFi6twy/f2CrB9ldh4zVwXc2QC86dYuIU9ucHBZ/nUpvtMT8bVap1iPs/ib8E7MPMo/fyBj4NQyKTtHS0kDoc62u+22mWvmrluwPJuW8h4hI6moGPlvRSoY9Ua2oe7NJCUdGu0rVuTffBDhlL8Zek1AIhCRYJt7dkaAvPdLEBQjbUpPJsSJOaT60OxZo9zWNze5YPASB3Zg8ZafU3huKWfO+FYbKkaHjdQOd6Kyv2w3IrLw4BZQrutvVtH5l5oZgDdhtBKEEWFFBocDj98bJsE2CMNJQ/ZY2O2CmhrdTdD7UGw3YLbX3kYu9fYncoEZsNdxsPNbmDmzZkMlSVGTgfWjPFHuGpNBMC3MbOKdUlQfJsEYZq57uWoAhTdpXqJ9PKqUxOsbtWZPiyveBcnRe0laylvIXfW5U9u+3QEz3Ca7bVHIOp1/iiH2BgnNijuW9hdd/JoA9ajcfJ0rImRk5ds966xY6eq9/YX0OOlf/EiWNz+O3Y1/iwI0qSYT6tjtAvJ5MeXJItIUetZSXaZXjTBs69S31F1aXXT7vTaq6t2vvx6Ab1shY6KHwVHB0eE6wSEa8aDv5Bw8GbYiIwUFTWStmGbNTsGdphC3tLm0v1rP6KGp3W0zTVMqesK2IWBU4AuKQeMWRfvitAVLzfASxGd3eiNVOPZAh0VqbzndyuXDt1s0KHzYGI7zRFZuLHdUVDJo4jaS592mdOpIew42Nhocc35gg4i/Oy/DR0/omPqG/tfYifMYwBbw5ylF8uX3M9vKXfCMHif220e0YDlcO0TnGK2bK1r9QeDARbPGuy3StNyulKTUir2P1CM5A/yvmR7d4wgUcZGGdautrdbrRNgx/pEHPUSJwSkGqG9WEdBwQab3eiV85a/K5I8rzZkh5XWSI/1FZSG4pIIHCoRVjK7yHLEE22a7wiBVopPrMYSwzpyN8xu5kw2uJP6bBV5RDUciUmjL4dJ8mTDDibZ0izr4FxyHdtTbEN6NMan1aWzgzjDKgZ5L8bnFmfjB1AxLo9jlkSQZeAv7yLurrbUFS2rV7rDNSq+t5rLAt8l9WLhuXqdZW7czjpLTO1zAvR9eHCb5mHOOiwYhxRb2W8cPtmGFfe3FfagX8j9bnLX4lTtWcRuRcS25D02I1Kg6/Jj4uLnDMR3dXwbZK7Moa3bCr44DtXZiFRvJ1LtrUhfyl6kMudzzfssup9mNfezqv/55UK3xETdZqPWtlT3m6q5Yys7LdVxdUuVTW4xDd2xzKIeZE71IAvg/HIQntMvhD0G+9bca98Otjkh68KJNgVMXe4VTypNN8TNW34dxVPuxQJ320UO8VzWmHA1V/LoZxP2HPuvbzObknBGb+dZhgrm8dajDLkDxGumGDnmw5273OUJeZD6nFC1Ywv85iwm+7OHswECVlgd6aVnvYWkKJON6sV6BZVdzRL93oVjDP7QBeyhS00pmciEPNUUmwpScC11QwpmsZWfnJ8Eu8UV8RSF7XqBONoaYqvAG913N+Ns5FbYQoVXD7SpMneh+FHc9wccShu74djjf6X66Wchq0bUilyn6yF8p5VvK2E8PQAFm6dqwUarJuuTQk+8f6i8VyKUOC9usciN9WXWJIMTa8wXUNKXiW7OoYFcdkjRWmBQZR4mFugnQT8/FnaE1Nde1YLB7tOXcgnkARx47csYX/IDRvdw9nLbQcofryPnOkZDcjPwoaozlaDlAvQQ+fkkPj+j+Cw3PvWc8YlF//rGJyr4rManSq1maKbea0I3nPshsoHlZVZmOcmMHMmMQ0iGCh4zyeSp8lokM3MkMw8hGSp4xCQ7gGIQkynFSBLXptgd5exDpthmqKSgvpJjFRfiWAVCNJeJSUjyirbDwiYkaecYCVEcM72zpGax0zHktJ44ywGRtzfUktkWqsRnV3oVwmHrC0qV4mGZDEX2IzALobMcs4y7MwvCtiaz7iieHziz1O+wHIVZCN/nmGXenVkQ8zWZdUfF8LCZdUxeWWu8su7Oq33G/yavHoLp/xB4td3nEtxQPhdMyzKfa5/yKfO5HoL62e1z0d8PeJBxijJ/rLgHUD/R8cPfBtZie8bA1E0JAqPsJzUOAQX5GAkoYDyXgWKfkisDxUNQc4/aEa8CDfw4K6CwsZmtKuvJV0pYDy+gjPX7VGYZ6x+C0nzUrN+xIVg/MXs9zdTwZ496+CEgWrCU0qDst4EOWtpIlQQ9lGgJsUpRV00khZ5wcW9qwihVE/2TLv5wRF+zugOk28aejQE7cJHqCXooURSCxXU1RVLogePi89oPx9EVcKMJDwfzP1UWav2zlP911UVS6IHz/4vTFzhXovV1w4Cu6Bu2qcm94gcshybaQtzWWA6tq0BUmYeJk8e6HCpPQ8gw6EGCQS1RKADg+EV1ANTVFKrMEwDuCwAHWQZqwUUBAPsTqwOgrqpQZZ4AcF8A6ByKgGQpX9zWQEDd9X1V5gkBnw4B4E32g9v0nPy15O/+BVBLAQIUABQAAAAIAIy4VVY9HnceHAUAADEmAAAXAAAAAAAAAAAAAAAAAAAAAABnZW9nZWJyYV9kZWZhdWx0czJkLnhtbFBLAQIUABQAAAAIAIy4VVa1a5LveQMAAD0RAAAXAAAAAAAAAAAAAAAAAFEFAABnZW9nZWJyYV9kZWZhdWx0czNkLnhtbFBLAQIUABQAAAAIAIy4VVZAbTw0GwAAABkAAAAWAAAAAAAAAAAAAAAAAP8IAABnZW9nZWJyYV9qYXZhc2NyaXB0LmpzUEsBAhQAFAAAAAgAjLhVVsDp7aiUEgAA/3kAAAwAAAAAAAAAAAAAAAAATgkAAGdlb2dlYnJhLnhtbFBLBQYAAAAABAAEAAgBAAAMHAAAAAA=",
+    };
+    var applet = new GGBApplet(parameters, '5.0', views);
+    window.addEventListener("load", function() { 
+        applet.inject('ggb-element');
+    });
+</script>
+
+<div id="ggb-element"></div> 
+</div></div>
+</div>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel: Fra graf til fortegnslinje</p>
+<p>Vi skal tegne fortegnslinje for funksjonen <span class="math notranslate nohighlight">\(f(x)=\frac{1}{2}x^{3} - 3x^{2} + \frac{3}{2}x + 5\)</span> som er tegnet i grafen under. Ved å ta utgangspunkt i grafen skal vi tegne fortegnslinje for funksjonen og den deriverte til funksjonen.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/graftilfortegnslinje.png"><img alt="../../_images/graftilfortegnslinje.png" src="../../_images/graftilfortegnslinje.png" style="width: 535.2px; height: 362.40000000000003px;" /></a>
+</figure>
+<p>Når vi skal tegne fortegnslinje for selve funksjonen, så ser vi på hvor den er positiv og hvor den er negativ. Vi ser da at</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f(x)&gt;0\)</span> for <span class="math notranslate nohighlight">\(x\in\langle -1, 2\rangle \cup \langle 5, \rightarrow\rangle\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x)&lt;0\)</span> for <span class="math notranslate nohighlight">\(x\in\langle \leftarrow, -1\rangle \cup \langle 2, 5\rangle\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x)=0\)</span> for <span class="math notranslate nohighlight">\(x\in\{-1, 2, 5\}\)</span>.</p></li>
+</ul>
+<p>Når vi skal tegne fortegnslinje for den deriverte, så ser vi på hvor funksjonen stiger og synker. Det er litt vanskelig å se nøyaktig, men om vi finner <span class="math notranslate nohighlight">\(x\)</span>-verdiene til topp- og bunnpunkt ved hjelp av CAS, så ser vi at</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f(x)\)</span> stiger slik at <span class="math notranslate nohighlight">\(f'(x)&gt;0\)</span> for <span class="math notranslate nohighlight">\(x\in\langle\leftarrow, 2-\sqrt{3}\rangle \cup \langle 2+\sqrt{3}, \rightarrow\rangle\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x)\)</span> synker slik at <span class="math notranslate nohighlight">\(f'(x)&lt;0\)</span> for <span class="math notranslate nohighlight">\(x\in\langle 2-\sqrt{3}, 2+\sqrt{3}\rangle\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x)\)</span> er flat slik at <span class="math notranslate nohighlight">\(f'(x)=0\)</span> for <span class="math notranslate nohighlight">\(x\in \{2-\sqrt{3}, 2+\sqrt{3}\}\)</span>.</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/fortegnslinjeeksempel.png"><img alt="../../_images/fortegnslinjeeksempel.png" src="../../_images/fortegnslinjeeksempel.png" style="width: 565.9499999999999px; height: 106.39999999999999px;" /></a>
+</figure>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./docs\vekstfart"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="momentanvekstfart.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Momentan vekstfart</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="numeriskderivert.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Numerisk derivert</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Kristoffer Stige<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
