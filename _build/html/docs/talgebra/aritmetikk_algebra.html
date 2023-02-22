@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Tallmengder og symboler &#8212; Matematikk 1T</title>
+    <title>Aritmetikk og algebra &#8212; Matematikk 1T</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -55,8 +55,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Aritmetikk og algebra" href="aritmetikk_algebra.html" />
-    <link rel="prev" title="Matematikk 1T" href="../intro.html" />
+    <link rel="next" title="Kvadratsetningene" href="kvadratsetningene.html" />
+    <link rel="prev" title="Tallmengder" href="tallmengder.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -114,13 +114,13 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Tallmengder og symboler
+ <li class="toctree-l1">
+  <a class="reference internal" href="tallmengder.html">
+   Tallmengder
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="aritmetikk_algebra.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Aritmetikk og algebra
   </a>
  </li>
@@ -475,7 +475,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/docs/talgebra/tallmengder.ipynb"
+        <a href="../../_sources/docs/talgebra/aritmetikk_algebra.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -535,13 +535,25 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#lister-og-intervaller">
-   Lister og intervaller
+  <a class="reference internal nav-link" href="#regnerekkefolge">
+   Regnerekkefølge
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#implikasjon-og-ekvivalens">
-   Implikasjon og ekvivalens
+  <a class="reference internal nav-link" href="#potenser">
+   Potenser
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#standardform">
+     Standardform
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kvadratrotter">
+   Kvadratrøtter
   </a>
  </li>
 </ul>
@@ -553,7 +565,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Tallmengder og symboler</h1>
+                <h1>Aritmetikk og algebra</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -564,13 +576,25 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#lister-og-intervaller">
-   Lister og intervaller
+  <a class="reference internal nav-link" href="#regnerekkefolge">
+   Regnerekkefølge
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#implikasjon-og-ekvivalens">
-   Implikasjon og ekvivalens
+  <a class="reference internal nav-link" href="#potenser">
+   Potenser
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#standardform">
+     Standardform
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kvadratrotter">
+   Kvadratrøtter
   </a>
  </li>
 </ul>
@@ -583,90 +607,169 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tallmengder-og-symboler">
-<h1>Tallmengder og symboler<a class="headerlink" href="#tallmengder-og-symboler" title="Permalink to this headline">#</a></h1>
-<p>I matematikk arbeider vi mye med tall og ofte vil vi være interessert i å se på ulike grupper av tall. Vi starter derfor med å definere noen viktige tallmengder som vi kommer til å arbeide med. En tallmengde er en samling av tall som kan inneholde et endelig eller uendelig antall elementer.</p>
-<p>Den første tallmengden vi lærer oss er de naturlige tallene, eller telletallene. Videre kan vi utvide dem ved å legge til negative heltall. Det neste naturlige steget er å lage brøker, såkalte rasjonale tall. Når vi i tillegg tar med alle de irrasjonale tallene som ikke kan skrives som brøker, så har vi fylt opp hele tallinja av reelle tall.</p>
-<div class="admonition-noen-viktige-tallmengder admonition">
-<p class="admonition-title">Noen viktige tallmengder</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(\mathbf{N}\)</span>: Naturlige tall - Alle positive tall - <span class="math notranslate nohighlight">\(\{1,2,3,\ldots\}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\mathbf{Z}\)</span>: Hele tall - Alle hele tall - <span class="math notranslate nohighlight">\(\{\ldots, -2, -1, 0, 1, 2,\ldots\}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\mathbf{Q}\)</span>: Rasjonale tall - Alle tall som kan skrives som brøker av hele tall</p></li>
-<li><p>Irrasjonale tall - Alle tall som ikke er rasjonale - <span class="math notranslate nohighlight">\(\pi, \sqrt{2}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\mathbf{R}\)</span>: Reelle tall - Alle tall på tallinja - Rasjonale + irrasjonale</p></li>
-</ul>
-<p>Vi ser at rasjonale tall er en delmengde av de reelle tallene, de hele tallene er en delmengde av de rasjonale og at de naturlige tallene er en delmengde av de hele tallene. Dette kan vi illustrere med figuren under.</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../../_images/tallmengder.png"><img alt="../../_images/tallmengder.png" src="../../_images/tallmengder.png" style="width: 198.29999999999998px; height: 192.29999999999998px;" /></a>
-</figure>
+  <section class="tex2jax_ignore mathjax_ignore" id="aritmetikk-og-algebra">
+<h1>Aritmetikk og algebra<a class="headerlink" href="#aritmetikk-og-algebra" title="Permalink to this headline">#</a></h1>
+<p>Aritmetikken er læren om tallenes egenskaper og omhandler metodene vi bruker til å regne med tall. Algebraen tar for seg generalisering av aritmetikken til bokstavuttrykk. I aritmetikken kan vi se på uttrykk som <span class="math notranslate nohighlight">\(4+4=2\cdot 4\)</span>, mens vi i algebraen arbeider med symboler og kan se på <span class="math notranslate nohighlight">\(x+x=2x\)</span>. Her skal vi se på en del av de grunnleggende regnereglene vi bruker når både til tallregning og bokstavuttrykk.</p>
+<section id="regnerekkefolge">
+<h2>Regnerekkefølge<a class="headerlink" href="#regnerekkefolge" title="Permalink to this headline">#</a></h2>
+<p>De fire grunnleggende regneoperasjonene er addisjon, subtraksjon, multiplikasjon og divisjon. I tillegg kommer vi til å ha bruk for potenser og røtter (kvadratrøtter).</p>
+<p>Når vi skal utføre et sammensatt regnestykke, så benytter vi oss av denne regnerekkefølgen</p>
+<div class="admonition-regnerekkefolgen admonition">
+<p class="admonition-title">Regnerekkefølgen</p>
+<ol class="simple">
+<li><p>Parenteser</p></li>
+<li><p>Potenser og røtter</p></li>
+<li><p>Multiplikasjon og divisjon</p></li>
+<li><p>Addisjon og subtraksjon</p></li>
+</ol>
 </div>
-<section id="lister-og-intervaller">
-<h2>Lister og intervaller<a class="headerlink" href="#lister-og-intervaller" title="Permalink to this headline">#</a></h2>
-<p>Ofte vil svarene på oppgaver være konkrete lister av tall, eller intervaller på tallinjene. Da trenger vi symboler for å spesifisere disse.</p>
-<div class="admonition-lister-og-intervaller admonition">
-<p class="admonition-title">Lister og intervaller</p>
-<ul class="simple">
-<li><p>{} - brukes for lister av tall</p></li>
-<li><p>[] - brukes for intervaller der endepunkt er med</p></li>
-<li><p><span class="math notranslate nohighlight">\(\langle \rangle\)</span> - brukes for intervaller der endepunktene ikke er med</p></li>
-<li><p><span class="math notranslate nohighlight">\(\setminus\)</span> - bortsett fra</p></li>
-<li><p><span class="math notranslate nohighlight">\(\cup\)</span> - kalles union i matematikken og betyr omtrent det samme som <em>og</em></p></li>
-</ul>
-<p>For to tall <span class="math notranslate nohighlight">\(a\)</span> og <span class="math notranslate nohighlight">\(b\)</span>, der <span class="math notranslate nohighlight">\(a\leq b\)</span>, så er</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(\{a,b\}\)</span> - mengden av tallene <span class="math notranslate nohighlight">\(a\)</span> og <span class="math notranslate nohighlight">\(b\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\([a,b]\)</span> - mengden av tallene fra og med <span class="math notranslate nohighlight">\(a\)</span> til og med <span class="math notranslate nohighlight">\(b\)</span> (<span class="math notranslate nohighlight">\(a\leq x\leq b\)</span>)</p></li>
-<li><p><span class="math notranslate nohighlight">\(\langle a,b\rangle\)</span> - mengden av tallene mellom <span class="math notranslate nohighlight">\(a\)</span> og <span class="math notranslate nohighlight">\(b\)</span> (<span class="math notranslate nohighlight">\(a&lt;x&lt;b\)</span>)</p></li>
-</ul>
-<p><span class="math notranslate nohighlight">\([a,b]\)</span> kalles et lukket intervall, mens <span class="math notranslate nohighlight">\(\langle a, b \rangle\)</span> kalles et åpent intervall. Vi kan også lage halvåpne intervall <span class="math notranslate nohighlight">\([a,b\rangle\)</span> og $\langle a, b].</p>
-<p>For å skrive at <span class="math notranslate nohighlight">\(x\)</span> er et element i en mengde <span class="math notranslate nohighlight">\(M\)</span>, så skriver vi <span class="math notranslate nohighlight">\(x\in M\)</span>.</p>
-<p>For å skrive at <span class="math notranslate nohighlight">\(x\)</span> ikke er et element i en mengde <span class="math notranslate nohighlight">\(M\)</span>, så skriver vi <span class="math notranslate nohighlight">\(x\notin M\)</span>.</p>
-<p>Vi kan også kombinere ulike intervaller eller fjerne enkelte verdier</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(\mathbf{Q}\cup\{\pi\}\)</span> - mengden av rasjonale tall og pi.</p></li>
-<li><p><span class="math notranslate nohighlight">\(\mathbf{R} \setminus \mathbf{Z}\)</span> - mengden av reelle tall som ikke er heltall</p></li>
-</ul>
-<p>Dersom et intervall går til uendelig kan vi bruke tegnene <span class="math notranslate nohighlight">\(\infty\)</span> eller piler <span class="math notranslate nohighlight">\(\leftarrow\)</span> og <span class="math notranslate nohighlight">\(\rightarrow\)</span>.</p>
+<p>Videre har vi en del egenskaper eller regneregler som gjelder både ved tallregning og bokstavregning. De fleste bør være kjente, men her formulerer vi dem presist.</p>
+<div class="admonition-regneregler admonition">
+<p class="admonition-title">Regneregler</p>
+<p>Vi lar <span class="math notranslate nohighlight">\(a, b \in \mathbf{R}\)</span>.</p>
+<p><strong>Kommutativ lov</strong>
+Addisjon og multiplikasjon kan utføres i den rekkefølgen vi ønsker. Gjelder ikke for subtraksjon og divisjon.</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(a+b=b+a\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(a\cdot b = b\cdot a\)</span></p></li>
+</ol>
+<p><strong>Assosiativ lov</strong>
+Vi kan addere og multiplisere tre elementer ved å velge to vilkårlige av elementene først. Gjelder ikke for subtraksjon og divisjon.
+3) <span class="math notranslate nohighlight">\(a+b+c= a + (b+c)= (a+b)+c\)</span>
+4) <span class="math notranslate nohighlight">\(a\cdot b\cdot c = a\cdot(b\cdot c)=(a\cdot b)\cdot c\)</span></p>
+<p><strong>Distributiv lov</strong>
+Handler om hvordan vi multipliserer ut parenteser. Gjelder også om vi bytter en eller begge addisjonene med subtraksjon.
+5) <span class="math notranslate nohighlight">\(a\cdot(b + c)= a\cdot b + a\cdot c\)</span>
+6) <span class="math notranslate nohighlight">\((a+b)(c+d) = ac + ad + bc +bd\)</span></p>
+<p><strong>Negativ faktor</strong>
+Multiplikasjon av to faktorer med ulikt fortegn gir negativt svar. Multiplikasjon av to faktorer med likt fortegn gir positivt svar. Gjelder også for divisjon.
+7) <span class="math notranslate nohighlight">\((-a)\cdot b = a(-b)=-(ab)=-a\cdot b\)</span>
+8) <span class="math notranslate nohighlight">\((-a) \cdot (-b) = a\cdot b\)</span></p>
 </div>
-<p>Vi kommer til å bruke symbolene over når vi skal skrive svar på likninger og ulikheter, når vi skal spesifisere intervaller for definisjonsmengde og verdimengde for funksjoner og ved definisjon av ulike sammenhenger og mønster. Alt det her kommer vi tilbake til senere, men vi gir et kort eksempel her.</p>
-<div class="eksempel admonition">
-<p class="admonition-title">Partall og oddetall</p>
-<p>Partall er tall som kan skrives på formen <span class="math notranslate nohighlight">\(2n\)</span> der <span class="math notranslate nohighlight">\(n\in\mathbf{N}\)</span>.</p>
-<p>Oddetall er tall som kan skrives på formen <span class="math notranslate nohighlight">\(2n-1\)</span> der <span class="math notranslate nohighlight">\(n\in\mathbf{N}\)</span>.</p>
-<p>Om vi ønsker å ta med de negative par- og oddetallene, så kan vi bytte ut <span class="math notranslate nohighlight">\(\mathbf{N}\)</span> med <span class="math notranslate nohighlight">\(\mathbf{Z}\)</span>.</p>
+<p>Vi skal ta for oss noen eksempler der vi bruker blant annet den distributive loven på algebraiske uttrykk. Det er imidlertid en viktig huskeregel for arbeid med algebraiske uttrykk som vi må ta for oss først.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel: Trekke sammen algebraiske uttrykk</p>
+<p>Her er fire grunnleggende eksempler på å trekke sammen algebrauttrykk. Det er brukt mange ekstra mellomregninger for å tydeliggjøre hva som blir gjort.</p>
+<p><span class="math notranslate nohighlight">\(2a+(3a-4a)=2a+3a-4a=a\)</span></p>
+<p><span class="math notranslate nohighlight">\(2a-(3a-4a)=2a-1\cdot(3a-4a)=2a-1\cdot 3a -1\cdot(-4a)=2a-3a+4a=3a\)</span></p>
+<p><span class="math notranslate nohighlight">\(4(2-a)=4\cdot 2+4\cdot(-a)=8-4a\)</span></p>
+<p><span class="math notranslate nohighlight">\((4+2a)(2-a)\)</span>=4\cdot 2+4\cdot(-a)+2a\cdot 2+2a\cdot (-a)=8-4a+4a-2a^2=-2a^2+8$</p>
 </div>
-<div class="eksempel admonition">
-<p class="admonition-title">Sammensatt intervall på tallinja</p>
-<p><span class="math notranslate nohighlight">\(x\in [2, 4\rangle\cup[6,\rightarrow\rangle\)</span></p>
-<p><span class="math notranslate nohighlight">\(x\)</span> er et element i mengden av tall fra og med 2, til men ikke med 4 og fra og med 6 til uendelig.</p>
+<p>I det sist eksempelet kom vi bort i uttrykket <span class="math notranslate nohighlight">\(a^2\)</span>. Det er et eksempel på en potens som vi skal se nærmere på i det neste avsnittet.</p>
+</section>
+<section id="potenser">
+<h2>Potenser<a class="headerlink" href="#potenser" title="Permalink to this headline">#</a></h2>
+<p>En potens er en gjentatt multiplikasjon.</p>
+<div class="admonition-definisjon-av-potens admonition">
+<p class="admonition-title">Definisjon av potens</p>
+<p>Dersom <span class="math notranslate nohighlight">\(a\in\mathbf{R}\)</span> og <span class="math notranslate nohighlight">\(n\in\mathbf{N}\)</span>, så betyr <span class="math notranslate nohighlight">\(a^n\)</span> at vi skal multiplisere <span class="math notranslate nohighlight">\(a\)</span> med seg selv <span class="math notranslate nohighlight">\(n\)</span> ganger. <span class="math notranslate nohighlight">\(a\)</span> kalles grunntallet, mens <span class="math notranslate nohighlight">\(n\)</span> er eksponenten.</p>
+<div class="math notranslate nohighlight">
+\[a^n=\underbrace{a\cdot a \cdots a}_{n \text{ ganger}}\]</div>
+</div>
+<p>All regning med potenser kan utføres fra definisjonen, men det blir mye mer effektivt dersom vi tar i bruk regnereglene for potenser. Vi beviser ikke alle regnereglene her, men i eksemplene som følger ser vi at de kommer som en ganske naturlig følge av definisjonen over.</p>
+<div class="admonition-regneregler-for-potenser admonition">
+<p class="admonition-title">Regneregler for potenser</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(a^n \cdot a^m = a^{n+m}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{a^n}{a^m} = a^{n-m}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\left(a\cdot b\right)^n = a^n \cdot a^m\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\left(a^n\right)^m = a^{n\cdot m}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(a^0 = 1\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(a^{-n} = \frac{1}{a^n}\)</span></p></li>
+</ol>
+</div>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel: “Bevis” for regneregel 1</p>
+<p><span class="math notranslate nohighlight">\(3^4\cdot 3^5=\underbrace{\underbrace{3\cdot 3\cdot 3\cdot 3}_{4 \text{ ganger}}\cdot \underbrace{3\cdot 3\cdot 3\cdot 3\cdot 3}_{5 \text{ ganger}}}_{4+5 \text{ ganger }=9\text{ ganger }}=3^{4+5}=3^9\)</span></p>
+</div>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel: Enkle brøkuttrykk</p>
+<p><span class="math notranslate nohighlight">\(\displaystyle{\frac{4^5}{4^3}=4^{5-3}=4^2}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\displaystyle{\frac{5^3\cdot 5}{5^2\cdot 5^{-3}}=\frac{5^{3+1}}{5^{2+(-3)}}=\frac{5^4}{5^{-1}}=4^{4-(-1)}=5^5}\)</span></p>
+</div>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel: “Bevis” for regneregel 6</p>
+<p>Vi ser på uttrykket <span class="math notranslate nohighlight">\(\frac{a^3}{a^3}\)</span> på to måter.</p>
+<p><span class="math notranslate nohighlight">\(\displaystyle{\frac{a^3}{a^3}}=1\)</span> siden vi deler et tall på seg selv.</p>
+<p><span class="math notranslate nohighlight">\(\displaystyle{\frac{a^3}{a^3}=a^{3-3}=a^0}\)</span> ved regneregel 2.</p>
+<p>Siden <span class="math notranslate nohighlight">\(\frac{a^3}{a^3}\)</span> er lik både <span class="math notranslate nohighlight">\(1\)</span> og <span class="math notranslate nohighlight">\(a^0\)</span>, så må <span class="math notranslate nohighlight">\(a^0=1\)</span>.</p>
+</div>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel: Sammensatte potensuttrykk</p>
+<p><span class="math notranslate nohighlight">\(\displaystyle{\frac{(2x)^3\cdot x^2}{x^3}=\frac{2^3\cdot x^3 \cdot x^2}{x^3}=\frac{2^3\cdot x^(3+2)}{x^3}=2^3\cdot x^{5-3}=8x^2}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\displaystyle{\frac{2a^3\cdot (2a)^3}{\left(\frac{1}{2}a^2\right)^{-3}}=\frac{2a^3\cdot 2^3 a^3}{2^{(-1)(-3)}a^{2(-3)}}=\frac{2^{1+3}a^{3+3}}{2^3 a^{-6}}=2^{4-3}a^{6-(-6)}=2a^{12}}\)</span></p>
+</div>
+<section id="standardform">
+<h3>Standardform<a class="headerlink" href="#standardform" title="Permalink to this headline">#</a></h3>
+<p>Når vi arbeider med tall som er veldig store, eller med tall som er veldig små kan en spesiell skrivemåte med potenser hjelpe oss.</p>
+<div class="admonition-standardform admonition">
+<p class="admonition-title">Standardform</p>
+<p>Standardform for et tall er</p>
+<p><span class="math notranslate nohighlight">\(a\cdot 10^n\)</span>, der <span class="math notranslate nohighlight">\(n\in \mathbf{Z}\)</span> og <span class="math notranslate nohighlight">\(|a|\in[1,10\rangle\)</span>.</p>
+<p>Vi skriver altså tallet med et siffer (1 eller større) før komma og multipliserer med en tierpotens for å beksrive størrelsen på tallet.</p>
+</div>
+<p>Standardform forklares enklest med noen eksempler.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel: Skrive tall på standardform</p>
+<p>For å skrive et tall på standardform teller vi antall plasser vi må flytte komma for å ha kun et siffer større eller lik 1 før komma. Eksponenten til tierpotensen blir antall plasser vi har flyttet komma mot venstre.</p>
+<p><span class="math notranslate nohighlight">\(53600000=5,36\cdot 10^7\)</span></p>
+<p>Her har vi flyttet komma 7 plasser mot venstre.</p>
+<p><span class="math notranslate nohighlight">\(0,0000000345 = 3,45\cdot 10^{-8}\)</span></p>
+<p>Her har vi flyttet komma 8 plasser mot høyre og får en negativ eksponent. Det er fordi <span class="math notranslate nohighlight">\(0,0000000345=\frac{3,45}{10^8}\)</span>.</p>
+</div>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel: Regne med potenser og standardform</p>
+<p><span class="math notranslate nohighlight">\(\frac{160000\cdot 0,02}{0,008}=\frac{16\cdot 10^4\cdot 2\cdot 10^{-2}}{8\cdot 10^{-3}}=\frac{16\cdot 2}{8}\cdot 10^{4+(-2)-(-3)}=4\cdot 10^5\)</span></p>
+<p>Her har vi ikke brukt skikkelig standardform før i svaret, men vi ser hvordan regnestykket forenkles ved å bruke tierpotenser og potensreglene.</p>
 </div>
 </section>
-<section id="implikasjon-og-ekvivalens">
-<h2>Implikasjon og ekvivalens<a class="headerlink" href="#implikasjon-og-ekvivalens" title="Permalink to this headline">#</a></h2>
-<p>I mange sammenhenger (spesielt i bevis og utledninger) vil det være nyttig å se på om en påstand medfører (impliserer) en annen påstand. Et ikke-matematisk eksempel er:</p>
-<p><em>Per bor i Molde</em> <strong>medfører at</strong> <em>Per bor i Norge</em>.</p>
-<p>Vi kan imidlertid ikke snu om på resonnementet. Dersom vi vet at Per bor i Norge, så kan vi ikke være sikker på at han bor i Molde. Det her er et eksempel på det vi i matematikken kaller en implikasjon.</p>
-<div class="eksempel admonition">
-<p class="admonition-title">Eksempel: Implikasjon</p>
-<p><span class="math notranslate nohighlight">\(x=5 \Rightarrow x^2=25\)</span></p>
-<p><span class="math notranslate nohighlight">\(x&gt;5 \Rightarrow x&gt;4\)</span></p>
-<p><span class="math notranslate nohighlight">\(x\in[4,5] \Rightarrow x\in [3,6]\)</span></p>
-</div>
-<p>I en del tilfeller, så vil implikasjonen gjelde begge veier. Da har vi det vi kaller en ekvivalens. Et ikke-matematisk eksempel er:</p>
-<p><em>Per er eldre enn Kari</em> <strong>er ekvivalent med at</strong> <em>Kari er yngre enn Per</em>.</p>
-<div class="admonition-ekvivalens admonition">
-<p class="admonition-title">Ekvivalens</p>
-<p>Dersom det at påstand <span class="math notranslate nohighlight">\(p\)</span> er sann medfører at påstand <span class="math notranslate nohighlight">\(q\)</span> er sann og omvendt, så sier vi at <span class="math notranslate nohighlight">\(p\)</span> er ekvivalent med <span class="math notranslate nohighlight">\(q\)</span> og skriver</p>
+</section>
+<section id="kvadratrotter">
+<h2>Kvadratrøtter<a class="headerlink" href="#kvadratrotter" title="Permalink to this headline">#</a></h2>
+<p>De fleste vet nok at <span class="math notranslate nohighlight">\(\sqrt{16} = 4\)</span>, men det kan være greit å definere begrepet kvadratrot skikkelig siden vi kommer til å benytte det inn mot blant annet andregradslikninger senere.</p>
+<div class="admonition-definisjon-av-kvadratrot admonition">
+<p class="admonition-title">Definisjon av kvadratrot</p>
+<p>Vi lar <span class="math notranslate nohighlight">\(a\)</span> være et positivt reelt tall. Kvadratroten av <span class="math notranslate nohighlight">\(a\)</span> er det positive tallet som multiplisert med seg selv gir <span class="math notranslate nohighlight">\(a\)</span>.</p>
 <div class="math notranslate nohighlight">
-\[p \Leftrightarrow q\]</div>
+\[\left(\sqrt{a}\right)^2=a\]</div>
 </div>
-<p>Selv om vi ikke tenker over det, så er ekvivalens viktig når vi løser likninger. Dersom alt vi gjør når vi løser likningen fører til at neste linje er ekvivalent med den forrige, så er vi sikker på at det endelige svaret stemmer med den opprinnelige likningen.</p>
-<div class="eksempel admonition">
-<p class="admonition-title">Eksempel: Ekvivalens</p>
-<p><span class="math notranslate nohighlight">\(x=4 \Leftrightarrow 3x=12\)</span></p>
-<p><span class="math notranslate nohighlight">\(x^2=4 \Leftrightarrow x=2 \text{ eller } x=-2\)</span></p>
-<p><span class="math notranslate nohighlight">\(x+4 = 8 \Leftrightarrow x=4\)</span></p>
+<p>I definisjonen over er det to ting som er viktig å legge merke til.</p>
+<ol class="simple">
+<li><p>Vi kan kun ta kvadratroten av positive reelle tall.</p></li>
+<li><p>Kvadratroten er et positivt tall. Selv om både <span class="math notranslate nohighlight">\((-4)^2=16\)</span> og <span class="math notranslate nohighlight">\(4^2=16\)</span>, så er <span class="math notranslate nohighlight">\(\sqrt{16}= 4\)</span>.</p></li>
+</ol>
+<p>Generelt kan vi skrive at <span class="math notranslate nohighlight">\(\sqrt{a^2}=|a|\)</span>. Der <span class="math notranslate nohighlight">\(|a|\)</span> er absoluttverdien til tallet <span class="math notranslate nohighlight">\(a\)</span>. Med absoluttverdien mener vi avstanden tallet har fra <span class="math notranslate nohighlight">\(0\)</span> på tallinja. Vi kan derfor si at <span class="math notranslate nohighlight">\(|-4|=|4|=4\)</span> siden begge tall har avstanden <span class="math notranslate nohighlight">\(4\)</span> fra <span class="math notranslate nohighlight">\(0\)</span>.</p>
+<p>Om kvadratrøtter kan det videre være nyttig å vite følgende.</p>
+<div class="admonition-viktig-om-kvadratrotter admonition">
+<p class="admonition-title">Viktig om kvadratrøtter</p>
+<div class="math notranslate nohighlight">
+\[\sqrt{a+b}\neq \sqrt{a}+\sqrt{b}\]</div>
+<div class="math notranslate nohighlight">
+\[\sqrt{a\cdot b} = \sqrt{a}\cdot \sqrt{b}\]</div>
+</div>
+<p>Om vi tenker oss en del om, så ser vi at den gyldige sammenhengen over minner om regneregel 3 for potenser. Den sa at <span class="math notranslate nohighlight">\((ab)^n=a^n b^n\)</span>. Dette er ikke en tilfeldighet. Kvadratrøtter kan faktisk skrives som en potens. Det er ikke pensum i 1T, men vi nevner det her som bakgrunnsstoff.</p>
+<div class="admonition-kvadratrot-og-potens admonition">
+<p class="admonition-title">Kvadratrot og potens</p>
+<p>Dersom <span class="math notranslate nohighlight">\(a\)</span> er et positivt reelt tall, så er</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle{\sqrt{a}=a^{\frac{1}{2}}}\]</div>
+<p>Vi ser at dette må stemme siden</p>
+<div class="math notranslate nohighlight">
+\[(\sqrt{a})^2=(a^{\frac{1}{2}})^2=a^{\frac{1}{2}\cdot 2}=a^1=a\]</div>
+<p>ALle regneregler for potenser må derfor også gjelde for kvadratrøtter.</p>
+</div>
+<p>Helt til slutt tar vi med den generelle definisjonen på n-te røtter.</p>
+<div class="admonition-n-terotter admonition">
+<p class="admonition-title">n-terøtter</p>
+<p>n-teroten av et tall <span class="math notranslate nohighlight">\(a\)</span> er det tallet som opphøyd i <span class="math notranslate nohighlight">\(n\)</span> er lik <span class="math notranslate nohighlight">\(a\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[(\sqrt[n]{a})^n=a\]</div>
+<p>Dersom <span class="math notranslate nohighlight">\(n\)</span> er et partall, så må både <span class="math notranslate nohighlight">\(a\)</span> og <span class="math notranslate nohighlight">\(\sqrt[n]{a}\)</span> være positive tall.</p>
+<p>Videre, så har vi at</p>
+<div class="math notranslate nohighlight">
+\[a^{t}{n}=\sqrt[n]{a^t}=(\sqrt[n]{a})^t\]</div>
+<p>der <span class="math notranslate nohighlight">\(t\)</span> er et heltall, <span class="math notranslate nohighlight">\(n\)</span> er et positivt heltall og <span class="math notranslate nohighlight">\(a\)</span> er et positivt tall.</p>
 </div>
 </section>
 </section>
@@ -698,17 +801,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../intro.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="tallmengder.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Matematikk 1T</p>
+            <p class="prev-next-title">Tallmengder</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="aritmetikk_algebra.html" title="next page">
+    <a class='right-next' id="next-link" href="kvadratsetningene.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Aritmetikk og algebra</p>
+        <p class="prev-next-title">Kvadratsetningene</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

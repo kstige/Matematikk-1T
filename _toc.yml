@@ -10,12 +10,7 @@ parts:
 - caption: Tall og algebra
   chapters:
   - file: docs/talgebra/tallmengder
-  - file: docs/talgebra/tallregning
-    sections:
-      - file: docs/talgebra/potenser
-      - file: docs/talgebra/primtallsfaktorisering
-      - file: docs/talgebra/brokregning
-  - file: docs/talgebra/grunnleggende_algebra
+  - file: docs/talgebra/aritmetikk_algebra
   - file: docs/talgebra/kvadratsetningene
   - file: docs/talgebra/faktorisering
   - file: docs/talgebra/fullstendig_kvadrat
