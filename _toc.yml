@@ -13,9 +13,9 @@ parts:
   - file: docs/talgebra/aritmetikk_algebra
   - file: docs/talgebra/kvadratsetningene
   - file: docs/talgebra/faktorisering
-  - file: docs/talgebra/fullstendig_kvadrat
   - file: docs/talgebra/rasjonaleuttrykk
   - file: docs/talgebra/bevis
+  - file: docs/talgebra/figurtall
 - caption: Formler og likninger
   chapters:
   - file: docs/likninger/uttrykk_likning_identitet

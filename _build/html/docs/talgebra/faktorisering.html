@@ -51,9 +51,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Fullstendig kvadrat" href="fullstendig_kvadrat.html" />
+    <link rel="next" title="Rasjonale uttrykk" href="rasjonaleuttrykk.html" />
     <link rel="prev" title="Kvadratsetningene" href="kvadratsetningene.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -114,39 +116,12 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="tallmengder.html">
-   Tallmengder
+   Tallmengder og symboler
   </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="tallregning.html">
-   Tallregning
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="potenser.html">
-     Potenser
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="primtallsfaktorisering.html">
-     Primtallsfaktorisering
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="brokregning.html">
-     Brøkregning
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="grunnleggende_algebra.html">
-   Grunnleggende algebra
+  <a class="reference internal" href="aritmetikk_algebra.html">
+   Aritmetikk og algebra
   </a>
  </li>
  <li class="toctree-l1">
@@ -160,11 +135,6 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="fullstendig_kvadrat.html">
-   Fullstendig kvadrat
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="rasjonaleuttrykk.html">
    Rasjonale uttrykk
   </a>
@@ -172,6 +142,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="bevis.html">
    Bevis
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="figurtall.html">
+   Figurtall
   </a>
  </li>
 </ul>
@@ -232,8 +207,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../funksjoner/viktige_punkt.html">
    Viktige punkt
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -249,8 +224,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../funksjoner/rettelinjer.html">
    Lineære funksjoner
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -271,8 +246,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../funksjoner/rasjonalefunksjoner.html">
    Rasjonale funksjoner
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -537,12 +512,36 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#primtall-og-faktorisering">
+   Primtall og faktorisering
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -554,6 +553,19 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#primtall-og-faktorisering">
+   Primtall og faktorisering
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -563,6 +575,24 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="faktorisering">
 <h1>Faktorisering<a class="headerlink" href="#faktorisering" title="Permalink to this headline">#</a></h1>
+<section id="primtall-og-faktorisering">
+<h2>Primtall og faktorisering<a class="headerlink" href="#primtall-og-faktorisering" title="Permalink to this headline">#</a></h2>
+<p>Et primtall er et tall som kun kan divideres på seg selv og <span class="math notranslate nohighlight">\(1\)</span>. De første primtallene er <span class="math notranslate nohighlight">\(2, 3, 5, 7, 11\)</span> og <span class="math notranslate nohighlight">\(13\)</span>. Det kan bevises at det finnes uendelig antall primtall.</p>
+<p>Alle tall som ikke er primtall (bortsett fra <span class="math notranslate nohighlight">\(1\)</span>) kaller vi for sammensatte tall. Sammensatte tall kan vi skrive som et produkt av andre tall. Det kalles å faktorisere tallet. Et fundamentalt teorem i matematikken sier at alle tall kan skrives som et produkt av primtall på en unik måte. En slik faktorisering kalles <em>primtallsfaktorisering</em>. Vi kan for eksempel primtallsfaktorisere <span class="math notranslate nohighlight">\(84=2\cdot 2\cdot 3\cdot 7\)</span>.</p>
+<p>Faktorisering blir et viktig redskap når vi skal arbeide med likninger. Her nøyer vi oss med å se et eksempel på hvordan vi kan bruke faktorisering til å forenkle uttrykk med kvadratrøtter.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Forenkling av kvadratrøtter</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+\sqrt{250}-\sqrt{40} &amp;=\sqrt{25\cdot 10}-\sqrt{4\cdot 10}\\
+&amp;= \sqrt{25}\cdot\sqrt{10}-\sqrt{4}\cdot\sqrt{10} \\
+&amp;=5\cdot\sqrt{10}-2\cdot\sqrt{10} \\
+&amp;=3\sqrt{10}
+\end{align}
+\end{split}\]</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -599,10 +629,10 @@ title="Print to PDF"
             <p class="prev-next-title">Kvadratsetningene</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="fullstendig_kvadrat.html" title="next page">
+    <a class='right-next' id="next-link" href="rasjonaleuttrykk.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Fullstendig kvadrat</p>
+        <p class="prev-next-title">Rasjonale uttrykk</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
