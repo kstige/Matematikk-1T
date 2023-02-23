@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Faktorisering" href="faktorisering.html" />
@@ -510,12 +512,36 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#illustrasjon-av-forste-kvadratsetning">
+   Illustrasjon av første kvadratsetning
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -527,6 +553,19 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#illustrasjon-av-forste-kvadratsetning">
+   Illustrasjon av første kvadratsetning
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -536,6 +575,42 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="kvadratsetningene">
 <h1>Kvadratsetningene<a class="headerlink" href="#kvadratsetningene" title="Permalink to this headline">#</a></h1>
+<p>Vi har nå sett på hvordan vi trekker sammen algebrauttrykk og hvordan vi multipliserer ut parenteser. Noen former for parentesuttrykk dukker opp så ofte at vi har gitt dem egne navn.</p>
+<div class="admonition-kvadratsetningene admonition">
+<p class="admonition-title">Kvadratsetningene</p>
+<p><strong>Første kvadratsetning:</strong> <span class="math notranslate nohighlight">\((a+b)^2=a^2+2ab+b^2\)</span></p>
+<p><strong>Andre kvadratsetning:</strong> <span class="math notranslate nohighlight">\((a-b)^2=a^2-2ab+b^2\)</span></p>
+<p><strong>Konjugatsetningen:</strong> <span class="math notranslate nohighlight">\((a+b)(a-b)=a^2-b^2\)</span></p>
+<p>Konjugatsetningen blir av og til også kalt for <em>tredje kvadratsetning</em>.</p>
+</div>
+<p>Sammenhengene over kan enkelt bevises ved å skrive ut kvadratene og multiplisere sammen parentesene. Det viser vi for første kvadratsetning i eksempelet under.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Første kvadratsetning</p>
+<p>Vi skal regne ut <span class="math notranslate nohighlight">\((x+4)^2\)</span> med og uten første kvadratsetning.</p>
+<p><strong>Uten</strong></p>
+<p><span class="math notranslate nohighlight">\((x+4)^2=(x+4)\cdot (x+4)=x^2+4x+4x+16=x^2+8x+16\)</span></p>
+<p><strong>Med</strong></p>
+<p><span class="math notranslate nohighlight">\((x+4)^2=x^2+2\cdot 4x +4^2=x^2+8x+16\)</span></p>
+</div>
+<p>Eksempelet over viser at det i enkle tilfeller ikke er så mye tid å spare på å bruke kvadratsetningene. Fordelen kommer når uttrykkene i parentesene blir mer sammensatte. I tillegg vil den største nytten komme i å bruke kvadratsetningene baklengs, det vil si til faktorisering.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Sammensatte kvadrater</p>
+<p><span class="math notranslate nohighlight">\((2a+3)^2=(2a)^2+2\cdot 2a\cdot 3+3^2=4a^2+12a+9\)</span></p>
+<p><span class="math notranslate nohighlight">\(\displaystyle{\left(\frac{x}{3}-3y\right)^2 = \left(\frac{x}{3}\right)^2-2\cdot\frac{x}{3}\cdot 3y+(3y)^2=\frac{x^2}{9}-2xy+9y^2}\)</span></p>
+<p><span class="math notranslate nohighlight">\((\sqrt{5}+2)(\sqrt{5}-2)=(\sqrt{5})^2-2^2=5-4=1\)</span></p>
+</div>
+<section id="illustrasjon-av-forste-kvadratsetning">
+<h2>Illustrasjon av første kvadratsetning<a class="headerlink" href="#illustrasjon-av-forste-kvadratsetning" title="Permalink to this headline">#</a></h2>
+<p>Vi kan bruke figuren under for å både bevise og illustrere første kvadratsetning.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/1kvadratsetning.png"><img alt="../../_images/1kvadratsetning.png" src="../../_images/1kvadratsetning.png" style="width: 266.5px; height: 268.0px;" /></a>
+</figure>
+<p>Sidene i kvadratet er <span class="math notranslate nohighlight">\(a+b\)</span>, så arealet av kvadratet er <span class="math notranslate nohighlight">\((a+b)^2\)</span>. Vi kan imidlertid også skrive arealet ved hjelp av firkantene som den er delt opp i.</p>
+<p>Blå firkant: <span class="math notranslate nohighlight">\(a^2\)</span></p>
+<p>Grønne firkatner: <span class="math notranslate nohighlight">\(2ab\)</span></p>
+<p>Rødbrun firkant: <span class="math notranslate nohighlight">\(b^2\)</span></p>
+<p>Vi ser da at <span class="math notranslate nohighlight">\((a+b)^2=a^2+2ab+b^2\)</span>.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
