@@ -19,6 +19,8 @@
 # Et fundamentalt teorem i matematikken sier at alle tall kan skrives som et produkt av primtall på en unik måte. En slik faktorisering kalles *primtallsfaktorisering*. Vi kan for eksempel primtallsfaktorisere $84=2\cdot 2\cdot 3\cdot 7$.
 # 
 # `````{admonition} Eksempel: Primtallsfaktorisering
+# :class: eksempel
+# 
 # ```{figure} ./bilder/primtallsfaktorisering.png
 # ---
 # scale: 40%
