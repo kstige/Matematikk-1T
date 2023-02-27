@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="prev" title="Sinussetningen" href="sinussetningen.html" />
@@ -107,19 +109,49 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Algebra
+  Tall og algebra
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../algebra/intro_algebra.html">
-   Introduksjon til algebra
+  <a class="reference internal" href="../talgebra/tallmengder.html">
+   Tallmengder og symboler
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../talgebra/aritmetikk_algebra.html">
+   Aritmetikk og algebra
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../talgebra/kvadratsetningene.html">
+   Kvadratsetningene
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../talgebra/faktorisering.html">
+   Faktorisering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../talgebra/rasjonaleuttrykk.html">
+   Rasjonale uttrykk
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../talgebra/bevis.html">
+   Bevis
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../talgebra/figurtall.html">
+   Figurtall
   </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Likninger
+  Formler og likninger
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -128,10 +160,40 @@ const thebe_selector_output = ".output, .cell_output"
    Uttrykk, likning og identitet
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/linearelikninger.html">
+   Lineære likninger
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/formler.html">
+   Formler
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/andregradslikninger.html">
+   Andregradslikninger
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/nullpunktfaktorisering.html">
+   Nullpunktfaktorisering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/polynomdivisjon.html">
+   Polynomdivisjon
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/rasjonale_likninger.html">
+   Rasjonale likninger
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Funksjoner
+  Funksjoner og modellering
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -207,21 +269,6 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../funksjoner/gjennomsnittligvekstfart.html">
-   Gjennomsnittlig vekstfart
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../funksjoner/momentanvekstfart.html">
-   Momentan vekstfart
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../funksjoner/derivert.html">
-   Den deriverte
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="../funksjoner/modellering.html">
    Modellering
   </a>
@@ -234,6 +281,33 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../funksjoner/funksjoner_programmering.html">
    Funksjoner i programmering
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Vekstfart og derivasjon
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../vekstfart/gjennomsnittligvekstfart.html">
+   Gjennomsnittlig vekstfart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../vekstfart/momentanvekstfart.html">
+   Momentan vekstfart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../vekstfart/derivert.html">
+   Den deriverte
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../vekstfart/numeriskderivert.html">
+   Numerisk derivert
   </a>
  </li>
 </ul>
@@ -437,12 +511,36 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bruk-av-cosinussetningen">
+   Bruk av cosinussetningen
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -454,6 +552,19 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bruk-av-cosinussetningen">
+   Bruk av cosinussetningen
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -463,6 +574,64 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="cosinussetningen">
 <h1>Cosinussetningen<a class="headerlink" href="#cosinussetningen" title="Permalink to this headline">#</a></h1>
+<p>Cosinussetningen er en generell variant av Pytagoras’ setning som kan brukes for trekanter uten rett vinkel.</p>
+<div class="admonition-cosinussetningen admonition">
+<p class="admonition-title">Cosinussetningen</p>
+<p>Vi ser på en trekant med sider <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span> og <span class="math notranslate nohighlight">\(c\)</span>, og lar <span class="math notranslate nohighlight">\(u\)</span> være vinkelen mellom sidene <span class="math notranslate nohighlight">\(b\)</span> og <span class="math notranslate nohighlight">\(c\)</span>. Da vil</p>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../_images/cosinussetningen.png"><img alt="../../_images/cosinussetningen.png" src="../../_images/cosinussetningen.png" style="width: 248.8px; height: 178.8px;" /></a>
+</figure>
+<div class="math notranslate nohighlight">
+\[a^2=b^2+c^2-2\cdot b\cdot c \cdot \cos u\]</div>
+<p>Cosinussetningen gjelder for alle vinkler.</p>
+</div>
+<figure class="align-right">
+<a class="reference internal image-reference" href="../../_images/beviscosinussetningen.png"><img alt="../../_images/beviscosinussetningen.png" src="../../_images/beviscosinussetningen.png" style="width: 403.20000000000005px; height: 199.20000000000002px;" /></a>
+</figure>
+<p>Vi beviser her cosinussetningen for trekanter med spisse vinkler ved å ta utgangspunkt i figuren til høyre. Det første vi gjør er å bruke Pytagroas’ setning på hver av de to mindre trekantene.</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+h^2+x^2 &amp;=b^2 \\
+h^2+(c-x)^2 &amp;=a^2
+\end{align}
+\)</span></p>
+<p>Den første gir oss <span class="math notranslate nohighlight">\(h^2=b^2-x^2\)</span>. Det setter vi inn i den andre. Etter å ha multiplisert ut parentesene ender vi opp med <span class="math notranslate nohighlight">\(b^2+c^2-2cx=a^2\)</span>. Fra definisjonen for cosinus får vi at <span class="math notranslate nohighlight">\(x=\cos u\)</span>. Setter vi inn det ender vi opp med cosinussetningen.</p>
+<div class="math notranslate nohighlight">
+\[b^2+c^2-2bc\cos u = a^2\]</div>
+<section id="bruk-av-cosinussetningen">
+<h2>Bruk av cosinussetningen<a class="headerlink" href="#bruk-av-cosinussetningen" title="Permalink to this headline">#</a></h2>
+<p>Cosinussetningen kan brukes både til å finne vinkler og ukjente sider i en trekant. Når vi skal finne ukjente sider, må vi være oppmerksomme på at cosinussetningen blir en andregradslikning. Vi kan derfor ende opp med to løsninger som vi må vurdere gyldigheten av.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Cosinussetningen</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/beviscosinussetningen.png"><img alt="../../_images/beviscosinussetningen.png" src="../../_images/beviscosinussetningen.png" style="width: 403.20000000000005px; height: 199.20000000000002px;" /></a>
+</figure>
+<p>Vi ser på trekanten over og skal finne den ukjente siden <span class="math notranslate nohighlight">\(a\)</span>. Fra cosinussetningen får vi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+a^2=b^2+c^2-2bc\cos u &amp;= (\sqrt{50})^2+(\sqrt{50})^2-2\sqrt{50}\sqrt{50}\cdot \cos 36,9^{\circ} \\
+&amp;= 100-100\cos 36,9^{\circ}\approx 20
+\end{align}
+\end{split}\]</div>
+<p>Med <span class="math notranslate nohighlight">\(a^2=20\)</span>, så får vi <span class="math notranslate nohighlight">\(a \approx \pm 4,47\)</span>. Den negative løsningen kan vi forkaste, så lengden blir <span class="math notranslate nohighlight">\(a=4,47\)</span>.</p>
+</div>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel 2: Cosinussetningen</p>
+<p>I <span class="math notranslate nohighlight">\(\bigtriangleup ABC\)</span> er <span class="math notranslate nohighlight">\(a=8\)</span>, <span class="math notranslate nohighlight">\(b=10\)</span>, og <span class="math notranslate nohighlight">\(\angle A= 35^{\circ}\)</span>. Finn den ukjente siden <span class="math notranslate nohighlight">\(c\)</span>.</p>
+<p>Vi setter inn i cosinussetningen og får</p>
+<p><span class="math notranslate nohighlight">\(
+8^2=10^2+c^2-2\cdot 10\cdot c \cdot \cos 35^{\circ}
+\)</span>
+Den løser vi med CAS</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/ekscosinussetningenCAS.png"><img alt="../../_images/ekscosinussetningenCAS.png" src="../../_images/ekscosinussetningenCAS.png" style="width: 387.09999999999997px; height: 65.8px;" /></a>
+</figure>
+<p>Vi ser at det er to muligheter for <span class="math notranslate nohighlight">\(c\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(c\approx 2,6 \vee c\approx 13,8\)</span></p>
+<p>Prøv og tegn begge trekantene for å se at det stemmer.</p>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

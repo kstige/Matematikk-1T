@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Cosinussetningen" href="cosinussetningen.html" />
@@ -108,19 +110,49 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Algebra
+  Tall og algebra
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../algebra/intro_algebra.html">
-   Introduksjon til algebra
+  <a class="reference internal" href="../talgebra/tallmengder.html">
+   Tallmengder og symboler
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../talgebra/aritmetikk_algebra.html">
+   Aritmetikk og algebra
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../talgebra/kvadratsetningene.html">
+   Kvadratsetningene
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../talgebra/faktorisering.html">
+   Faktorisering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../talgebra/rasjonaleuttrykk.html">
+   Rasjonale uttrykk
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../talgebra/bevis.html">
+   Bevis
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../talgebra/figurtall.html">
+   Figurtall
   </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Likninger
+  Formler og likninger
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -129,10 +161,40 @@ const thebe_selector_output = ".output, .cell_output"
    Uttrykk, likning og identitet
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/linearelikninger.html">
+   Lineære likninger
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/formler.html">
+   Formler
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/andregradslikninger.html">
+   Andregradslikninger
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/nullpunktfaktorisering.html">
+   Nullpunktfaktorisering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/polynomdivisjon.html">
+   Polynomdivisjon
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../likninger/rasjonale_likninger.html">
+   Rasjonale likninger
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Funksjoner
+  Funksjoner og modellering
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -208,21 +270,6 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../funksjoner/gjennomsnittligvekstfart.html">
-   Gjennomsnittlig vekstfart
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../funksjoner/momentanvekstfart.html">
-   Momentan vekstfart
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../funksjoner/derivert.html">
-   Den deriverte
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="../funksjoner/modellering.html">
    Modellering
   </a>
@@ -235,6 +282,33 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../funksjoner/funksjoner_programmering.html">
    Funksjoner i programmering
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Vekstfart og derivasjon
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../vekstfart/gjennomsnittligvekstfart.html">
+   Gjennomsnittlig vekstfart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../vekstfart/momentanvekstfart.html">
+   Momentan vekstfart
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../vekstfart/derivert.html">
+   Den deriverte
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../vekstfart/numeriskderivert.html">
+   Numerisk derivert
   </a>
  </li>
 </ul>
@@ -438,12 +512,36 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bruk-av-sinussetningen">
+   Bruk av sinussetningen
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -455,6 +553,19 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bruk-av-sinussetningen">
+   Bruk av sinussetningen
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -464,6 +575,67 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="sinussetningen">
 <h1>Sinussetningen<a class="headerlink" href="#sinussetningen" title="Permalink to this headline">#</a></h1>
+<p>Sinussetningen er en direkte konsekvens av arealsetningen. Vi husker at vi med arealsetningen kan finne arealet på tre måter.</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{2}bc\sin A = \frac{1}{2}ac\sin B = \frac{1}{2}ab\sin C\]</div>
+<p>Vi deler med <span class="math notranslate nohighlight">\(\frac{1}{2}abc\)</span> i hvert uttrykk. Da får vi:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\sin A}{A}=\frac{\sin B}{B}=\frac{\sin C}{C}\]</div>
+<p>Dette er sinussetningen.</p>
+<div class="admonition-sinussetningen admonition">
+<p class="admonition-title">Sinussetningen</p>
+<p>For alle trekanter gjelder det at forholdet mellom sinus til en vinkel og lengden av motstående side er konstant.</p>
+<div class="math notranslate nohighlight">
+\[\frac{\sin A}{A}=\frac{\sin B}{B}=\frac{\sin C}{C}\]</div>
+<p>Vi kan også skrive sinussetningen <em>oppned</em>:</p>
+<div class="math notranslate nohighlight">
+\[\frac{A}{\sin A}=\frac{B}{\sin B}=\frac{C}{\sin C}\]</div>
+</div>
+<section id="bruk-av-sinussetningen">
+<h2>Bruk av sinussetningen<a class="headerlink" href="#bruk-av-sinussetningen" title="Permalink to this headline">#</a></h2>
+<p>Sinussetningen viser at de tre forholdene er lik hverandre. Når vi skal bruke sinussetningen velger vi to av forholdene og setter de lik hverandre.</p>
+<p>Dersom vi skal bruke sinussetningen til å finne en ukjent vinkel må vi være oppmerksom på at det kan være to vinkler (supplementvinkler) som passer med opplysningene i oppgaven.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Bruk av sinussetningen</p>
+<p>I <span class="math notranslate nohighlight">\(\bigtriangleup ABC\)</span> er <span class="math notranslate nohighlight">\(a=6\)</span>, <span class="math notranslate nohighlight">\(b=8\)</span>, og <span class="math notranslate nohighlight">\(\angle A= 35^{\circ}\)</span>. Finn <span class="math notranslate nohighlight">\(\angle B\)</span>.</p>
+<p>Vi starter med å tegne en hjelpefigur. Vi starter med å tegne <span class="math notranslate nohighlight">\(b=8\)</span> og <span class="math notranslate nohighlight">\(\angle A = 35^{\circ}\)</span>. Så setter vi en passer i <span class="math notranslate nohighlight">\(C\)</span> med radius 6 og finner to mulige punkt <span class="math notranslate nohighlight">\(B_1\)</span> og <span class="math notranslate nohighlight">\(B_2\)</span>.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/sinussetningen.png"><img alt="../../_images/sinussetningen.png" src="../../_images/sinussetningen.png" style="width: 459.6px; height: 245.20000000000002px;" /></a>
+</figure>
+<p>Så bruker vi sinussetningen</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+\frac{\sin A}{a} &amp;= \frac{\sin B}{b} \\
+\sin B &amp;= \frac{b\cdot \sin A}{a} = \frac{8\sin 35^{\circ}}{6}\approx 0,76 \\
+\angle B &amp;= \sin^{-1} 0,76 \approx 49,5^{\circ}
+\end{align}
+\)</span></p>
+<p>Fra figuren ser vi at det her må være <span class="math notranslate nohighlight">\(\angle B_2\)</span>. Det vil si at de to mulighetene for <span class="math notranslate nohighlight">\(\angle B\)</span> er:</p>
+<p><span class="math notranslate nohighlight">\(
+\angle B_1 = 180^{\circ} - 49,5^{\circ} = 130,5^{\circ} \\
+\angle B_2 = 49,5^{\circ}
+\)</span></p>
+</div>
+<p>Dersom vi ikke tegner en nøyaktig hjelpefigur som vi gjorde i eksempelet over, så må vi være nøye med å kontrollere løsningene våre. Det skal vi se i det neste eksempelet som kan virke veldig likt som det forrige.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Bruk av sinussetningen</p>
+<p>I <span class="math notranslate nohighlight">\(\bigtriangleup ABC\)</span> er <span class="math notranslate nohighlight">\(a=10\)</span>, <span class="math notranslate nohighlight">\(b=8\)</span>, og <span class="math notranslate nohighlight">\(\angle A= 64^{\circ}\)</span>. Finn <span class="math notranslate nohighlight">\(\angle B\)</span>.</p>
+<p>Vi starter med sinussetningen uten å tegne hjelpefigur.</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+\frac{\sin A}{a} &amp;= \frac{\sin B}{b} \\
+\sin B &amp;= \frac{b\cdot \sin A}{a} = \frac{8\sin 64^{\circ}}{10}\approx 0,72 \\
+\angle B &amp;= \sin^{-1} 0,72 \approx 46,1^{\circ}
+\end{align}
+\)</span></p>
+<p>Tilsvarende som i forrige eksempel kan vi tenke at det gir to muligheter for <span class="math notranslate nohighlight">\(\angle B\)</span></p>
+<p><span class="math notranslate nohighlight">\(
+\angle B_1 = 46,1^{\circ}
+\angle B_2 = 180^{\circ} - 46,1^{\circ} = 133.9^{\circ} \\
+\)</span></p>
+<p>Prøver vi å tegne opp det her vil vi imidlertid fort se at det ikke er mulig å tegne en treknat med <span class="math notranslate nohighlight">\(\angle B_2\)</span>. Grunnen ser vi når vi regner ut at <span class="math notranslate nohighlight">\(\angle A + \angle B_2 = 64^{\circ}+133,9^{\circ}=197,9^{\circ}\)</span>. I og med at vinkelsummen i en trekant skal bli <span class="math notranslate nohighlight">\(180^{\circ}\)</span>, så kan ikke det være mulig. Vi må derfor forkaste løsningen <span class="math notranslate nohighlight">\(\angle B_2\)</span>.</p>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
