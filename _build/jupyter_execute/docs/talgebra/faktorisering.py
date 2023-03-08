@@ -73,4 +73,39 @@ get_ipython().run_cell_magic('html', '', '\n<meta name=viewport content="width=d
 
 # ## Faktorisering av algebrauttrykk
 # 
-# Når vi skal faktorisere et algebrauttrykk bør vi følge 
+# Når vi skal faktorisere et algebrauttrykk er det flere ting å ta hensyn til enn ved primtallsfaktorisering. Prinsippene bak primtallsfaktorisering kan imidlertid hjelpe oss med første steg i faktorisering av algebraiske uttrykk.
+# 
+# ### Trekke ut felles faktor
+# 
+# Vi kan faktorisere et uttrykk med et ledd på tilsvarende måte som med primtallsfaktorisering.
+# 
+# $84x^3y^2=2\cdot 2\cdot 3\cdot 7\cdot x\cdot x\cdot x\cdot y\cdot y$
+# 
+# Dersom uttrykket inneholder mer enn et ledd må vi lete etter felles faktorer i uttrykket som kan trekkes utenfor en parentes. Det vi gjør da er det motsatte av å multiplisere ut parenteser. Det ser vi på i eksempelet under.
+# 
+# ```{admonition} Eksempel: Felles faktor 1
+# :class: eksempel
+# 
+# $12-4x={\color{red} 2\cdot 2} \cdot 3-{\color{red} 2\cdot 2} \cdot x ={\color{red} 2\cdot 2}(3-x)=4(3-x)$
+# 
+# Her starter vi med fullstendig faktorisering av hvert ledd i uttrykket. Så ser vi etter hva som er felles i leddene. Det er $2\cdot 2$. Faktorene som er felles trekker vi utenfor en parentes. Det som står igjen etter at felles faktor er trukket ut blir stående igjen inne i parentesen.
+# 
+# Det er ikke nødvendig å starte med å faktorisere hvert ledd. Vi kan skrive direkte at $12-4x=4(3-x)$. Fordelen med å faktorisere hvert ledd er at det blir lettere å se hva som er felles og hva som står igjen (spesielt om uttrykkene blir større og mer sammensatte).
+# 
+# For å kontrollere om faktoriseringen stemmer kan vi multiplisere ut igjen parentesen.
+# 
+# $4(3-x)=4\cdot3+4\cdot(-x)=12-4x$
+# ```
+# 
+# ```{admonition} Eksempel: Felles faktor 2
+# :class: eksempel
+# $
+# \begin{align}
+# 28x^2y+14xy&=2\cdot {\color{red} 2\cdot 7\cdot x}\cdot x\cdot {\color{red}y}+{\color{red}2\cdot 7\cdot x\cdot y}{\color{blue}\cdot 1} \\
+# &={\color{red}2\cdot 7\cdot x\cdot y}(2x+{\color{blue}1}) \\
+# &=14xy(2x+1)
+# \end{align}
+# $
+# 
+# Her ser vi et eksempel på at hele det andre leddet er en del av den felles faktoren. Da er det lett å tenke at vi står igjen med $0$ når felles faktor er trukket ut. Det blir imidlertid feil. Grunnen ser vi enklest dersom vi prøver å mutliplisere tilbake inn i parentesen. Da må det stå $1$ der for å komme tilbake til det opprinnelige uttrykket. Over har vi tydeliggjort dette ved å skrive opp $\cdot\color{blue} 1$ i faktoriseringen av det andre leddet. Vi kan alltid multiplisere med $1$ uten å endre uttrykket. Derfor blir vi også stående igjen med $1$ inne i parentesen.
+# ```
