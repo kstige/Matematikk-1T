@@ -13,7 +13,6 @@ parts:
   - file: docs/talgebra/aritmetikk_algebra
   - file: docs/talgebra/kvadratsetningene
   - file: docs/talgebra/faktorisering
-  - file: docs/talgebra/faktoriseringkvadrat
   - file: docs/talgebra/rasjonaleuttrykk
   - file: docs/talgebra/bevis
   - file: docs/talgebra/figurtall
