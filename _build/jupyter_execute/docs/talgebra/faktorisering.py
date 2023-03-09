@@ -183,3 +183,6 @@ get_ipython().run_cell_magic('html', '', '\n<div id="applet_container3"></div>\n
 
 get_ipython().run_cell_magic('html', '', '\n<div id="applet_container4"></div>\n')
 
+
+# ## Fullstendig kvadrat
+# 
