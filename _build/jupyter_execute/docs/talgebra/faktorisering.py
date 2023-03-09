@@ -71,11 +71,9 @@ get_ipython().run_cell_magic('html', '', '\n<meta name=viewport content="width=d
 # 
 # ```
 
-# ## Faktorisering av algebrauttrykk
+# ## Trekke ut felles faktor
 # 
 # Når vi skal faktorisere et algebrauttrykk er det flere ting å ta hensyn til enn ved primtallsfaktorisering. Prinsippene bak primtallsfaktorisering kan imidlertid hjelpe oss med første steg i faktorisering av algebraiske uttrykk.
-# 
-# ### Trekke ut felles faktor
 # 
 # Vi kan faktorisere et uttrykk med et ledd på tilsvarende måte som med primtallsfaktorisering.
 # 
@@ -125,3 +123,7 @@ get_ipython().run_cell_magic('html', '', '\n<div id="applet_container2"></div>\n
 
 get_ipython().run_cell_magic('html', '', '\n<div id="applet_container3"></div>\n')
 
+
+# ## Faktorisering med kvadratsetningene
+# 
+# Etter at vi har trukket ut eventuelle felles faktorer må vi sjekke om faktorer som ikke er lineære kan faktoriseres videre. Det første vi sjekker er om eventuelle andregradsuttrykk er på en form som gjør at vi kan bruke kvadratsetningene baklengs.
