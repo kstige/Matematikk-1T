@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Figurtall" href="figurtall.html" />
@@ -510,12 +512,41 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#direkte-bevis">
+   Direkte bevis
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#indirekte-bevis">
+   Indirekte bevis
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -527,6 +558,24 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#direkte-bevis">
+   Direkte bevis
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#indirekte-bevis">
+   Indirekte bevis
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -536,7 +585,43 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="bevis">
 <h1>Bevis<a class="headerlink" href="#bevis" title="Permalink to this headline">#</a></h1>
-<p>Matematikk er det vi kaller for en aksiomatisk vitenskap. Det betyr at all matematikk baserer seg på noen grunnleggende askiomer (påstander/prinsipp). All annen matematikk kan via bevisrekker føres tilbake til disse aksiomene.</p>
+<p>Matematikk er det vi kaller for en aksiomatisk vitenskap. Det betyr at all matematikk baserer seg på noen grunnleggende askiomer (påstander/prinsipp). All annen matematikk kan via bevisrekker føres tilbake til disse aksiomene. Vi kommer ikke til å bygge opp matematikken fra disse aksiomene her, men vi skal vise hvordan vi kan utføre noen enkle matematiske bevis. Det finnes flere matematiske bevisteknikker. Her kommer vi til å se på direkte bevis, men vi nevner også det som kalles indirekte bevis.</p>
+<section id="direkte-bevis">
+<h2>Direkte bevis<a class="headerlink" href="#direkte-bevis" title="Permalink to this headline">#</a></h2>
+<div class="admonition-direkte-bevis admonition">
+<p class="admonition-title">Direkte bevis</p>
+<p>Et direkte bevis er en rekke av implikasjoner. Vi kan si at hvis vi vi vet at A er sant, så kan vi vise at B er sant som kan vise at C er sant.</p>
+<p><span class="math notranslate nohighlight">\(A\Rightarrow B \Rightarrow C\)</span></p>
+<p>Hvis vi vet at A stemmer, så har vi altså vist at også C må stemme.</p>
+</div>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Sum av oddetall</p>
+<p>Vi skal bevise at summen av to oddetall er et partall. Fra før vet vi at alle partall kan skrives på formen <span class="math notranslate nohighlight">\(2n+1, n\in\matbf{Z}\)</span>. De to tallene våre kan altså skrives som</p>
+<p><span class="math notranslate nohighlight">\(\text{Tall 1: } 2n+1\)</span>
+<span class="math notranslate nohighlight">\(\text{Tall 2: } 2m + 1\)</span></p>
+<p>der <span class="math notranslate nohighlight">\(m, n \in mathbf{Z}\)</span>.</p>
+<p>Det gir at tall 1 + tall 2 <span class="math notranslate nohighlight">\(= 2n+1+2m+1=2n+2m+2=2\underbrace{(n+m+1)}_{k}=2k\)</span></p>
+<p>Siden <span class="math notranslate nohighlight">\(n\)</span>, <span class="math notranslate nohighlight">\(m\)</span> og <span class="math notranslate nohighlight">\(1\)</span> er hele tall, så må også <span class="math notranslate nohighlight">\(k=n+m+1\)</span> være et heltall. Vi ser at summen blir på formen <span class="math notranslate nohighlight">\(2k, k\in\mathbf{Z}\)</span> som er formen for et partall.</p>
+<p><em>Det er viktig å merke seg at vi her har en rekke med implikasjoner fra start til slutt. Vi har derfor bevist at summen av to oddetall er et partall. Siden det er implikasjoner har vi imidlertid ikke bevist noe den andre veien. Fra dette beviset kan vi derfor ikke si at alle partall kan skrives som summen av to oddetall (men det kan også bevises).</em></p>
+</div>
+</section>
+<section id="indirekte-bevis">
+<h2>Indirekte bevis<a class="headerlink" href="#indirekte-bevis" title="Permalink to this headline">#</a></h2>
+<p>Indirekte bevis kan være vanskeligere å forstå da de snur det meste opp ned i forhold til hva vi er vant med.</p>
+<div class="admonition-indirekte-bevis admonition">
+<p class="admonition-title">Indirekte bevis</p>
+<p>Indirekte bevis følger også av en rekke implikasjoner. Vi starter imidlertid med å prøve og bevise det motsatte av det vi ønsker. Dersom vi ønsker å bevise påstand A, så starter vi med å prøve og bevise det motsatte av A. Hvis vi da ender opp med noe vi vet at ikke er sant, så har vi bevist at A må være sant.</p>
+</div>
+<p>Et kjent indirekte bevis er Euklid (gresk matematiker omtrent 300 <a class="reference external" href="http://f.Kr">f.Kr</a>.) sitt bevis for at det finnes uendelig mange primtall.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: uendelig mange primtall</p>
+<p>Vi ønsker å bevise at det finnes uendelig mange primtall. Vi starter imidlertid med å anta det motsatte og sier at det største primtallet er <span class="math notranslate nohighlight">\(p\)</span>.</p>
+<p>Så lager vi oss et tall <span class="math notranslate nohighlight">\(n\)</span> som er produktet av alle primtallene pluss 1.</p>
+<p><span class="math notranslate nohighlight">\(n = 2\cdot 3\cdot 5\cdot 7 \cdot \ldots \cdot p +1\)</span></p>
+<p>Siden <span class="math notranslate nohighlight">\(n\)</span> er større enn <span class="math notranslate nohighlight">\(p\)</span>, så må <span class="math notranslate nohighlight">\(n\)</span> være et sammensatt tall. Det vil si at <span class="math notranslate nohighlight">\(n\)</span> har en primtallsfaktor <span class="math notranslate nohighlight">\(q&gt;1\)</span> som er mindre enn <span class="math notranslate nohighlight">\(p\)</span>. Siden <span class="math notranslate nohighlight">\(n\)</span> inneholder et produkt av alle primtall må <span class="math notranslate nohighlight">\(q\)</span> være en del av det venstre leddet i <span class="math notranslate nohighlight">\(n\)</span>. For at <span class="math notranslate nohighlight">\(n\)</span> skal kunne deles på <span class="math notranslate nohighlight">\(q\)</span> må <span class="math notranslate nohighlight">\(q\)</span> også være en faktor i det andre leddet til <span class="math notranslate nohighlight">\(n\)</span>. Det vil si at <span class="math notranslate nohighlight">\(q\)</span> må være en faktor i <span class="math notranslate nohighlight">\(1\)</span>. Men det er umulig siden <span class="math notranslate nohighlight">\(q&gt;1\)</span>. Antakelsen vår om at det finnes et største primtall <span class="math notranslate nohighlight">\(p\)</span> fører derfor til noe som ikke stemmer.</p>
+<p>Det må derfor finnes uendelig mange primtall.</p>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
