@@ -666,9 +666,35 @@ En annen (men tilsvarende) metode går ut på å dele opp figuren i ulike <em>kj
 <li><p>figur 2 er satt sammen av trekanttall nummer 2 pluss to prikker</p></li>
 <li><p>figur 3 er satt sammen av trekanttall nummer 3 pluss tre prikker</p></li>
 </ul>
-<p>Formelen blir da <span class="math notranslate nohighlight">\(\displaystyle{E_n=T_n+n=\frac{n(n+1)}{2}+n=\frac{n^2+n}{2}+\frac{2n}{2}=\frac{n^2+3n}{2}=\frac{n(n+3)}{2}\)</span></p>
+<p>Formelen blir da <span class="math notranslate nohighlight">\(\displaystyle{E_n=T_n+n=\frac{n(n+1)}{2}+n=\frac{n^2+n}{2}+\frac{2n}{2}=\frac{n^2+3n}{2}=\frac{n(n+3)}{2}}\)</span></p>
 <p>Skal så vise at <span class="math notranslate nohighlight">\(E_n+E_{n+3}\)</span> er et kvadrattall.</p>
-<p><span class="math notranslate nohighlight">\(\displaystyle{E_n+E_{n+3}=\frac{n(n+3)}{2}+\frac{(n+3)(n+6)}{2}=\frac{(n+3)(n+n+6)}{2}=\frac{(n+3)(2n+6)}{2}=\frac{2(n+3)^2}{2}=(n+3)^2=K_{n+3}\)</span></p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+E_n+E_{n+3} &amp;=\frac{n(n+3)}{2}+\frac{(n+3)(n+6)}{2} =\frac{(n+3)(n+n+6)}{2} \\
+&amp;=\frac{(n+3)(2n+6)}{2}=\frac{2(n+3)^2}{2} =(n+3)^2=K_{n+3}
+\end{align}
+\)</span></p>
+</div>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel 3</p>
+<p>Vi ser på rekken av figurtall under og skal finne formelen for antall prikker, <span class="math notranslate nohighlight">\(F_n\)</span>, i figur nummer <span class="math notranslate nohighlight">\(n\)</span>.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/eksempel3figurtall.png"><img alt="../../_images/eksempel3figurtall.png" src="../../_images/eksempel3figurtall.png" style="width: 395.5px; height: 244.5px;" /></a>
+</figure>
+<p>Vi ser at</p>
+<ul class="simple">
+<li><p>figur 1 er <span class="math notranslate nohighlight">\(T_1 + K_0\)</span></p></li>
+<li><p>figur 2 er <span class="math notranslate nohighlight">\(T_2 + K_1\)</span></p></li>
+<li><p>figur 3 er <span class="math notranslate nohighlight">\(T_3 + K_2\)</span></p></li>
+</ul>
+<p>Da må formelen bli</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+F_n=T_n+K_{n-1} &amp;=\frac{n(n+1)}{2}+(n-1)^2 = \frac{n(n+1)}{2}+\frac{2(n-1)^2}{2} \\
+&amp; =\frac{n^2+n+2n^2-4n-2}{2}=\frac{3n^2-3n+2}{2} \\
+&amp;=\frac{3n(n-1)}{2}+1
+\end{align}
+\)</span></p>
 </div>
 </section>
 </section>
