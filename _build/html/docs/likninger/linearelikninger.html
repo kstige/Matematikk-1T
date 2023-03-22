@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Formler" href="formler.html" />
@@ -510,12 +512,36 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sette-prove-pa-svaret">
+   Sette prøve på svaret
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -527,6 +553,19 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sette-prove-pa-svaret">
+   Sette prøve på svaret
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -536,6 +575,115 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="lineaere-likninger">
 <h1>Lineære likninger<a class="headerlink" href="#lineaere-likninger" title="Permalink to this headline">#</a></h1>
+<p>Den enkleste formen for likninger vi arbeider med er lineære likninger.</p>
+<div class="admonition-lineaere-likninger admonition">
+<p class="admonition-title">Lineære likninger</p>
+<p>At ei likning er lineære vil si at den ukjente størrelsen kun kommer i første potens.</p>
+<p>Eksempler:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(3x + 5 = 2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(4x - 2 = 2x + 4\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{2x}{3} + 1 = \frac{x}{2}+\frac{2x+1}{3}\)</span></p></li>
+</ul>
+<p>Lineære likninger kan ha ingen, en eller uendelig mange løsninger.</p>
+</div>
+<p>Vi har en hovedregel for løsning av lineære (og forsåvidt andre) likninger.</p>
+<div class="admonition-losning-av-likninger admonition">
+<p class="admonition-title">Løsning av likninger</p>
+<p>Å løse en likning går ut på å finne verdien(e) som gjør at venstre side er lik høyre side i likningen. En vanlig metode er å omforme likningen slik at den ukjente størrelsen er alene på den ene siden av likhetstegnet. Vi gjør dette ved å utføre samme regneoperasjon på begge sider av likhetstegnet.</p>
+</div>
+<p>Vi starter med å se på noen enkle lineære likninger før vi går over til lineære likninger med brøk.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel 1</p>
+<p>Vi skal løse likningen <span class="math notranslate nohighlight">\(3x-4=x +2\)</span>. Vi gjør det ved først å legge til 4 på begge sider. Deretter trekker vi fra <span class="math notranslate nohighlight">\(x\)</span> på begge sider. Siste steg blir å dividere begge sider med 2.</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+3x-4+4 &amp;= x+2+4 \\
+3x - x &amp;= x+6-x \\
+2x &amp;= 6 \\
+\frac{2x}{2}&amp;=\frac{6}{2} \\
+x &amp;= 3
+\end{align}
+\)</span></p>
+</div>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel 2: Likning uten løsning</p>
+<p>Vi skal løse likningen <span class="math notranslate nohighlight">\(3x-4=3x+2\)</span>. Vi starter med å legge til 4 på begge sider. Deretter trekker vi fra <span class="math notranslate nohighlight">\(3x\)</span> på begge sider.</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+3x-4+4 &amp;= 3x+2+4 \\
+3x - 3x &amp;= 3x+6-3x \\
+0 &amp;= 6 \\
+\end{align}
+\)</span></p>
+<p>Her ender vi opp med noe som helt tydelig ikke stemmer. Det vil si at likningen ikke har løsning. Senere i faget skal vi se at dette har en sammenheng med at de rette linjene vi får dersom vi tegner venstre og høyre side inn i et koordinatsystem er parallelle og aldri vil skjære hverandre.</p>
+</div>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel 3: Likning med uendelig mange løsninger</p>
+<p>Vi skal løse likningen <span class="math notranslate nohighlight">\(2(x+3)+x=3(x+1)+3\)</span>. Vi starter med å multiplisere ut parentesene og rydde på hver side av likhetstegnet slik at vi får <span class="math notranslate nohighlight">\(3x+6=3x+6\)</span>. Her ser vi at sidene er helt lik hverandre. Det vil si at likningen er en identitet. Da vet vi at likningen stemmer for alle verdier av <span class="math notranslate nohighlight">\(x\)</span>. Den har altså uendelig mange løsninger. Hadde vi prøvd å løse likningen videre ville vi endt opp med <span class="math notranslate nohighlight">\(0=0\)</span>. Det viser også at likningen er en identitet.</p>
+</div>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel 4: Likning med brøk</p>
+<p>Vi skal løse likningen <span class="math notranslate nohighlight">\(\displaystyle{\frac{x}{3}+2=\frac{x}{2}-2}\)</span>.</p>
+<p>Man kan velge forskjellige første steg ved likning med brøk, men som oftest er det enkleste å starte med og kvitte seg med brøkene. Det gjør vi ved å multiplisere begge sider av likningen med fellesnevner.</p>
+<p>Fellesnevneren til 2 og 3 er 6, så vi multipliserer begge sider med 6. Vær oppmerksom på at alle selvstendige ledd på hver side skal multipliseres med fellesnevneren. Vi vil ende opp med ei “normal” lineær likning uten brøk som vi løser som eksemplene over.</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+6\left(\frac{x}{3}+2\right) &amp;= 6\left(\frac{x}{2}-2\right) \\
+\frac{6x}{3}+6\cdot 2 &amp;= \frac{6x}{2}-6\cdot 2 \\
+2x+12 &amp;= 3x-12 \\
+2x-3x &amp;=-12-12 \\
+-x &amp;= -24 \\
+\frac{-x}{-1} &amp;= \frac{-24}{-1} \\
+x &amp;= 24
+\end{align}
+\)</span></p>
+<p>Her kom vi til at <span class="math notranslate nohighlight">\(-x=-24\)</span>. Husk at <span class="math notranslate nohighlight">\(-x\)</span> er det samme som <span class="math notranslate nohighlight">\(-1\cdot x\)</span>. Derfor dividerer vi med <span class="math notranslate nohighlight">\(-1\)</span> for å få <span class="math notranslate nohighlight">\(x\)</span> alene.</p>
+</div>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel 5: Vanskeligere likning med brøk</p>
+<p>Vi skal løse likningen <span class="math notranslate nohighlight">\(\displaystyle{1-\frac{1}{2}\left(7x-\frac{5}{3}\right) = \frac{x-1}{4}}\)</span>. For lettere å se hva fellesnevneren er, så starter vi med å multiplisere ut parentesen på venstre side slik at vi får</p>
+<p><span class="math notranslate nohighlight">\(1-\frac{7x}{2}+\frac{5}{6} = \frac{x-1}{4}\)</span></p>
+<p>Vi ser at den enkleste fellesnevneren er 12, så vi fortsetter med å multiplisere med 12. Deretter løser vi normalt videre.</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+12\left(1-\frac{7x}{2}+\frac{5}{6}\right) &amp;= 12\left(\frac{x-1}{4}\right) \\
+12-\frac{12\cdot 7x}{2}+\frac{12\cdot 5}{6} &amp;= \frac{12(x-1)}{4} \\
+12 - 42x+10 &amp;=3x-9 \\
+22-42x &amp;= 3x-3 \\
+-42x-3x &amp;=-3-22 \\
+-45x &amp;= -25 \\
+\frac{-45x}{-45} &amp;= \frac{-25}{-45} \\
+x &amp;=\frac{25}{45} \\
+x &amp;= \frac{5}{9}
+\end{align}
+\)</span></p>
+</div>
+<section id="sette-prove-pa-svaret">
+<h2>Sette prøve på svaret<a class="headerlink" href="#sette-prove-pa-svaret" title="Permalink to this headline">#</a></h2>
+<p>Vi kan kontrollere svaret på en likning ved sette inn svaret på venstre og høyre side i den opprinnelige likningen.</p>
+<div class="eksempel dropdown admonition">
+<p class="admonition-title">Eksempel: Sette prøve på svaret</p>
+<p>Bruker VS og HS som forkortelse for henholdsvis venstre og høyre side.</p>
+<p><strong>Eksempel 1</strong>
+Likningen var <span class="math notranslate nohighlight">\(3x-4=x +2\)</span> og svaret var $x=3.</p>
+<p><strong>VS:</strong> <span class="math notranslate nohighlight">\(3x-4=3\cdot 3-4=9-4=5\)</span></p>
+<p><strong>HS:</strong> <span class="math notranslate nohighlight">\(x+2 = 3+2 = 5\)</span></p>
+<p>Vi ser at VS=HS. <span class="math notranslate nohighlight">\(x=3\)</span> er derfor løsning på likningen.</p>
+<p><strong>Eksempel 5</strong>
+Likningen var <span class="math notranslate nohighlight">\(\displaystyle{1-\frac{1}{2}\left(7x-\frac{5}{3}\right) = \frac{x-1}{4}}\)</span> og svaret var <span class="math notranslate nohighlight">\(\displaystyle{x=\frac{5}{9}}\)</span>.</p>
+<p><strong>VS:</strong></p>
+<p><span class="math notranslate nohighlight">\(\begin{align}
+1-\frac{1}{2}\left(7x-\frac{5}{3}\right) &amp;=1-\frac{1}{2}\left(7\frac{5}{9}-\frac{5}{3}\right)=1-\frac{1}{2}\left(\frac{35}{9}-\frac{15}{9}\right) \\
+&amp;=1-\frac{1}{2}\cdot \frac{20}{9}=1-\frac{10}{9}=-\frac{1}{9}
+\end{align}
+\)</span></p>
+<p><strong>HS:</strong></p>
+<p><span class="math notranslate nohighlight">\(\displaystyle{\frac{x-1}{4}=\frac{\frac{5}{9}-1}{4}=\frac{9\left(\frac{5}{9}-1\right)}{9\cdot 4}=\frac{5-9}{36}=\frac{-4}{36}=-\frac{1}{9}}\)</span></p>
+<p>Vi ser at VS=HS. <span class="math notranslate nohighlight">\(\displaystyle{x=\frac{5}{9}}\)</span> er derfor løsning på likningen.</p>
+<p>Det siste eksempelet involverer en del brøkregning som ikke er forklart. Gå gjerne nøye gjennom hvert steg for å forsikre deg om at du skjønner hva som skjer.</p>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
