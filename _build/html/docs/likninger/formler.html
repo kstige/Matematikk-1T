@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Andregradslikninger" href="andregradslikninger.html" />
@@ -510,12 +512,46 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sette-inn-tall-i-formler">
+   Sette inn tall i formler
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gjore-om-tekst-til-formel">
+   Gjøre om tekst til formel
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lose-likning-fra-formel">
+   Løse likning fra formel
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -527,6 +563,29 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sette-inn-tall-i-formler">
+   Sette inn tall i formler
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gjore-om-tekst-til-formel">
+   Gjøre om tekst til formel
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lose-likning-fra-formel">
+   Løse likning fra formel
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -536,6 +595,114 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="formler">
 <h1>Formler<a class="headerlink" href="#formler" title="Permalink to this headline">#</a></h1>
+<p>Formler blir ofte brukt i realfagene og faller naturlig inn i arbeid med algebra og likninger.</p>
+<div class="admonition-formel admonition">
+<p class="admonition-title">Formel</p>
+<p>En formel er en sammenheng mellom to eller flere størrelser.</p>
+</div>
+<p>For å beherske bruken av formler skal vi se på følgende steg</p>
+<ul class="simple">
+<li><p>sette tall inn i formler</p></li>
+<li><p>gjøre om tekst til formel</p></li>
+<li><p>løse likninger fra formler</p></li>
+<li><p>snu om på formler</p></li>
+<li><p>(formler i programmering)</p></li>
+</ul>
+<section id="sette-inn-tall-i-formler">
+<h2>Sette inn tall i formler<a class="headerlink" href="#sette-inn-tall-i-formler" title="Permalink to this headline">#</a></h2>
+<p>Den mest grunnleggende bruken av en formel er å sette inn tall i den for å regne ut en bestemt størrelse.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Areal av en sirkel</p>
+<p>Arealet av en sirkel er gitt ved <span class="math notranslate nohighlight">\(A=\pi r^2\)</span>. Dersom radien er 4 vil arealet bli</p>
+<div class="math notranslate nohighlight">
+\[A=\pi\cdot 4^2=16\pi\]</div>
+</div>
+</section>
+<section id="gjore-om-tekst-til-formel">
+<h2>Gjøre om tekst til formel<a class="headerlink" href="#gjore-om-tekst-til-formel" title="Permalink to this headline">#</a></h2>
+<p>En viktig grunn til å bruke formler i matematikk og andre realfag er at de hjelper oss å uttrykke sammenhenger på en kompakt måte. I eksempelet over brukte vi formelen <span class="math notranslate nohighlight">\(A=\pi r^2\)</span> for arealet av en sirkel. Skulle vi uttryk den ved tekst kunne vi sagt</p>
+<p><em>Arealet er <span class="math notranslate nohighlight">\(\pi\)</span> multiplisert med kvadratet av radien til sirkelen.</em></p>
+<p>Eller om vi skulle brukt enda litt mer av det matematiske språket:</p>
+<p><em>Arealet er proporsjonalt med kvadratet av radien til sirkelen, med <span class="math notranslate nohighlight">\(\pi\)</span> som proporsjonalitetskonstant.</em></p>
+<p>Slike formuleringer er viktig for å forstå innholdet i formler og for å komme fram til nye formler, men de er lite hensiktsmessige i praktiske utregninger. Der er formlene mer kompakte og hendige. Vi skal allikevel se på noen viktige matematiske begrep som kan dukke opp i forbindelse med formler.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Informasjon</strong></p></th>
+<th class="head"><p><strong>Formel</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Produktet av <span class="math notranslate nohighlight">\(x\)</span> og <span class="math notranslate nohighlight">\(y\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(x\cdot y\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Forholdet mellom <span class="math notranslate nohighlight">\(x\)</span> og <span class="math notranslate nohighlight">\(y\)</span></p></td>
+<td><p>$\frac{x}{y}</p></td>
+</tr>
+<tr class="row-even"><td><p>Kvadratet av <span class="math notranslate nohighlight">\(x\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(x^2\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(y\)</span> er proporsjonal med <span class="math notranslate nohighlight">\(x\)</span></p></td>
+<td><p>y=kx</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(y\)</span> er omvendt proporsjonal med <span class="math notranslate nohighlight">\(x\)</span></p></td>
+<td><p>y=\frac{k}{x}</p></td>
+</tr>
+</tbody>
+</table>
+<p>De to siste er ikke nødvendigvis helt kjent for alle. De sier noe om en sammenheng mellom størrelsene <span class="math notranslate nohighlight">\(y\)</span> og <span class="math notranslate nohighlight">\(x\)</span>. Størrelsen <span class="math notranslate nohighlight">\(k\)</span> er et reellt tall (<span class="math notranslate nohighlight">\(k\in\mathbf{R}\)</span>) og kalles proporsjonalitetskonstanten.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Timelønn</p>
+<p>Dersom du tjener 200 kr i timen og jobber <span class="math notranslate nohighlight">\(x\)</span> timer, så vil lønnen <span class="math notranslate nohighlight">\(L\)</span> være gitt ved</p>
+<div class="math notranslate nohighlight">
+\[L=200x\]</div>
+<p>Her sier vi at <span class="math notranslate nohighlight">\(L\)</span> er proporsjonal med <span class="math notranslate nohighlight">\(x\)</span> med proporsjonalitetskonstant på 200 kr.</p>
+<p>Når to størrelser er proporsjonale, så vokser de i samme takt. Dersom den ene størrelsen dobles, så dobles den andre. Dersom den ene halveres, så halveres den andre.</p>
+</div>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Akkordlønn</p>
+<p>Du får 20000 kr for å male et hus. Du bruker <span class="math notranslate nohighlight">\(x\)</span> timer på jobben. Timelønnen <span class="math notranslate nohighlight">\(T\)</span> er gitt ved</p>
+<div class="math notranslate nohighlight">
+\[T=\frac{20000}{x}\]</div>
+<p>Vi sier at <span class="math notranslate nohighlight">\(T\)</span> er omvendt proporsjonal med <span class="math notranslate nohighlight">\(x\)</span> med proporsjonalitetskonstant på 20000 kr.</p>
+<p>Når to størrelser er omvendt proporsjonale så endres de i hver sin retning. Dersom den ene størrelsen dobles, så vil den andre halveres.</p>
+</div>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Formel fra tekst</p>
+<p>En av verdens mest kjente formler sier at energien <span class="math notranslate nohighlight">\(E\)</span> til en gjenstand med masse <span class="math notranslate nohighlight">\(m\)</span> er proporsjonal med kvadratet av lysfarten <span class="math notranslate nohighlight">\(c\)</span>. Proporsjonalitetskonstanten er massen til gjenstanden. Sammenhengen kan uttrykkes som</p>
+<div class="math notranslate nohighlight">
+\[E = mc^2\]</div>
+</div>
+</section>
+<section id="lose-likning-fra-formel">
+<h2>Løse likning fra formel<a class="headerlink" href="#lose-likning-fra-formel" title="Permalink to this headline">#</a></h2>
+<p>Vi startet å se på formler med å sette inn en verdi for radien i formelen <span class="math notranslate nohighlight">\(A=\pi r^2\)</span>. Da kunne vi regne direkte ut hva arealet til sirkelen var. Men hva gjør vi om vi vet arealet og trenger å finne radien?</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Finne radius fra areal</p>
+<p>Arealet av en sirkel er 20. Finn radien til sirkelen.</p>
+<p>Vi starter med å sette inn de kjente tallene i formelen og får <span class="math notranslate nohighlight">\(20 = \pi r^2\)</span>. Her ser vi at vi ender opp med ei likning siden den ukjente størrelsen ikke står alene på den ene siden av likhetstegnet. Vi deler derfor på <span class="math notranslate nohighlight">\(\pi\)</span> på begge sider av likhetstegnet før vi tar kvadratroten og får</p>
+<div class="math notranslate nohighlight">
+\[r=\sqrt{\frac{20}{\pi}}\]</div>
+</div>
+<p>Vi tar også et litt mer sammensatt eksempel.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Strekning</p>
+<p>I fysikk har vi en sammenheng mellom strekning <span class="math notranslate nohighlight">\(s\)</span> (m), startfart <span class="math notranslate nohighlight">\(v_0\)</span> (m/s), akselerasjon <span class="math notranslate nohighlight">\(a\)</span> (<span class="math notranslate nohighlight">\(\text{m/s^2}\)</span>) og tid <span class="math notranslate nohighlight">\(t\)</span> (s) som sier at</p>
+<div class="math notranslate nohighlight">
+\[s=v_0t+\frac{1}{2}at^2\]</div>
+<p>Vi skal finne akselerasjonen dersom vi får vite at strekningen er 96 m på 4 s med ei startfart på 10 m/s. Vi setter inn alle kjente tall og får</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+96 &amp;= 10\cdot 4+\frac{1}{2}a\cdot 4^2 \\
+96 &amp;= 40+8a \\
+8a &amp;= 56 \\
+a &amp;= \frac{56}{8} \\
+a &amp;= 7
+\end{align}
+\)</span></p>
+<p>Det betyr at akselerasjonen er $7 \text{m/s^2}.</p>
+<p>Oppgava kan også løses i CAS ved å skrive inn formelen, sette inn verdier for de kjente størrelsene, markere linja og trykke på knappen for eksakt løsning eller numerisk løsming.</p>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
