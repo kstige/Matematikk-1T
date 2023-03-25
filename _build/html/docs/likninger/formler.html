@@ -549,6 +549,11 @@ title="Print to PDF"
    Løse likning fra formel
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#snu-om-pa-formel">
+   Snu om på formel
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -581,6 +586,11 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#lose-likning-fra-formel">
    Løse likning fra formel
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#snu-om-pa-formel">
+   Snu om på formel
   </a>
  </li>
 </ul>
@@ -700,7 +710,41 @@ a &amp;= 7
 \end{align}
 \)</span></p>
 <p>Det betyr at akselerasjonen er $7 \text{m/s^2}.</p>
-<p>Oppgava kan også løses i CAS ved å skrive inn formelen, sette inn verdier for de kjente størrelsene, markere linja og trykke på knappen for eksakt løsning eller numerisk løsming.</p>
+<p>Oppgava kan også løses i CAS ved å skrive inn formelen, sette inn verdier for de kjente størrelsene, markere linja og trykke på knappen for enten eksakt eller numerisk løsming.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/formellikningcas.png"><img alt="../../_images/formellikningcas.png" src="../../_images/formellikningcas.png" style="width: 245.7px; height: 259.0px;" /></a>
+</figure>
+</div>
+</section>
+<section id="snu-om-pa-formel">
+<h2>Snu om på formel<a class="headerlink" href="#snu-om-pa-formel" title="Permalink to this headline">#</a></h2>
+<p>Vi kan snu om på en formel for å få en ny formel for en av de andre størrelsene som er involvert. For å gjøre det løser vi formelen som en likning.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Formel for radien</p>
+<p>Vi ser igjen på formelen for arealet til en sirkel <span class="math notranslate nohighlight">\(A=\pi r^2\)</span>. Vi har sett at vi når <span class="math notranslate nohighlight">\(A\)</span> er kjent kan løse ei likning for å finne <span class="math notranslate nohighlight">\(r\)</span>. Dersom vi ønsker å finne en formel for <span class="math notranslate nohighlight">\(r\)</span> kan vi gå fram på samme måte. Vi anser <span class="math notranslate nohighlight">\(A\)</span> som kjent (men setter ikke inn noe tall) og løser for <span class="math notranslate nohighlight">\(r\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+A &amp;= \pi r^2 \qquad &amp; : \pi \\
+\frac{A}{\pi} &amp;= r^2 &amp; \text{ta kvadratrot} \\
+r &amp;= \sqrt{\frac{A}{\pi}} &amp;
+\end{align}
+\)</span></p>
+</div>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Formel for akselerasjon</p>
+<p>Vi ser igjen på formelen <span class="math notranslate nohighlight">\(s=v_0t+\frac{1}{2}at^2\)</span> som er forklart i et tidligere eksempel. Vi ønsker å finne en formel for akselerasjonen <span class="math notranslate nohighlight">\(a\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+s&amp;=v_0t+\frac{1}{2}at^2 \qquad &amp;-v_0t \\
+s-v_0t &amp;= \frac{1}{2}at^2 &amp; \cdot 2 \\
+2(s-v_0t) &amp;= at^2 &amp; :t^2 \\
+a &amp;= \frac{2(s-v_0t)}{t^2}
+\end{align}
+\)</span></p>
+<p>Vi kan også løse med CAS. Vi skriver da inn <em>Løs()</em>. Inne i parentesen skriver vi inn formelen (vær nøye med <span class="math notranslate nohighlight">\(\cdot\)</span> mellom variabler) etterfulgt av komma (,) og variabelen vi skal løse for. Vær oppmerksom på at CAS ikke alltid vil skrive svaret på samme måte som vi vil foretrekke.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/formelsnucas.png"><img alt="../../_images/formelsnucas.png" src="../../_images/formelsnucas.png" style="width: 280.0px; height: 113.39999999999999px;" /></a>
+</figure>
 </div>
 </section>
 </section>
