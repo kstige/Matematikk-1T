@@ -512,12 +512,38 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ax-2-c-0">
+   <span class="math notranslate nohighlight">
+    \(ax^2+c=0\)
+   </span>
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -529,6 +555,21 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ax-2-c-0">
+   <span class="math notranslate nohighlight">
+    \(ax^2+c=0\)
+   </span>
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -539,14 +580,13 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="andregradslikninger">
 <h1>Andregradslikninger<a class="headerlink" href="#andregradslikninger" title="Permalink to this headline">#</a></h1>
 <p>Fram til nå har vi arbeidet med lineære likninger. Det er likninger der den ukjente kun er i første potens. Skal vi bruke likninger til å løse problemstillinger innenfor andre fagfelt, så vil vi imidlertid ende opp med likninger der den ukjente er opphøyd i andre. Eksempler på slike likninger er</p>
-<ul class="simple">
+<ol class="simple">
 <li><p><span class="math notranslate nohighlight">\(x^2=36\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(2x^2-8=0\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(x^2-12x=0\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(x^2+6x+9=4\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(x^2-12x+20=0\)</span></p></li>
-</ul>
-<p>Vi skal</p>
+</ol>
 <div class="admonition-andregradslikninger admonition">
 <p class="admonition-title">Andregradslikninger</p>
 <p>I en andregradslikning vil den ukjente størrelsen være i andre potens. Alle andregradslikninger kan skrives på formen</p>
@@ -554,6 +594,65 @@ title="Print to PDF"
 \[ax^2+bx+c=0\]</div>
 <p>der <span class="math notranslate nohighlight">\(a, b, c \in \mathbf{R}\)</span> og <span class="math notranslate nohighlight">\(a\neq 0\)</span>.</p>
 </div>
+<p>Dersom vi flytter alle ledd over på venstre side, så vil alle eksemplene over være på denne generelle formen. I de tre første er enten <span class="math notranslate nohighlight">\(b\)</span> eller <span class="math notranslate nohighlight">\(c\)</span> lik null. Vi starter med å se på disse tilfellene.</p>
+<section id="ax-2-c-0">
+<h2><span class="math notranslate nohighlight">\(ax^2+c=0\)</span><a class="headerlink" href="#ax-2-c-0" title="Permalink to this headline">#</a></h2>
+<p>Vi starter med andregradslikninger der <span class="math notranslate nohighlight">\(b=0\)</span>. Da er likningen på formen <span class="math notranslate nohighlight">\(ax^2+c=0\)</span>. Slike likninger løser vi ved enklest ved å flytte <span class="math notranslate nohighlight">\(c\)</span> over til høyre side, dividere på <span class="math notranslate nohighlight">\(a\)</span> og så ta kvadratrot. I det første eksempelet viser vi hvordan vi løser den generelt før vi løser 1) og 2) i lista øverst på sida.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: <span class="math notranslate nohighlight">\(ax^2+c=0\)</span></p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+ax^2+c &amp;= 0 \\
+ax^2 &amp;= -c \\
+x^2 &amp;= -\frac{c}{a} \\
+\sqrt{x^2} &amp;= \sqrt{-\frac{c}{a}} \\
+|x| &amp;= \sqrt{-\frac{c}{a}} \\
+x &amp;= \pm \sqrt{-\frac{c}{a}}
+\end{align}
+\)</span></p>
+<p>Her har vi brukt at <span class="math notranslate nohighlight">\(\sqrt{x^2}=|x|\)</span> siden vi har definert kvadratroten til å være et positivt tall.</p>
+<p>Vi husker at vi kun kan ta kvadratroten av positive tall. Dersom vi skal kunne regne ut kvadratroten på høyre side må derfor enten <span class="math notranslate nohighlight">\(a\)</span> eller <span class="math notranslate nohighlight">\(c\)</span> være negativ (men ikke begge). Om <span class="math notranslate nohighlight">\(a\)</span> og <span class="math notranslate nohighlight">\(c\)</span> har likt fortegn vil vi få et negativt tall inne i kvadratoten og den er da ikke definert. I slike tilfeller har likningen ingen løsning. Videre vil vi ha en løsning dersom <span class="math notranslate nohighlight">\(c=0\)</span> og to løsninger (gitt ved <span class="math notranslate nohighlight">\(\pm\)</span> foran kvadratroten) dersom <span class="math notranslate nohighlight">\(a\)</span> og <span class="math notranslate nohighlight">\(c\)</span> har forskjellige fortegn.</p>
+</div>
+<p>Det vi ser over gjelder generelt for alle andregradslikninger.</p>
+<div class="admonition-antall-losninger admonition">
+<p class="admonition-title">Antall løsninger</p>
+<p>En andregradslikning kan ha</p>
+<ul class="simple">
+<li><p>ingen løsning</p></li>
+<li><p>en løsning</p></li>
+<li><p>to løsninger</p></li>
+</ul>
+</div>
+<p>Vi tar nå to talleksemepel</p>
+<div class="eksempel admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(x^2=36\)</span></p>
+<p>I denne likningen er vi klar til å ta kvadratrot med en gang</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+x^2 &amp;= 36 \\
+\sqrt{x^2} &amp;= \sqrt{36} \\
+|x| &amp;= 6 \\
+x &amp;= \pm 6
+\end{align}
+\)</span></p>
+<p>Det er også vanlig å skrive opp løsningen som <span class="math notranslate nohighlight">\(L=\{-6, 6\}\)</span> som betyr at løsningsmengden til likningen er <span class="math notranslate nohighlight">\(\{-6, 6\}\)</span></p>
+<p>Vanligvis vil vi hoppe over linje 3 i mellomregningen her.</p>
+</div>
+<div class="eksempel admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(2x^2-8=0\)</span></p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+2x^2 -8 &amp;= 0 \\
+2x^2 &amp;= 8 \\
+x^2 &amp;= 4 \\
+\sqrt{x^2} &amp;= \sqrt{4} \\
+|x| &amp;= 2 \\
+x &amp;= \pm 2
+\end{align}
+\)</span></p>
+<p>Løsningsmengden er <span class="math notranslate nohighlight">\(L=\{-2,2\}\)</span>.</p>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
