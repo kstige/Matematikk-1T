@@ -74,7 +74,7 @@ get_ipython().run_cell_magic('html', '', '\n<meta name=viewport content="width=d
 # ## Bruk av arealsetningen
 # 
 # 
-# ```{admonition} Eksempel: Kjent areal, ukjent vinkel
+# `````{admonition} Eksempel: Kjent areal, ukjent vinkel
 # :class: eksempel
 # 
 # En trekant har arealet 16, $AB=8$ og $AC=6$. Hvor stor er vinkel $A$?
@@ -97,4 +97,4 @@ get_ipython().run_cell_magic('html', '', '\n<meta name=viewport content="width=d
 # 
 # Her har vi fått vinkelen i trekanten til venstre, men hvordan kan vi få trekanten til høyre? Hvis vi husker at sinus til supplementvinkler er lik, så får vi at den andre vinkelen er $180^{\circ}-41,8^{\circ}=138,2^{\circ}$
 # 
-# ```
+# `````
