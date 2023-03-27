@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Lineære likninger" href="linearelikninger.html" />
@@ -536,6 +538,58 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="uttrykk-likning-og-identitet">
 <h1>Uttrykk, likning og identitet<a class="headerlink" href="#uttrykk-likning-og-identitet" title="Permalink to this headline">#</a></h1>
+<p>I arbeidet med algebra og likninger er det viktig å skille mellom innholdet i begrepene <em>uttrykk, likning og identitet</em>. Mange misforståelser i matematikk på dette nivået bunner i at man behandler algebraiske uttrykk som ei likning og/eller motsatt. Vi starter derfor med å definere begrepene før vi viser viktige forskjeller.</p>
+<div class="admonition-algebraisk-uttrykk admonition">
+<p class="admonition-title">Algebraisk uttrykk</p>
+<p>Et algebraisk uttrykk er bygd opp av tall og variabler og inneholder ikke likhetstegn.</p>
+<p>Eksempler:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(3x+4\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(4b^2-3a^2b+8\)</span></p></li>
+</ul>
+<p>Det er også verdt å merke seg at en formel inneholder et uttrykk. For eksempel vil formelen for arealet av en sirkel, <span class="math notranslate nohighlight">\(A=\pi r^2\)</span>, si at arealet er gitt ved uttrykket <span class="math notranslate nohighlight">\(\pi r^2\)</span>.</p>
+</div>
+<div class="admonition-likning admonition">
+<p class="admonition-title">Likning</p>
+<p>Dersom vi setter to algebraiske uttrykk lik hverandre, så har vi en likning. Likningen består av en høyre side og en venstre side med et likhetstegn mellom.</p>
+<p>Eksempler:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(3x + 4 = 2x +1\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(x^2+6x+9=0\)</span></p></li>
+</ul>
+<p>En likning kan være sann for ingen, en eller flere verdier for den ukjente variabelen.</p>
+<p>Når vi setter inn kjente størrelser i en formel, så vil vi i mange tilfeller ende opp med en likning. Får vi vite at arealet av en sirkel er 8, så kan vi sette opp likningen <span class="math notranslate nohighlight">\(8=\pi r^2\)</span> som kan løses for å finne radien i sirkelen.</p>
+</div>
+<div class="admonition-identitet admonition">
+<p class="admonition-title">Identitet</p>
+<p>En identitet er er en likning med uendelig mange løsninger. Det vil si at det er to algebraiske uttrykk som er lik for alle verdier av variablene.</p>
+<p>Eksempler:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(2(x+3)=2x+6\)</span></p></li>
+<li><p>kvadratsetningnene (<span class="math notranslate nohighlight">\((a+b)^2=a^2+2ab+b^2\)</span>)</p></li>
+</ul>
+</div>
+<p>Det kan virke unaturlig og undøvendig å skille mellom disse tre. Forskjellen er imidlertid viktig fordi vi må behandle uttrykk og likninger på forskjellige måter.</p>
+<p>I en likning kan vi (men noen begrensninger) utføre samme matematiske operasjon på begge sider av likhetstegnet uten at likningen endres. Vi kan for eksempel multiplisere med et tall for å få vekk brøker. Ved å multiplisere med 5 i en likning gjør vi både venstre og høyre side av likningen 5 ganger så stor. Det endrer ikke likningen.</p>
+<p>Dersom vi gjøre det samme i et uttrykk, så endrer vi hele uttrykket. Dersom vi multipliserer uttrykket av arealet til en sirkel med 5, så får vi <span class="math notranslate nohighlight">\(5\pi r^2\)</span>. Da har vi gjort arealet 5 ganger så stort. Det kan vi derfor ikke gjøre. Vi kan allikevel forenkle eller omskrive uttrykk. Da er det imidlertid viktig at hvert ledd i omskrivingen er en identitet. Eksempler på dette er når vi har laget fullstendige kvadrat (og faktorisert). Da legger vi til og trekker fra like mye slik at vi ikke endrer verdien på uttrykket.</p>
+<p>Senere i faget skal vi arbeide med funksjoner. Det kan være verdt å merke seg at en funksjon er en likning som viser sammenhengen mellom to størrelser. Høyresiden i en funksjon vil være et uttrykk som viser verdien til venstre siden. Dette er på mange måter det samme som en formel.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Avgjøre om en likning er en identitet</p>
+<p>Vi skal avgjøre om <span class="math notranslate nohighlight">\(x^2+6x+8=(x+2)(x+4)\)</span> er en identitet.</p>
+<p><strong>For hånd</strong></p>
+<p>Vi kan gå fram på to måter:</p>
+<ul class="simple">
+<li><p>faktorisere venstre side med fullstendig kvadrat metoden</p></li>
+<li><p>multiplisere ut høyre side</p></li>
+</ul>
+<p>Det siste alternativet er enklest: <span class="math notranslate nohighlight">\((x+2)(x+4)=x^2+4x+2x+8=x^2+6x+8\)</span>. Vi ser at uttrykkene er eksakt like. Det er derfor en identitet.</p>
+<p><strong>Med CAS</strong></p>
+<p>Vi skriver inn uttrykket i CAS med dobbelt likhetstegn “==” mellom. Da får vi symbolet vist i utklippet under. Dersom likningen er en identitet får vi resultatet <em>true</em>. Dersom det ikke er en identitet får vi <em>false</em>.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/identitet.png"><img alt="../../_images/identitet.png" src="../../_images/identitet.png" style="width: 296.79999999999995px; height: 62.99999999999999px;" /></a>
+</figure>
+<p>Vi ser at likningen er en identitet. Det vil si at den stemmer for alle verdier av <span class="math notranslate nohighlight">\(x\)</span>.</p>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
