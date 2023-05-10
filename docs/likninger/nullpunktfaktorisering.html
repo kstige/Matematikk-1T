@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Polynomdivisjon" href="polynomdivisjon.html" />
@@ -536,6 +538,37 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="nullpunktfaktorisering">
 <h1>Nullpunktfaktorisering<a class="headerlink" href="#nullpunktfaktorisering" title="Permalink to this headline">#</a></h1>
+<p>Vi har sett hvordan uttrykk kan faktoriseres ved:</p>
+<ul class="simple">
+<li><p>å trekke ut felles faktor</p></li>
+<li><p>kvadratsetningene</p></li>
+<li><p>fullstendig-kvadratmetoden</p></li>
+</ul>
+<p>Vi har også sett på hvordan vi kan løse andregradslikninger på formen <span class="math notranslate nohighlight">\(ax^2+bx+c=0\)</span>. Når vi løser denne likningen finner vi nullpunktene til andregradspolynomet <span class="math notranslate nohighlight">\(ax^2+bx+c\)</span>. Vi skal her se på hvordan vi kan bruke nullpunkt til å faktorisere generelle andregradsuttrykk uten å bruke fullstendig-kvadratmetoden, men først definerer vi begrepene andregradspolynom og nullpunkt.</p>
+<div class="admonition-andregradspolynom admonition">
+<p class="admonition-title">Andregradspolynom</p>
+<p>Et uttrykk som kan skrives på formen</p>
+<p><span class="math notranslate nohighlight">\(P(x)=ax^2+bx+c\)</span> der <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, <span class="math notranslate nohighlight">\(c \in \mathbf{R}\)</span> og <span class="math notranslate nohighlight">\(a\neq 0\)</span></p>
+<p>kalles et andregradspolynom.</p>
+<p>Ordet polynom består av ordene</p>
+<ul class="simple">
+<li><p>poly - mange</p></li>
+<li><p>nom - ledd</p></li>
+</ul>
+<p>og er altså et uttrykk som består av flere ledd.</p>
+<p>Ved å legge til ledd med <span class="math notranslate nohighlight">\(x^3\)</span> vil vi få et tredjegradspolynom og så videre.</p>
+</div>
+<div class="admonition-nullpunkt admonition">
+<p class="admonition-title">Nullpunkt</p>
+<p>Når vi løser en likning <span class="math notranslate nohighlight">\(P(x)=0\)</span> finner vi nullpunktene til uttrykket <span class="math notranslate nohighlight">\(P(x)\)</span>. Nullpunktene er de <span class="math notranslate nohighlight">\(x\)</span>-verdiene som gjør at uttrykket blir lik null.</p>
+<p>Dersom <span class="math notranslate nohighlight">\(a\)</span> er et nullpunkt for <span class="math notranslate nohighlight">\(P(x)\)</span>, så vil <span class="math notranslate nohighlight">\(P(a)=0\)</span>.</p>
+</div>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Andregradspolynom og nullpunkt</p>
+<p><span class="math notranslate nohighlight">\(P(x)=x^2-x-6\)</span> er et andregradspolynom. <span class="math notranslate nohighlight">\(x=-2\)</span> og <span class="math notranslate nohighlight">\(x=3\)</span> er nullpunkt til andregradspolynomet siden</p>
+<p><span class="math notranslate nohighlight">\(P(-2)=(-2)^2-(-2)-6=4+2-6=0\)</span></p>
+<p><span class="math notranslate nohighlight">\(P(3)=3^2-3-6=9-3-6=0\)</span></p>
+</div>
 </section>
 
     <script type="text/x-thebe-config">

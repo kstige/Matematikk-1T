@@ -541,6 +541,28 @@ title="Print to PDF"
    </span>
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ax-2-bx-0">
+   <span class="math notranslate nohighlight">
+    \(ax^2+bx=0\)
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#generelle-andregradslikninger">
+   Generelle andregradslikninger
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#abc-formel">
+   abc-formel
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#antall-losninger">
+   Antall løsninger
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -565,6 +587,28 @@ title="Print to PDF"
    <span class="math notranslate nohighlight">
     \(ax^2+c=0\)
    </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ax-2-bx-0">
+   <span class="math notranslate nohighlight">
+    \(ax^2+bx=0\)
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#generelle-andregradslikninger">
+   Generelle andregradslikninger
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#abc-formel">
+   abc-formel
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#antall-losninger">
+   Antall løsninger
   </a>
  </li>
 </ul>
@@ -651,6 +695,219 @@ x &amp;= \pm 2
 \end{align}
 \)</span></p>
 <p>Løsningsmengden er <span class="math notranslate nohighlight">\(L=\{-2,2\}\)</span>.</p>
+</div>
+</section>
+<section id="ax-2-bx-0">
+<h2><span class="math notranslate nohighlight">\(ax^2+bx=0\)</span><a class="headerlink" href="#ax-2-bx-0" title="Permalink to this headline">#</a></h2>
+<p>Den neste formen for andregradslikning vi skal se på er likninger der konstantleddet <span class="math notranslate nohighlight">\(c=0\)</span>. For å løse disse kan vi bruke noe vi kaller for produktsetningen.</p>
+<div class="admonition-produktsetningen admonition">
+<p class="admonition-title">Produktsetningen</p>
+<p>Dersom produktet av to tall blir null, så må minst et av tallene være null.</p>
+<div class="math notranslate nohighlight">
+\[x\cdot y = 0 \quad \Leftrightarrow \quad x = 0 \vee y = 0\]</div>
+</div>
+<p>Vi skal i første omgang bruke produktsetningen til å løse likninger på formen <span class="math notranslate nohighlight">\(ax^2+bx=0\)</span>, men den vil være veldig nyttig også når vi skal se på faktorisering av generelle andregradsuttrykk.</p>
+<div class="eksempel admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(ax^2+bx=0\)</span></p>
+<p>Første steg i løsningen er å se at vi har en felles faktor <span class="math notranslate nohighlight">\(x\)</span>. Vi starter med å trekke den utenfor en parentes.</p>
+<p><span class="math notranslate nohighlight">\(ax^2+bx=x(ax+b)=0\)</span></p>
+<p>Her har vi et produkt av to faktorer som skal bli null. Ved produktsetningen er det kun mulig dersom minst en av faktorene er null. Løsningen på likningen er derfor</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+x=0 \qquad \vee&amp; \qquad ax+b=0\\
+x=0 \qquad \vee&amp; \qquad ax=-b \\
+x=0 \qquad \vee&amp; \qquad x=-\frac{b}{a}
+\end{align}
+\)</span></p>
+<p>Løsningen blir: <span class="math notranslate nohighlight">\(L=\{0, -\frac{b}{a}\}\)</span>.</p>
+</div>
+<p>Så tar vi et talleksempel.</p>
+<div class="eksempel admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(x^2-12x=0\)</span></p>
+<p>Vi starter med å faktorisere ut felles faktor <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(x^2-12x=x(x-12)=0\)</span></p>
+<p>Her har vi et produkt av to faktorer som skal bli null. Ved produktsetningen er det kun mulig dersom minst en av faktorene er null. Løsningen på likningen er derfor</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+x=0 \qquad \vee&amp; \qquad x-12=0\\
+x=0 \qquad \vee&amp; \qquad x=12 
+\end{align}
+\)</span></p>
+<p>Løsningen blir: <span class="math notranslate nohighlight">\(L=\{0, 12\}\)</span>.</p>
+</div>
+</section>
+<section id="generelle-andregradslikninger">
+<h2>Generelle andregradslikninger<a class="headerlink" href="#generelle-andregradslikninger" title="Permalink to this headline">#</a></h2>
+<p>I en helt generell andregradslikning vil ingen av koeffisienten være lik null. Det vil derfor ikke være mulig å bruke de spesielle framgangsmåtene over for å løse likningene. Prinsippene vi har brukt er imidlertid nyttige.</p>
+<p>Vi har sett at dersom vi kan faktorisere uttrykket, så kan vi bruke produktsetningen til å finne løsningene. Andregradsuttrykk kan faktoriseres ved å lage fullstendige kvadrat slik vi har sett på tidligere.</p>
+<div class="eksempel admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(x^2+6x+9=4\)</span></p>
+<p>Vi skal løse oppgaven på to måter.</p>
+<p><strong>Metode 1</strong>
+Vi ser at venstresiden av uttrykket er et fullstendig kvadrat. Vi kan derfor faktorisere det direkte slik at vi får.</p>
+<p><span class="math notranslate nohighlight">\((x+3)^2=4\)</span></p>
+<p>Videre følger vi framgangsmåten fra likningene med <span class="math notranslate nohighlight">\(b=0\)</span> ved å ta kvadratrot på begge sider.</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+\sqrt{(x+3)^2}&amp;=\sqrt{4} \\
+|x+3|&amp;= 2 \\
+x+3 &amp;= \pm 2 
+\end{align}
+\)</span></p>
+<p>Vi får to løsninger gitt ved</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+x+3 = 2 \qquad &amp;\vee \qquad x+3=-2 \\
+x = 2-3 \qquad &amp;\vee \qquad x=-2-3 \\
+x = -1 \qquad &amp;\vee \qquad x=-5
+\end{align}
+\)</span></p>
+<p>Løsningen blir <span class="math notranslate nohighlight">\(L=\{-5, -1\}\)</span>.</p>
+<p><strong>Metode 2</strong>
+Vi bruker første kvadratsetning på venstre side og flytter <span class="math notranslate nohighlight">\(4\)</span> over til venstre side. Videre skriver vi <span class="math notranslate nohighlight">\(4\)</span> som et kvadrat <span class="math notranslate nohighlight">\(2^2\)</span> slik at vi står med:</p>
+<p><span class="math notranslate nohighlight">\((x+3)^2-2^2=0\)</span></p>
+<p>Her kan vi bruke konjugatsetningen på venstre side.</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+(x+3+2)(x+3-2)&amp;=0 \\
+(x+5)(x+1) &amp;= 0
+\end{align}
+\)</span></p>
+<p>Her har vi et produkt av to faktorer som skal bli null. Ved produktsetningen er det kun mulig dersom minst en av faktorene er null. Løsningen på likningen er derfor</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+x+5=0 \qquad \vee&amp; \qquad x+1=0\\
+x=-5 \qquad \vee&amp; \qquad x=-1 
+\end{align}
+\)</span></p>
+<p>Løsningen blir <span class="math notranslate nohighlight">\(L=\{-5, -1\}\)</span>.</p>
+</div>
+<p>Vi tar et eksempel til der vi må lage oss et fullstendig kvadrat. Også dette eksempelet utfører vi på to måter.</p>
+<div class="eksempel admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(x^2-12x+20=0\)</span></p>
+<p><strong>Metode 1</strong>
+Vi starter med å lage et fullstendig kvadrat på venstre side. For å få det må vi legge til og trekke fra <span class="math notranslate nohighlight">\(\left(\frac{-12}{2}\right)^2=36\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(x^2-12x+20=\underbrace{x^2-12x+36}_{\text{Fullstendig kvadrat}}-36+20=(x-6)^2-16=0\)</span></p>
+<p>Videre flytter vi <span class="math notranslate nohighlight">\(-16\)</span> over til høyre side (ved å legge til <span class="math notranslate nohighlight">\(16\)</span> på begge sider av likhetstegnet) og følger framgangsmåten fra likningene med <span class="math notranslate nohighlight">\(b=0\)</span> ved å ta kvadratrot på begge sider.</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+\sqrt{(x-6)^2}&amp;=\sqrt{16} \\
+x-6 &amp;= \pm 4 
+\end{align}
+\)</span></p>
+<p>Vi får to løsninger gitt ved</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+x-6 = 4 \qquad &amp;\vee \qquad x-6=-4 \\
+x = 4+6 \qquad &amp;\vee \qquad x=-4+6 \\
+x = 10 \qquad &amp;\vee \qquad x=2
+\end{align}
+\)</span></p>
+<p>Løsningen blir <span class="math notranslate nohighlight">\(L=\{2, 10\}\)</span>.</p>
+<p><strong>Metode 2</strong>
+Vi starter på samme måte ved å lage et fullstendig kvadrat på venstre side. Videre skriver vi <span class="math notranslate nohighlight">\(16\)</span> som et kvadrat <span class="math notranslate nohighlight">\(4^2\)</span> slik at likningen vår blir</p>
+<p><span class="math notranslate nohighlight">\((x-6)^2-4^2=0\)</span></p>
+<p>Her kan vi bruke konjugatsetningen på venstre side.</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+(x-6+4)(x-6-4)&amp;=0 \\
+(x-2)(x-10) &amp;= 0
+\end{align}
+\)</span></p>
+<p>Her har vi et produkt av to faktorer som skal bli null. Ved produktsetningen er det kun mulig dersom minst en av faktorene er null. Løsningen på likningen er derfor</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+x-2=0 \qquad \vee&amp; \qquad x-10=0\\
+x=2 \qquad \vee&amp; \qquad x=10 
+\end{align}
+\)</span></p>
+<p>Løsningen blir <span class="math notranslate nohighlight">\(L=\{2, 10\}\)</span>.</p>
+</div>
+</section>
+<section id="abc-formel">
+<h2>abc-formel<a class="headerlink" href="#abc-formel" title="Permalink to this headline">#</a></h2>
+<p>De to metodene som er brukt i eksemplene over er nok for å løse alle andregradslikninger som kan løses. Eksemplene er imidlertid valgt med “fine tall” som gjør det lett å faktorisere. I en andregradslikning som beskriver en eller annen reell situasjon vil vi sjeldent få fine tall. Det vil derfor være praktisk med en formel som vi kan bruke direkte på alle andregradslikninger. Denne formelen kalles abc-formelen og vi gir den her før vi tar bevis og en del eksempler på bruk.</p>
+<div class="eksempel dropdown full-width admonition">
+<p class="admonition-title">Bevis for abc-formelen</p>
+<p>Beviset for abc-formelen bygger på faktoriseringsmetodene vi brukte over.</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+ax^2+bx+c&amp;=0 \quad &amp; \\
+ax^2+bx&amp;=-c \quad &amp; \text{Trekker fra c på begge sider.} \\
+x^2+\frac{b}{a}x &amp;=-\frac{c}{a} \quad &amp;\text{Dividerer med a på begge sider.} \\
+\underbrace{x^2+\frac{b}{a}x+\left(\frac{b}{2a}\right)^2}_{\text{Fullstendig kvadrat}} &amp;=-\frac{c}{a}+\left(\frac{b}{2a}\right)^2 \quad &amp;\text{Legger til }\left(\frac{b}{2a}\right)^2 \text{ på begge sider} \\
+\left(x+\frac{b}{2a}\right)^2&amp;=\left(\frac{b}{2a}\right)^2-\frac{c}{a} \quad &amp;\text{Bruker 1. kvadratsetning} \\
+\left(x+\frac{b}{2a}\right)^2&amp;=\frac{b^2}{4a^2} \quad &amp;\text{Multipliserer ut potensen på høyre side} \\
+\left(x+\frac{b}{2a}\right)^2&amp;=\frac{b^2-4ac}{4a^2} \quad &amp;\text{Setter høyre side på felles brøkstrek} \\
+x+\frac{b}{2a}&amp;= \pm \sqrt{\frac{b^2-4ac}{4a^2}} \quad &amp;\text{Tar kvadratrot på begge sider} \\
+x &amp;= -\frac{b}{2a} \pm \sqrt{\frac{b^2-4ac}{4a^2}} \quad &amp;\text{Trekker fra } \frac{b}{2a} \text{ på begge sider} \\
+x &amp;= -\frac{b}{2a} \pm \frac{\sqrt{b^2-4ac}}{2a} \quad &amp;\text{Regner ut kvadratrot av nevneren} \\
+x &amp;= \frac{-b\pm \sqrt{b^2-4ac}}{2a} \quad &amp;\text{Setter på felles brøkstrek}
+\end{align}
+\)</span></p>
+</div>
+<p>Det er ikke nødvendig å huske beviset for abc-formelen, men prøv og forstå alle stegene som er involvert.</p>
+<p>Videre skal vi se på en del eksempler på bruk av abc-formelen.</p>
+<div class="eksempel admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(x^2+20=12x\)</span></p>
+<p>Vi starter med å trekke fra <span class="math notranslate nohighlight">\(12x\)</span> på begge sider og får <span class="math notranslate nohighlight">\(x^2-12x+20=0\)</span>. Da er likningen på formen <span class="math notranslate nohighlight">\(ax^2+bx+c=0\)</span> som vi må ha for å kunne bruke abc-formelen. Vi ser videre at</p>
+<div class="math notranslate nohighlight">
+\[a=1 \quad b=-12 \quad c=20\]</div>
+<p>Vi setter inn i abc-formelen</p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+x &amp;=\frac{-(-12)\pm\sqrt{(-12)^2-4\cdot 1\cdot 20}}{2\cdot 1}=\frac{12\pm\sqrt{144-80}}{2} \\
+&amp;=\frac{12\pm\sqrt{64}}{2}=\frac{12\pm 8}{2}
+\end{align}
+\)</span></p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+x=\frac{12+8}{2} \quad &amp;\vee \quad x=\frac{12-8}{2} \\
+x=10 \quad &amp;\vee \quad x=2
+\end{align}
+\)</span></p>
+<p>Løsningen blir <span class="math notranslate nohighlight">\(L=\{2, 10\}\)</span> tilsvarende som vi fant ved faktorisering i et tidligere eksempel.</p>
+</div>
+<div class="eksempel admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(2x^2-2x-12=0\)</span></p>
+<p>Her kan vi bruke <span class="math notranslate nohighlight">\(a=2\)</span>, <span class="math notranslate nohighlight">\(b=-2\)</span> og <span class="math notranslate nohighlight">\(c=-12\)</span>, men vi kan gjøre det enklere for oss ved å først dividere med <span class="math notranslate nohighlight">\(2\)</span> på begge sder av likningen. Da får vi <span class="math notranslate nohighlight">\(x^2-x-6=0\)</span> slik at vi kan bruke</p>
+<div class="math notranslate nohighlight">
+\[a=1 \quad b=-1 \quad c=-6\]</div>
+<p>Vi setter inn i abc-formelen</p>
+<p><span class="math notranslate nohighlight">\(\displaystyle{x=\frac{-(-1)\pm\sqrt{(-1)^2-4\cdot 1\cdot (-6)}}{2\cdot 1}=\frac{1\pm\sqrt{1+24}}{2}=\frac{1\pm\sqrt{25}}{2}=\frac{1\pm 5}{2}}\)</span></p>
+<p><span class="math notranslate nohighlight">\(
+\begin{align}
+x=\frac{1+5}{2} \quad &amp;\vee \quad x=\frac{1-5}{2} \\
+x=3 \quad &amp;\vee \quad x=-2
+\end{align}
+\)</span></p>
+<p>Løsningen blir <span class="math notranslate nohighlight">\(L=\{-2, 3\}\)</span>.</p>
+</div>
+<div class="eksempel admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(x^2+6x+9=0\)</span></p>
+<p>Bruker abc-formelen med <span class="math notranslate nohighlight">\(a=1\)</span>, <span class="math notranslate nohighlight">\(b=6\)</span> og <span class="math notranslate nohighlight">\(c=9\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(\displaystyle{x=\frac{-6\pm\sqrt{6^2-4\cdot 1\cdot 9}}{2\cdot 1}=\frac{-6\pm\sqrt{36-36}}{2}=\frac{-6\pm\sqrt{0}}{2}=\frac{-6}{2}=-3}\)</span></p>
+<p>Vi ser at vi har bare en løsning <span class="math notranslate nohighlight">\(x=-3\)</span> som henger sammen med at uttrykket på venstre siden av likningen er et fullstendig kvadrat <span class="math notranslate nohighlight">\((x+3)^2\)</span>.</p>
+</div>
+<div class="eksempel admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(x^2+4x+5=0\)</span></p>
+<p>Bruker abc-formelen med <span class="math notranslate nohighlight">\(a=1\)</span>, <span class="math notranslate nohighlight">\(b=4\)</span> og <span class="math notranslate nohighlight">\(c=5\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(\displaystyle{x=\frac{-4\pm\sqrt{4^2-4\cdot 1\cdot 5}}{2\cdot 1}=\frac{-4\pm\sqrt{16-20}}{2}=\frac{-4\pm\sqrt{-4}}{2}}\)</span></p>
+<p>Det er ikke mulig å regne ut <span class="math notranslate nohighlight">\(\sqrt{-4}\)</span>. abc-formelen gir oss derfor ingen løsninger. Utledningen av abc-formelen er helt generell og når abc-formelen ikke gir løsning, så har ikke likningen noen løsning.</p>
+<p>Vi skriver <span class="math notranslate nohighlight">\(L=\text{Ø}\)</span>, der <span class="math notranslate nohighlight">\(\text{Ø}\)</span> står for den tomme mengde. Det betyr at likningen ikke har løsning.</p>
+</div>
+</section>
+<section id="antall-losninger">
+<h2>Antall løsninger<a class="headerlink" href="#antall-losninger" title="Permalink to this headline">#</a></h2>
+<p>I eksemplene over har vi sett andregradslikninger med to, en og ingen løsninger. Fra kvadratrotuttrykket i abc-formelen kan vi avgjøre hvor mange løsninger en andregradsliknig har.</p>
+<div class="admonition-antall-losninger admonition">
+<p class="admonition-title">Antall løsninger</p>
+<p>Uttrykket <span class="math notranslate nohighlight">\(b^2-4ac\)</span> som står under kvadraroten i abc-formelen kalles diskriminanten. Diskriminanten bestemmer antall løsninger.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(b^2-4ac&gt;0\)</span> gir to forskjellige løsninger</p></li>
+<li><p><span class="math notranslate nohighlight">\(b^2-4ac=0\)</span> gir en løsning (to like løsninger)</p></li>
+<li><p><span class="math notranslate nohighlight">\(b^2-4ac&lt;0\)</span> gir ingen løsning</p></li>
+</ul>
 </div>
 </section>
 </section>
