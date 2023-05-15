@@ -512,12 +512,36 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tredjegradspolynom">
+   Tredjegradspolynom
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -529,6 +553,19 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tredjegradspolynom">
+   Tredjegradspolynom
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -565,10 +602,93 @@ title="Print to PDF"
 </div>
 <div class="eksempel admonition">
 <p class="admonition-title">Eksempel: Andregradspolynom og nullpunkt</p>
-<p><span class="math notranslate nohighlight">\(P(x)=x^2-x-6\)</span> er et andregradspolynom. <span class="math notranslate nohighlight">\(x=-2\)</span> og <span class="math notranslate nohighlight">\(x=3\)</span> er nullpunkt til andregradspolynomet siden</p>
-<p><span class="math notranslate nohighlight">\(P(-2)=(-2)^2-(-2)-6=4+2-6=0\)</span></p>
-<p><span class="math notranslate nohighlight">\(P(3)=3^2-3-6=9-3-6=0\)</span></p>
+<p><span class="math notranslate nohighlight">\(P(x)=x^2+2x-8\)</span> er et andregradspolynom. <span class="math notranslate nohighlight">\(x=2\)</span> og <span class="math notranslate nohighlight">\(x=-4\)</span> er nullpunkt til andregradspolynomet siden</p>
+<p><span class="math notranslate nohighlight">\(P(2)=2^2+2\cdot2-8=4+4-8=0\)</span></p>
+<p><span class="math notranslate nohighlight">\(P(-4)=(-4)^2+2\cdot(-4)-8=16-8-8=0\)</span></p>
 </div>
+<p>Kan vi tenke oss et faktorisert uttrykk som har de samme nullpunktene? Vi angriper problemet ved å ta en del av gangen.</p>
+<p>Det enkleste uttrykket som har <span class="math notranslate nohighlight">\(2\)</span> som nullpunkt er <span class="math notranslate nohighlight">\(x-2\)</span>.</p>
+<p>Det enkleste uttrykket som har <span class="math notranslate nohighlight">\(-4\)</span> som nullpunkt er <span class="math notranslate nohighlight">\(x+4\)</span>.</p>
+<p>Hvis vi husker produktsetningen fra likningsløsningen, så vil det enkleste uttrykket som har <span class="math notranslate nohighlight">\(2\)</span> og <span class="math notranslate nohighlight">\(-4\)</span> som nullpunkt være produktet av disse:</p>
+<div class="math notranslate nohighlight">
+\[(x-2)(x+4)\]</div>
+<p>Hvis vi multipliserer ut dette uttrykket ender vi opp med</p>
+<div class="math notranslate nohighlight">
+\[(x-2)(x+4)=x^2+4x-2x-2\cdot 4 = x^2-2x-8\]</div>
+<p>Det er uttrykket vi så på i eksempelet over. Har vi nullpunktene til et uttrykk kan vi altså raskt faktorisere uttrykket. Vi uttrykker dette generelt.</p>
+<div class="admonition-nullpunktfaktorisering admonition">
+<p class="admonition-title">Nullpunktfaktorisering</p>
+<p>Dersom andregradspolynomet <span class="math notranslate nohighlight">\(P(x)=ax^2+bx+c\)</span> har nullpunktene <span class="math notranslate nohighlight">\(x_1\)</span> og <span class="math notranslate nohighlight">\(x_2\)</span>, så vil faktorisert form av <span class="math notranslate nohighlight">\(P(x)\)</span> være</p>
+<p><span class="math notranslate nohighlight">\(P(x)=ax^2+bx+c=a(x-x_1)(x-x_2)\)</span></p>
+<p>Om <span class="math notranslate nohighlight">\(x_1=x_2\)</span> (dobbelt nullpunkt) vil vi få <span class="math notranslate nohighlight">\(P(x)=(x-x_1)^2\)</span></p>
+<p>Om <span class="math notranslate nohighlight">\(P(x)\)</span> ikke har nullpunkt, så kan det ikke faktoriseres.</p>
+<p>Framgangsmåten kan lett generaliseres til polynom av høyere grad.</p>
+</div>
+<p>Forhåpentligvis gir resultatet mening, men det kan også bevises algebraisk:</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Bevis for nullpunktfaktorisering</p>
+<p>Vi ser på et generelt andregradspolynom <span class="math notranslate nohighlight">\(P(x)=ax^2+bx+c\)</span>. Fra abc-formelen vet vi at løsningene er</p>
+<p><span class="math notranslate nohighlight">\(x_1=\frac{-b+\sqrt{b^2-4ac}}{2a}\)</span>
+<span class="math notranslate nohighlight">\(x_2=\frac{-b-\sqrt{b^2-4ac}}{2a}\)</span></p>
+<p>Vi setter disse løsningene inn i faktoriseringen. For oversikten sin skyld setter vi <span class="math notranslate nohighlight">\(\sqrt{b^2-4ac}=d\)</span> fram til slutten av beviset.</p>
+<p><span class="math notranslate nohighlight">\(\begin{align}
+P(x)&amp;=ax^2+bx+c =a(x-x_1)(x-x_2) \\
+&amp;=  a\left(x-\frac{-b+d}{2a}\right)\left(x-\frac{-b-d}{2a}\right) \\
+&amp;= a\left(x^2-\frac{x(-b-d)}{2a}-\frac{x(-b+d)}{2a}+\frac{(-b+d)(-b-d)}{4a^2}\right) \\
+&amp;= ax^2 +\frac{xb+xd+xb-xd}{2}+\frac{b^2-d^2}{4a} \\
+&amp;= ax^2+bx+\frac{b^2-(b^2-4ac)}{4a} \\
+&amp;= ax^2+bx+c
+\end{align}
+\)</span></p>
+</div>
+<p>Vi tar noen eksempler</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Nullpunktfaktorisering</p>
+<p>Finner nullpunktene til uttrykkene på venstre side ved abc-formelen og setter opp faktoriseringen.</p>
+<p><span class="math notranslate nohighlight">\(x^2-5x+6 = (x-3)(x-2)\)</span> siden nullpunktene er <span class="math notranslate nohighlight">\(2\)</span> og <span class="math notranslate nohighlight">\(3\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(x^2+7x+10=(x+2)(x+5)\)</span> siden nullpunktene er <span class="math notranslate nohighlight">\(-2\)</span> og <span class="math notranslate nohighlight">\(-5\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(2x^2-10x+12 = 2(x-3)(x-2)\)</span> siden nullpunktene er <span class="math notranslate nohighlight">\(2\)</span> og <span class="math notranslate nohighlight">\(3\)</span>. Legg merke til at vi må få med faktoren 2 som står foran andregradsleddet.</p>
+<p>Kontroller gjerne faktoriseringen ved å multiplisere ut parentesene på høyre side, eller ved å bruke fullstendigkvadratmetoden.</p>
+</div>
+<p>Forståelse av nullpunktfaktorisering kan også hjelpe oss til å finne funksjonsutrykket til en graf.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Finne funksjonsuttrykk fra graf</p>
+<p>Vi skal finne funksjonsuttrykket til funksjonen i grafen under.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/ukjentandregrad.png"><img alt="../../_images/ukjentandregrad.png" src="../../_images/ukjentandregrad.png" style="width: 324.0px; height: 398.5px;" /></a>
+</figure>
+<p>Vi starter med å se at funksjonen er en andregradsfunksjon med nullpunkt <span class="math notranslate nohighlight">\(-2\)</span> og <span class="math notranslate nohighlight">\(3\)</span>. Det betyr at funksjonsuttrykket må være på formen <span class="math notranslate nohighlight">\(P(x)=a(x+2)(x-3)\)</span>. For å bestemme <span class="math notranslate nohighlight">\(a\)</span> må vi bruke et annet punkt på grafen. Vi kan velge hvilket punkt vi vil, men det er kanskje enklest å bruke <span class="math notranslate nohighlight">\((0, -12)\)</span>. Det vil si at <span class="math notranslate nohighlight">\(P(0)=-12\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(P(0)=a(0+2)(0-3)=-6a=-12\)</span></p>
+<p>Det gir at <span class="math notranslate nohighlight">\(a=2\)</span> slik at <span class="math notranslate nohighlight">\(P(x)=2(x+2)(x-3)=2x^2-2x-12\)</span></p>
+</div>
+<section id="tredjegradspolynom">
+<h2>Tredjegradspolynom<a class="headerlink" href="#tredjegradspolynom" title="Permalink to this headline">#</a></h2>
+<p>Vi kan også bruke nullpunktfaktorisering på uttrykk av høyere grad. I 1T vil vi stort sett begrense oss til tredjegradsuttrykk, men prinsippet gjelder også for høyere grads uttrykk.</p>
+<div class="admonition-nullpunktfaktorisering-av-tredjegradspolynom admonition">
+<p class="admonition-title">Nullpunktfaktorisering av tredjegradspolynom</p>
+<p>Et generelt tredjegradspolynom kan skrives på formen <span class="math notranslate nohighlight">\(P(x)=ax^3+bx^2+cx+d\)</span>. Det kan ha ett (trippelt), to (dobbelt + enkelt) eller tre ulike nullpunkt. Dersom nullpunktene er <span class="math notranslate nohighlight">\(x_1\)</span>, <span class="math notranslate nohighlight">\(x_2\)</span> og <span class="math notranslate nohighlight">\(x_3\)</span>, så vil faktoriseringen av <span class="math notranslate nohighlight">\(P(x)\)</span> være</p>
+<p><span class="math notranslate nohighlight">\(
+P(x) = a(x-x_1)(x-x_2)(x-x_3)
+\)</span></p>
+</div>
+<p>Vi tar noen eksempler.</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Faktorisering av tredjegradspolynom</p>
+<p><span class="math notranslate nohighlight">\(f(x)=x^3+4x^2-4x-16=(x+4)(x+2)(x-2)\)</span> siden nullpunktene er -4, -2 og 2.</p>
+<p><span class="math notranslate nohighlight">\(g(x)=-2x^3+8x^2-2x-12=-2(x+1)(x-2)(x-3)\)</span> siden nullpunktene er -1, 2 og 3. I tillegg ser vi at koeffisienten foran <span class="math notranslate nohighlight">\(x^3\)</span>-leddet er -2.</p>
+<p>For å komme fram til nullpunktene over må vi løse tredjegradslikninger. I 1T lærer vi ikke å gjøre det generelt, men på neste side om polynomdivisjon vil vi lære en teknikk som kan brukes i noen tilfeller.</p>
+</div>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Tredjegradspolynom fra graf</p>
+<p>Vi skal finne funksjonsuttrykket til funksjonen i grafen under.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/ukjenttredjegrad.png"><img alt="../../_images/ukjenttredjegrad.png" src="../../_images/ukjenttredjegrad.png" style="width: 300.5px; height: 392.0px;" /></a>
+</figure>
+<p>Vi starter med å se at funksjonen er en tredjegradsfunksjon med dobbelt nullpunkt i <span class="math notranslate nohighlight">\(-1\)</span> og enkelt nullpunkt i <span class="math notranslate nohighlight">\(2\)</span>. Det betyr at funksjonsuttrykket må være på formen <span class="math notranslate nohighlight">\(P(x)=a(x+1)^2(x-2)\)</span>. For å bestemme <span class="math notranslate nohighlight">\(a\)</span> må vi bruke et annet punkt på grafen. Vi kan velge hvilket punkt vi vil, men det er kanskje enklest å bruke <span class="math notranslate nohighlight">\((0, -3)\)</span>. Det vil si at <span class="math notranslate nohighlight">\(P(0)=-3\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(P(0)=a(0+1)^2(0-2)=-2a=-3\)</span></p>
+<p>Det gir at <span class="math notranslate nohighlight">\(a=\frac{3}{2}\)</span> slik at <span class="math notranslate nohighlight">\(P(x)=\frac{3}{2}(x+1)^2(x-2)=\frac{3}{2}x^3-\frac{9}{2}x-3\)</span>.</p>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
