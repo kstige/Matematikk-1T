@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Funksjonsbegrepet" href="../funksjoner/funksjonsbegrepet.html" />
@@ -536,6 +538,67 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="rasjonale-likninger">
 <h1>Rasjonale likninger<a class="headerlink" href="#rasjonale-likninger" title="Permalink to this headline">#</a></h1>
+<p>Likningene vi har arbeidet med fram til nå har bestått av polynomuttrykk. Det vil si at den ukjente størrelsen kun har forekommet med positiv eksponent (<span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(x^2\)</span>, <span class="math notranslate nohighlight">\(x^3\)</span> og så videre). I en del tilfeller vil vi imidlertid møte likninger der den ukjente er i nevneren i uttrykket. Slike likninger krever at vi er litt ekstra forsiktig når vi løser dem. Vi kaller de for rasjonale likninger.</p>
+<div class="admonition-rasjonale-likninger admonition">
+<p class="admonition-title">Rasjonale likninger</p>
+<p>Likninger som inneholder rasjonale uttrykk kalles rasjonale likninger. Et rasjonalt uttrykk er et uttrykk der variabelen (<span class="math notranslate nohighlight">\(x\)</span>) befinner seg i nevneren i uttrykket.</p>
+</div>
+<p>Vi skal på den sida her lære hvordan vi kan løse slike likninger, men først vil vi repetere og utdype litt generelt om det vi kan om likningsløsning fra før.Grunnprinsippet for å løse likninger er at vi må gjøre samme regneoperasjon på begge sider av likhetstegnet fram til vi har <span class="math notranslate nohighlight">\(x\)</span> (den ukjente størrelesen) alene på den ene siden av likhetstegnet. Det er det vi har brukt for å løse lineære likninger og det er det som er brukt for å utlede abc-formelen for andregradslikninger. Grunnen til at dette prinsippet holder er at så lenge vi utfører samme regneoperasjon på begge sider av et likhetstegn, så vil den nye og den opprinnelige likningen være ekvivalente. Vi kan for eksempel skrive:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+x+5&amp;=6 \\
+&amp;\Updownarrow \\
+x &amp; = 1
+\end{align}
+\end{split}\]</div>
+<p>De to likningene har akkurat samme løsning og er derfor ekvivalente.</p>
+<p>Det finnes imidlertid noen operasjoner vi kan gjøre som ikke bevarer ekvivalens mellom likningene. De viktigste av disse operasjonene er å multiplisere eller dividere med 0. Dersom vi multipliserer begge sider av ei likning med 0, så vil begge sider bli 0 uavhengig av hva de opprinnelig var. Det vil sjelden/aldri være et problem at vi multipliserer/dividerer med 0 direkte, men dersom vi multipliserer/dividerer med et uttrykk som inneholder <span class="math notranslate nohighlight">\(x\)</span> vil det kunne skje indirekte.</p>
+<div class="admonition-multiplisere-dividere-med-x admonition">
+<p class="admonition-title">Multiplisere/dividere med x</p>
+<p>Dersom vi multipliserer med uttrykket <span class="math notranslate nohighlight">\(x-a\)</span> (<span class="math notranslate nohighlight">\(a\in\mathbf{R}\)</span>) på begge sider av ei likning, så vil vi kunne innføre ei ny løsning <span class="math notranslate nohighlight">\(x=a\)</span> i likningen.</p>
+<p>Dersom vi dividerer med uttrykket <span class="math notranslate nohighlight">\(x-a\)</span> (<span class="math notranslate nohighlight">\(a\in\mathbf{R}\)</span>) på begge sider av ei likning, så vil vi kunne fjerne ei løsning <span class="math notranslate nohighlight">\(x=a\)</span> fra likningen.</p>
+<p>I begge tilfeller vil regneoperasjonen gjøre at vi ikke har ekvivalens mellom den nye og den opprinnelige likningen. I stedet for vil vi ha en implikasjon der den opprinnelige likningen impliserer den nye.</p>
+</div>
+<p>Vi starter med et eksempel der vi multipliserer med <span class="math notranslate nohighlight">\(x\)</span> uten å trenge</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel: Dividere med x</p>
+<p>Vi skal løse likningen <span class="math notranslate nohighlight">\((x-2)(x+4)=(x-2)\)</span>.</p>
+<p>Likninga kan løses ved å multiplisere ut parentesene og flytte alt til venstre side. Da ender vi opp med likningen <span class="math notranslate nohighlight">\(x^2+x-6=0\)</span> som har løsningene <span class="math notranslate nohighlight">\(x=-3\)</span> og <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
+<p>Alternativt så kan vi tenke oss at vi dividerer begge sider med <span class="math notranslate nohighlight">\(x-2\)</span> og ender opp pmed likningen <span class="math notranslate nohighlight">\(x+4=-3\)</span>. Den har løsningen <span class="math notranslate nohighlight">\(x=2\)</span>. Her ser vi at vi har mistet løsningen <span class="math notranslate nohighlight">\(x=2\)</span> ved å dividere med <span class="math notranslate nohighlight">\(x+2\)</span>. Likningen <span class="math notranslate nohighlight">\(x+4=-3\)</span> er derfor ikke ekvivalent med den opprinnelige likningen.</p>
+</div>
+<p>Når vi skal løse rasjonale likninger kan vi bli nødt til å multiplisere begge sidene av likningen med et uttrykk som inneholder <span class="math notranslate nohighlight">\(x\)</span>. I slike tilfeller må vi alltid kontrollere svaret for å se om vi har innført en ny løsning som ikke passer med den opprinnelige likningen. Vi ser dette best med noen eksempler:</p>
+<div class="eksempel admonition">
+<p class="admonition-title">Eksempel 1: Rasjonal likning</p>
+<p>Vi skal løse likningen <span class="math notranslate nohighlight">\(\displaystyle{\frac{x-3}{x-2}-4=-\frac{1}{x-2}}\)</span>. For å løse likninger med brøk multipliserer vi gjerne med fellesnevner til begge sider for å bli kvitt brøkene. Her er fellesnevner <span class="math notranslate nohighlight">\(x-2\)</span>. Ved å multiplisere med dette vil vi ikke ha ekvivalens mellom likningene og må derfor gå tilbake å sjekke svaret til slutt.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+\frac{x-3}{x-2}-4&amp;=-\frac{1}{x-2} \\
+\frac{(x-2)(x-3)}{x-2}-4(x-2) &amp;= -\frac{(x-2){x-2}} \\
+(x-3)-4x+8 &amp;= -1 \\
+-3x &amp;= -6 \\
+x&amp;=2
+\end{align}
+\end{split}\]</div>
+<p>Vi ender opp med løsninga <span class="math notranslate nohighlight">\(x=2\)</span>. Går vi tilbake til den opprinnelige likningen ser vi imidlertid at løsninga ikke er gyldig siden den medfører at det blir null i nevnerne. Grunnen til at vi allikevel får løsningen er at vi ved å multiplisere med <span class="math notranslate nohighlight">\(x-2\)</span> i dette tilfellet har innført <span class="math notranslate nohighlight">\(x=2\)</span> som løsning i likningen.</p>
+<p>Løsninga av likninga er <span class="math notranslate nohighlight">\(L= \varnothing\)</span>.</p>
+<p>Så når vi multipliserer med et ukjent uttrykk må vi sjekke svaret. Ei lita endring på likninga til <span class="math notranslate nohighlight">\(\frac{x-3}{x-2}-3=\frac{1}{x-2}\)</span> løst på akkurat samme måte gir ei godkjent løsning <span class="math notranslate nohighlight">\(x=1\)</span>.</p>
+</div>
+<div class="eksamen admonition">
+<p class="admonition-title">Eksempel 2: Rasjonal likning</p>
+<p>Vi skal løse likningen <span class="math notranslate nohighlight">\(\displaystyle{\frac{1}{x-4}-\frac{x-3}{3x}=\frac{4}{x^2-4x}}\)</span>.</p>
+<p>Det første vi må gjøre er å finne fellesnevner. Om man ikke ser det direkte, så kan vi faktorisere alle nevnere og bruke en av metodene fra siden om rasjonale uttrykk. Vi finner fellesnever lik <span class="math notranslate nohighlight">\(3x(x-4)\)</span> og multipliserer alle ledd på begge sider av likningen med dette. Da forutsetter vi at <span class="math notranslate nohighlight">\(x\neq 0\)</span> og <span class="math notranslate nohighlight">\(x\neq 4\)</span> siden de løsningene medfører at vi multipliserer med null.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+\frac{1}{x-4}-\frac{x-3}{3x}&amp;=\frac{4}{x^2-4x} \\
+\frac{3x(x-4)}{x-4}-\frac{3x(x-4)(x-3)}{3x}&amp;=\frac{3x(x-4)\cdot 4}{x^2-4x} \\
+3x-(x-4)(x-3) &amp;= 12 \\
+-x^2+10x-24&amp;=0
+\end{align}
+\end{split}\]</div>
+<p>Løser andregradslikninga med abc-formelen og får <span class="math notranslate nohighlight">\(x=4 \vee x=6\)</span>. Siden vi har multiplisert med et uttrykk som inneholder <span class="math notranslate nohighlight">\(x\)</span> må vi gå tilbake å kontrollere svaret. Vi ser at <span class="math notranslate nohighlight">\(x=4\)</span> ikke er ei mulig løsning siden vi da dividerer med null i opprinnelig likning.</p>
+<p>Løsninga av likninga er <span class="math notranslate nohighlight">\(L=\{6\}\)</span>.</p>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
