@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Rasjonale likninger" href="rasjonale_likninger.html" />
@@ -536,6 +538,24 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="polynomdivisjon">
 <h1>Polynomdivisjon<a class="headerlink" href="#polynomdivisjon" title="Permalink to this headline">#</a></h1>
+<p>På barneskolen har de fleste lært (en form av) divisjonsalgoritmen under</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/divisjon.png"><img alt="../../_images/divisjon.png" src="../../_images/divisjon.png" style="width: 197.5px; height: 158.0px;" /></a>
+</figure>
+<p>Noe tilsvarende kan brukes for å utføre divisjon med polynomuttrykk. Det ønsker vi å gjøre for å</p>
+<ul class="simple">
+<li><p>forenkle brøkuttrykk av typen <span class="math notranslate nohighlight">\(\frac{x^3+6x^2+11x+6}{x+2}\)</span></p></li>
+<li><p>faktorisere polynomuttrykk av tredjegrad og oppover</p></li>
+<li><p>løse likninger med polynomer</p></li>
+</ul>
+<p>Siden brøk forkortes ved å stryke felles faktor, faktorisering gjøres ved hjelp av nullpunkt og alle likninger kan omformes til å handle om å finne nullpunkt, så vil de tre punktene over egentlig gå ut på det samme.</p>
+<p>La oss se på tredjegradsuttrykket <span class="math notranslate nohighlight">\(P(x)=x^3+6x^2+11x+6\)</span> og undersøke om -2 er et nullpunkt i uttrykket.</p>
+<div class="math notranslate nohighlight">
+\[P(-2)=(-2)^3+6\cdot (-2)^2+11\cdot(-2)+6=-8+24-22+6=0\]</div>
+<p>Vi ser at -2 er et nullpunkt og vet derfor at <span class="math notranslate nohighlight">\(x+2\)</span> må være en faktor i <span class="math notranslate nohighlight">\(P(x)\)</span>. Det vil si at vi kan skrive <span class="math notranslate nohighlight">\(P(x)=(x+2)\cdot f(x)\)</span>, der <span class="math notranslate nohighlight">\(f(x)\)</span> er det uttrykket vi står igjen med når vi har trukket ut faktoren <span class="math notranslate nohighlight">\(x+2\)</span>. Problemet vårt blir å finne ut hva <span class="math notranslate nohighlight">\(f(x)\)</span> er.</p>
+<div class="math notranslate nohighlight">
+\[\frac{P(x)}{x+2}=\frac{(x+2)\cdot f(x)}{x+2}=f(x)\]</div>
+<p>Vi ser at vi kan finne <span class="math notranslate nohighlight">\(f(x)\)</span> ved å dele <span class="math notranslate nohighlight">\(P(x)\)</span> på <span class="math notranslate nohighlight">\(x+2\)</span>. Det kan gjøres ved hjelp av det vi kaller polynomdivisjon, og er en divisjonsalgoritme (framgangsmåte) som likner mye på divisjon med tall som vi startet med på denne siden. Vi viser algoritmen med et eksempel.</p>
 </section>
 
     <script type="text/x-thebe-config">
