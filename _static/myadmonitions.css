@@ -10,6 +10,8 @@
     color: #be8322
 }
 
+.admonition
+
 .admonition.losning {
     border-color: #be8322;
     background-color: rgba(245, 174, 67, 0.2)
@@ -37,9 +39,27 @@
 }
 
 .admonition.def {
-    border-color: rgba(87,154,202);
-    background-color: rgba(87,154,202,0.1);
+    border-color: rgba(var(--pst-color-primary));
+
 }
 .admonition.def > .admonition-title {
     background-color: rgba(87,154,202,0.1);
+    
+}
+.admonition.def > .admonition-title::before {
+    content: '\f0eb';
+    color: rgba(var(--pst-color-primary))
+}
+
+
+.admonition.utbytte {
+    border-color: rgba(var(--pst-color-admonition-tip),1);
+}
+.admonition.utbytte > .admonition-title {
+    background-color: rgba(var(--pst-color-admonition-tip),.1);
+    
+}
+.admonition.utbytte > .admonition-title::before {
+    content: '\f19d';
+    color: rgba(var(--pst-color-admonition-tip),1)
 }
