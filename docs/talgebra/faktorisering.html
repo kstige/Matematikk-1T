@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Faktorisering &#8212; Matematikk 1T</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,21 +20,17 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/myadmonitions.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -40,12 +38,13 @@
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -65,7 +64,21 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -74,9 +87,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -391,12 +405,17 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
 
 
@@ -404,61 +423,117 @@ const thebe_selector_output = ".output, .cell_output"
 
 
           
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
     
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
+    <div class="header-article row sticky-top noprint">
         
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/docs/talgebra/faktorisering.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/docs/talgebra/faktorisering.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
     </div>
 </div>
 
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#primtall-og-faktorisering">
    Primtall og faktorisering
@@ -481,12 +556,11 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Faktorisering</h1>
@@ -525,26 +599,27 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="faktorisering">
-<h1>Faktorisering<a class="headerlink" href="#faktorisering" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="faktorisering">
+<h1>Faktorisering<a class="headerlink" href="#faktorisering" title="Permalink to this headline">#</a></h1>
 <p>Mye av algebraen vi har arbeidet med til nå vil vi i stor grad benytte baklengs. Som oftest er vi nemlig interessert i å skrive uttrykk på det vi kaller faktorisert form.</p>
 <div class="admonition-faktorisere admonition">
 <p class="admonition-title">Faktorisere</p>
 <p>Å faktorisere et tall eller uttrykk betyr at vi skriver tallet eller uttrykket som et produkt av flere faktorer.</p>
 <p>I faktorisert form av et uttrykk vil eventuelle <span class="math notranslate nohighlight">\(+\)</span> og <span class="math notranslate nohighlight">\(-\)</span> kun befinne seg inne i parenteser. Parentesen er da en faktor i uttrykket.</p>
 </div>
-<div class="section" id="primtall-og-faktorisering">
-<h2>Primtall og faktorisering<a class="headerlink" href="#primtall-og-faktorisering" title="Permalink to this headline">¶</a></h2>
+<section id="primtall-og-faktorisering">
+<h2>Primtall og faktorisering<a class="headerlink" href="#primtall-og-faktorisering" title="Permalink to this headline">#</a></h2>
 <p>Vi starter med å repetere faktorisering av tall. Mange tall kan faktoriseres og de kan ofte faktoriseres på flere måter. For eksemel kan vi skrive <span class="math notranslate nohighlight">\(84=2\cdot 42\)</span> eller <span class="math notranslate nohighlight">\(84=4\cdot 21\)</span>. Alle tall som kan faktoriseres kaller vi for <em>sammensatte tall</em>. Alle andre tall (bortsett fra <span class="math notranslate nohighlight">\(1\)</span>) kaller vi for <em>primtall</em>. Et primtall er et tall som kun kan divideres på seg selv og <span class="math notranslate nohighlight">\(1\)</span>. De første primtallene er <span class="math notranslate nohighlight">\(2, 3, 5, 7, 11\)</span> og <span class="math notranslate nohighlight">\(13\)</span>. Det kan bevises at det finnes uendelig antall primtall.</p>
 <p>Et fundamentalt teorem i matematikken sier at alle tall kan skrives som et produkt av primtall på en unik måte. En slik faktorisering kalles <em>primtallsfaktorisering</em>. Vi kan for eksempel primtallsfaktorisere <span class="math notranslate nohighlight">\(84=2\cdot 2\cdot 3\cdot 7\)</span>.</p>
 <div class="eksempel admonition">
 <p class="admonition-title">Eksempel: Primtallsfaktorisering</p>
-<div class="figure align-right">
+<figure class="align-right">
 <a class="reference internal image-reference" href="../../_images/primtallsfaktorisering.png"><img alt="../../_images/primtallsfaktorisering.png" src="../../_images/primtallsfaktorisering.png" style="width: 75.2px; height: 138.8px;" /></a>
-</div>
+</figure>
 <p>Når vi skal primtallsfaktorisere <span class="math notranslate nohighlight">\(84\)</span>, så starter vi med å sjekke hva som er det minste primtallet vi kan dele <span class="math notranslate nohighlight">\(84\)</span> på. Det er <span class="math notranslate nohighlight">\(2\)</span>. Etter å ha utført divisjonen ender vi opp med <span class="math notranslate nohighlight">\(42\)</span>. Så gjennomfører vi samme prosedyren til vi ender opp med <span class="math notranslate nohighlight">\(1\)</span>. Vi kan holde oversikt ved for eksempel å skrive det opp som figuren til høyre. Primtallsfaktoriseringen får vi ved å multiplisere sammen alle faktorene på høyre side.</p>
 <p><span class="math notranslate nohighlight">\(84=2\cdot 2\cdot 3\cdot 7=2^2\cdot 3\cdot 7\)</span></p>
 </div>
@@ -733,9 +808,9 @@ applet.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www
 \end{align}
 \end{split}\]</div>
 </div>
-</div>
-<div class="section" id="trekke-ut-felles-faktor">
-<h2>Trekke ut felles faktor<a class="headerlink" href="#trekke-ut-felles-faktor" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="trekke-ut-felles-faktor">
+<h2>Trekke ut felles faktor<a class="headerlink" href="#trekke-ut-felles-faktor" title="Permalink to this headline">#</a></h2>
 <p>Når vi skal faktorisere et algebrauttrykk er det flere ting å ta hensyn til enn ved primtallsfaktorisering. Prinsippene bak primtallsfaktorisering kan imidlertid hjelpe oss med første steg i faktorisering av algebraiske uttrykk.</p>
 <p>Vi kan faktorisere et uttrykk med et ledd på tilsvarende måte som med primtallsfaktorisering.</p>
 <p><span class="math notranslate nohighlight">\(84x^3y^2=2\cdot 2\cdot 3\cdot 7\cdot x\cdot x\cdot x\cdot y\cdot y\)</span></p>
@@ -773,9 +848,9 @@ applet.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www
 <div id="applet_container3"></div>
 </div></div>
 </div>
-</div>
-<div class="section" id="faktorisering-med-kvadratsetningene">
-<h2>Faktorisering med kvadratsetningene<a class="headerlink" href="#faktorisering-med-kvadratsetningene" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="faktorisering-med-kvadratsetningene">
+<h2>Faktorisering med kvadratsetningene<a class="headerlink" href="#faktorisering-med-kvadratsetningene" title="Permalink to this headline">#</a></h2>
 <p>Etter at vi har trukket ut eventuelle felles faktorer må vi sjekke om faktorer som ikke er lineære kan faktoriseres videre. Det første vi sjekker er om eventuelle andregradsuttrykk er på en form som gjør at vi kan bruke kvadratsetningene baklengs. Vi husker for eksempel at første kvadratsetning sa at:</p>
 <div class="math notranslate nohighlight">
 \[(a+b)^2=a^2+2ab+b^2\]</div>
@@ -815,9 +890,9 @@ applet.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www
 <div id="applet_container4"></div>
 </div></div>
 </div>
-</div>
-<div class="section" id="fullstendig-kvadrat">
-<h2>Fullstendig kvadrat<a class="headerlink" href="#fullstendig-kvadrat" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="fullstendig-kvadrat">
+<h2>Fullstendig kvadrat<a class="headerlink" href="#fullstendig-kvadrat" title="Permalink to this headline">#</a></h2>
 <p>Det siste verktøyet vi skal ta i bruk i denne omgang er metoden med å lage fullstendige kvadrat. Metoden går ut på å skrive om uttrykk slik at de inneholder et kvadrat som vi kan bruke første eller andre kvadratsetning på.</p>
 <p>Vi kommer til å konsentrere oss om uttrykk på formen <span class="math notranslate nohighlight">\(x^2+bx+c\)</span>. Om det skulle være et annet tall enn <span class="math notranslate nohighlight">\(1\)</span> foran <span class="math notranslate nohighlight">\(x^2\)</span> kan vi starte med å faktorisere ut det for å få uttrykket på ønsket form. Som vi har sett tidligere vil uttrykket <span class="math notranslate nohighlight">\(x^2+bx+c\)</span> kunne faktoriseres med første eller andre kvadratsetning dersom <span class="math notranslate nohighlight">\(\left(\frac{b}{2}\right)^2=c\)</span>.</p>
 <p>Metoden med fullstendig kvadrat går ut på å omforme uttrykket vi arbeider med til å inneholde et fullstendig kvadrat.</p>
@@ -852,8 +927,8 @@ applet.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www
 <p>Leddet bak det fullstendige kvadratet er positivt. Da er det ikke mulig å faktorisere videre. Utrykket <span class="math notranslate nohighlight">\(x^2+6x+13\)</span> kan derfor ikke faktoriseres i lineære faktorer.</p>
 </div>
 <p>Under får du oppgaver som gir øving i bruk av metoden med fullstendig kvadrat. Det vil også komme oppgaver der du får bruk for noen av de andre metodene vi har brukt på denne siden.</p>
-<div id="applet_container6"></div></div>
-</div>
+<div id="applet_container6"></div></section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -877,9 +952,11 @@ applet.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="kvadratsetningene.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -895,24 +972,28 @@ applet.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Kristoffer Stige<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
     
-      By Kristoffer Stige<br/>
-    
-        &copy; Copyright 2021.<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
