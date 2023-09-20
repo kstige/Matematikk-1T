@@ -414,7 +414,7 @@ document.write(`
 <h2>Matematiske modeller for hånd<a class="headerlink" href="#matematiske-modeller-for-hand" title="Permalink to this heading">#</a></h2>
 <p>I prinsippet kan vi lage de fleste matematiske modeller for hånd. Vi har også gjort det tidligere når vi har funnet funksjonsuttrykk for rette linjer gjennom to punkt eller andre funksjonstyper gjennom et gitt antall punkt.</p>
 <div class="eksempel admonition">
-<p class="admonition-title">Eksempel: Modell - eksponentiell modell</p>
+<p class="admonition-title">Eksempel: Modell - lineær modell</p>
 <p>Innbyggertallet i en kommune er 5000 i 2010. 10 år senere har innbyggertallet økt til 6400.</p>
 <p>Dersom innbyggertallet følger en lineær modell, så vil antall innbyggere stige med <span class="math notranslate nohighlight">\(\frac{6400-5000}{10}=140\)</span> personer i året. Dette tilsvarer stigningstallet til den lineære modellen. For enkelthetsskyld setter vi 2010 til å være <span class="math notranslate nohighlight">\(x=0\)</span>. Da vil konstantleddet være 5000.</p>
 <p>En lineær modell vil være <span class="math notranslate nohighlight">\(l(x)=140x+5000\)</span>, der <span class="math notranslate nohighlight">\(x\)</span> er antall år etter 2010 og gyldighetsområdet er <span class="math notranslate nohighlight">\(x\in [0,10]\)</span>.</p>
@@ -425,7 +425,7 @@ document.write(`
 <p>Innbyggertallet i en kommune er 5000 i 2010. 10 år senere har innbyggertallet økt til 6400.</p>
 <p>Dersom innbyggertallet følger en eksponentiell modell, så vil antall innbyggere stige med en fast prosent i året. Den eksponentielle modellen er generelt gitt ved <span class="math notranslate nohighlight">\(e(x)=a\cdot b^x\)</span>. Vi må altså bestemme de to parametrene <span class="math notranslate nohighlight">\(a\)</span> og <span class="math notranslate nohighlight">\(b\)</span> ved hjelp av punktene <span class="math notranslate nohighlight">\((0,5000)\)</span> og <span class="math notranslate nohighlight">\((10,6400)\)</span>.</p>
 <p>Med det første punktet får vi at <span class="math notranslate nohighlight">\(e(0)=a=5000\)</span> som bestemmer parameteren <span class="math notranslate nohighlight">\(a\)</span>.</p>
-<p>Med det andre punktet får vi at <span class="math notranslate nohighlight">\(l(10)=5000\cdot b^10=6400\)</span>. Vi løser likningen med CAS og får at <span class="math notranslate nohighlight">\(b=1,025\)</span>.</p>
+<p>Med det andre punktet får vi at <span class="math notranslate nohighlight">\(l(10)=5000\cdot b^{10}=6400\)</span>. Vi løser likningen med CAS og får at <span class="math notranslate nohighlight">\(b=1,025\)</span>.</p>
 <p>En eksponentiell modell blir da <span class="math notranslate nohighlight">\(e(x)=5000\cdot 1,025^x\)</span>, er <span class="math notranslate nohighlight">\(x\)</span> er antall år etter 2010 og gyldighetsområdet er <span class="math notranslate nohighlight">\(x\in [0,10]\)</span>. Modellen tilsier at innbyggertallet øker med <span class="math notranslate nohighlight">\(2,5\%\)</span> i året.</p>
 </div>
 <p>Over ser vi at det går an å lage ulike modeller for de samme målingene.</p>
