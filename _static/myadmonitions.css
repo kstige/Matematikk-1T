@@ -1,95 +1,132 @@
-.admonition.oppgave {
+/* Læringsutbytte */
+
+div.admonition.utbytte {
+    border-color: var(--pst-color-attention);
+    background-color: rgba(255, 193, 7, 0)
+}
+
+div.admonition.utbytte > .admonition-title {
+    background-color: rgba(255, 193, 7, 0.1)
+    
+}
+div.admonition.utbytte > .admonition-title:after {
+    content: '\f19d';
+    color: var(--pst-color-attention)
+}
+
+div.admonition.utbytte > .admonition-title:before {
+    content: '\f19d';
+    background-color: rgba(255, 193, 7, 0)
+}
+
+/* Eksempel */
+
+div.admonition.eksempel {
+    border-color: var(--pst-color-success);
+    background-color: rgba(60, 160, 75, 0.1);
+}
+div.admonition.eksempel > .admonition-title {
+    background-color: rgba(60, 160, 75, 0.2);
+}
+
+div.admonition.eksempel > .admonition-title:after {
+    content: '\f304';
+    color: var(--pst-color-success);
+}
+
+div.admonition.eksempel > .admonition-title:before {
+    color: var(--pst-color-success);
+    background-color: rgba(60, 160, 75, 0)
+}
+
+/* Eksempel - løsning */
+
+div.admonition.ekslos {
+    border-color: var(--pst-color-success);
+    background-color: rgba(60, 160, 75, 0.2);
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+div.admonition.ekslos > .admonition-title {
+    background-color: rgba(60, 160, 75, 0.2);
+
+}
+div.admonition.ekslos > .admonition-title:after {
+    content: '\f044';
+    color: var(--pst-color-success);
+}
+
+div.admonition.ekslos > .admonition-title:before {
+    color: var(--pst-color-success);
+    background-color: rgba(60, 160, 75, 0)
+}
+
+div.admonition.videolos {
+    border-color: var(--pst-color-success);
+    background-color: rgba(60, 160, 75, 0.2);
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+div.admonition.videolos > .admonition-title {
+    background-color: rgba(60, 160, 75, 0.2);
+}
+div.admonition.videolos > .admonition-title::after {
+    content: '\f03d';
+    color: var(--pst-color-success);
+}
+
+div.admonition.videolos > .admonition-title:before {
+    color: var(--pst-color-success);
+    background-color: rgba(60, 160, 75, 0)
+}
+
+
+/* Definisjon */
+
+div.admonition.def {
+    border-color: var(--pst-color-primary);
+    background-color: rgba(69, 157, 185, 0);
+    
+
+}
+div.admonition.def > .admonition-title {
+    background-color: rgba(69, 157, 185, 0.2);
+    
+}
+div.admonition.def > .admonition-title:after {
+    content: '\f0eb';
+    color: var(--pst-color-primary)
+}
+
+div.admonition.def > .admonition-title:before {
+    color: var(--pst-color-primary);
+    background-color: rgba(69, 157, 185, 0)
+}
+
+div.admonition.oppgave {
     border-color: #be8322;
     background-color: rgba(249, 154, 38, 0.1)
 }
-.admonition.oppgave > .admonition-title {
+div.admonition.oppgave > .admonition-title {
     background-color: rgba(249, 154, 38, 0.1)
 }
-.admonition.oppgave > .admonition-title::before {
+div.admonition.oppgave > .admonition-title::after {
     content: '\f304';
     color: #be8322
 }
 
 
-.admonition.losning {
+div.admonition.losning {
     border-color: #be8322;
     background-color: rgba(245, 174, 67, 0.2);
     margin-left: 0;
 }
-.admonition.losning > .admonition-title {
+div.admonition.losning > .admonition-title {
     background-color: rgba(255, 171, 68, 0.2);
     margin-left: -1.0rem;
     margin-right: -1.4rem;
 }
-.admonition.losning > .admonition-title::before {
+div.admonition.losning > .admonition-title::after {
     content: '\f044';
     color: #be8322
-}
-
-.admonition.eksempel {
-    border-color: #2aaf1e;
-    background-color: rgba(60, 160, 74, 0.1);
-}
-.admonition.eksempel > .admonition-title {
-    background-color: rgba(60, 160, 74, 0.1);
-}
-.admonition.eksempel > .admonition-title::before {
-    content: '\f304';
-    color: #2aaf1e
-}
-
-.admonition.ekslos {
-    border-color: #2aaf1e;
-    background-color: rgba(60, 160, 74, 0.2);
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-}
-.admonition.ekslos > .admonition-title {
-    background-color: rgba(60, 160, 74, 0.2);
-
-}
-.admonition.ekslos > .admonition-title::before {
-    content: '\f044';
-    color: #2aaf1e
-}
-
-.admonition.videolos {
-    border-color: #2aaf1e;
-    background-color: rgba(60, 160, 74, 0.2);
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-}
-.admonition.videolos > .admonition-title {
-    background-color: rgba(60, 160, 74, 0.2);
-
-}
-.admonition.videolos > .admonition-title::before {
-    content: '\f03d';
-    color: #2aaf1e
-}
-
-.admonition.def {
-    border-color: rgba(var(--pst-color-primary));
-
-}
-.admonition.def > .admonition-title {
-    background-color: rgba(87,154,202,0.1);
-    
-}
-.admonition.def > .admonition-title::before {
-    content: '\f0eb';
-    color: rgba(var(--pst-color-primary))
-}
-
-
-.admonition.utbytte {
-    border-color: rgba(var(--pst-color-admonition-tip),1);
-}
-.admonition.utbytte > .admonition-title {
-    background-color: rgba(var(--pst-color-admonition-tip),.1);
-    
-}
-.admonition.utbytte > .admonition-title::before {
-    content: '\f19d';
-    color: rgba(var(--pst-color-admonition-tip),1)
 }

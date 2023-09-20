@@ -18,6 +18,7 @@ execute:
 # HTML-specific settings
 html:
   home_page_in_navbar         : false
+  use_multitoc_numbering:   false
 
 # Interact link settings
 notebook_interface            : "notebook"
@@ -45,6 +46,13 @@ repository:
   url: https://kstige.github.io/Matematikk-1T  # Online location of your book
   path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: master  # Which branch of the repository should be used when creating links (optional)
+
+sphinx:
+  recursive_update: true
+  config:
+    html_theme_options:
+      repository_provider: github
+    language: nb_NO
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
